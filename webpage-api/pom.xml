@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>dario.gmori</groupId>
 	<artifactId>webpage-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>Webpage API</name>
 	<description>API for dariogmori.com</description>
 	<properties>
