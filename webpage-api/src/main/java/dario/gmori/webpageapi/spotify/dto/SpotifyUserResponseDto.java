@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SpotifyResponseDto {
+public class SpotifyUserResponseDto {
     private String username;
     private String avatar;
     @JsonProperty("profile_url")

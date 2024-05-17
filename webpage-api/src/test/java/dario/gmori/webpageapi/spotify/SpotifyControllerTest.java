@@ -1,8 +1,6 @@
 package dario.gmori.webpageapi.spotify;
 
 import dario.gmori.webpageapi.auth.SecurityConfig;
-import dario.gmori.webpageapi.spotify.SpotifyController;
-import dario.gmori.webpageapi.spotify.SpotifyService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -22,7 +20,7 @@ public class SpotifyControllerTest {
     MockMvc mockMvc;
 
     @MockBean
-    SpotifyService spotifyService;
+    SpotifyUserService spotifyUserService;
 
     @Test
     void getSpotifyInfoShouldReturn200() throws Exception{

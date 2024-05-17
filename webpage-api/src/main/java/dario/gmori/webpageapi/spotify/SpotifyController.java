@@ -1,6 +1,6 @@
 package dario.gmori.webpageapi.spotify;
 
-import dario.gmori.webpageapi.spotify.dto.SpotifyResponseDto;
+import dario.gmori.webpageapi.spotify.dto.SpotifyUserResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/spotify")
 @RequiredArgsConstructor
 public class SpotifyController {
-    private final SpotifyService service;
+    private final SpotifyUserService service;
     @GetMapping("/info")
-    public ResponseEntity<SpotifyResponseDto> getUser(){
+    public ResponseEntity<SpotifyUserResponseDto> getUser(){
         return new ResponseEntity<>(service.getSpotifyInfo(), HttpStatus.OK);
     }
 }
