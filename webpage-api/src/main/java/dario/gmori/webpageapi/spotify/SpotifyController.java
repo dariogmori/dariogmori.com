@@ -15,6 +15,6 @@ public class SpotifyController {
     private final SpotifyService service;
     @GetMapping("/info")
     public ResponseEntity<SpotifyResponseDto> getUser(){
-        return new ResponseEntity<SpotifyResponseDto>(service.getSpotifyInfo(), HttpStatus.OK);
+        return new ResponseEntity<>(service.getSpotifyInfo(), HttpStatus.OK);
     }
 }
