@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class SpotifyService {
     public SpotifyResponseDto getSpotifyInfo() {
-        return null;
+        return new SpotifyResponseDto(
+                "test",
+                "https://test.com",
+                "https://profile_url.com");
     }
 }
