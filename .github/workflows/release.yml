@@ -60,7 +60,7 @@ jobs:
           user: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           command: |
-            wget https://raw.githubusercontent.com/Toto-hitori/dariogmori.com/main/api-config/docker-compose.yml
+            wget https://raw.githubusercontent.com/Toto-hitori/dariogmori.com/feat/api-config/docker-compose.yml
             echo "DATABASE_USER=${{ secrets.DATABASE_USER }}" >> .env
             echo "DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}" >> .env
             echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> .env
