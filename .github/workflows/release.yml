@@ -36,7 +36,7 @@ jobs:
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
           SSL_PASSWORD: ${{ secrets.SSL_PASSWORD }}
         with:
-          name: Toto-hitori/webpage-api
+          name: Toto-hitori/dariogmori.com/webpage-api
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
