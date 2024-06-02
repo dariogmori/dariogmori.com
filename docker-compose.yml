@@ -24,7 +24,7 @@ services:
       - JWT_SECRET=${JWT_SECRET}
       - SSL_PASSWORD=${SSL_PASSWORD}
     ports:
-      - 8443:8443
+      - 8843:8443
     networks:
       mynetwork:
     volumes:
