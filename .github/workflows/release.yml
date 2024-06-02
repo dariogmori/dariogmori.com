@@ -54,7 +54,6 @@ jobs:
     steps:
       - name: Deploy over SSH
         uses: fifsky/ssh-action@master
-        working-directory: dariogmori.com
         env:
           DATABASE_USER: ${{ secrets.DATABASE_USER }}
           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
@@ -63,6 +62,7 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           user: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
+          workdir: dariogmori.com
           command: |
             wget https://raw.githubusercontent.com/Toto-hitori/dariogmori.com/feat/api-config/docker-compose.yml
             echo "DATABASE_USER=${{ secrets.DATABASE_USER }}" >> .env
