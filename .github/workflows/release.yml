@@ -54,6 +54,7 @@ jobs:
     steps:
       - name: Deploy over SSH
         uses: fifsky/ssh-action@master
+        working-directory: dariogmori.com
         env:
           DATABASE_USER: ${{ secrets.DATABASE_USER }}
           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}

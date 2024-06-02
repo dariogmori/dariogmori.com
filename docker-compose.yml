@@ -16,8 +16,7 @@ services:
   api:
     container_name: api-dariogmori
     profiles: ["dev", "prod"]
-    build:
-      context: ./webpage-api
+    image: ghcr.io/toto-hitori/dariogmori.com/webpage-api:feat-api-config
     environment:
       - DATABASE_URL=jdbc:postgresql://database:5432/api
       - DATABASE_USER=${DATABASE_USER}
