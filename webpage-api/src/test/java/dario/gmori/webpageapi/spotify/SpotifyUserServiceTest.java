@@ -9,6 +9,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.time.LocalDateTime;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
@@ -32,7 +34,9 @@ public class SpotifyUserServiceTest {
         defaultSpotifyUser = new SpotifyUser(
                 "test",
                 "https://test.com",
-                "https://profile_url.com");
+                "https://profile_url.com",
+                LocalDateTime.now()
+                );
     }
 
     @Test
