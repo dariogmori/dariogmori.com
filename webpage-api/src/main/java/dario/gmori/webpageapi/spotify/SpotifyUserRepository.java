@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SpotifyUserRepository extends JpaRepository<SpotifyUser, Long> {
-    @Query(value = "SELECT s FROM spotify_users s", nativeQuery = true)
+    @Query(value = "SELECT s FROM spotify_users s WHERE s.id = 1L", nativeQuery = true)
     SpotifyUser findUserInfo();
 }
