@@ -9,7 +9,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
-        - 5532:5432
+        - 5432:5432
     image: postgres:latest
     profiles: ["dev", "prod"]
     networks:
@@ -20,13 +20,13 @@ services:
     profiles: ["dev", "prod"]
     image: ghcr.io/toto-hitori/dariogmori.com/webpage-api:feat-api-config
     environment:
-      - DATABASE_URL=jdbc:postgresql://postgresql-dariogmori:5532/api
+      - DATABASE_URL=jdbc:postgresql://postgresql-dariogmori:5432/api
       - DATABASE_USER=${DATABASE_USER}
       - DATABASE_PASSWORD=${DATABASE_PASSWORD}
       - JWT_SECRET=${JWT_SECRET}
       - SSL_PASSWORD=${SSL_PASSWORD}
     ports:
-      - 8843:8443
+      - 8443:8443
     networks:
       mynetwork:
     volumes:
