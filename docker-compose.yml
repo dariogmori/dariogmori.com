@@ -1,0 +1,41 @@
+version: '3'
+services:
+  database:
+    container_name: postgresql-dariogmori
+    environment:
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: api
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+        - 5432:5432
+    image: postgres:latest
+    profiles: ["dev", "prod"]
+    networks:
+      mynetwork:
+
+  api:
+    container_name: api-dariogmori
+    profiles: ["dev", "prod"]
+    image: ghcr.io/toto-hitori/dariogmori.com/webpage-api:feat-api-config
+    environment:
+      - DATABASE_URL=jdbc:postgresql://postgresql-dariogmori:5432/api
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - JWT_SECRET=${JWT_SECRET}
+      - SSL_PASSWORD=${SSL_PASSWORD}
+    ports:
+      - 8443:8443
+    networks:
+      mynetwork:
+    volumes:
+      - /certs:/etc/letsencrypt/live/dariogmori.com:ro
+    depends_on:
+      - database
+
+volumes:
+    postgres_data:
+networks:
+    mynetwork:
+        driver: bridge
