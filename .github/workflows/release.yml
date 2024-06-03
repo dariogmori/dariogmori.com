@@ -65,6 +65,7 @@ jobs:
           workdir: dariogmori.com
           command: |
             wget https://raw.githubusercontent.com/Toto-hitori/dariogmori.com/feat/api-config/docker-compose.yml -O docker-compose.yml
+            rm -f .env
             echo "DATABASE_USER=${{ secrets.DATABASE_USER }}" >> .env
             echo "DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}" >> .env
             echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> .env
