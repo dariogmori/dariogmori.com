@@ -7,7 +7,7 @@ WORKDIR /webpage-api
 RUN mvn install
 RUN mvn clean package
 
-FROM arm64v8/eclipse-temurin:17 AS runtime
+FROM arm64v8/eclipse-temurin:17.0.11_9-jdk AS runtime
 
 # Copy the compiled jar file from the build stage
 COPY --from=build /webpage-api/target/webpage-api*.jar app.jar
