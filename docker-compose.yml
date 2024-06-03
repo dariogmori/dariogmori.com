@@ -20,7 +20,7 @@ services:
     profiles: ["dev", "prod"]
     image: ghcr.io/toto-hitori/dariogmori.com/webpage-api:feat-api-config
     environment:
-      - DATABASE_URL=jdbc:postgresql://database:5532/api
+      - DATABASE_URL=jdbc:postgresql://postgresql-dariogmori:5532/api
       - DATABASE_USER=${DATABASE_USER}
       - DATABASE_PASSWORD=${DATABASE_PASSWORD}
       - JWT_SECRET=${JWT_SECRET}
