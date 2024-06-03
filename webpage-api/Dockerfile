@@ -7,7 +7,7 @@ WORKDIR /webpage-api
 RUN mvn install
 RUN mvn clean package
 
-FROM openjdk:17 AS runtime
+FROM amazoncorretto:17-alpine3.16 AS runtime
 
 # Copy the compiled jar file from the build stage
 COPY --from=build /webpage-api/target/webpage-api*.jar app.jar
