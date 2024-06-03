@@ -10,6 +10,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
@@ -32,6 +33,7 @@ public class SpotifyUserServiceTest {
                 "https://test.com",
                 "https://profile_url.com");
         defaultSpotifyUser = new SpotifyUser(
+                1L,
                 "test",
                 "https://test.com",
                 "https://profile_url.com",
@@ -41,7 +43,7 @@ public class SpotifyUserServiceTest {
 
     @Test
     void getSpotifyInfoShouldReturnSpotifyResponseDto(){
-        when(spotifyUserRepository.findUserInfo()).thenReturn(defaultSpotifyUser);
+        when(spotifyUserRepository.findUserInfo()).thenReturn(Optional.of(defaultSpotifyUser));
         SpotifyUserResponseDto response = spotifyUserService.getSpotifyInfo();
         assertEquals(defaultSpotifyUserResponseDto, response);
     }

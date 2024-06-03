@@ -11,6 +11,6 @@ public class SpotifyUserService {
     private final SpotifyUserRepository spotifyUserRepository;
     private final SpotifyUserResponseDtoMapper spotifyUserResponseDtoMapper;
     public SpotifyUserResponseDto getSpotifyInfo() {
-        return spotifyUserResponseDtoMapper.apply(spotifyUserRepository.findUserInfo());
+        return spotifyUserResponseDtoMapper.apply(spotifyUserRepository.findUserInfo().orElseThrow());
     }
 }
