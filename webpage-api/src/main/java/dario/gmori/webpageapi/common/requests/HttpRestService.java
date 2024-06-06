@@ -1,4 +1,4 @@
-package dario.gmori.webpageapi.common.requests.spotify;
+package dario.gmori.webpageapi.common.requests;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.http.HttpEntity;
