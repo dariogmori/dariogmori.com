@@ -2,6 +2,7 @@ package dario.gmori.webpageapi.spotify;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 @Table(name = "spotify_users")
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Data
 public class SpotifyUser {
     @Id
@@ -28,4 +30,8 @@ public class SpotifyUser {
 
     @Column(name="last_modified_date")
     private LocalDateTime lastModifiedDate;
+
+    public boolean timeToRefreshPassed(int seconds){
+        return LocalDateTime.now().isAfter(lastModifiedDate.plusSeconds(seconds));
+    }
 }
