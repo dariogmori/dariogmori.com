@@ -1,6 +1,7 @@
 package dario.gmori.webpageapi.spotify;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import dario.gmori.webpageapi.common.requests.spotify.SpotifyRequestUtils;
 import dario.gmori.webpageapi.spotify.dto.SpotifyUserResponseDto;
@@ -50,13 +51,23 @@ public class SpotifyUserServiceTest {
                 "https://profile_url.com",
                 LocalDateTime.now()
                 );
+
         ObjectMapper mapper = new ObjectMapper();
 
-        // Create an ObjectNode
         defaultUserInfoJson = mapper.createObjectNode();
         defaultUserInfoJson.put("display_name", "test");
-        defaultUserInfoJson.put("spotify", "https://profile_url.com");
-        defaultUserInfoJson.put("url", "https://test.com");
+
+        // Create external_urls object
+        ObjectNode externalUrls = mapper.createObjectNode();
+        externalUrls.put("spotify", "https://profile_url.com");
+        defaultUserInfoJson.set("external_urls", externalUrls);
+
+        // Create images array
+        ArrayNode images = mapper.createArrayNode();
+        ObjectNode image = mapper.createObjectNode();
+        image.put("url", "https://test.com");
+        images.add(image);
+        defaultUserInfoJson.set("images", images);
     }
 
     @Test
