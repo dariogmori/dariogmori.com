@@ -15,6 +15,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Data
+@ToString
 public class Artist {
     @Id
     private String name;
@@ -33,6 +34,7 @@ public class Artist {
             mappedBy = "artists")
     @Fetch(value = FetchMode.SELECT)
     @JsonIgnore
+    @ToString.Exclude
     private Set<Song> songs;
 
 }

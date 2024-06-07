@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -29,38 +28,47 @@ public class SpotifyUserService {
 
     private final SpotifyRequestUtils spotifyRequestUtils;
     public SpotifyUserResponseDto getSpotifyInfo() {
-        SpotifyUser spotifyUser = updateSpotifyUser(spotifyUserRepository.findUserInfo());
-        return spotifyUserResponseDtoMapper.apply(spotifyUser);
+        Optional<SpotifyUser> spotifyUser = spotifyUserRepository.findUserInfo();
+        if(spotifyUser.isEmpty() ){ // No user found, create a new one
+            return spotifyUserResponseDtoMapper.apply(createNewSpotifyUser());
+        } else if(spotifyUser.get().timeToRefreshPassed(10)) { // User found, but it's time to refresh
+            return spotifyUserResponseDtoMapper.apply(updateSpotifyUser(spotifyUser.get()));
+        }else{
+            return spotifyUserResponseDtoMapper.apply(spotifyUser.get()); // User found and it's not time to refresh
+        }
     }
 
-    private SpotifyUser updateSpotifyUser(Optional<SpotifyUser> spotifyUser) {
-        if(spotifyUser.isEmpty() ){ // No user found, create a new one
-            SpotifyUser newSpotifyUser = spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation());
-            List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getSpotifySongs());
-            newSpotifyUser.setTopSongs(saveSongsNotRepeated(songsList));
-            newSpotifyUser.setId(1L);
-            newSpotifyUser.setLastModifiedDate(LocalDateTime.now());
-            return spotifyUserRepository.save(newSpotifyUser);
-        } else if(spotifyUser.get().timeToRefreshPassed(10)) { // User found, but it's time to refresh
-            SpotifyUser updatedSpotifyUser =  spotifyUser.get();
-            List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getSpotifySongs());
-            updatedSpotifyUser.updateUser(spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation()),saveSongsNotRepeated(songsList));
-            return spotifyUserRepository.save(updatedSpotifyUser);
-        }else{
-            return spotifyUser.get();
+    private SpotifyUser updateSpotifyUser(SpotifyUser spotifyUser) {
+        List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getSpotifySongs());
+        for( Song song : songsList){
+            song.setUser(spotifyUser);
         }
+        spotifyUser.updateUser(spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation()),saveSongsNotRepeated(songsList));
+        return spotifyUserRepository.save(spotifyUser);
+
+    }
+
+    private SpotifyUser createNewSpotifyUser() {
+        SpotifyUser newSpotifyUser = spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation());
+        List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getSpotifySongs());
+        newSpotifyUser.setTopSongs(saveSongsNotRepeated(songsList));
+        newSpotifyUser.setId(1L);
+        newSpotifyUser.setLastModifiedDate(LocalDateTime.now());
+        newSpotifyUser = spotifyUserRepository.save(newSpotifyUser);
+        for( Song song : songsList){
+            song.setUser(newSpotifyUser);
+        }
+        songRepository.saveAll(songsList);
+        return newSpotifyUser;
     }
 
     private List<Song> saveSongsNotRepeated(List<Song> songsList) {
         artistRepository.saveAll(songsList.stream()
                 .flatMap(song -> song.getArtists().stream())
                 .distinct()// Remove duplicates
-                .filter(artist -> artistRepository.findByName(artist.getName()).isEmpty())
                 .toList()
         );
 
-        return songRepository.saveAll(songsList.stream()
-                .filter(song -> songRepository.findBySongId(song.getSongId()).isEmpty())
-                .collect(Collectors.toList()));
+        return songRepository.saveAll(songsList);
     }
 }

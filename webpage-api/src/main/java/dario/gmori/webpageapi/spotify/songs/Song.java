@@ -19,6 +19,8 @@ import java.util.Set;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown=true)
 @Data
+@EqualsAndHashCode(exclude={"artists","user"})
+@ToString
 public class Song {
 
     @Id
@@ -48,6 +50,7 @@ public class Song {
     @ManyToOne
     @JoinColumn(name = "spotify_user")
     @JsonIgnore
+    @ToString.Exclude
     private SpotifyUser user;
 
 }
