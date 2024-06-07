@@ -44,6 +44,8 @@ public class SpotifyUserServiceTest {
 
     private ObjectNode defaultSongsJson;
 
+    private ObjectNode defaultArtistJson;
+
     @Mock
     private SpotifyUserRepository spotifyUserRepository;
 
@@ -56,7 +58,7 @@ public class SpotifyUserServiceTest {
     private ArtistRepository artistRepository;
     @BeforeEach
     void setup(){
-        spotifyUserService = new SpotifyUserService(spotifyUserRepository,songRepository,artistRepository, new SpotifyUserResponseDtoMapper(new SpotifySongResponseDtoMapper(new SpotifyArtistResponseDtoMapper())), new SpotifyUserJsonModelMapper(),new SpotifySongsJsonModelMapper(new SpotifyArtistJsonModelMapper()),spotifyRequestUtils);
+        spotifyUserService = new SpotifyUserService(spotifyUserRepository,songRepository,artistRepository, new SpotifyUserResponseDtoMapper(new SpotifySongResponseDtoMapper(new SpotifyArtistResponseDtoMapper()),new SpotifyArtistResponseDtoMapper()), new SpotifyUserJsonModelMapper(),new SpotifySongsJsonModelMapper(new SpotifyArtistJsonModelMapper()),new SpotifyArtistJsonModelMapper(),spotifyRequestUtils);
 
         defaultSpotifyUserResponseDto = new SpotifyUserResponseDto(
                 "test",
@@ -78,8 +80,16 @@ public class SpotifyUserServiceTest {
                                                 .build()
                                 ))
                                 .build()
-
-                ));
+                ),
+                List.of(
+                        ArtistResponseDto.builder()
+                                .name("test")
+                                .avatarUrl("https://test.com")
+                                .profileUrl("https://profile_url.com")
+                                .followers(0)
+                                .genres("")
+                                .build())
+        );
         defaultSpotifyUser = new SpotifyUser(
                 1L,
                 "test",
@@ -92,7 +102,7 @@ public class SpotifyUserServiceTest {
                                 .url("https://profile_url.com")
                                 .name("test")
                                 .durationMs(1000)
-                                .artists(Set.of(
+                                .artists(List.of(
                                         Artist.builder()
                                                 .name("test")
                                                 .avatarUrl("https://test.com")
@@ -102,7 +112,15 @@ public class SpotifyUserServiceTest {
                                                 .build()
                                 ))
                                 .build()
-                )
+                ),
+                List.of(
+                        Artist.builder()
+                                .name("test")
+                                .avatarUrl("https://test.com")
+                                .profileUrl("https://profile_url.com")
+                                .followers(0)
+                                .genres("")
+                                .build())
                 );
 
         ObjectMapper mapper = new ObjectMapper();
@@ -144,6 +162,10 @@ public class SpotifyUserServiceTest {
         items.add(item);
         defaultSongsJson.set("items", items);
 
+        // Create default top artists
+        defaultArtistJson = mapper.createObjectNode();
+        defaultArtistJson.set("items", artists);
+
     }
 
     @Test
@@ -159,7 +181,9 @@ public class SpotifyUserServiceTest {
         when(spotifyRequestUtils.getSpotifyInformation()).thenReturn(defaultUserInfoJson);
         when(songRepository.saveAll(any())).thenAnswer(invocation -> invocation.getArgument(0));
         when(spotifyUserRepository.save(any())).thenAnswer(invocation -> invocation.getArgument(0));
-        when(spotifyRequestUtils.getSpotifySongs()).thenReturn(defaultSongsJson);
+        when(artistRepository.saveAll(any())).thenAnswer(invocation -> invocation.getArgument(0));
+        when(spotifyRequestUtils.getTopArtists()).thenReturn(defaultArtistJson);
+        when(spotifyRequestUtils.getTopSongs()).thenReturn(defaultSongsJson);
         SpotifyUserResponseDto response = spotifyUserService.getSpotifyInfo();
         assertEquals(defaultSpotifyUserResponseDto, response);
     }
@@ -172,7 +196,9 @@ public class SpotifyUserServiceTest {
         when(spotifyRequestUtils.getSpotifyInformation()).thenReturn(defaultUserInfoJson);
         when(songRepository.saveAll(any())).thenAnswer(invocation -> invocation.getArgument(0));
         when(spotifyUserRepository.save(any())).thenAnswer(invocation -> invocation.getArgument(0));
-        when(spotifyRequestUtils.getSpotifySongs()).thenReturn(defaultSongsJson);
+        when(artistRepository.saveAll(any())).thenAnswer(invocation -> invocation.getArgument(0));
+        when(spotifyRequestUtils.getTopArtists()).thenReturn(defaultArtistJson);
+        when(spotifyRequestUtils.getTopSongs()).thenReturn(defaultSongsJson);
 
         assertTrue(defaultSpotifyUser.timeToRefreshPassed(10));
         SpotifyUserResponseDto response = spotifyUserService.getSpotifyInfo();
