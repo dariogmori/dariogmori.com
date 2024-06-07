@@ -1,5 +1,6 @@
 package dario.gmori.webpageapi.spotify;
 
+import dario.gmori.webpageapi.spotify.artists.Artist;
 import dario.gmori.webpageapi.spotify.songs.Song;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -39,17 +40,21 @@ public class SpotifyUser {
     @Fetch(value = FetchMode.SELECT)
     private List<Song> topSongs;
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    private List<Artist> topArtists;
+
     public boolean timeToRefreshPassed(int seconds){
         if(lastModifiedDate == null)
             return true;
         return LocalDateTime.now().isAfter(lastModifiedDate.plusSeconds(seconds));
     }
 
-    public void updateUser(SpotifyUser apply, List<Song> songsList) {
+    public void updateUser(SpotifyUser apply, List<Song> songsList, List<Artist> artistList) {
         this.username = apply.getUsername();
         this.avatar = apply.getAvatar();
         this.profileUrl = apply.getProfileUrl();
         this.topSongs = songsList;
+        this.topArtists = artistList;
         this.setLastModifiedDate(LocalDateTime.now());
     }
 }

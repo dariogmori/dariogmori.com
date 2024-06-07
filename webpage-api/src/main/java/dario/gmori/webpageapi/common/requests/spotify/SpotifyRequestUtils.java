@@ -53,7 +53,7 @@ public class SpotifyRequestUtils {
     }
 
 
-    public JsonNode getSpotifySongs() {
+    public JsonNode getTopSongs() {
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
         headers.setContentType(MediaType.APPLICATION_JSON);
@@ -67,6 +67,23 @@ public class SpotifyRequestUtils {
                 return httpRestService.makeGetRequest("https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term", headers);
             }
             throw new RuntimeException("Error getting Spotify songs");
+        }
+    }
+
+    public JsonNode getTopArtists() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.setBearerAuth(token);
+        try{
+            return httpRestService.makeGetRequest("https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term", headers);
+        } catch (HttpClientErrorException e){
+            if(e.getStatusCode().value() == 401){
+                refreshToken();
+                headers.setBearerAuth(token);
+                return httpRestService.makeGetRequest("https://api.spotify.com/v1/me/top/artists?limit=5&time_range=short_term", headers);
+            }
+            throw new RuntimeException("Error getting Spotify artists");
         }
     }
 
@@ -113,4 +130,5 @@ public class SpotifyRequestUtils {
             System.out.println("Error updating property: " + e.getMessage());
         }
     }
+
 }

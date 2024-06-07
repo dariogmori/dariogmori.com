@@ -1,7 +1,9 @@
 package dario.gmori.webpageapi.spotify;
 
 import dario.gmori.webpageapi.common.requests.spotify.SpotifyRequestUtils;
+import dario.gmori.webpageapi.spotify.artists.Artist;
 import dario.gmori.webpageapi.spotify.artists.ArtistRepository;
+import dario.gmori.webpageapi.spotify.artists.mappers.SpotifyArtistJsonModelMapper;
 import dario.gmori.webpageapi.spotify.dto.SpotifyUserResponseDto;
 import dario.gmori.webpageapi.spotify.mappers.SpotifyUserJsonModelMapper;
 import dario.gmori.webpageapi.spotify.mappers.SpotifyUserResponseDtoMapper;
@@ -14,6 +16,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -25,6 +28,7 @@ public class SpotifyUserService {
     private final SpotifyUserResponseDtoMapper spotifyUserResponseDtoMapper;
     private final SpotifyUserJsonModelMapper spotifyUserJsonModelMapper;
     private final SpotifySongsJsonModelMapper spotifySongsJsonModelMapper;
+    private final SpotifyArtistJsonModelMapper artistJsonModelMapper;
 
     private final SpotifyRequestUtils spotifyRequestUtils;
     public SpotifyUserResponseDto getSpotifyInfo() {
@@ -39,18 +43,22 @@ public class SpotifyUserService {
     }
 
     private SpotifyUser updateSpotifyUser(SpotifyUser spotifyUser) {
-        List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getSpotifySongs());
+        List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getTopSongs());
         for( Song song : songsList){
             song.setUser(spotifyUser);
         }
-        spotifyUser.updateUser(spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation()),saveSongsNotRepeated(songsList));
+        Set<Artist> artistList = artistJsonModelMapper.apply(spotifyRequestUtils.getTopArtists().get("items"));
+        for( Artist artist : artistList){
+            artist.setUser(spotifyUser);
+        }
+        spotifyUser.updateUser(spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation()),saveSongsNotRepeated(songsList),saveArtistsNotRepeated(artistList));
         return spotifyUserRepository.save(spotifyUser);
 
     }
 
     private SpotifyUser createNewSpotifyUser() {
         SpotifyUser newSpotifyUser = spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation());
-        List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getSpotifySongs());
+        List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getTopSongs());
         newSpotifyUser.setTopSongs(saveSongsNotRepeated(songsList));
         newSpotifyUser.setId(1L);
         newSpotifyUser.setLastModifiedDate(LocalDateTime.now());
@@ -70,5 +78,9 @@ public class SpotifyUserService {
         );
 
         return songRepository.saveAll(songsList);
+    }
+
+    private List<Artist> saveArtistsNotRepeated(Set<Artist> artistList) {
+        return artistRepository.saveAll(artistList);
     }
 }

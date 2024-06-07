@@ -1,6 +1,7 @@
 package dario.gmori.webpageapi.spotify.artists;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import dario.gmori.webpageapi.spotify.SpotifyUser;
 import dario.gmori.webpageapi.spotify.songs.Song;
 import jakarta.persistence.*;
 import lombok.*;
@@ -36,5 +37,10 @@ public class Artist {
     @JsonIgnore
     @ToString.Exclude
     private Set<Song> songs;
+
+    @ManyToOne
+    @JoinColumn(name = "spotify_user")
+    @JsonIgnore
+    private SpotifyUser user;
 
 }
