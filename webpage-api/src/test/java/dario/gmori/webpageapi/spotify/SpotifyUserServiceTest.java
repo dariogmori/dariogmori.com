@@ -4,13 +4,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import dario.gmori.webpageapi.common.requests.spotify.SpotifyRequestUtils;
+import dario.gmori.webpageapi.spotify.artists.Artist;
 import dario.gmori.webpageapi.spotify.artists.ArtistRepository;
+import dario.gmori.webpageapi.spotify.artists.ArtistResponseDto;
 import dario.gmori.webpageapi.spotify.artists.mappers.SpotifyArtistJsonModelMapper;
 import dario.gmori.webpageapi.spotify.artists.mappers.SpotifyArtistResponseDtoMapper;
 import dario.gmori.webpageapi.spotify.dto.SpotifyUserResponseDto;
 import dario.gmori.webpageapi.spotify.mappers.SpotifyUserJsonModelMapper;
 import dario.gmori.webpageapi.spotify.mappers.SpotifyUserResponseDtoMapper;
+import dario.gmori.webpageapi.spotify.songs.Song;
 import dario.gmori.webpageapi.spotify.songs.SongRepository;
+import dario.gmori.webpageapi.spotify.songs.SongResponseDto;
 import dario.gmori.webpageapi.spotify.songs.mappers.SpotifySongResponseDtoMapper;
 import dario.gmori.webpageapi.spotify.songs.mappers.SpotifySongsJsonModelMapper;
 import org.junit.jupiter.api.BeforeEach;
@@ -23,6 +27,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -57,14 +62,47 @@ public class SpotifyUserServiceTest {
                 "test",
                 "https://test.com",
                 "https://profile_url.com",
-                List.of());
+                List.of(
+                        SongResponseDto.builder()
+                                .coverUrl("https://test.com")
+                                .url("https://profile_url.com")
+                                .name("test")
+                                .durationMs(1000)
+                                .artists(List.of(
+                                        ArtistResponseDto.builder()
+                                                .name("test")
+                                                .avatarUrl("https://test.com")
+                                                .profileUrl("https://profile_url.com")
+                                                .followers(0)
+                                                .genres("")
+                                                .build()
+                                ))
+                                .build()
+
+                ));
         defaultSpotifyUser = new SpotifyUser(
                 1L,
                 "test",
                 "https://test.com",
                 "https://profile_url.com",
                 LocalDateTime.now(),
-                List.of()
+                List.of(
+                        Song.builder()
+                                .coverImageUrl("https://test.com")
+                                .url("https://profile_url.com")
+                                .name("test")
+                                .durationMs(1000)
+                                .artists(Set.of(
+                                        Artist.builder()
+                                                .name("test")
+                                                .avatarUrl("https://test.com")
+                                                .profileUrl("https://profile_url.com")
+                                                .followers(0)
+                                                .genres("")
+                                                .build()
+                                ))
+                                .build()
+                )
                 );
 
         ObjectMapper mapper = new ObjectMapper();
@@ -99,6 +137,8 @@ public class SpotifyUserServiceTest {
         artist.put("name", "test");
         artist.put("id", "test");
         artist.set("external_urls", externalUrls);
+        artist.set("images", images);
+        artist.set("followers", mapper.createObjectNode().put("total", 0));
         artists.add(artist);
         item.set("artists", artists);
         items.add(item);
@@ -117,6 +157,7 @@ public class SpotifyUserServiceTest {
     void getSpotifyInfoNeedsToBeCreated(){
         when(spotifyUserRepository.findUserInfo()).thenReturn(Optional.empty());
         when(spotifyRequestUtils.getSpotifyInformation()).thenReturn(defaultUserInfoJson);
+        when(songRepository.saveAll(any())).thenAnswer(invocation -> invocation.getArgument(0));
         when(spotifyUserRepository.save(any())).thenAnswer(invocation -> invocation.getArgument(0));
         when(spotifyRequestUtils.getSpotifySongs()).thenReturn(defaultSongsJson);
         SpotifyUserResponseDto response = spotifyUserService.getSpotifyInfo();
@@ -129,6 +170,7 @@ public class SpotifyUserServiceTest {
         assertTrue(defaultSpotifyUser.timeToRefreshPassed(10));
         when(spotifyUserRepository.findUserInfo()).thenReturn(Optional.of(defaultSpotifyUser));
         when(spotifyRequestUtils.getSpotifyInformation()).thenReturn(defaultUserInfoJson);
+        when(songRepository.saveAll(any())).thenAnswer(invocation -> invocation.getArgument(0));
         when(spotifyUserRepository.save(any())).thenAnswer(invocation -> invocation.getArgument(0));
         when(spotifyRequestUtils.getSpotifySongs()).thenReturn(defaultSongsJson);
 
