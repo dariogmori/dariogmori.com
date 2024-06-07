@@ -1,12 +1,16 @@
 package dario.gmori.webpageapi.spotify;
 
+import dario.gmori.webpageapi.spotify.songs.Song;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "spotify_users")
@@ -31,7 +35,13 @@ public class SpotifyUser {
     @Column(name="last_modified_date")
     private LocalDateTime lastModifiedDate;
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    @Fetch(value = FetchMode.SELECT)
+    private List<Song> topSongs;
+
     public boolean timeToRefreshPassed(int seconds){
+        if(lastModifiedDate == null)
+            return true;
         return LocalDateTime.now().isAfter(lastModifiedDate.plusSeconds(seconds));
     }
 }

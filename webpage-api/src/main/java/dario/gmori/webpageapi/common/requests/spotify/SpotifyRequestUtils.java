@@ -2,6 +2,7 @@ package dario.gmori.webpageapi.common.requests.spotify;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import dario.gmori.webpageapi.common.requests.HttpRestService;
+import dario.gmori.webpageapi.spotify.songs.Song;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -19,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Collections;
+import java.util.List;
 import java.util.Properties;
 
 @Service
@@ -49,6 +51,24 @@ public class SpotifyRequestUtils {
                 return httpRestService.makeGetRequest("https://api.spotify.com/v1/me", headers);
             }
             throw new RuntimeException("Error getting Spotify information");
+        }
+    }
+
+
+    public JsonNode getSpotifySongs() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.setBearerAuth(token);
+        try{
+            return httpRestService.makeGetRequest("https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term", headers);
+        } catch (HttpClientErrorException e){
+            if(e.getStatusCode().value() == 401){
+                refreshToken();
+                headers.setBearerAuth(token);
+                return httpRestService.makeGetRequest("https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=short_term", headers);
+            }
+            throw new RuntimeException("Error getting Spotify songs");
         }
     }
 
