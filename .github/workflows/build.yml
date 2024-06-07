@@ -18,7 +18,7 @@ jobs:
           java-version: '17'
       - name: Run unit tests
         run: mvn clean verify
-        working-directory: api
+        working-directory: webpage-api
         env:
           DATABASE_USER: ${{ secrets.DATABASE_USER }}
           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
