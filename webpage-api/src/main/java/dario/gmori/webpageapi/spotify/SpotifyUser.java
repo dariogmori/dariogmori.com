@@ -44,4 +44,12 @@ public class SpotifyUser {
             return true;
         return LocalDateTime.now().isAfter(lastModifiedDate.plusSeconds(seconds));
     }
+
+    public void updateUser(SpotifyUser apply, List<Song> songsList) {
+        this.username = apply.getUsername();
+        this.avatar = apply.getAvatar();
+        this.profileUrl = apply.getProfileUrl();
+        this.topSongs = songsList;
+        this.setLastModifiedDate(LocalDateTime.now());
+    }
 }

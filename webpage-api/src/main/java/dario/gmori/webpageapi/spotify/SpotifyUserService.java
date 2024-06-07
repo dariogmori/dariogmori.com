@@ -42,11 +42,9 @@ public class SpotifyUserService {
             newSpotifyUser.setLastModifiedDate(LocalDateTime.now());
             return spotifyUserRepository.save(newSpotifyUser);
         } else if(spotifyUser.get().timeToRefreshPassed(10)) { // User found, but it's time to refresh
-            SpotifyUser updatedSpotifyUser = spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation());
+            SpotifyUser updatedSpotifyUser =  spotifyUser.get();
             List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getSpotifySongs());
-            updatedSpotifyUser.setId(spotifyUser.get().getId());
-            updatedSpotifyUser.setTopSongs(saveSongsNotRepeated(songsList));
-            updatedSpotifyUser.setLastModifiedDate(LocalDateTime.now());
+            updatedSpotifyUser.updateUser(spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation()),saveSongsNotRepeated(songsList));
             return spotifyUserRepository.save(updatedSpotifyUser);
         }else{
             return spotifyUser.get();
