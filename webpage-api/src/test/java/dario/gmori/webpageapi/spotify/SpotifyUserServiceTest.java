@@ -4,9 +4,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import dario.gmori.webpageapi.common.requests.spotify.SpotifyRequestUtils;
+import dario.gmori.webpageapi.spotify.artists.ArtistRepository;
+import dario.gmori.webpageapi.spotify.artists.mappers.SpotifyArtistJsonModelMapper;
+import dario.gmori.webpageapi.spotify.artists.mappers.SpotifyArtistResponseDtoMapper;
 import dario.gmori.webpageapi.spotify.dto.SpotifyUserResponseDto;
 import dario.gmori.webpageapi.spotify.mappers.SpotifyUserJsonModelMapper;
 import dario.gmori.webpageapi.spotify.mappers.SpotifyUserResponseDtoMapper;
+import dario.gmori.webpageapi.spotify.songs.SongRepository;
+import dario.gmori.webpageapi.spotify.songs.mappers.SpotifySongResponseDtoMapper;
+import dario.gmori.webpageapi.spotify.songs.mappers.SpotifySongsJsonModelMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,6 +21,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -30,26 +37,34 @@ public class SpotifyUserServiceTest {
 
     private ObjectNode defaultUserInfoJson;
 
+    private ObjectNode defaultSongsJson;
+
     @Mock
     private SpotifyUserRepository spotifyUserRepository;
 
     @Mock
     private SpotifyRequestUtils spotifyRequestUtils;
 
+    @Mock
+    private SongRepository songRepository;
+    @Mock
+    private ArtistRepository artistRepository;
     @BeforeEach
     void setup(){
-        spotifyUserService = new SpotifyUserService(spotifyUserRepository, new SpotifyUserResponseDtoMapper(), new SpotifyUserJsonModelMapper(),spotifyRequestUtils);
+        spotifyUserService = new SpotifyUserService(spotifyUserRepository,songRepository,artistRepository, new SpotifyUserResponseDtoMapper(new SpotifySongResponseDtoMapper(new SpotifyArtistResponseDtoMapper())), new SpotifyUserJsonModelMapper(),new SpotifySongsJsonModelMapper(new SpotifyArtistJsonModelMapper()),spotifyRequestUtils);
 
         defaultSpotifyUserResponseDto = new SpotifyUserResponseDto(
                 "test",
                 "https://test.com",
-                "https://profile_url.com");
+                "https://profile_url.com",
+                List.of());
         defaultSpotifyUser = new SpotifyUser(
                 1L,
                 "test",
                 "https://test.com",
                 "https://profile_url.com",
-                LocalDateTime.now()
+                LocalDateTime.now(),
+                List.of()
                 );
 
         ObjectMapper mapper = new ObjectMapper();
@@ -68,6 +83,27 @@ public class SpotifyUserServiceTest {
         image.put("url", "https://test.com");
         images.add(image);
         defaultUserInfoJson.set("images", images);
+
+        // Create default songs json
+        defaultSongsJson = mapper.createObjectNode();
+        ArrayNode items = mapper.createArrayNode();
+        ObjectNode item = mapper.createObjectNode();
+        item.put("name", "test");
+        item.put("id", "test");
+        item.put("duration_ms", 1000);
+        item.put("preview_url", "https://preview.com");
+        item.set("external_urls", externalUrls);
+        item.set("album", mapper.createObjectNode().set("images", images));
+        ArrayNode artists = mapper.createArrayNode();
+        ObjectNode artist = mapper.createObjectNode();
+        artist.put("name", "test");
+        artist.put("id", "test");
+        artist.set("external_urls", externalUrls);
+        artists.add(artist);
+        item.set("artists", artists);
+        items.add(item);
+        defaultSongsJson.set("items", items);
+
     }
 
     @Test
@@ -82,6 +118,7 @@ public class SpotifyUserServiceTest {
         when(spotifyUserRepository.findUserInfo()).thenReturn(Optional.empty());
         when(spotifyRequestUtils.getSpotifyInformation()).thenReturn(defaultUserInfoJson);
         when(spotifyUserRepository.save(any())).thenAnswer(invocation -> invocation.getArgument(0));
+        when(spotifyRequestUtils.getSpotifySongs()).thenReturn(defaultSongsJson);
         SpotifyUserResponseDto response = spotifyUserService.getSpotifyInfo();
         assertEquals(defaultSpotifyUserResponseDto, response);
     }
@@ -93,9 +130,11 @@ public class SpotifyUserServiceTest {
         when(spotifyUserRepository.findUserInfo()).thenReturn(Optional.of(defaultSpotifyUser));
         when(spotifyRequestUtils.getSpotifyInformation()).thenReturn(defaultUserInfoJson);
         when(spotifyUserRepository.save(any())).thenAnswer(invocation -> invocation.getArgument(0));
+        when(spotifyRequestUtils.getSpotifySongs()).thenReturn(defaultSongsJson);
+
         assertTrue(defaultSpotifyUser.timeToRefreshPassed(10));
         SpotifyUserResponseDto response = spotifyUserService.getSpotifyInfo();
-        assertEquals(defaultSpotifyUserResponseDto, response);
         assertFalse(defaultSpotifyUser.timeToRefreshPassed(10));
+        assertEquals(defaultSpotifyUserResponseDto, response);
     }
 }
