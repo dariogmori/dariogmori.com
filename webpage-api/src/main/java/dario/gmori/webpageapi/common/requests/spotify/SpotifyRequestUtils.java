@@ -2,7 +2,6 @@ package dario.gmori.webpageapi.common.requests.spotify;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import dario.gmori.webpageapi.common.requests.HttpRestService;
-import dario.gmori.webpageapi.spotify.songs.Song;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -20,7 +19,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Collections;
-import java.util.List;
 import java.util.Properties;
 
 @Service

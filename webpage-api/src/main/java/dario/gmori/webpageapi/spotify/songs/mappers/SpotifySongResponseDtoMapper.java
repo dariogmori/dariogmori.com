@@ -1,6 +1,5 @@
 package dario.gmori.webpageapi.spotify.songs.mappers;
 
-import dario.gmori.webpageapi.spotify.artists.mappers.SpotifyArtistJsonModelMapper;
 import dario.gmori.webpageapi.spotify.artists.mappers.SpotifyArtistResponseDtoMapper;
 import dario.gmori.webpageapi.spotify.songs.Song;
 import dario.gmori.webpageapi.spotify.songs.SongResponseDto;
