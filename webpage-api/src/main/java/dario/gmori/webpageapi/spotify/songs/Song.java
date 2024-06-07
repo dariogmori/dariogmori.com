@@ -9,6 +9,7 @@ import lombok.*;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -44,7 +45,7 @@ public class Song {
             joinColumns = @JoinColumn(name = "song_id"),
             inverseJoinColumns = @JoinColumn(name = "artist_id"))
     @Fetch(value = FetchMode.SELECT)
-    private Set<Artist> artists;
+    private List<Artist> artists;
 
     @ManyToOne
     @JoinColumn(name = "spotify_user")

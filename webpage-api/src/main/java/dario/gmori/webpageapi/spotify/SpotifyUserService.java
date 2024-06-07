@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -47,7 +46,7 @@ public class SpotifyUserService {
         for( Song song : songsList){
             song.setUser(spotifyUser);
         }
-        Set<Artist> artistList = artistJsonModelMapper.apply(spotifyRequestUtils.getTopArtists().get("items"));
+        List<Artist> artistList = artistJsonModelMapper.apply(spotifyRequestUtils.getTopArtists().get("items"));
         for( Artist artist : artistList){
             artist.setUser(spotifyUser);
         }
@@ -59,12 +58,17 @@ public class SpotifyUserService {
     private SpotifyUser createNewSpotifyUser() {
         SpotifyUser newSpotifyUser = spotifyUserJsonModelMapper.apply(spotifyRequestUtils.getSpotifyInformation());
         List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getTopSongs());
+        List<Artist> artistList = artistJsonModelMapper.apply(spotifyRequestUtils.getTopArtists().get("items"));
         newSpotifyUser.setTopSongs(saveSongsNotRepeated(songsList));
+        newSpotifyUser.setTopArtists(saveArtistsNotRepeated(artistList));
         newSpotifyUser.setId(1L);
         newSpotifyUser.setLastModifiedDate(LocalDateTime.now());
         newSpotifyUser = spotifyUserRepository.save(newSpotifyUser);
         for( Song song : songsList){
             song.setUser(newSpotifyUser);
+        }
+        for( Artist artist : artistList){
+            artist.setUser(newSpotifyUser);
         }
         songRepository.saveAll(songsList);
         return newSpotifyUser;
@@ -80,7 +84,7 @@ public class SpotifyUserService {
         return songRepository.saveAll(songsList);
     }
 
-    private List<Artist> saveArtistsNotRepeated(Set<Artist> artistList) {
+    private List<Artist> saveArtistsNotRepeated(List<Artist> artistList) {
         return artistRepository.saveAll(artistList);
     }
 }

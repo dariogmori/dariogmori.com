@@ -4,15 +4,17 @@ import com.fasterxml.jackson.databind.JsonNode;
 import dario.gmori.webpageapi.spotify.artists.Artist;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.function.Function;
 
 @Service
-public class SpotifyArtistJsonModelMapper implements Function<JsonNode, Set<Artist>> {
+public class SpotifyArtistJsonModelMapper implements Function<JsonNode, List<Artist>> {
     @Override
-    public Set<Artist> apply(JsonNode jsonNode) {
-        Set<Artist> artists = new HashSet<>();
+    public List<Artist> apply(JsonNode jsonNode) {
+        List<Artist> artists = new ArrayList<>();
 
         jsonNode.forEach(artist -> {
             artists.add(Artist.builder()
