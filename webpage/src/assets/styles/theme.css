@@ -3,4 +3,12 @@
 :root {
     background: var(--yellow);
     --background-color:var(--yellow);
+    --main-color:var(--grenate);
+    transition: background-color 0.5s, main-color 0.5s;
+}
+
+[data-theme="dark"] {
+    background: var(--grenate);
+    --background-color:var(--grenate);
+    --main-color:var(--yellow);
 }
