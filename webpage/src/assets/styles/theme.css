@@ -1,0 +1,6 @@
+@import './palette.css';
+
+:root {
+    background: var(--yellow);
+    --background-color:var(--yellow);
+}
