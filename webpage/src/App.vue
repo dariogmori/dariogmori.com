@@ -6,7 +6,7 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
   </body>
 
-  <nav style="position:fixed; left:3%; bottom:3%;">
+  <nav style="position:fixed; left:40%; bottom:3%;">
     <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
     <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
     <button @click="toggleTheme">{{ languageMode() }}</button>
@@ -70,6 +70,6 @@ function changeLanguage ( lang: string) {
   i18next.changeLanguage(lang)
 }
 function languageMode () {
-  return config.theme === 'light' ? t('config.theme.light-mode') : t('config.theme.dark-mode')
+  return config.theme === 'dark' ? t('config.theme.light-mode') : t('config.theme.dark-mode')
 }
 </script>
