@@ -1,6 +1,7 @@
 <template>
   <nav>
     <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
+    <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
     <button @click="toggleTheme">{{ languageMode() }}</button>
     <button @click="changeLanguage('es')">{{ t('config.language.spanish') }}</button>
     <button @click="changeLanguage('en')">{{ t('config.language.english') }}</button>

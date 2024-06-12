@@ -1,6 +1,10 @@
 {
   "about-me" : {
-    "title": "About me"
+    "title": "About me",
+    "description":  "Hi! I am a software developer that sometimes makes games (when i remember to). I love videogames, mushrooms (not the ones you are thinking about) and going hiking :)"
+  },
+  "celeste": {
+    "title": "Celeste"
   },
   "config": {
     "language": {

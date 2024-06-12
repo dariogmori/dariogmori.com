@@ -1,6 +1,10 @@
 {
   "about-me" : {
-    "title": "Sobre mí"
+    "title": "Sobre mí",
+    "description":  "Hola! Soy une desarrolladore de software (y jueguitos a veces). Me encantan los jueguitos, las setas (no alucinogenas lol) e ir de monte."
+  },
+  "celeste": {
+    "title": "Celeste"
   },
   "config": {
     "language": {
