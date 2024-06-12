@@ -23,6 +23,7 @@
           </p>
         </el-col>
       </el-row>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/2560px-Flag_of_Guatemala.svg.png" style="width: 90%">
     </el-col>
     <el-col :span="12" class="center-container">
       <h1>{{ t('about-me.title') }}</h1>
