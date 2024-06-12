@@ -37,6 +37,23 @@ services:
     depends_on:
       - database
 
+  webpage:
+    container_name: webapp-dariogmori
+    profiles: [ "dev", "prod" ]
+    image: ghcr.io/toto-hitori/dariogmori.com/webpage-webapp:latest
+    build:
+      args:
+        REACT_APP_API_ENDPOINT: ${API_URI}
+      context: ./webpage
+    ports:
+      - 443:443
+    networks:
+      mynetwork:
+    volumes:
+      - /etc/letsencrypt/live/dariogmori.com:/etc/nginx:ro
+    depends_on:
+      - api
+
 volumes:
     postgres_data:
 networks:

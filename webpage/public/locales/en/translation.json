@@ -1,0 +1,22 @@
+{
+  "about-me" : {
+    "title": "About me",
+    "description":  "Hi! I am Darío Gutiérrez Mori, a software developer that sometimes makes games (when i remember to). I love videogames, mushrooms (not the ones you are thinking about) and going hiking :)",
+    "nationality": "I grew up and live in Asturias, Spain although I am also half Guatemalan!",
+    "gender": "I identify as a non-binary person and use he/they/she pronouns. Just be respectful ;)"
+  },
+  "celeste": {
+    "title": "Celeste",
+    "description": "Wait what? Dario has a favorite videogame? They have never mentioned it EVER. "
+  },
+  "config": {
+    "language": {
+      "spanish": "Spanish",
+      "english": "English"
+    },
+    "theme": {
+      "light-mode": "Light mode",
+      "dark-mode": "Dark mode"
+    }
+  }
+}

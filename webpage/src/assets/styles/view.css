@@ -1,0 +1,36 @@
+.center-container{
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeFall 0.5s ease-out forwards;
+}
+.left-container{
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeFall 1s ease-out forwards;
+}
+.right-container{
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeFall 1s ease-out forwards;
+}
+.image-display:hover {
+    animation:hover-animation 0.3s ease-out forwards;
+}
+@keyframes hover-animation {
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale:1.02;
+    }
+}
+@keyframes fadeFall {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
