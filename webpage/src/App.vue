@@ -1,7 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about-me">About Me</router-link>
     <button @click="toggleTheme">Toggle Theme</button>
   </nav>
   <router-view/>

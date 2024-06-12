@@ -1,10 +1,9 @@
 <template>
-  <div class="home">
-  </div>
+  <main>
+    <div class="home">
+    </div>
+  </main>
 </template>
 
-<script lang="ts">
-import { Vue } from 'vue-class-component'
-
-export default class HomeView extends Vue {}
+<script setup lang="ts">
 </script>
