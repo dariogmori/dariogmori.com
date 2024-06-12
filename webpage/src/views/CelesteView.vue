@@ -13,8 +13,6 @@
           <img alt="madeline" src="https://media.spelunky.fyi/mods/logo/01G8PXMPWZ2K3CVW70DJ5HEMGA/1658626661282822.gif" style="width: 90%">
         </el-col>
       </el-row>
-      <el-row>
-        </el-row>
     </el-col>
 
     <!-- CENTER CONTAINER -->
@@ -27,9 +25,8 @@
       <el-col :span="24">
         <CelesteComponent />
       </el-col>
-      <el-row justify="end">
-        <el-col :span="20" >
-        </el-col>
+      <el-row>
+        <VideoCardComponent :video="'https://www.youtube.com/embed/_iBkkwy0fcM'" :title="'Cool speedy thingie'" :article="'yay me go fast'"></VideoCardComponent>
       </el-row>
     </el-col>
   </el-row>
@@ -38,6 +35,7 @@
 <script setup lang="ts">
 import CelesteComponent from "@/components/CelesteComponent.vue";
 import { useTranslation } from "i18next-vue";
+import VideoCardComponent from "@/components/VideoCardComponent.vue";
 const { t } = useTranslation();
 </script>
 
