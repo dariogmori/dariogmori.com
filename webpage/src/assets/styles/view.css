@@ -1,7 +1,17 @@
-.main-container{
+.center-container{
     opacity: 0;
     transform: translateY(-50px);
     animation: fadeFall 0.5s ease-out forwards;
+}
+.left-container{
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeFall 1s ease-out forwards;
+}
+.right-container{
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeFall 1s ease-out forwards;
 }
 @keyframes fadeFall {
     0% {
