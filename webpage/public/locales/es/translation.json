@@ -1,0 +1,22 @@
+{
+  "about-me" : {
+    "title": "Sobre mí",
+    "description":  "Hola! Soy Darío Gutiérrez Mori, une desarrolladore de software (y jueguitos a veces). Me encantan los jueguitos, las setas (no alucinogenas lol) e ir de monte.",
+    "nationality": "Crecí y vivo en Asturias, aunque soy medio guatemalteco. Latino powerrrr!",
+    "gender": "Me identifico como una persona no-binaria y uso los pronombres él/elle/ella. Se respetuose plis ;)"
+  },
+  "celeste": {
+    "title": "Celeste",
+    "description": "Coooomo? Darío tiene un juego favorito? Nunca lo había oído, suena interesante..."
+  },
+  "config": {
+    "language": {
+      "spanish": "Español",
+      "english": "Inglés"
+    },
+    "theme": {
+      "light-mode": "Modo claro",
+      "dark-mode": "Modo oscuro"
+    }
+  }
+}

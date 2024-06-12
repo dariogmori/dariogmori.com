@@ -1,0 +1,81 @@
+<template>
+  <el-row >
+    <!-- LEFT CONTAINER -->
+    <el-col :span="6" class="left-container" >
+      <el-row justify="end" style="margin-top:10%;margin-bottom:10%;">
+        <img alt="Me" src="/img/me-1.jpg" class="image-display" style="width: 90%; rotate: -10deg">
+      </el-row>
+
+      <el-row style="margin-top:10%;margin-bottom:10%;">
+        <el-col :span="14">
+          <p>
+            {{ t('about-me.description') }}
+          </p>
+        </el-col>
+        <el-col :span="7">
+          <img alt="Profile picture" src="/img/pfp.png" class="image-display" style="width: 90%">
+        </el-col>
+      </el-row>
+
+      <el-row justify="end" style="margin-top:10%;margin-bottom:10%;">
+        <el-col :span="7">
+          <el-row>
+            <el-col :span="12">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/2560px-Flag_of_Guatemala.svg.png" class="image-display" style="width: 100%; rotate: -10deg;">
+            </el-col>
+            <el-col :span="12">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Asturias.svg/1200px-Flag_of_Asturias.svg.png" class="image-display" style="width: 100%; rotate: 10deg;">
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="14">
+          <p>
+            {{ t('about-me.nationality') }}
+          </p>
+        </el-col>
+
+      </el-row><el-row justify="start" style="margin-top:10%;margin-bottom:10%;">
+        <el-col :span="14">
+          <p>
+            {{ t('about-me.gender') }}
+          </p>
+        </el-col>
+        <el-col :span="7">
+          <el-row>
+            <el-col :span="12">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Nonbinary_flag.svg/640px-Nonbinary_flag.svg.png" class="image-display" style="width: 100%; rotate: -10deg;">
+            </el-col>
+            <el-col :span="12">
+              <h3 style="rotate:10deg"> he/they/she </h3>
+            </el-col>
+          </el-row>
+        </el-col>
+      </el-row>
+    </el-col>
+
+    <!-- CENTER CONTAINER -->
+    <el-col :span="12" class="center-container">
+      <h1>{{ t('about-me.title') }}</h1>
+    </el-col>
+
+
+    <!-- RIGHT CONTAINER -->
+    <el-col :span="6" class="right-container">
+      <el-col :span="20" style="margin-top:10%;margin-bottom:10%;">
+        <img alt="me again" src="/img/me-2.jpg" class="image-display" style="width: 90%; rotate:10deg;">
+      </el-col>
+
+
+    </el-col>
+  </el-row>
+</template>
+
+<style scoped>
+@import '../assets/styles/palette.css';
+@import '../assets/styles/view.css';
+</style>
+
+<script setup lang="ts">
+import { useTranslation } from "i18next-vue";
+const { t } = useTranslation();
+</script>

@@ -1,0 +1,67 @@
+
+.card-celeste{
+    margin:30px;
+    background-color: #f5fcb9;
+    background-image: url("../celeste/background.png");
+    background-position: bottom right;
+    background-size:100%;
+    background-repeat: no-repeat;
+    color: #552d12;
+    border-color:#3e211e;
+    border-radius: 10px;
+    border:3px;
+    flex:auto;
+    border-top-style:dotted;
+    border-bottom-style:dotted;
+    border-left-style: dashed;
+    border-right-style:dashed;
+}
+.content-celeste{
+    margin:5px;
+    background-color: #ad914193;;
+    color: #3e211e;
+    border-radius: 10px;
+    border:3px;
+    flex:auto;
+}
+.avatar{
+    border-radius:10px;
+    width:80%;
+    border-color: #3e211e;
+    border:solid 5px #3e211e;
+}
+.avatar:hover{
+    transform:scale(1.02);
+}
+.username{
+    font-family: Lucida Console;
+    font-size: 3vw;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin:0px;
+}
+.counter{
+    font-family: Lucida Console;
+    font-size: 1.8vw;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin:0px;
+}
+.inside-button{
+    width:100%;
+    min-width: 30px;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.menu{
+    background-color:#ad914193;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.heart:click {
+    transform: scale(0.9);
+}
