@@ -19,6 +19,7 @@
     "i18next-http-backend": "^2.5.2",
     "i18next-vue": "^4.0.0",
     "pinia": "^2.1.7",
+    "sass": "^1.77.5",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
