@@ -1,0 +1,15 @@
+{
+  "about-me" : {
+    "title": "About me"
+  },
+  "config": {
+    "language": {
+      "spanish": "Spanish",
+      "english": "English"
+    },
+    "theme": {
+      "light-mode": "Light mode",
+      "dark-mode": "Dark mode"
+    }
+  }
+}

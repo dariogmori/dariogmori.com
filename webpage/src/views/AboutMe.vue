@@ -1,9 +1,8 @@
 <template>
   <div class="main-container">
-    <img alt="Vue logo" src="../../public/img/me-1.jpg" style="width: 30vh">
-    <h1>About Me</h1>
+    <img alt="Vue logo" src="/img/me-1.jpg" style="width: 30vh">
+    <h1>{{ $t('about-me.title') }}</h1>
     <p>
-
     </p>
   </div>
 </template>
@@ -28,4 +27,6 @@
 </style>
 
 <script setup lang="ts">
+import { useTranslation } from "i18next-vue";
+const { t } = useTranslation();
 </script>
