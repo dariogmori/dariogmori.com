@@ -1,12 +1,18 @@
 <template>
-  <nav>
+  <body>
+    <div style="z-index: 2;">
+      <router-view/>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
+  </body>
+
+  <nav style="position:fixed; left:3%; bottom:3%;">
     <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
     <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
     <button @click="toggleTheme">{{ languageMode() }}</button>
     <button @click="changeLanguage('es')">{{ t('config.language.spanish') }}</button>
     <button @click="changeLanguage('en')">{{ t('config.language.english') }}</button>
   </nav>
-  <router-view/>
 </template>
 
 <style>
