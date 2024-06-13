@@ -16,5 +16,3 @@ COPY  --from=build-stage /app/dist /config/www
 COPY  --from=build-stage /app/nginx.conf /config/nginx/nginx.conf
 # Expose the port 443
 EXPOSE 443
-# Optional: Set default command to run Nginx
-CMD ["nginx", "-g", "daemon off;"]
