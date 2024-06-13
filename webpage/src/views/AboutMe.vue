@@ -21,10 +21,10 @@
         <el-col :span="7">
           <el-row>
             <el-col :span="12">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/2560px-Flag_of_Guatemala.svg.png" class="image-display" style="width: 100%; rotate: -10deg;">
+              <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges;">
             </el-col>
             <el-col :span="12">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Asturias.svg/1200px-Flag_of_Asturias.svg.png" class="image-display" style="width: 100%; rotate: 10deg;">
+              <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; rotate: 10deg; image-rendering: crisp-edges;">
             </el-col>
           </el-row>
         </el-col>
@@ -43,7 +43,7 @@
         <el-col :span="7">
           <el-row>
             <el-col :span="12">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Nonbinary_flag.svg/640px-Nonbinary_flag.svg.png" class="image-display" style="width: 100%; rotate: -10deg;">
+              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges; ">
             </el-col>
             <el-col :span="12">
               <h3 style="rotate:10deg"> he/they/she </h3>
@@ -54,8 +54,8 @@
     </el-col>
 
     <!-- CENTER CONTAINER -->
-    <el-col :span="12" class="center-container">
-      <h1>{{ t('about-me.title') }}</h1>
+    <el-col :span="12" class="center-container" >
+      <el-image :src="getLogoURI()" class="logo" />
     </el-col>
 
 
@@ -77,5 +77,27 @@
 
 <script setup lang="ts">
 import { useTranslation } from "i18next-vue";
+import { onMounted, reactive } from "vue";
+
 const { t } = useTranslation();
+const config = reactive({
+  theme: 'light',
+  lang: 'es'
+})
+onMounted(() => {
+  const savedTheme = localStorage.getItem('theme')
+  const savedLang = localStorage.getItem('lang')
+  if (savedTheme) {
+    config.theme = savedTheme
+    document.documentElement.setAttribute('data-theme', config.theme)
+  }
+  if( savedLang ) {
+    config.lang = savedLang
+    document.documentElement.setAttribute('data-lang', config.lang)
+  }
+})
+
+function getLogoURI() {
+  return '/img/about-me/logo-' + config.theme + '-' + config.lang + '.png'
+}
 </script>

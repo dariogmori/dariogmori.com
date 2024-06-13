@@ -17,7 +17,7 @@
 
     <!-- CENTER CONTAINER -->
     <el-col :span="12" class="center-container">
-      <h1>{{ t('celeste.title') }}</h1>
+      <img src="../assets/celeste/logo.png" class="logo">
     </el-col>
 
     <!-- RIGHT CONTAINER -->
