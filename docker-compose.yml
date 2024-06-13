@@ -48,7 +48,7 @@ services:
     networks:
       mynetwork:
     volumes:
-      - /etc/letsencrypt/live/dariogmori.com:/config/keys
+      - /etc/letsencrypt/live/dariogmori.com:/config/keys:;ro
     depends_on:
       - api
 
