@@ -21,10 +21,10 @@
         <el-col :span="7">
           <el-row>
             <el-col :span="12">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/2560px-Flag_of_Guatemala.svg.png" class="image-display" style="width: 100%; rotate: -10deg;">
+              <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges;">
             </el-col>
             <el-col :span="12">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Asturias.svg/1200px-Flag_of_Asturias.svg.png" class="image-display" style="width: 100%; rotate: 10deg;">
+              <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; rotate: 10deg; image-rendering: crisp-edges;">
             </el-col>
           </el-row>
         </el-col>
@@ -43,7 +43,7 @@
         <el-col :span="7">
           <el-row>
             <el-col :span="12">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Nonbinary_flag.svg/640px-Nonbinary_flag.svg.png" class="image-display" style="width: 100%; rotate: -10deg;">
+              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges; ">
             </el-col>
             <el-col :span="12">
               <h3 style="rotate:10deg"> he/they/she </h3>
