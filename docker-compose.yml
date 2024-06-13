@@ -42,15 +42,13 @@ services:
     profiles: [ "dev", "prod" ]
     image: ghcr.io/toto-hitori/dariogmori.com/webpage-webapp:latest
     build:
-      args:
-        REACT_APP_API_ENDPOINT: ${API_URI}
       context: ./webpage
     ports:
       - 443:443
     networks:
       mynetwork:
     volumes:
-      - /etc/letsencrypt/live/dariogmori.com:/etc/nginx:ro
+      - /etc/letsencrypt/live/dariogmori.com:/config/keys
     depends_on:
       - api
 
