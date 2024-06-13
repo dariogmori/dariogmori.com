@@ -14,6 +14,6 @@ FROM lscr.io/linuxserver/nginx:arm64v8-latest as production-stage
 COPY  --from=build-stage /app/dist /config/www
 # Copy the nginx configuration file
 COPY  --from=build-stage /app/nginx.conf /etc/nginx/nginx.conf
-COPY  --from=build-stage /app/nginx.conf /config/nginx
+COPY  --from=build-stage /app/nginx.conf /config/nginx/nginx.conf
 # Expose the port 443
 EXPOSE 443
