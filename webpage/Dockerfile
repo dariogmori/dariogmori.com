@@ -9,7 +9,7 @@ RUN npm install
 #Create an optimized version of the webapp
 RUN npm run build
 # Use the lightweight Nginx image from the previous stage for the nginx container
-FROM lscr.io/linuxserver/nginx:latest as production-stage
+FROM lscr.io/linuxserver/nginx:arm64v8-latest as production-stage
 # Copy the build application from the previous stage to the Nginx container
 COPY  --from=build-stage /app/dist /app
 # Copy the nginx configuration file
