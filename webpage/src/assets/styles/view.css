@@ -16,6 +16,10 @@
 .image-display:hover {
     animation:hover-animation 0.3s ease-out forwards;
 }
+.logo{
+    width:40%;
+    image-rendering: crisp-edges;
+}
 @keyframes hover-animation {
     0% {
         scale: 1;
