@@ -13,8 +13,6 @@ FROM lscr.io/linuxserver/nginx:arm64v8-latest as production-stage
 # Copy the build application from the previous stage to the Nginx container
 COPY  --from=build-stage /app/dist /config/www
 # Copy the nginx configuration file
-COPY  --from=build-stage /app/nginx.conf /config
+COPY  --from=build-stage /app/nginx.conf /etc/nginx/nginx.conf
 # Expose the port 443
 EXPOSE 443
-# Start Nginx to serve the application
-CMD ["nginx", "-g", "daemon off;"]
