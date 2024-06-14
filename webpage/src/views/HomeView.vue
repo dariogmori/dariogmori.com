@@ -48,6 +48,6 @@ onMounted(() => {
 })
 
 function getLogoURI() {
-  return '/img/home/logo-' + config.theme + '-' + config.lang + '.png'
+  return '/img/home/logo-' + config.theme + '.png'
 }
 </script>
