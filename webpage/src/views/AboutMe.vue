@@ -13,7 +13,7 @@
           </p>
         </el-col>
         <el-col :span="7">
-          <img alt="Profile picture" src="/img/pfp.png" class="image-display" style="width: 90%">
+          <img alt="Profile picture" src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;">
         </el-col>
       </el-row>
 
