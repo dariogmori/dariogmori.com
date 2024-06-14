@@ -1,7 +1,7 @@
 <template>
   <el-row>
     <!-- LEFT CONTAINER -->
-    <el-col :span="6" class="left-container">
+    <el-col :span="getSpan(0)" class="left-container">
       <img alt="celeste game" src="https://gaming-cdn.com/images/products/8003/orig/celeste-pc-mac-juego-steam-cover.jpg?v=1705489821" class="image-display" style="width: 90%">
       <el-row>
         <el-col :span="16">
@@ -16,12 +16,12 @@
     </el-col>
 
     <!-- CENTER CONTAINER -->
-    <el-col :span="12" class="center-container">
+    <el-col :span="getSpan(1)" class="center-container">
       <img src="../assets/celeste/logo.png" class="logo">
     </el-col>
 
     <!-- RIGHT CONTAINER -->
-    <el-col :span="6" class="right-container">
+    <el-col :span="getSpan(2)" class="right-container">
       <el-col :span="24">
         <CelesteComponent />
       </el-col>
@@ -36,6 +36,8 @@
 import CelesteComponent from "@/components/CelesteComponent.vue";
 import { useTranslation } from "i18next-vue";
 import VideoCardComponent from "@/components/VideoCardComponent.vue";
+
+import { getSpan } from "@/scripts/layout"
 const { t } = useTranslation();
 </script>
 

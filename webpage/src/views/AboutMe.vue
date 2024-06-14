@@ -1,7 +1,7 @@
 <template>
   <el-row >
     <!-- LEFT CONTAINER -->
-    <el-col :span="6" class="left-container" >
+    <el-col :span="getSpan(0)" class="left-container" >
       <el-row justify="end" style="margin-top:10%;margin-bottom:10%;">
         <img alt="Me" src="/img/me-1.jpg" class="image-display" style="width: 90%; rotate: -10deg">
       </el-row>
@@ -54,13 +54,13 @@
     </el-col>
 
     <!-- CENTER CONTAINER -->
-    <el-col :span="12" class="center-container" >
+    <el-col :span="getSpan(1)" class="center-container" >
       <el-image :src="getLogoURI()" class="logo" />
     </el-col>
 
 
     <!-- RIGHT CONTAINER -->
-    <el-col :span="6" class="right-container">
+    <el-col :span="getSpan(2)" class="right-container">
       <el-col :span="20" style="margin-top:10%;margin-bottom:10%;">
         <img alt="me again" src="/img/me-2.jpg" class="image-display" style="width: 90%; rotate:10deg;">
       </el-col>
@@ -78,7 +78,7 @@
 <script setup lang="ts">
 import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
-
+import { getSpan } from "@/scripts/layout"
 const { t } = useTranslation();
 const config = reactive({
   theme: 'light',
@@ -100,4 +100,7 @@ onMounted(() => {
 function getLogoURI() {
   return '/img/about-me/logo-' + config.theme + '-' + config.lang + '.png'
 }
+
+
+
 </script>

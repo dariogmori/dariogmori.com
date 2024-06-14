@@ -3,7 +3,7 @@
     <div style="z-index: 2;">
       <router-view/>
     </div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
+    <img v-if="!isMobile()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
   </body>
 
   <nav style="position:fixed; left:40%; bottom:1vh;">
@@ -42,6 +42,7 @@ nav a.router-link-exact-active {
 import { useTranslation } from 'i18next-vue'
 const { t, i18next } = useTranslation()
 import { onMounted, reactive } from 'vue'
+import {isMobile} from "@/scripts/utils";
 
 const config = reactive({
   theme: 'light',

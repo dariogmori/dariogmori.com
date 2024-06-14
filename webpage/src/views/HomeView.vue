@@ -2,18 +2,18 @@
   <main>
     <el-row >
       <!-- LEFT CONTAINER -->
-      <el-col :span="6" class="left-container" >
+      <el-col :span="getSpan(0)" class="left-container" >
 
       </el-col>
 
       <!-- CENTER CONTAINER -->
-      <el-col :span="12" class="center-container" >
+      <el-col :span="getSpan(1)" class="center-container" >
         <el-image :src="getLogoURI()" class="logo" />
       </el-col>
 
 
       <!-- RIGHT CONTAINER -->
-      <el-col :span="6" class="right-container">
+      <el-col :span="getSpan(2)" class="right-container">
 
       </el-col>
     </el-row>
@@ -28,6 +28,8 @@
 <script setup lang="ts">
 import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
+
+import { getSpan } from "@/scripts/layout"
 
 const { t } = useTranslation();
 const config = reactive({
