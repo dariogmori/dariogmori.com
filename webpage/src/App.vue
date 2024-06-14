@@ -7,6 +7,7 @@
   </body>
 
   <nav style="position:fixed; left:40%; bottom:1vh;">
+    <router-link to="/">Home</router-link>
     <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
     <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
     <el-button @click="toggleTheme">{{ languageMode() }}</el-button>
