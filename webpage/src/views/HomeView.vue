@@ -26,7 +26,7 @@
 <script setup lang="ts">
 import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
-import ViewLayout from "@/components/ViewLayout.vue";
+import ViewLayout from "@/components/layout/ViewLayout.vue";
 
 
 const { t } = useTranslation();

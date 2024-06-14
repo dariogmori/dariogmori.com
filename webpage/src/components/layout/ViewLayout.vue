@@ -21,6 +21,6 @@ import {isMobile} from "@/scripts/utils";
 
 
 <style scoped>
-@import '../assets/styles/palette.css';
-@import '../assets/styles/view.css';
+@import '../../assets/styles/palette.css';
+@import '../../assets/styles/view.css';
 </style>
