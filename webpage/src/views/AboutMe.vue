@@ -43,7 +43,7 @@
         <el-col :span="7">
           <el-row>
             <el-col :span="12">
-              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges; ">
+              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); ">
             </el-col>
             <el-col :span="12">
               <h3 style="rotate:10deg"> he/they/she </h3>
