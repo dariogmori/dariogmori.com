@@ -110,6 +110,4 @@ function getLogoURI() {
   return '/img/about-me/logo-' + config.theme + '-' + config.lang + '.png'
 }
 
-
-
 </script>

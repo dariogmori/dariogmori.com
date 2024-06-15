@@ -10,6 +10,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
     <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
+    <router-link to="/games/big-crunch">{{ t('games.big-crunch.title') }}</router-link>
     <el-button @click="toggleTheme">{{ languageMode() }}</el-button>
     <el-button @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-button>
     <el-button @click="changeLanguage('en')">{{ t('config.language.english') }}</el-button>
