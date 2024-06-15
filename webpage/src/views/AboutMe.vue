@@ -63,6 +63,16 @@
       <LayoutRow>
         <img alt="me again" src="/img/me-2.jpg" class="image-display" style="width: 80%; rotate:10deg;">
       </LayoutRow>
+      <LayoutRow>
+        <el-col :span="14">
+          <p>
+            {{ t('about-me.mushrooms') }}
+          </p>
+        </el-col>
+        <el-col :span="7">
+          <img alt="Mushrooms" src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;">
+        </el-col>
+      </LayoutRow>
     </template>
 
   </ViewLayout>
