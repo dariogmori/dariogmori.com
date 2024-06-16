@@ -6,14 +6,21 @@
     <img v-if="!isMobile()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
   </body>
 
-  <nav style="position:fixed; left:40%; bottom:1vh;">
-    <router-link to="/">Home</router-link>
-    <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
-    <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
-    <router-link to="/games/big-crunch">Big Crunch</router-link>
-    <el-button @click="toggleTheme">{{ languageMode() }}</el-button>
-    <el-button @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-button>
-    <el-button @click="changeLanguage('en')">{{ t('config.language.english') }}</el-button>
+  <nav style="position:fixed;  bottom:1vh;">
+    <el-row style="width:100vw" justify="center">
+      <el-row>
+        <router-link to="/">Home</router-link>
+        <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
+        <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
+        <router-link to="/games/big-crunch">Big Crunch</router-link>
+      </el-row>
+      <el-row>
+        <el-button @click="toggleTheme">{{ languageMode() }}</el-button>
+        <el-button @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-button>
+        <el-button @click="changeLanguage('en')">{{ t('config.language.english') }}</el-button>
+      </el-row>
+      </el-row>
+
   </nav>
 </template>
 
