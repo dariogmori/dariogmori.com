@@ -13,6 +13,9 @@
       "languages": "Solo disponible en español!"
     }
   },
+  "projects": {
+    "title": "Proyectos"
+  },
   "celeste": {
     "title": "Celeste",
     "description": "Coooomo? Darío tiene un juego favorito? Nunca lo había oído, suena interesante..."
