@@ -4,8 +4,9 @@
       <LayoutRow>
         <img alt="capture2" :src="'/img/game/big-crunch/capture2.png'" style="width: 60%; rotate: 10deg;" class="logo"/>
       </LayoutRow>
-
-
+      <LayoutRow :justify="'center'">
+        <p>{{ t('games.big-crunch.first-game') }}</p>
+      </LayoutRow>
     </template>
     <template #right-col>
       <LayoutRow>
@@ -15,7 +16,7 @@
         <img alt="title" :src="'/img/game/big-crunch/capture1.png'" style="width: 60%; rotate: 10deg;" class="logo">
       </LayoutRow>
       <LayoutRow>
-        <p>Only available in spanish, although you dont need it to enjoy it!</p>
+        <p>{{ t('games.big-crunch.languages') }}</p>
       </LayoutRow>
       <LayoutRow :justify="'end'">
         <img alt="capture3" :src="'/img/game/big-crunch/capture3.png'" style="width: 60%; rotate: -10deg;" class="logo"/>
@@ -28,12 +29,13 @@
 import GameLayout from "@/components/layout/GameLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
 import VideoCardComponent from "@/components/VideoCardComponent.vue";
+import { useTranslation } from "i18next-vue";
 const game = {
   id : 'big-crunch',
   date: '21-01-2024',
   tags: ['puzzle', 'speed-run']
 }
-
+const { t } = useTranslation();
 </script>
 
 <style scoped>
