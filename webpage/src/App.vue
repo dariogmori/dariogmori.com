@@ -3,17 +3,37 @@
     <div style="z-index: 2;">
       <router-view/>
     </div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
+    <img v-if="!isMobile()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
   </body>
+  <el-row justify="center" >
+    <el-menu
+        class="el-menu"
+        mode="horizontal"
+        style="position:fixed;  bottom:1vh;"
+    >
+      <el-menu-item index="1">
+        <el-menu-item index="4-1" @click="goToRoute('/')">Home</el-menu-item>
+      </el-menu-item>
+      <el-menu-item index="2">
+        <el-menu-item index="2-1" @click="goToRoute('/about-me')">{{ t('about-me.title') }}</el-menu-item>
+      </el-menu-item>
+      <el-sub-menu index="3">
+        <template #title>Hobbies</template>
+        <el-menu-item index="3-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
 
-  <nav style="position:fixed; left:40%; bottom:1vh;">
-    <router-link to="/">Home</router-link>
-    <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
-    <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
-    <el-button @click="toggleTheme">{{ languageMode() }}</el-button>
-    <el-button @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-button>
-    <el-button @click="changeLanguage('en')">{{ t('config.language.english') }}</el-button>
-  </nav>
+      </el-sub-menu>
+      <el-sub-menu index="4">
+        <template #title>{{ t('projects.title') }}</template>
+        <el-menu-item index="4-1" @click="goToRoute('/games/big-crunch')">Big-Crunch</el-menu-item>
+      </el-sub-menu>
+      <el-sub-menu index="5">
+        <template #title>Settings</template>
+        <el-menu-item index="5-1" @click="toggleTheme">{{ languageMode() }}</el-menu-item>
+        <el-menu-item index="5-2" @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-menu-item>
+        <el-menu-item index="5-3" @click="changeLanguage('en')">{{ t('config.language.english') }}</el-menu-item>
+      </el-sub-menu>
+    </el-menu>
+  </el-row>
 </template>
 
 <style>
@@ -42,6 +62,8 @@ nav a.router-link-exact-active {
 import { useTranslation } from 'i18next-vue'
 const { t, i18next } = useTranslation()
 import { onMounted, reactive } from 'vue'
+import {isMobile} from "@/scripts/utils";
+import router from "@/router";
 
 const config = reactive({
   theme: 'light',
@@ -72,5 +94,9 @@ function changeLanguage ( lang: string) {
 }
 function languageMode () {
   return config.theme === 'dark' ? t('config.theme.light-mode') : t('config.theme.dark-mode')
+}
+
+function goToRoute(route: string) {
+  router.push(route)
 }
 </script>
