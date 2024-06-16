@@ -5,29 +5,26 @@
     </div>
     <img v-if="!isMobile()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
   </body>
-  <el-row justify="center" style="width:100%;">
+  <el-row justify="center" >
     <el-menu
         class="el-menu"
         mode="horizontal"
         style="position:fixed;  bottom:1vh;"
     >
       <el-menu-item index="1">
-        <router-link to="/">Home</router-link>
+        <el-menu-item index="4-1" @click="goToRoute('/')">Home</el-menu-item>
       </el-menu-item>
       <el-menu-item index="2">
-        <router-link to="/about-me">{{ t('about-me.title') }}</router-link>
+        <el-menu-item index="2-1" @click="goToRoute('/about-me')">{{ t('about-me.title') }}</el-menu-item>
       </el-menu-item>
       <el-sub-menu index="3">
         <template #title>Hobbies</template>
-        <el-menu-item index="3-1">
-          <router-link to="/celeste">{{ t('celeste.title') }}</router-link>
-        </el-menu-item>
+        <el-menu-item index="3-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
+
       </el-sub-menu>
       <el-sub-menu index="4">
         <template #title>{{ t('projects.title') }}</template>
-        <el-menu-item index="4-1">
-          <router-link to="/games/big-crunch">Big Crunch</router-link>
-        </el-menu-item>
+        <el-menu-item index="4-1" @click="goToRoute('/games/big-crunch')">Big-Crunch</el-menu-item>
       </el-sub-menu>
       <el-sub-menu index="5">
         <template #title>Settings</template>
@@ -66,6 +63,7 @@ import { useTranslation } from 'i18next-vue'
 const { t, i18next } = useTranslation()
 import { onMounted, reactive } from 'vue'
 import {isMobile} from "@/scripts/utils";
+import router from "@/router";
 
 const config = reactive({
   theme: 'light',
@@ -96,5 +94,9 @@ function changeLanguage ( lang: string) {
 }
 function languageMode () {
   return config.theme === 'dark' ? t('config.theme.light-mode') : t('config.theme.dark-mode')
+}
+
+function goToRoute(route: string) {
+  router.push(route)
 }
 </script>
