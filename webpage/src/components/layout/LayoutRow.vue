@@ -1,12 +1,13 @@
 <template>
-  <el-row :justify="props.justify" class="row">
+  <el-row :justify="props.justify" :align="props.align" class="row">
     <slot></slot>
   </el-row>
 </template>
 
 <script setup lang="ts">
  const props = defineProps({
-   justify: String
+   justify: String,
+   align: String
  });
 </script>
 
