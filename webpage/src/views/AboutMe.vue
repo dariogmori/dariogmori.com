@@ -1,12 +1,12 @@
 <template>
-  <el-row >
+  <ViewLayout>
     <!-- LEFT CONTAINER -->
-    <el-col :span="6" class="left-container" >
-      <el-row justify="end" style="margin-top:10%;margin-bottom:10%;">
+    <template #left-col>
+      <LayoutRow :justify="'end'">
         <img alt="Me" src="/img/me-1.jpg" class="image-display" style="width: 90%; rotate: -10deg">
-      </el-row>
+      </LayoutRow>
 
-      <el-row style="margin-top:10%;margin-bottom:10%;">
+      <LayoutRow>
         <el-col :span="14">
           <p>
             {{ t('about-me.description') }}
@@ -15,9 +15,9 @@
         <el-col :span="7">
           <img alt="Profile picture" src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;">
         </el-col>
-      </el-row>
+      </LayoutRow>
 
-      <el-row justify="end" style="margin-top:10%;margin-bottom:10%;">
+      <LayoutRow :justify="'end'">
         <el-col :span="7">
           <el-row>
             <el-col :span="12">
@@ -33,8 +33,8 @@
             {{ t('about-me.nationality') }}
           </p>
         </el-col>
-
-      </el-row><el-row justify="start" style="margin-top:10%;margin-bottom:10%;">
+      </LayoutRow>
+      <LayoutRow>
         <el-col :span="14">
           <p>
             {{ t('about-me.gender') }}
@@ -50,24 +50,32 @@
             </el-col>
           </el-row>
         </el-col>
-      </el-row>
-    </el-col>
+      </LayoutRow>
+    </template>
 
     <!-- CENTER CONTAINER -->
-    <el-col :span="12" class="center-container" >
+    <template #center-col>
       <el-image :src="getLogoURI()" class="logo" />
-    </el-col>
-
+    </template>
 
     <!-- RIGHT CONTAINER -->
-    <el-col :span="6" class="right-container">
-      <el-col :span="20" style="margin-top:10%;margin-bottom:10%;">
-        <img alt="me again" src="/img/me-2.jpg" class="image-display" style="width: 90%; rotate:10deg;">
-      </el-col>
+    <template #right-col>
+      <LayoutRow>
+        <img alt="me again" src="/img/me-2.jpg" class="image-display" style="width: 80%; rotate:10deg;">
+      </LayoutRow>
+      <LayoutRow>
+        <el-col :span="14">
+          <p>
+            {{ t('about-me.mushrooms') }}
+          </p>
+        </el-col>
+        <el-col :span="7">
+          <img alt="Mushrooms" src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;">
+        </el-col>
+      </LayoutRow>
+    </template>
 
-
-    </el-col>
-  </el-row>
+  </ViewLayout>
 </template>
 
 <style scoped>
@@ -78,7 +86,8 @@
 <script setup lang="ts">
 import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
-
+import ViewLayout from "@/components/layout/ViewLayout.vue";
+import LayoutRow from "@/components/layout/LayoutRow.vue";
 const { t } = useTranslation();
 const config = reactive({
   theme: 'light',
@@ -100,4 +109,5 @@ onMounted(() => {
 function getLogoURI() {
   return '/img/about-me/logo-' + config.theme + '-' + config.lang + '.png'
 }
+
 </script>

@@ -3,11 +3,24 @@
     "title": "About me",
     "description":  "Hi! I am Darío Gutiérrez Mori, a software developer that sometimes makes games (when i remember to). I love videogames, mushrooms (not the ones you are thinking about) and going hiking :)",
     "nationality": "I grew up and live in Asturias, Spain although I am also half Guatemalan!",
-    "gender": "I identify as a non-binary person and use he/they/she pronouns. Just be respectful ;)"
+    "gender": "I identify as a non-binary person and use he/they/she pronouns. Just be respectful ;)",
+    "mushrooms": "I like to pick up mushrooms! I tend to pick up only the ones I know but always look up species I am not familiar with to learn more!"
   },
   "celeste": {
     "title": "Celeste",
     "description": "Wait what? Dario has a favorite videogame? They have never mentioned it EVER. "
+  },
+  "games": {
+    "released": "Released",
+    "tags": "Tags",
+    "big-crunch": {
+      "description": "Collect caffeinated drinks to pass the final exam! This game was developed for Uniovi's EII Techfest 2022 Game Jam. It was kinda ironic 'cause the meaning of the game turned real for me in the last 24 hours of development (haha crunch). It was my first game but god, I wish it was the last (kidding). Welp, it is quite meh but hopefully you enjoy playing! (there is an easter egg for collecting all the drinks!)",
+      "first-game": "My first game!",
+      "languages": "Only available in spanish, although you dont need it to enjoy it!"
+    }
+  },
+  "projects": {
+    "title": "Projects"
   },
   "config": {
     "language": {

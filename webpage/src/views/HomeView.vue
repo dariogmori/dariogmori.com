@@ -1,23 +1,21 @@
 <template>
-  <main>
-    <el-row >
-      <!-- LEFT CONTAINER -->
-      <el-col :span="6" class="left-container" >
+  <ViewLayout>
+    <!-- LEFT CONTAINER -->
+     <template #left-col>
 
-      </el-col>
+    </template>
 
-      <!-- CENTER CONTAINER -->
-      <el-col :span="12" class="center-container" >
-        <el-image :src="getLogoURI()" class="logo" />
-      </el-col>
+    <!-- CENTER CONTAINER -->
+    <template #center-col>
+      <el-image :src="getLogoURI()" class="logo" />
+    </template>
 
+    <!-- RIGHT CONTAINER -->
+    <template #right-col>
 
-      <!-- RIGHT CONTAINER -->
-      <el-col :span="6" class="right-container">
+    </template>
 
-      </el-col>
-    </el-row>
-  </main>
+  </ViewLayout>
 </template>
 
 <style scoped>
@@ -28,6 +26,8 @@
 <script setup lang="ts">
 import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
+import ViewLayout from "@/components/layout/ViewLayout.vue";
+
 
 const { t } = useTranslation();
 const config = reactive({
