@@ -1,47 +1,28 @@
 <template>
-  <ViewLayout>
-    <template #left-col>
-      <LayoutRow :justify="'end'">
-        <img alt="logo" src="../../assets/games/big-crunch/logo.png" class="image-display" style="width: 90%; rotate: -10deg">
-      </LayoutRow>
-    </template>
-
-    <template #center-col>
-      <img alt="title" :src="getLogoURI()" style="width: 40%;" class="logo">
-    </template>
+  <GameLayout :name="game.id" :date="game.date" :tags="game.tags">
     <template #right-col>
-      <LayoutRow >
-        <img alt="title" :src="getLogoURI()" style="width: 60%;" class="logo">
+      <LayoutRow>
+        <VideoCardComponent :video="'https://www.youtube.com/embed/x5Yj8gDjvs0'"></VideoCardComponent>
       </LayoutRow>
-    </template>
-  </ViewLayout>
+      <LayoutRow :justify="'center'">
+        <img alt="title" :src="'/img/game/big-crunch/capture1.png'" style="width: 60%; rotate: 10deg;" class="logo">
+      </LayoutRow>
+      <LayoutRow>
+        <img alt="capture2" :src="'/img/game/big-crunch/capture2.png'" style="width: 60%; rotate: -10deg;" class="logo"/>
+      </LayoutRow></template>
+  </GameLayout>
 </template>
 
 <script setup lang="ts">
-import { useTranslation } from "i18next-vue";
-import { onMounted, reactive } from "vue";
-import ViewLayout from "@/components/layout/ViewLayout.vue";
+import GameLayout from "@/components/layout/GameLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
-const { t } = useTranslation();
-const config = reactive({
-  theme: 'light',
-  lang: 'es'
-})
-onMounted(() => {
-  const savedTheme = localStorage.getItem('theme')
-  const savedLang = localStorage.getItem('lang')
-  if (savedTheme) {
-    config.theme = savedTheme
-    document.documentElement.setAttribute('data-theme', config.theme)
-  }
-  if( savedLang ) {
-    config.lang = savedLang
-    document.documentElement.setAttribute('data-lang', config.lang)
-  }
-})
-function getLogoURI() {
-  return '/img/game/big-crunch/logo-' + config.theme + '.png'
+import VideoCardComponent from "@/components/VideoCardComponent.vue";
+const game = {
+  id : 'big-crunch',
+  date: '21-01-2024',
+  tags: ['puzzle', 'speed-run']
 }
+
 </script>
 
 <style scoped>

@@ -10,6 +10,13 @@
     "title": "Celeste",
     "description": "Wait what? Dario has a favorite videogame? They have never mentioned it EVER. "
   },
+  "games": {
+    "released": "Released",
+    "tags": "Tags",
+    "big-crunch": {
+      "description": "Collect caffeinated drinks to pass the final exam! This game was developed for Uniovi's EII Techfest 2022 Game Jam. It was kinda ironic 'cause the meaning of the game turned real for me in the last 24 hours of development (haha crunch). It was my first game but god, I wish it was the last (kidding). Welp, it is quite meh but hopefully you enjoy playing! (there is an easter egg for collecting all the drinks!)"
+    }
+  },
   "config": {
     "language": {
       "spanish": "Spanish",

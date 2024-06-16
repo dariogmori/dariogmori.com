@@ -6,6 +6,11 @@
     "gender": "Me identifico como una persona no-binaria y uso los pronombres él/elle/ella. Se respetuose plis ;)",
     "mushrooms": "Me encanta recoger setas! Solo las que conozco, claro (aunque me gusta descubrir nuevas especies).",
   },
+  "games": {
+    "big-crunch": {
+      "description": "Recolecta bebidas cafeinadas para aprobar el examen final!\n\nEste juego fue desarrollado para la Game Jam del Techfest 2022 de la EII de Uniovi.\n\nEs irónico porque el significado del juego (que la protagonista no tiene suficiente tiempo y debe consumir bebidas cafeinadas) se fue aplicando a mi mismo durante las ultimas 24 h de su desarrollo. Es mi primer juego pero madre mía, ojalá sea el último (just kidding)\n\nEn fin, es bastante cutre pero espero que os lo paseis guay jugando :)\n\n(hay un easter egg por recolectar todas las bebidas ;) )"
+    }
+  },
   "celeste": {
     "title": "Celeste",
     "description": "Coooomo? Darío tiene un juego favorito? Nunca lo había oído, suena interesante..."
