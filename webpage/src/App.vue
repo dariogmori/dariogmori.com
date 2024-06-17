@@ -1,5 +1,5 @@
 <template>
-  <body style="max-width:98.8%;">
+  <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() }">
     <div style="z-index: 2;">
       <router-view/>
     </div>
@@ -8,6 +8,7 @@
       <el-menu
           mode="horizontal"
           :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
+          style="position:fixed;bottom:0vh;"
           :ellipsis="true"
       >
         <el-menu-item index="1">
@@ -60,13 +61,15 @@ nav a.router-link-exact-active {
   color: var(--main-color);
 }
 .mobile{
-  position:fixed;
-  bottom:0.6vh;
-  width:100%
+  width:98%
 }
-.desktop{
-  position:fixed;
-  bottom:0.6vh;
+.desktop {
+}
+.body-desktop {
+  max-width:98.8%;
+}
+.body-mobile{
+  max-width:100%;
 }
 </style>
 <script setup lang="ts">
