@@ -61,7 +61,7 @@ nav a.router-link-exact-active {
   color: var(--main-color);
 }
 .mobile{
-  width:98%
+  width:98%;
 }
 .desktop {
 }
@@ -70,6 +70,7 @@ nav a.router-link-exact-active {
 }
 .body-mobile{
   max-width:100%;
+  overflow-x: hidden;
 }
 </style>
 <script setup lang="ts">
@@ -89,10 +90,12 @@ onMounted(() => {
   if (savedTheme) {
     config.theme = savedTheme
     document.documentElement.setAttribute('data-theme', config.theme)
+    changeLanguage(config.lang)
   }
   if( savedLang ) {
     config.lang = savedLang
     document.documentElement.setAttribute('data-lang', config.lang)
+    changeLanguage(config.lang)
   }
 })
 function toggleTheme () {
