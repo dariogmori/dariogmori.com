@@ -1,4 +1,10 @@
 {
+  "home" : {
+    "github": {
+      "recommendation":"Echale un vistazo al repo de esta página!",
+      "button": "Click aquí!"
+    }
+  },
   "about-me" : {
     "title": "Sobre mí",
     "description":  "Hola! Soy Darío Gutiérrez Mori, une desarrolladore de software (y jueguitos a veces). Me encantan los jueguitos, las setas (no alucinogenas lol) e ir de monte.",
