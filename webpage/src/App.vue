@@ -1,42 +1,45 @@
 <template>
-  <body>
+  <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() }">
     <div style="z-index: 2;">
       <router-view/>
     </div>
     <img v-if="!isMobile()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
-  </body>
-  <el-row justify="center" >
-    <el-menu
-        class="el-menu"
-        mode="horizontal"
-        style="position:fixed;  bottom:1vh;"
-    >
-      <el-menu-item index="1">
-        <el-menu-item index="4-1" @click="goToRoute('/')">Home</el-menu-item>
-      </el-menu-item>
-      <el-menu-item index="2">
-        <el-menu-item index="2-1" @click="goToRoute('/about-me')">{{ t('about-me.title') }}</el-menu-item>
-      </el-menu-item>
-      <el-sub-menu index="3">
-        <template #title>Hobbies</template>
-        <el-menu-item index="3-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
+    <el-row justify="center" >
+      <el-menu
+          mode="horizontal"
+          :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
+          style="position:fixed;bottom:0vh;"
+          :ellipsis="true"
+      >
+        <el-menu-item index="1">
+          <el-menu-item index="4-1" @click="goToRoute('/')">Home</el-menu-item>
+        </el-menu-item>
+        <el-menu-item index="2">
+          <el-menu-item index="2-1" @click="goToRoute('/about-me')">{{ t('about-me.title') }}</el-menu-item>
+        </el-menu-item>
+        <el-sub-menu index="3">
+          <template #title>Hobbies</template>
+          <el-menu-item index="3-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
 
-      </el-sub-menu>
-      <el-sub-menu index="4">
-        <template #title>{{ t('projects.title') }}</template>
-        <el-menu-item index="4-1" @click="goToRoute('/games/big-crunch')">Big-Crunch</el-menu-item>
-      </el-sub-menu>
-      <el-sub-menu index="5">
-        <template #title>Settings</template>
-        <el-menu-item index="5-1" @click="toggleTheme">{{ languageMode() }}</el-menu-item>
-        <el-menu-item index="5-2" @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-menu-item>
-        <el-menu-item index="5-3" @click="changeLanguage('en')">{{ t('config.language.english') }}</el-menu-item>
-      </el-sub-menu>
-    </el-menu>
-  </el-row>
+        </el-sub-menu>
+        <el-sub-menu index="4">
+          <template #title>{{ t('projects.title') }}</template>
+          <el-menu-item index="4-1" @click="goToRoute('/games/big-crunch')">Big-Crunch</el-menu-item>
+        </el-sub-menu>
+        <el-sub-menu index="5">
+          <template #title>Settings</template>
+          <el-menu-item index="5-1" @click="toggleTheme">{{ languageMode() }}</el-menu-item>
+          <el-menu-item index="5-2" @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-menu-item>
+          <el-menu-item index="5-3" @click="changeLanguage('en')">{{ t('config.language.english') }}</el-menu-item>
+        </el-sub-menu>
+      </el-menu>
+    </el-row>
+  </body>
+
 </template>
 
 <style>
+@import './assets/styles/theme.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -57,6 +60,18 @@ nav a {
 nav a.router-link-exact-active {
   color: var(--main-color);
 }
+.mobile{
+  width:98%;
+}
+.desktop {
+}
+.body-desktop {
+  max-width:98.8%;
+}
+.body-mobile{
+  max-width:100%;
+  overflow-x: hidden;
+}
 </style>
 <script setup lang="ts">
 import { useTranslation } from 'i18next-vue'
@@ -75,10 +90,12 @@ onMounted(() => {
   if (savedTheme) {
     config.theme = savedTheme
     document.documentElement.setAttribute('data-theme', config.theme)
+    changeLanguage(config.lang)
   }
   if( savedLang ) {
     config.lang = savedLang
     document.documentElement.setAttribute('data-lang', config.lang)
+    changeLanguage(config.lang)
   }
 })
 function toggleTheme () {
