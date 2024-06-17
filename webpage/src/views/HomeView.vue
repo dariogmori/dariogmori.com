@@ -12,7 +12,18 @@
 
     <!-- RIGHT CONTAINER -->
     <template #right-col>
+      <LayoutRow :justify="'center'">
+        <img src="../assets/home/github.png"  alt="github screenshot" class="image-display" style="width:90%;"/>
+        <el-col>
+          <p>{{ t('home.github.recommendation') }}</p>
+        </el-col>
+        <el-col>
+          <el-button type="primary" icon="el-icon-link" @click="openGithubLink()">{{ t('home.github.button') }}</el-button>
+        </el-col>
+      </LayoutRow>
+      <LayoutRow :justify="'center'">
 
+        </LayoutRow>
     </template>
 
   </ViewLayout>
@@ -27,6 +38,7 @@
 import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
+import LayoutRow from "@/components/layout/LayoutRow.vue";
 
 
 const { t } = useTranslation();
@@ -49,5 +61,9 @@ onMounted(() => {
 
 function getLogoURI() {
   return '/img/home/logo-' + config.theme + '.png'
+}
+
+function openGithubLink() {
+  window.open('https://github.com/Toto-hitori/dariogmori.com', '_blank')
 }
 </script>
