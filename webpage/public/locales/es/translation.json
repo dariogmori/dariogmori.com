@@ -3,6 +3,9 @@
     "github": {
       "recommendation":"Echale un vistazo al repo de esta página!",
       "button": "Click aquí!"
+    },
+    "itchio": {
+      "recommendation": "Visita mi perfil de itch.io para jugar a mis jueguitos!"
     }
   },
   "about-me" : {

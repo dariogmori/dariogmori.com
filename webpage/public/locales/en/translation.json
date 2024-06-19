@@ -3,6 +3,9 @@
     "github": {
       "recommendation":"Checkout the repository of this webpage!",
       "button": "Click here!"
+    },
+    "itchio": {
+      "recommendation": "Check out my itch.io page!"
     }
   },
   "about-me" : {
