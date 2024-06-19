@@ -12,7 +12,7 @@
       <LayoutRow :justify="'center'">
         <p>{{ t('games.hdiewtg.developers') }}</p>
         <el-col>
-          <el-button type="primary" icon="el-icon-link" @click="openAriLink()">Ari's socials</el-button>
+          <el-button type="primary" @click="openAriLink()">Ari's socials</el-button>
         </el-col>
       </LayoutRow>
       <LayoutRow :justify="'end'">
