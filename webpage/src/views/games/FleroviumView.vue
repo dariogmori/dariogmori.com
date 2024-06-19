@@ -2,22 +2,22 @@
   <GameLayout :name="game.id" :date="game.date" :tags="game.tags">
     <template #left-col>
       <el-button type="primary" @click="openGameLink()">Play</el-button>
-      <LayoutRow>
-        <img alt="capture2" :src="'/img/game/anp4a/capture2.png'" style="width: 60%; rotate: 10deg;" class="logo"/>
-      </LayoutRow>
     </template>
     <template #right-col>
       <LayoutRow :justify="'center'">
-        <img alt="title" :src="'/img/game/anp4a/capture1.png'" style="width: 60%; rotate: 10deg;" class="logo">
+        <img alt="title" :src="'/img/game/flerovium/capture1.png'" style="width: 60%; rotate: 10deg;" class="logo">
       </LayoutRow>
       <LayoutRow :justify="'center'">
-        <p>{{ t('games.anp4a.development') }}</p>
+        <p>{{ t('games.flerovium.language') }}</p>
       </LayoutRow>
       <LayoutRow :justify="'end'">
-        <img alt="pallette" :src="'/img/game/anp4a/pallette.png'" style="width: 60%; rotate: -10deg;" class="logo"/>
+        <img alt="title" :src="'/img/game/flerovium/capture3.png'" style="width: 60%; rotate: -10deg;" class="logo">
       </LayoutRow>
-      <LayoutRow :justify="'start'">
-        <img alt="paint bucket" :src="'/img/game/anp4a/paint-bucket.png'" style="width: 60%; rotate: -10deg;" class="logo"/>
+      <LayoutRow>
+        <img alt="capture2" :src="'/img/game/flerovium/capture2.png'" style="width: 60%; rotate: 10deg;" class="logo"/>
+      </LayoutRow>
+      <LayoutRow :justify="'center'">
+        <p>{{ t('games.flerovium.understanding') }}</p>
       </LayoutRow>
     </template>
   </GameLayout>
