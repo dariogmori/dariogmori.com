@@ -22,6 +22,10 @@
       "description": "Acompaña a Maya,tu mapache favorito cuyo único propósito en la vida es encontrar una forma de ganar este juego! Dalo todo en estos 5 minijuegos arcades y resuelve el misterio!",
       "languages": "Solo disponible en inglés!",
       "developers": "Jueguito desarrollado por Darío y Ari para la Low Rez Jam 2023. El tema opcional elegido fue 'Escondido a simple vista'."
+    },
+    "anp4a": {
+      "description": "Disfruta de un lienzo de 128x128 pixeles que compartes con el resto del mundo! (con las clásicas limitaciones de pico-8, claro). Crea arte chuli y muestraselo a la comunidad!321",
+      "development": "Esta experiencia fue inspirada por el r/place que ocurre a veces en Reddit, y fue desarrollada completamente por mi! Use la fantasy console pico-8 y una característica que descubrí recientemente que te deja compartir información entre javascript y pico-8!"
     }
   },
   "projects": {

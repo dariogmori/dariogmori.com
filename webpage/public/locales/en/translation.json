@@ -28,6 +28,10 @@
       "description": "Join Maya, your favourite comically unhinged raccoon whose only purpose in life is finding out a way to beat this game. Give it your all at these 5 arcade-reminiscent minigames and solve the mystery!",
       "languages": "Available only in English!",
       "developers": "Game developed by Darío and Ari as an entry for the Low Rez Jam 2023. The optional theme chosen was 'Hidden in Plain Sight'."
+    },
+    "anp4a": {
+      "description": "Enjoy a 128x128 pixel canvas that you share with the rest of the world! (with the classic pico-8 limitations ofc). \n\nCreate some nice art and showcase it to the community!",
+      "development": "This experience was inspired by the r/place thing that happens every once in a while. And it was developed entirely by me! \n\nI used the fantasy console pico-8 and a feature that i discovered recently that lets you basically share information from the hosted script to the pico-8 game itself! After that it was just tampering with the javascript export of the game! :)"
     }
   },
   "projects": {
