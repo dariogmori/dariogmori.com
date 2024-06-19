@@ -17,6 +17,11 @@
       "description": "Recolecta bebidas cafeinadas para aprobar el examen final!\n\nEste juego fue desarrollado para la Game Jam del Techfest 2022 de la EII de Uniovi.\n\nEs irónico porque el significado del juego (que la protagonista no tiene suficiente tiempo y debe consumir bebidas cafeinadas) se fue aplicando a mi mismo durante las ultimas 24 h de su desarrollo. Es mi primer juego pero madre mía, ojalá sea el último (just kidding)\n\nEn fin, es bastante cutre pero espero que os lo paseis guay jugando :)\n\n(hay un easter egg por recolectar todas las bebidas ;) )",
       "first-game": "Mi primerito juego!",
       "languages": "Solo disponible en español!"
+    },
+    "hdiewtg": {
+      "description": "Acompaña a Maya,tu mapache favorito cuyo único propósito en la vida es encontrar una forma de ganar este juego! Dalo todo en estos 5 minijuegos arcades y resuelve el misterio!",
+      "languages": "Solo disponible en inglés!",
+      "developers": "Jueguito desarrollado por Darío y Ari para la Low Rez Jam 2023. El tema opcional elegido fue 'Escondido a simple vista'."
     }
   },
   "projects": {

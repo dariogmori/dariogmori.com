@@ -17,6 +17,12 @@
     --el-border-color: var(--main-color) !important;
     --el-border-color-light: var(--main-color) !important;
     --el-border-color-lighter: var(--main-color) !important;
+    --el-color-info: var(--main-color) !important;
+    --el-color-info-light-3: var(--hover-color) !important;
+    --el-color-info-light-5: var(--hover-color) !important;
+    --el-color-info-light-7: var(--hover-color) !important;
+    --el-color-info-light-8: var(--main-color) !important;
+    --el-color-info-light-9: var(--hover-color) !important;
     transition: background-color 0.5s, main-color 0.5s;
 }
 
@@ -37,5 +43,11 @@
     --el-border-color: var(--main-color) !important;
     --el-border-color-light: var(--main-color) !important;
     --el-border-color-lighter: var(--main-color) !important;
+    --el-color-info: var(--main-color) !important;
+    --el-color-info-light-3: var(--hover-color) !important;
+    --el-color-info-light-5: var(--hover-color) !important;
+    --el-color-info-light-7: var(--hover-color) !important;
+    --el-color-info-light-8: var(--main-color) !important;
+    --el-color-info-light-9: var(--hover-color) !important;
     transition: background-color 0.5s, main-color 0.5s;
 }
