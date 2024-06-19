@@ -24,8 +24,12 @@ const routes= [
   {
     path: '/games/how-do-i-even-win-this-game',
     name: 'how-do-i-even-win-this-game',
-    // route level code-splitting
     component: () => import('../views/games/HDIEWTGView.vue')
+  },
+  {
+    path: '/games/a-nice-place-4-art',
+    name: 'a-nice-place-4-art',
+    component: () => import('../views/games/ANP4AView.vue')
   }
 ]
 

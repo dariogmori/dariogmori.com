@@ -1,6 +1,7 @@
 <template>
   <GameLayout :name="game.id" :date="game.date" :tags="game.tags">
     <template #left-col>
+      <el-button type="primary" @click="openGameLink()">Play</el-button>
       <LayoutRow>
         <img alt="capture2" :src="'/img/game/big-crunch/capture2.png'" style="width: 60%; rotate: 10deg;" class="logo"/>
       </LayoutRow>
@@ -36,6 +37,9 @@ const game = {
   tags: ['puzzle', 'speed-run']
 }
 const { t } = useTranslation();
+function openGameLink() {
+  window.open('https://toto-hitori.itch.io/big-crunch', '_blank')
+}
 </script>
 
 <style scoped>

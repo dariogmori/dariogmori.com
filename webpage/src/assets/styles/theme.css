@@ -5,6 +5,7 @@
     --background-color:var(--yellow);
     --main-color:var(--grenate);
     --hover-color:var(--light-orange);
+    --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
     --el-color-primary-light-3: var(--hover-color) !important;
     --el-color-primary-light-5: var(--hover-color) !important;
@@ -31,6 +32,7 @@
     --background-color:var(--grenate);
     --main-color:var(--yellow);
     --hover-color:var(--red);
+    --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
     --el-color-primary-light-3: var(--hover-color) !important;
     --el-color-primary-light-5: var(--hover-color) !important;
