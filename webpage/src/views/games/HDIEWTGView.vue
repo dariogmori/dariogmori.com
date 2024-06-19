@@ -1,6 +1,7 @@
 <template>
   <GameLayout :name="game.id" :date="game.date" :tags="game.tags">
     <template #left-col>
+      <el-button type="primary" @click="openGameLink()">Play</el-button>
       <LayoutRow>
         <img alt="capture2" :src="'/img/game/hdiewtg/capture2.png'" style="width: 60%; rotate: 10deg;" class="logo"/>
       </LayoutRow>
@@ -39,6 +40,9 @@ const { t } = useTranslation();
 
 function openAriLink() {
   window.open('https://x.com/WomenVideogames', '_blank')
+}
+function openGameLink() {
+  window.open('https://arive.itch.io/how-do-i-even-win-this-game', '_blank')
 }
 </script>
 
