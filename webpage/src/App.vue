@@ -3,7 +3,7 @@
     <div style="z-index: 2;">
       <router-view/>
     </div>
-    <img v-if="!isMobile()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vnGsgBgV8QW50dp-wZ4GoCNWu4egKYuxAw&s" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%">
+    <img v-if="!isMobile()" src="./assets/game-placeholder.png" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%;image-rendering: crisp-edges; ">
     <el-row justify="center" >
       <el-menu
           mode="horizontal"
@@ -27,6 +27,7 @@
           <el-menu-item index="4-1" @click="goToRoute('/games/big-crunch')">Big-Crunch</el-menu-item>
           <el-menu-item index="4-2" @click="goToRoute('/games/how-do-i-even-win-this-game')">HDIEWTG?</el-menu-item>
           <el-menu-item index="4-3" @click="goToRoute('/games/a-nice-place-4-art')">A nice play 4 art</el-menu-item>
+          <el-menu-item index="4-4" @click="goToRoute('/games/the-half-life-of-flerovium')">The half life of flerovium</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="5">
           <template #title>Settings</template>

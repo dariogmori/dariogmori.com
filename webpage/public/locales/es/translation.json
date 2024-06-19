@@ -29,6 +29,11 @@
     "anp4a": {
       "description": "Disfruta de un lienzo de 128x128 pixeles que compartes con el resto del mundo! (con las clásicas limitaciones de pico-8, claro). Crea arte chuli y muestraselo a la comunidad!",
       "development": "Esta experiencia fue inspirada por el r/place que ocurre a veces en Reddit, y fue desarrollada completamente por mi! Use la fantasy console pico-8 y una característica que descubrí recientemente que te deja compartir información entre javascript y pico-8!"
+    },
+    "flerovium": {
+      "description": "CUIDADO: TU TIEMPO VA A SER MALGASTADO \n\n He creado una experiencia que ni yo entiendo en este punto. Unete a mi y se une mas de les que estamos confuses por esto. Nos ha superado a todos. La vida es corta, pero siempre podría ser más corta.",
+      "language": "Solo disponible en inglés!",
+      "understanding": "Ni siquiera yo entiendo el juego!"
     }
   },
   "projects": {
