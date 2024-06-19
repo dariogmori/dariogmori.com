@@ -30,6 +30,11 @@ const routes= [
     path: '/games/a-nice-place-4-art',
     name: 'a-nice-place-4-art',
     component: () => import('../views/games/ANP4AView.vue')
+  },
+  {
+    path: '/games/the-half-life-of-flerovium',
+    name: 'the-half-life-of-flerovium',
+    component: () => import('../views/games/FleroviumView.vue')
   }
 ]
 
