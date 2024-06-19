@@ -1,8 +1,16 @@
 <template>
   <ViewLayout>
     <!-- LEFT CONTAINER -->
-     <template #left-col>
-
+    <template #left-col>
+      <LayoutRow :justify="'center'">
+        <img src="../assets/home/itchio.png" alt="itchio logo" class="image-display" style="width:60%;image-rendering: crisp-edges;"/>
+        <el-col>
+          <p>{{ t('home.itchio.recommendation') }}</p>
+        </el-col>
+        <el-col>
+          <el-button type="primary" @click="openItchioLink()">{{ t('home.github.button') }}</el-button>
+        </el-col>
+      </LayoutRow>
     </template>
 
     <!-- CENTER CONTAINER -->
@@ -18,7 +26,7 @@
           <p>{{ t('home.github.recommendation') }}</p>
         </el-col>
         <el-col>
-          <el-button type="primary" icon="el-icon-link" @click="openGithubLink()">{{ t('home.github.button') }}</el-button>
+          <el-button type="primary" @click="openGithubLink()">{{ t('home.github.button') }}</el-button>
         </el-col>
       </LayoutRow>
       <LayoutRow :justify="'center'">
@@ -65,5 +73,7 @@ function getLogoURI() {
 
 function openGithubLink() {
   window.open('https://github.com/Toto-hitori/dariogmori.com', '_blank')
+}function openItchioLink() {
+  window.open('https://toto-hitori.itch.io/', '_blank')
 }
 </script>

@@ -4,28 +4,37 @@ const routes= [
   {
     path: '/',
     name: 'home',
-    component: () => import(/* webpackChunkName: "about" */ '../views/HomeView.vue')
+    component: () => import('../views/HomeView.vue')
   },
   {
     path: '/celeste',
     name: 'celeste',
-    component: () => import(/* webpackChunkName: "about" */ '../views/CelesteView.vue')
+    component: () => import('../views/CelesteView.vue')
   },
   {
     path: '/about-me',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutMe.vue')
+    component: () => import('../views/AboutMe.vue')
   },
   {
     path: '/games/big-crunch',
     name: 'big-crunch',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/games/BigCrunchView.vue')
+    component: () => import('../views/games/BigCrunchView.vue')
+  },
+  {
+    path: '/games/how-do-i-even-win-this-game',
+    name: 'how-do-i-even-win-this-game',
+    component: () => import('../views/games/HDIEWTGView.vue')
+  },
+  {
+    path: '/games/a-nice-place-4-art',
+    name: 'a-nice-place-4-art',
+    component: () => import('../views/games/ANP4AView.vue')
+  },
+  {
+    path: '/games/the-half-life-of-flerovium',
+    name: 'the-half-life-of-flerovium',
+    component: () => import('../views/games/FleroviumView.vue')
   }
 ]
 

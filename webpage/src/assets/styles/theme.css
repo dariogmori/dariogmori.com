@@ -5,6 +5,7 @@
     --background-color:var(--yellow);
     --main-color:var(--grenate);
     --hover-color:var(--light-orange);
+    --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
     --el-color-primary-light-3: var(--hover-color) !important;
     --el-color-primary-light-5: var(--hover-color) !important;
@@ -17,6 +18,12 @@
     --el-border-color: var(--main-color) !important;
     --el-border-color-light: var(--main-color) !important;
     --el-border-color-lighter: var(--main-color) !important;
+    --el-color-info: var(--main-color) !important;
+    --el-color-info-light-3: var(--hover-color) !important;
+    --el-color-info-light-5: var(--hover-color) !important;
+    --el-color-info-light-7: var(--hover-color) !important;
+    --el-color-info-light-8: var(--main-color) !important;
+    --el-color-info-light-9: var(--hover-color) !important;
     transition: background-color 0.5s, main-color 0.5s;
 }
 
@@ -25,6 +32,7 @@
     --background-color:var(--grenate);
     --main-color:var(--yellow);
     --hover-color:var(--red);
+    --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
     --el-color-primary-light-3: var(--hover-color) !important;
     --el-color-primary-light-5: var(--hover-color) !important;
@@ -37,5 +45,11 @@
     --el-border-color: var(--main-color) !important;
     --el-border-color-light: var(--main-color) !important;
     --el-border-color-lighter: var(--main-color) !important;
+    --el-color-info: var(--main-color) !important;
+    --el-color-info-light-3: var(--hover-color) !important;
+    --el-color-info-light-5: var(--hover-color) !important;
+    --el-color-info-light-7: var(--hover-color) !important;
+    --el-color-info-light-8: var(--main-color) !important;
+    --el-color-info-light-9: var(--hover-color) !important;
     transition: background-color 0.5s, main-color 0.5s;
 }

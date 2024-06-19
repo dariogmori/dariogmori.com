@@ -3,6 +3,9 @@
     "github": {
       "recommendation":"Echale un vistazo al repo de esta página!",
       "button": "Click aquí!"
+    },
+    "itchio": {
+      "recommendation": "Visita mi perfil de itch.io para jugar a mis jueguitos!"
     }
   },
   "about-me" : {
@@ -17,6 +20,20 @@
       "description": "Recolecta bebidas cafeinadas para aprobar el examen final!\n\nEste juego fue desarrollado para la Game Jam del Techfest 2022 de la EII de Uniovi.\n\nEs irónico porque el significado del juego (que la protagonista no tiene suficiente tiempo y debe consumir bebidas cafeinadas) se fue aplicando a mi mismo durante las ultimas 24 h de su desarrollo. Es mi primer juego pero madre mía, ojalá sea el último (just kidding)\n\nEn fin, es bastante cutre pero espero que os lo paseis guay jugando :)\n\n(hay un easter egg por recolectar todas las bebidas ;) )",
       "first-game": "Mi primerito juego!",
       "languages": "Solo disponible en español!"
+    },
+    "hdiewtg": {
+      "description": "Acompaña a Maya,tu mapache favorito cuyo único propósito en la vida es encontrar una forma de ganar este juego! Dalo todo en estos 5 minijuegos arcades y resuelve el misterio!",
+      "languages": "Solo disponible en inglés!",
+      "developers": "Jueguito desarrollado por Darío y Ari para la Low Rez Jam 2023. El tema opcional elegido fue 'Escondido a simple vista'."
+    },
+    "anp4a": {
+      "description": "Disfruta de un lienzo de 128x128 pixeles que compartes con el resto del mundo! (con las clásicas limitaciones de pico-8, claro). Crea arte chuli y muestraselo a la comunidad!",
+      "development": "Esta experiencia fue inspirada por el r/place que ocurre a veces en Reddit, y fue desarrollada completamente por mi! Use la fantasy console pico-8 y una característica que descubrí recientemente que te deja compartir información entre javascript y pico-8!"
+    },
+    "flerovium": {
+      "description": "CUIDADO: TU TIEMPO VA A SER MALGASTADO \n\n He creado una experiencia que ni yo entiendo en este punto. Unete a mi y se une mas de les que estamos confuses por esto. Nos ha superado a todos. La vida es corta, pero siempre podría ser más corta.",
+      "language": "Solo disponible en inglés!",
+      "understanding": "Ni siquiera yo entiendo el juego!"
     }
   },
   "projects": {

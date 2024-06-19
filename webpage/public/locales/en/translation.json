@@ -3,6 +3,9 @@
     "github": {
       "recommendation":"Checkout the repository of this webpage!",
       "button": "Click here!"
+    },
+    "itchio": {
+      "recommendation": "Check out my itch.io page!"
     }
   },
   "about-me" : {
@@ -23,6 +26,20 @@
       "description": "Collect caffeinated drinks to pass the final exam! This game was developed for Uniovi's EII Techfest 2022 Game Jam. It was kinda ironic 'cause the meaning of the game turned real for me in the last 24 hours of development (haha crunch). It was my first game but god, I wish it was the last (kidding). Welp, it is quite meh but hopefully you enjoy playing! (there is an easter egg for collecting all the drinks!)",
       "first-game": "My first game!",
       "languages": "Only available in spanish, although you dont need it to enjoy it!"
+    },
+    "hdiewtg": {
+      "description": "Join Maya, your favourite comically unhinged raccoon whose only purpose in life is finding out a way to beat this game. Give it your all at these 5 arcade-reminiscent minigames and solve the mystery!",
+      "languages": "Available only in English!",
+      "developers": "Game developed by Darío and Ari as an entry for the Low Rez Jam 2023. The optional theme chosen was 'Hidden in Plain Sight'."
+    },
+    "anp4a": {
+      "description": "Enjoy a 128x128 pixel canvas that you share with the rest of the world! (with the classic pico-8 limitations ofc). \n\nCreate some nice art and showcase it to the community!",
+      "development": "This experience was inspired by the r/place thing that happens every once in a while. And it was developed entirely by me! \n\nI used the fantasy console pico-8 and a feature that i discovered recently that lets you basically share information from the hosted script to the pico-8 game itself! After that it was just tampering with the javascript export of the game! :)"
+    },
+    "flerovium": {
+      "description": "WARNING: YOUR TIME WILL BE WASTED \n\n I have created an experience not even I comprehend anymore. Join me in the group of people that are confused about what this is. This has outgrown all of us.\n\nLife is short, but it could always be shorter.\n\n",
+      "language": "Only available in English!",
+      "understanding": "Even I don't understand this game!"
     }
   },
   "projects": {
