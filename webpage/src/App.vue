@@ -45,6 +45,7 @@
 @import './assets/styles/theme.css';
 #app {
   font-family: 'Press Start 2P';
+  font-size: 13px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

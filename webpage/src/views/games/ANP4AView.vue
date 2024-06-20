@@ -11,7 +11,7 @@
         <img alt="title" :src="'/img/game/anp4a/capture1.png'" style="width: 60%; rotate: 10deg;" class="logo">
       </LayoutRow>
       <LayoutRow :justify="'center'">
-        <p style="font-family:Helvetica">{{ t('games.anp4a.development') }}</p>
+        <p>{{ t('games.anp4a.development') }}</p>
       </LayoutRow>
       <LayoutRow :justify="'end'">
         <img alt="pallette" :src="'/img/game/anp4a/pallette.png'" style="width: 60%; rotate: -10deg;" class="logo"/>
