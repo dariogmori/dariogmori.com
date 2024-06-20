@@ -1,5 +1,5 @@
 @import './palette.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root {
     background: var(--yellow);
     --background-color:var(--yellow);
@@ -25,6 +25,7 @@
     --el-color-info-light-8: var(--main-color) !important;
     --el-color-info-light-9: var(--hover-color) !important;
     transition: background-color 0.5s, main-color 0.5s;
+    --el-font-family: 'Press Start 2P' !important;
 }
 
 [data-theme="dark"] {
@@ -52,4 +53,13 @@
     --el-color-info-light-8: var(--main-color) !important;
     --el-color-info-light-9: var(--hover-color) !important;
     transition: background-color 0.5s, main-color 0.5s;
+    --el-font-family: 'Press Start 2P' !important;
+}
+
+.el-button{
+    font-family: var(--el-font-family) !important;
+}
+
+.el-menu{
+    font-family: var(--el-font-family) !important;
 }

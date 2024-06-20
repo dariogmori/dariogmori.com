@@ -8,7 +8,7 @@
 
       <LayoutRow>
         <el-col :span="14">
-          <p>
+          <p >
             {{ t('about-me.description') }}
           </p>
         </el-col>

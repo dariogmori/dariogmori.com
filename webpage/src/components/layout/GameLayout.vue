@@ -12,7 +12,7 @@
         </el-row>
       </LayoutRow>
       <LayoutRow :justify="'center'">
-        <p>{{ t('games.' + props.name + '.description')}}</p>
+        <p style="font-family:Helvetica" >{{ t('games.' + props.name + '.description')}}</p>
       </LayoutRow>
       <slot name="left-col"></slot>
     </template>
