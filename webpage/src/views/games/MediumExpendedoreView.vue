@@ -8,10 +8,13 @@
         <img alt="title" :src="'/img/game/medium-expendedore/capture1.png'" style="width: 80%; rotate: 10deg;" class="logo">
       </LayoutRow>
       <LayoutRow :justify="'center'">
-        <p>{{ t('games.medium-expendedore.development') }}</p>
+        <p>{{ t('games.medium-expendedore.language') }}</p>
       </LayoutRow>
       <LayoutRow>
         <img alt="capture2" :src="'/img/game/medium-expendedore/capture2.png'" style="width: 80%; rotate: 10deg;" class="logo"/>
+      </LayoutRow>
+      <LayoutRow :justify="'center'">
+        <p>{{ t('games.medium-expendedore.development') }}</p>
       </LayoutRow>
     </template>
   </GameLayout>
