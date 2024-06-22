@@ -1,12 +1,12 @@
-
+@import './theme.css';
 .card-celeste {
-    background-color: #f5fcb9;
+    background-color: var(--main-color);
     background-image: url("../celeste/background.png");
     background-position: bottom right;
     background-size:100%;
     background-repeat: no-repeat;
-    color: #552d12;
-    border-color:#3e211e;
+    color: var(--background-color);
+    border-color:var(--background-color);
     border-radius: 10px;
     border:3px;
     flex:auto;
@@ -14,20 +14,24 @@
     border-bottom-style:dotted;
     border-left-style: dashed;
     border-right-style:dashed;
+    image-rendering: crisp-edges;
 }
 .content-celeste{
     margin:5px;
-    background-color: #ad914193;;
-    color: #3e211e;
+    background-color: var(--hover-color);
+    opacity:0.9;
+    color: var(--background-color);
     border-radius: 10px;
-    border:3px;
+    border-color: var(--background-color);
+    border:solid 5px;
     flex:auto;
 }
 .avatar{
     border-radius:10px;
     width:80%;
-    border-color: #3e211e;
-    border:solid 5px #3e211e;
+    border-color: var(--background-color);
+    border:solid 5px;
+    background:var(--hover-color);
 }
 .avatar:hover{
     transform:scale(1.02);
@@ -53,8 +57,10 @@
 .flex-grow {
   flex-grow: 1;
 }
-.menu{
-    background-color:#ad914193;
+.el-menu-demo{
+    background-color: var(--hover-color);
+    border-color: var(--background-color);
+    opacity:0.9;
 }
 
 .heart:hover {
