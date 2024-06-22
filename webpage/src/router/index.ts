@@ -35,6 +35,11 @@ const routes= [
     path: '/games/the-half-life-of-flerovium',
     name: 'the-half-life-of-flerovium',
     component: () => import('../views/games/FleroviumView.vue')
+  },
+  {
+    path: '/games/medium-expendedore',
+    name: 'medium-expendedore',
+    component: () => import('../views/games/MediumExpendedoreView.vue')
   }
 ]
 
