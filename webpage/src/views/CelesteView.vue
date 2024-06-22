@@ -20,7 +20,7 @@
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <img src="../assets/celeste/logo.png" class="logo">
+      <img src="../assets/celeste/logo.gif" class="logo">
     </template>
 
     <!-- RIGHT CONTAINER -->

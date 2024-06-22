@@ -28,6 +28,7 @@
           <el-menu-item index="4-2" @click="goToRoute('/games/how-do-i-even-win-this-game')">HDIEWTG?</el-menu-item>
           <el-menu-item index="4-3" @click="goToRoute('/games/a-nice-place-4-art')">A nice play 4 art</el-menu-item>
           <el-menu-item index="4-4" @click="goToRoute('/games/the-half-life-of-flerovium')">The half life of flerovium</el-menu-item>
+          <el-menu-item index="4-5" @click="goToRoute('/games/medium-expendedore')">Medium Expendedore</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="5">
           <template #title>Settings</template>
@@ -44,7 +45,8 @@
 <style>
 @import './assets/styles/theme.css';
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Press Start 2P';
+  font-size: 13px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

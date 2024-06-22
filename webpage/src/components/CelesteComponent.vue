@@ -4,7 +4,7 @@
             <el-col :span="8">
                     <el-row justify="space-evenly">
                         <el-col >
-                            <img src="../assets/celeste/icon_celeste.jpg" class="avatar"/>
+                            <img src="../assets/about-me/me.png" class="avatar"/>
                             <el-row justify="center" align="middle">
                                 <el-col :span="12">
                                     <h1 class="username">Toto</h1>
@@ -29,8 +29,8 @@
                     </el-col>
                     <el-col :span="8">
                         <el-menu class="el-menu-demo" mode="horizontal" :ellipsis="false"
-                            :default-active="active.activeIndex" background-color=#ad914193
-                            active-text-color=#250505 text-color=#552d12; style="border-radius:10px; border-style: none; border-width: 2px; padding-left:10px; padding-right:10px; width:fit-content ">
+                            :default-active="active.activeIndex"
+                             style="border-radius:10px; border-style: none; border-width: 2px; padding-left:10px; padding-right:10px; width:fit-content ">
                             <el-row justify="end">
                                 <el-col :span="12">
                                     <el-menu-item index="1" @click="active.activeIndex='1'">
@@ -58,9 +58,9 @@
                     <el-row justify="center" v-if="active.activeIndex==='2'">
                             <el-col :span="3" v-for="index in 8" :key="index">
                                 <!--<p class="counter">Ch{{index}}</p>-->
-                                <img :src="goldenAside[index-1]? goldenIcon : dot" style="width:80%" class="heart"/>
-                                <img :src="goldenBside[index-1]? goldenIcon : dot" style="width:80%" class="heart"/>
-                                <img :src="goldenCside[index-1]? goldenIcon : dot" style="width:80%" class="heart"/>
+                                <img :src="goldenAside[index-1]? goldenIcon : dot" style="width:100%" class="heart"/>
+                                <img :src="goldenBside[index-1]? goldenIcon : dot" style="width:100%" class="heart"/>
+                                <img :src="goldenCside[index-1]? goldenIcon : dot" style="width:100%" class="heart"/>
                             </el-col>
                     </el-row>
                 </el-card>
@@ -70,10 +70,10 @@
 </template>
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
-import goldenInactive from '@/assets/celeste/golden-strawberry.png'
-import goldenActive from '@/assets/celeste/golden-strawberry-active.png'
-import heartInactive from '../assets/celeste/heart-web.png'
-import heartActive from '../assets/celeste/heart-red-active.png'
+import goldenInactive from '@/assets/celeste/golden-strawberry-active.png'
+import goldenActive from '@/assets/celeste/golden-strawberry-icon.png'
+import heartInactive from '../assets/celeste/heart-red-active.png'
+import heartActive from '../assets/celeste/heart-red.png'
 import strawberry from '../assets/celeste/strawberry.png'
 import heartRed from '../assets/celeste/heart-red.png'
 import heartYellow from '../assets/celeste/heart-yellow.png'

@@ -22,6 +22,9 @@
       <LayoutRow :justify="'end'">
         <img alt="capture3" :src="'/img/game/big-crunch/capture3.png'" style="width: 60%; rotate: -10deg;" class="logo"/>
       </LayoutRow>
+      <LayoutRow :justify="'center'">
+        <p>{{ t('games.big-crunch.development') }}</p>
+      </LayoutRow>
     </template>
   </GameLayout>
 </template>

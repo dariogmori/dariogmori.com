@@ -10,7 +10,7 @@
   },
   "about-me" : {
     "title": "About me",
-    "description":  "Hi! I am Darío Gutiérrez Mori, a software developer that sometimes makes games (when i remember to). I love videogames, mushrooms (not the ones you are thinking about) and going hiking :)",
+    "description":  "Hi! I am Darío Gutiérrez Mori, a software developer that sometimes makes games (when i remember to).",
     "nationality": "I grew up and live in Asturias, Spain although I am also half Guatemalan!",
     "gender": "I identify as a non-binary person and use he/they/she pronouns. Just be respectful ;)",
     "mushrooms": "I like to pick up mushrooms! I tend to pick up only the ones I know but always look up species I am not familiar with to learn more!"
@@ -23,9 +23,10 @@
     "released": "Released",
     "tags": "Tags",
     "big-crunch": {
-      "description": "Collect caffeinated drinks to pass the final exam! This game was developed for Uniovi's EII Techfest 2022 Game Jam. It was kinda ironic 'cause the meaning of the game turned real for me in the last 24 hours of development (haha crunch). It was my first game but god, I wish it was the last (kidding). Welp, it is quite meh but hopefully you enjoy playing! (there is an easter egg for collecting all the drinks!)",
+      "description": "Collect caffeinated drinks to pass the final exam! This game was developed for Uniovi's EII Techfest 2022 Game Jam.",
       "first-game": "My first game!",
-      "languages": "Only available in spanish, although you dont need it to enjoy it!"
+      "languages": "Only available in spanish, although you dont need it to enjoy it!",
+      "development": "It was kinda ironic 'cause the meaning of the game turned real for me in the last 24 hours of development (haha crunch). It was my first game but god, I wish it was the last (kidding). Welp, it is quite meh but hopefully you enjoy playing! (there is an easter egg for collecting all the drinks!)"
     },
     "hdiewtg": {
       "description": "Join Maya, your favourite comically unhinged raccoon whose only purpose in life is finding out a way to beat this game. Give it your all at these 5 arcade-reminiscent minigames and solve the mystery!",
@@ -40,6 +41,11 @@
       "description": "WARNING: YOUR TIME WILL BE WASTED \n\n I have created an experience not even I comprehend anymore. Join me in the group of people that are confused about what this is. This has outgrown all of us.\n\nLife is short, but it could always be shorter.\n\n",
       "language": "Only available in English!",
       "understanding": "Even I don't understand this game!"
+    },
+    "medium-expendedore": {
+      "description": "Read the future to predict what product from the machine will be free! This game was developed for Uniovi's EII Techfest 2024 Game Jam. ",
+      "language": "Only available in Spanish!",
+      "development": "This game now has no music and the mechanics are a bit basic, time constraints. In the future I will make a proper release since i like how the art looks hehe"
     }
   },
   "projects": {
