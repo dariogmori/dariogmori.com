@@ -1,5 +1,5 @@
 <template>
-  <GameLayout :name="game.id" :date="game.date" :tags="game.tags">
+  <GameLayout :game="game">
     <template #left-col>
       <el-button type="primary" @click="openGameLink()">Play</el-button>
     </template>
