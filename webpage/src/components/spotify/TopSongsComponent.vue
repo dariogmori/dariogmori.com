@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import {onMounted, reactive} from "vue";
- import SongComponent from "@/components/SongComponent.vue";
+ import SongComponent from "@/components/spotify/SongComponent.vue";
 import { getSpotifyInfo } from '@/scripts/services/spotifyService';
 
   const config = reactive({
