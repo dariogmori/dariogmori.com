@@ -33,7 +33,7 @@
         </el-col>
       </LayoutRow>
       <LayoutRow :justify="'center'">
-
+        <TopArtistsComponent />
       </LayoutRow>
     </template>
 
@@ -51,6 +51,7 @@ import { onMounted, reactive } from "vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
 import TopSongsComponent from "@/components/spotify/TopSongsComponent.vue";
+import TopArtistsComponent from "@/components/spotify/TopArtistsComponent.vue";
 
 
 const { t } = useTranslation();
