@@ -17,6 +17,7 @@ import java.util.Set;
 @Builder
 @Data
 @ToString
+@EqualsAndHashCode(exclude = "user")
 public class Artist {
     @Id
     private String name;
