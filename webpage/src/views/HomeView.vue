@@ -50,7 +50,7 @@ import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
-import TopSongsComponent from "@/components/TopSongsComponent.vue";
+import TopSongsComponent from "@/components/spotify/TopSongsComponent.vue";
 
 
 const { t } = useTranslation();
