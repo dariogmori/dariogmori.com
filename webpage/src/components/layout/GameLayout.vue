@@ -2,17 +2,17 @@
   <ViewLayout>
     <template #left-col>
       <LayoutRow :justify="'end'">
-        <img alt="logo" :src="'/img/game/' + props.name + '/logo.png'" class="image-display" style="width: 90%; rotate: -10deg;">
+        <img alt="logo" :src="'/img/game/' + props.game.id + '/logo.png'" class="image-display" style="width: 90%; rotate: -10deg;">
       </LayoutRow>
       <LayoutRow :justify="'center'" :align="'middle'" >
-        <h1>{{ t('games.released') + ': ' + props.date}} </h1>
+        <h1>{{ t('games.released') + ': ' + props.game.date}} </h1>
         <el-row align="middle">
           <h2>{{ t('games.tags') }}: </h2>
-          <el-tag v-for="tag in tags"  :type="'info'">{{ tag }}</el-tag>
+          <el-tag v-for="tag in game.tags"  :type="'info'">{{ tag }}</el-tag>
         </el-row>
       </LayoutRow>
       <LayoutRow :justify="'center'">
-        <p>{{ t('games.' + props.name + '.description')}}</p>
+        <p>{{ t('games.' + props.game.id + '.description')}}</p>
       </LayoutRow>
       <slot name="left-col"></slot>
     </template>
@@ -31,12 +31,13 @@ import LayoutRow from "@/components/layout/LayoutRow.vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import {useTranslation} from "i18next-vue";
 import {onMounted, reactive} from "vue";
-import VideoCardComponent from "@/components/VideoCardComponent.vue";
-const props = defineProps({
-  name: String,
-  date: String,
-  tags: Array<String>
-});
+const props = defineProps<{
+  game: {
+    id: String,
+    date: String,
+    tags: Array<String>
+  }
+}>()
 const { t } = useTranslation();
 const config = reactive({
   theme: 'light',
