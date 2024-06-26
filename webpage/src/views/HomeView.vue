@@ -11,6 +11,9 @@
           <el-button type="primary" @click="openItchioLink()">{{ t('home.github.button') }}</el-button>
         </el-col>
       </LayoutRow>
+      <LayoutRow :justify="'center'">
+        <TopSongsComponent />
+      </LayoutRow>
     </template>
 
     <!-- CENTER CONTAINER -->
@@ -30,8 +33,8 @@
         </el-col>
       </LayoutRow>
       <LayoutRow :justify="'center'">
-
-        </LayoutRow>
+        <TopArtistsComponent />
+      </LayoutRow>
     </template>
 
   </ViewLayout>
@@ -47,6 +50,8 @@ import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
+import TopSongsComponent from "@/components/spotify/TopSongsComponent.vue";
+import TopArtistsComponent from "@/components/spotify/TopArtistsComponent.vue";
 
 
 const { t } = useTranslation();
