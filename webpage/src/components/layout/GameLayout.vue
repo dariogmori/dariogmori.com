@@ -8,7 +8,7 @@
         <h1>{{ t('games.released') + ': ' + props.game.date}} </h1>
         <el-row align="middle">
           <h2>{{ t('games.tags') }}: </h2>
-          <el-tag v-for="tag in game.tags"  :type="'info'">{{ tag }}</el-tag>
+          <el-tag v-for="tag in props.game.tags"  :type="'info'">{{ tag }}</el-tag>
         </el-row>
       </LayoutRow>
       <LayoutRow :justify="'center'">
@@ -56,7 +56,7 @@ onMounted(() => {
   }
 })
 function getTitleURI() {
-  return '/img/game/' + props.name + '/title-' + config.theme + '.png'
+  return '/img/game/' + props.game.id + '/title-' + config.theme + '.png'
 }
 </script>
 
