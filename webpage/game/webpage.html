@@ -988,7 +988,7 @@ canvas{
 
 .button_gfx{
 	stroke-width:2;
-	stroke: #ffffff;
+	stroke: var(--main-color);
 	stroke-opacity:0.4;
 	fill-opacity:0.2;
 	fill:black;
@@ -996,7 +996,7 @@ canvas{
 
 .button_gfx_icon{
 	stroke-width:3;
-	stroke: #909090;
+	stroke: var(--main-color);
 	stroke-opacity:0.7;
 	fill:none;
 }
@@ -1005,7 +1005,7 @@ canvas{
 
 </head>
 
-<body style="padding:0px; margin:0px; background-color:#222; color:#ccc">
+<body style="padding:0px; margin:0px; background-color:var(--background-color); color:var(--background-color)">
 <div id="body_0"> <!-- hide this when playing in mobile (p8_touch_detected) so that elements don't affect layout -->
 
 
@@ -1035,7 +1035,7 @@ canvas{
 		">
 
 			<div  id="touch_controls_background"
-				  style=" pointer-events:none; display:none; background-color:#000;
+				  style=" pointer-events:none; display:none; background-color:var(--main-color);
 						 position:fixed; top:0px; left:0px; border:0; width:100vw; height:100vh">
 
 			</div>
