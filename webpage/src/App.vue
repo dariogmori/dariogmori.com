@@ -3,7 +3,7 @@
     <div style="z-index: 2;">
       <router-view/>
     </div>
-    <img v-if="!isMobile()" src="./assets/game-placeholder.png" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%;image-rendering: crisp-edges; ">
+    <iframe  v-if="!isMobile()" src="../game/webpage.html" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%; height:50%;image-rendering: crisp-edges; "></iframe>
     <el-row justify="center" >
       <el-menu
           mode="horizontal"
