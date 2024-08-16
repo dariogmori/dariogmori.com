@@ -9,7 +9,12 @@ const routes= [
   {
     path: '/celeste',
     name: 'celeste',
-    component: () => import('../views/CelesteView.vue')
+    component: () => import('../views/hobby/CelesteView.vue')
+  },
+  {
+    path: '/minecraft',
+    name: 'minecraft',
+    component: () => import('../views/hobby/MinecraftView.vue')
   },
   {
     path: '/about-me',

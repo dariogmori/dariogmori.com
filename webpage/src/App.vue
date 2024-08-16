@@ -20,6 +20,7 @@
         <el-sub-menu index="3">
           <template #title>Hobbies</template>
           <el-menu-item index="3-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
+          <el-menu-item index="3-2" @click="goToRoute('/minecraft')">Minecraft </el-menu-item>
 
         </el-sub-menu>
         <el-sub-menu index="4">
