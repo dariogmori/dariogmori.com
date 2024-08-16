@@ -56,7 +56,7 @@ onMounted(() => {
   }
 })
 function getTitleURI() {
-  return '/img/game/' + props.name + '/title-' + config.theme + '.png'
+  return '/img/game/' + props.game.id + '/title-' + config.theme + '.png'
 }
 </script>
 
