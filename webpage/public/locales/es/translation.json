@@ -40,6 +40,10 @@
       "description": "Lee el futuro para adivinar que producto de la maquina te saldrá gratis!\n\nEste juego fue desarrollado para la Game Jam del Techfest 2024 de la EII de Uniovi.",
       "language": "Solo disponible en español!",
       "development": "El juego actualmente carece de música y la funcionalidad se ha quedado básica, cosas del directo. En el futuro haré una proper release que me ha gustado como me ha quedado el arte jeje."
+    },
+    "kiwiq": {
+      "description": "Adéntrate en preguntas apasionantes en este juego de trivia desarrollado para my curso de Arquitectura del Software.",
+      "development": "Desarrollado con compañeros de clase!"
     }
   },
   "projects": {
