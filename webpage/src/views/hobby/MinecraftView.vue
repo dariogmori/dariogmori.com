@@ -7,15 +7,16 @@
       </LayoutRow>
 
       <LayoutRow>
-        <el-col :span="16">
+        <el-col>
           <p>
-            {{ t('celeste.description') }}
+            {{ t('minecraft.description') }}
           </p>
         </el-col>
-        <el-col :span="8">
-          <img alt="madeline" src="https://media.spelunky.fyi/mods/logo/01G8PXMPWZ2K3CVW70DJ5HEMGA/1658626661282822.gif" class="image-display" style="width: 90%">
-        </el-col>
       </LayoutRow>
+      <el-col>
+        <img alt="skin" src="/img/hobby/minecraft/body.png" class="image-display" style="width: 90%">
+        <canvas id="minecraftCanvas" style="width:30%;"></canvas>
+      </el-col>
     </template>
 
     <!-- CENTER CONTAINER -->
@@ -26,10 +27,8 @@
     <!-- RIGHT CONTAINER -->
     <template #right-col>
       <LayoutRow>
-        <CelesteComponent />
-      </LayoutRow>
-      <LayoutRow>
-        <VideoCardComponent :video="'https://www.youtube.com/embed/_iBkkwy0fcM'" :title="'Cool speedy thingie'" :article="'yay me go fast'" ></VideoCardComponent>
+        <MinecraftComponent />
+        <iframe src="http://map.dariogmori.com:8123/" style="width: 100%; height: 30vh;"></iframe>
       </LayoutRow>
     </template>
 
@@ -37,9 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import CelesteComponent from "@/components/CelesteComponent.vue";
 import { useTranslation } from "i18next-vue";
-import VideoCardComponent from "@/components/VideoCardComponent.vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
 
