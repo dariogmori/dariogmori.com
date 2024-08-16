@@ -1,7 +1,7 @@
 <template>
   <GameLayout :game="game">
     <template #left-col>
-      <el-button type="primary" @click="openGameLink()">Play</el-button>
+      <el-button type="primary" @click="openRepoLink()">Github repo</el-button>
     </template>
     <template #right-col>
       <LayoutRow :justify="'center'">
@@ -9,6 +9,8 @@
       </LayoutRow>
       <LayoutRow :justify="'center'">
         <p>{{ t('games.kiwiq.development') }}</p>
+      </LayoutRow>
+      <LayoutRow :justify="'center'">
       </LayoutRow>
       <LayoutRow>
         <img alt="capture2" :src="'/img/game/kiwiq/capture2.jpeg'" style="width: 60%; rotate: 10deg;" class="logo"/>
@@ -32,8 +34,8 @@ const game = {
 }
 const { t } = useTranslation();
 
-function openAriLink() {
-  window.open('https://x.com/WomenVideogames', '_blank')
+function openRepoLink() {
+  window.open('https://github.com/Arquisoft/wiq_en2b', '_blank')
 }
 
 function openGameLink() {
