@@ -46,6 +46,10 @@
       "description": "Read the future to predict what product from the machine will be free! This game was developed for Uniovi's EII Techfest 2024 Game Jam. ",
       "language": "Only available in Spanish!",
       "development": "This game now has no music and the mechanics are a bit basic, time constraints. In the future I will make a proper release since i like how the art looks hehe"
+    },
+    "kiwiq": {
+      "description": "Play some trivia in this quiz game developed for my Software Architecture course.",
+      "development": "Developed with other fellow students!"
     }
   },
   "projects": {

@@ -40,6 +40,11 @@ const routes= [
     path: '/games/medium-expendedore',
     name: 'medium-expendedore',
     component: () => import('../views/games/MediumExpendedoreView.vue')
+  },
+  {
+    path: '/games/kiwiq',
+    name: 'kiwiq',
+    component: () => import('../views/games/KiwiqView.vue')
   }
 ]
 

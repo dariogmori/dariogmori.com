@@ -29,6 +29,7 @@
           <el-menu-item index="4-3" @click="goToRoute('/games/a-nice-place-4-art')">A nice play 4 art</el-menu-item>
           <el-menu-item index="4-4" @click="goToRoute('/games/the-half-life-of-flerovium')">The half life of flerovium</el-menu-item>
           <el-menu-item index="4-5" @click="goToRoute('/games/medium-expendedore')">Medium Expendedore</el-menu-item>
+          <el-menu-item index="4-6" @click="goToRoute('/games/kiwiq')">Kiwiq</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="5">
           <template #title>Settings</template>
