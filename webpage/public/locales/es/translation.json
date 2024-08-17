@@ -53,6 +53,9 @@
     "title": "Celeste",
     "description": "Coooomo? Darío tiene un juego favorito? Nunca lo había oído, suena interesante..."
   },
+  "minecraft": {
+    "description": "Mi juego mas jugado! Me encanta jugar survival y bedwars."
+  },
   "config": {
     "language": {
       "spanish": "Español",

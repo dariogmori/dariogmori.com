@@ -19,6 +19,10 @@
     "title": "Celeste",
     "description": "Wait what? Dario has a favorite videogame? They have never mentioned it EVER. "
   },
+  "minecraft": {
+    "description": "My most played game ever! I actually love playing minecraft survival as well as bedwars."
+  }
+  ,
   "games": {
     "released": "Released",
     "tags": "Tags",
