@@ -21,7 +21,7 @@
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <img src="../../assets/celeste/logo.gif" class="logo">
+      <img src="../../assets/hobby/minecraft/logo.gif" class="logo" style="width: 60%; ">
     </template>
 
     <!-- RIGHT CONTAINER -->
