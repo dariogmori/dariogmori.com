@@ -20,7 +20,7 @@
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <img src="../assets/celeste/logo.gif" class="logo">
+      <img src="../../assets/celeste/logo.gif" class="logo">
     </template>
 
     <!-- RIGHT CONTAINER -->
@@ -47,5 +47,5 @@ const { t } = useTranslation();
 </script>
 
 <style scoped>
-@import '../assets/styles/view.css';
+@import '../../assets/styles/view.css';
 </style>

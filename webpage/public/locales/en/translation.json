@@ -19,6 +19,18 @@
     "title": "Celeste",
     "description": "Wait what? Dario has a favorite videogame? They have never mentioned it EVER. "
   },
+  "minecraft": {
+    "description": "My most played game ever! I actually love playing minecraft survival as well as bedwars."
+  },
+  "art" : {
+    "title": "Art",
+    "ace-attorney": {
+        "description": "Fanart from the Ace Attorney saga. Practising perspective."
+    },
+    "me-sketches": {
+      "description": "Sketches of myself. Practising anatomy and perspective."
+    }
+  },
   "games": {
     "released": "Released",
     "tags": "Tags",
@@ -46,10 +58,28 @@
       "description": "Read the future to predict what product from the machine will be free! This game was developed for Uniovi's EII Techfest 2024 Game Jam. ",
       "language": "Only available in Spanish!",
       "development": "This game now has no music and the mechanics are a bit basic, time constraints. In the future I will make a proper release since i like how the art looks hehe"
+    },
+    "kiwiq": {
+      "description": "Play some trivia in this quiz game developed for my Software Architecture course.",
+      "development": "Developed with other fellow students!"
     }
   },
   "projects": {
     "title": "Projects"
+  },
+  "month": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
   },
   "config": {
     "language": {

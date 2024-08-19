@@ -9,7 +9,16 @@ const routes= [
   {
     path: '/celeste',
     name: 'celeste',
-    component: () => import('../views/CelesteView.vue')
+    component: () => import('../views/hobby/CelesteView.vue')
+  },
+  {
+    path: '/minecraft',
+    name: 'minecraft',
+    component: () => import('../views/hobby/MinecraftView.vue')
+  },{
+    path: '/art',
+    name: 'art',
+    component: () => import('../views/hobby/ArtView.vue')
   },
   {
     path: '/about-me',
@@ -40,6 +49,11 @@ const routes= [
     path: '/games/medium-expendedore',
     name: 'medium-expendedore',
     component: () => import('../views/games/MediumExpendedoreView.vue')
+  },
+  {
+    path: '/games/kiwiq',
+    name: 'kiwiq',
+    component: () => import('../views/games/KiwiqView.vue')
   }
 ]
 

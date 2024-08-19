@@ -3,7 +3,7 @@
     <div style="z-index: 2;">
       <router-view/>
     </div>
-    <img v-if="!isMobile()" src="./assets/game-placeholder.png" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%;image-rendering: crisp-edges; ">
+    <!--<iframe  v-if="!isMobile()" src="../game/webpage.html" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%; height:50%; border: 0; "></iframe>-->
     <el-row justify="center" >
       <el-menu
           mode="horizontal"
@@ -20,7 +20,8 @@
         <el-sub-menu index="3">
           <template #title>Hobbies</template>
           <el-menu-item index="3-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
-
+          <el-menu-item index="3-2" @click="goToRoute('/minecraft')">Minecraft </el-menu-item>
+          <el-menu-item index="3-3" @click="goToRoute('/art')">{{ t('art.title') }}</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="4">
           <template #title>{{ t('projects.title') }}</template>
@@ -29,6 +30,7 @@
           <el-menu-item index="4-3" @click="goToRoute('/games/a-nice-place-4-art')">A nice play 4 art</el-menu-item>
           <el-menu-item index="4-4" @click="goToRoute('/games/the-half-life-of-flerovium')">The half life of flerovium</el-menu-item>
           <el-menu-item index="4-5" @click="goToRoute('/games/medium-expendedore')">Medium Expendedore</el-menu-item>
+          <el-menu-item index="4-6" @click="goToRoute('/games/kiwiq')">Kiwiq</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="5">
           <template #title>Settings</template>

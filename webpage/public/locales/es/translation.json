@@ -40,6 +40,10 @@
       "description": "Lee el futuro para adivinar que producto de la maquina te saldrá gratis!\n\nEste juego fue desarrollado para la Game Jam del Techfest 2024 de la EII de Uniovi.",
       "language": "Solo disponible en español!",
       "development": "El juego actualmente carece de música y la funcionalidad se ha quedado básica, cosas del directo. En el futuro haré una proper release que me ha gustado como me ha quedado el arte jeje."
+    },
+    "kiwiq": {
+      "description": "Adéntrate en preguntas apasionantes en este juego de trivia desarrollado para my curso de Arquitectura del Software.",
+      "development": "Desarrollado con compañeros de clase!"
     }
   },
   "projects": {
@@ -48,6 +52,32 @@
   "celeste": {
     "title": "Celeste",
     "description": "Coooomo? Darío tiene un juego favorito? Nunca lo había oído, suena interesante..."
+  },
+  "minecraft": {
+    "description": "Mi juego mas jugado! Me encanta jugar survival y bedwars."
+  },
+  "art" : {
+    "title": "Arte",
+    "ace-attorney": {
+      "description": "Fanart de la saga Ace Attorney. Practicando perspectivas."
+    },
+    "me-sketches": {
+      "description": "Bocetos de mi persona. Practicando anatomía y perspectivas."
+    }
+  },
+  "month": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre"
   },
   "config": {
     "language": {
