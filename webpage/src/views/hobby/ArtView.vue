@@ -2,11 +2,7 @@
   <ViewLayout>
     <!-- LEFT CONTAINER -->
     <template #left-col>
-      <el-col>
-      </el-col>
-      <LayoutRow>
-        <ArtComponent :images="['maya.png','gumshoe.png','edgeworth.png']" id="ace-attorney"/>
-      </LayoutRow>
+      <ArtComponent :images="['maya.png','gumshoe.png','edgeworth.png']" id="ace-attorney" :month="'august'" :year="2024"/>
     </template>
 
     <!-- CENTER CONTAINER -->
