@@ -3,19 +3,16 @@
     <!-- LEFT CONTAINER -->
     <template #left-col>
       <ArtComponent id="ace-attorney"  :images="['maya.png','gumshoe.png','edgeworth.png']" :month="'august'" :year="2024"/>
-      <ArtComponent id="me-sketches"  :images="['1.png','2.png','3.png','4.png']" :month="'august'" :year="2024"/>
     </template>
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <img src="../../assets/hobby/art/logo.gif" class="logo" style="width: 60%; ">
+      <!--<img src="../../assets/hobby/art/logo.gif" class="logo" style="width: 60%; ">-->
     </template>
 
     <!-- RIGHT CONTAINER -->
     <template #right-col>
-      <LayoutRow>
-
-      </LayoutRow>
+      <ArtComponent id="me-sketches"  :images="['1.png','2.png','3.png','4.png']" :month="'august'" :year="2024"/>
     </template>
 
   </ViewLayout>
