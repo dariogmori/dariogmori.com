@@ -59,7 +59,10 @@
   "art" : {
     "title": "Arte",
     "ace-attorney": {
-        "description": "Fanart de la saga Ace Attorney. Practicando perspectivas."
+      "description": "Fanart de la saga Ace Attorney. Practicando perspectivas."
+    },
+    "me-sketches": {
+      "description": "Bocetos de mi persona. Practicando anatomía y perspectivas."
     }
   },
   "month": {
