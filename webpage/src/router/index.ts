@@ -15,6 +15,10 @@ const routes= [
     path: '/minecraft',
     name: 'minecraft',
     component: () => import('../views/hobby/MinecraftView.vue')
+  },{
+    path: '/art',
+    name: 'art',
+    component: () => import('../views/hobby/ArtView.vue')
   },
   {
     path: '/about-me',

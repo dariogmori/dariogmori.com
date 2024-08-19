@@ -56,6 +56,12 @@
   "minecraft": {
     "description": "Mi juego mas jugado! Me encanta jugar survival y bedwars."
   },
+  "art" : {
+    "title": "Arte",
+    "ace-attorney": {
+        "description": "Fanart de la saga Ace Attorney. Practicando perspectivas."
+    }
+  },
   "config": {
     "language": {
       "spanish": "Español",

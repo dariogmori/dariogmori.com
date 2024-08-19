@@ -21,6 +21,12 @@
   },
   "minecraft": {
     "description": "My most played game ever! I actually love playing minecraft survival as well as bedwars."
+  },
+  "art" : {
+    "title": "Art",
+    "ace-attorney": {
+        "description": "Fanart from the Ace Attorney saga. Practising perspective."
+    }
   }
   ,
   "games": {
