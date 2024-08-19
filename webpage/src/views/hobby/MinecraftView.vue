@@ -2,10 +2,10 @@
   <ViewLayout>
     <!-- LEFT CONTAINER -->
     <template #left-col>
-      <LayoutRow>
-        <img alt="minecraft game" src="https://gaming-cdn.com/images/products/442/616x353/minecraft-java-bedrock-edition-java-bedrock-edition-pc-juego-cover.jpg?v=1716387513" class="image-display" style="width: 90%">
-      </LayoutRow>
-
+      <el-col>
+        <img alt="skin" src="/img/hobby/minecraft/body.png" class="image-display" style="width: 90%">
+        <canvas id="minecraftCanvas" style="width:30%;"></canvas>
+      </el-col>
       <LayoutRow>
         <el-col>
           <p>
@@ -13,10 +13,6 @@
           </p>
         </el-col>
       </LayoutRow>
-      <el-col>
-        <img alt="skin" src="/img/hobby/minecraft/body.png" class="image-display" style="width: 90%">
-        <canvas id="minecraftCanvas" style="width:30%;"></canvas>
-      </el-col>
     </template>
 
     <!-- CENTER CONTAINER -->
@@ -27,7 +23,6 @@
     <!-- RIGHT CONTAINER -->
     <template #right-col>
       <LayoutRow>
-        <MinecraftComponent />
         <iframe src="http://map.dariogmori.com:8123/" style="width: 100%; height: 30vh;"></iframe>
       </LayoutRow>
     </template>
