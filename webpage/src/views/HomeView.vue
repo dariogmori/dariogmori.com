@@ -3,7 +3,7 @@
     <!-- LEFT CONTAINER -->
     <template #left-col>
       <LayoutRow :justify="'center'">
-        <img src="../assets/home/itchio.png" alt="itchio logo" class="image-display" style="width:60%;image-rendering: crisp-edges;"/>
+        <img src="../assets/home/itchio.png" alt="itchio logo" class="image-display" style="width:40%;image-rendering: crisp-edges;"/>
         <el-col>
           <p>{{ t('home.itchio.recommendation') }}</p>
         </el-col>
@@ -24,7 +24,7 @@
     <!-- RIGHT CONTAINER -->
     <template #right-col>
       <LayoutRow :justify="'center'">
-        <img src="../assets/home/github.png"  alt="github screenshot" class="image-display" style="width:90%;"/>
+        <img src="../assets/home/github.png"  alt="github screenshot" class="image-display" style="width:60%;"/>
         <el-col>
           <p>{{ t('home.github.recommendation') }}</p>
         </el-col>
