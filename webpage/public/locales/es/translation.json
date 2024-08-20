@@ -64,14 +64,20 @@
     "me-sketches": {
       "description": "Bocetos de mi persona. Practicando anatomía y perspectivas."
     },
-    "pfp2023": {
+    "pfp/2022": {
+      "description": "La foto de perfil que usé en 2022."
+    },
+    "pfp/2023": {
       "description": "La foto de perfil que usé en 2023. También me hice un modelo de Vtuber que nunca usé."
     },
-    "pfp2024": {
+    "pfp/2024": {
       "description": "El set de fotos de perfil que usé en 2024."
     },
     "helltaker": {
-      "description": "Fanart de Helltaker."
+      "description": "Fanart de Helltaker. Hecho con rotuladores."
+    },
+    "tf2/merasmus": {
+      "description": "Fanart de Merasmus de Team Fortress 2. (mix del foxy plushie y merasmus)"
     }
   },
   "month": {
