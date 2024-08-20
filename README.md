@@ -1,6 +1,6 @@
 # Dario G. Mori's personal webpage
 
-![imagen](https://github.com/Toto-hitori/dariogmori.com/assets/91892789/c80cf673-3db4-418a-b677-d6e0ccb2f6ad)
+![image](https://github.com/user-attachments/assets/cf62d8c6-5e99-4389-967f-eefd09fa6a71)
 
 Checkout my page at:
 https://dariogmori.com
