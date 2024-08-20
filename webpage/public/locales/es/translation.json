@@ -63,6 +63,12 @@
     },
     "me-sketches": {
       "description": "Bocetos de mi persona. Practicando anatomía y perspectivas."
+    },
+    "pfp2023": {
+      "description": "La foto de perfil que usé en 2023. También me hice un modelo de Vtuber que nunca usé."
+    },
+    "pfp2024": {
+      "description": "El set de fotos de perfil que usé en 2024."
     }
   },
   "month": {

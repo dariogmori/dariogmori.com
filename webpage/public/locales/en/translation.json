@@ -15,21 +15,8 @@
     "gender": "I identify as a non-binary person and use he/they/she pronouns. Just be respectful ;)",
     "mushrooms": "I like to pick up mushrooms! I tend to pick up only the ones I know but always look up species I am not familiar with to learn more!"
   },
-  "celeste": {
-    "title": "Celeste",
-    "description": "Wait what? Dario has a favorite videogame? They have never mentioned it EVER. "
-  },
-  "minecraft": {
-    "description": "My most played game ever! I actually love playing minecraft survival as well as bedwars."
-  },
-  "art" : {
-    "title": "Art",
-    "ace-attorney": {
-        "description": "Fanart from the Ace Attorney saga. Practising perspective."
-    },
-    "me-sketches": {
-      "description": "Sketches of myself. Practising anatomy and perspective."
-    }
+  "projects": {
+    "title": "Projects"
   },
   "games": {
     "released": "Released",
@@ -64,8 +51,27 @@
       "development": "Developed with other fellow students!"
     }
   },
-  "projects": {
-    "title": "Projects"
+  "celeste": {
+    "title": "Celeste",
+    "description": "Wait what? Dario has a favorite videogame? They have never mentioned it EVER. "
+  },
+  "minecraft": {
+    "description": "My most played game ever! I actually love playing minecraft survival as well as bedwars."
+  },
+  "art" : {
+    "title": "Art",
+    "ace-attorney": {
+        "description": "Fanart from the Ace Attorney saga. Practising perspective."
+    },
+    "me-sketches": {
+      "description": "Sketches of myself. Practising anatomy and perspective."
+    },
+    "pfp2023": {
+      "description": "The set of profile pictures I used in 2023. Also made a Vtuber model that I never ended up using."
+    },
+    "pfp2024": {
+      "description": "El set de fotos de perfil que usé en 2024."
+    }
   },
   "month": {
     "january": "January",
