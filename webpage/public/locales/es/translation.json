@@ -79,6 +79,9 @@
     "mix/jose-emilio": {
       "description": "Jose Emilio."
     },
+    "mix/snails-house": {
+        "description": "Arte hecho en Microsoft paint basado en Snail's House."
+    },
     "tf2/merasmus": {
       "description": "Fanart de Merasmus de Team Fortress 2. (mix del foxy plushie y merasmus)"
     }
