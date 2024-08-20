@@ -87,6 +87,9 @@
     "mix/oneshot": {
       "description": "Fanart based on Oneshot. "
     },
+    "mix/omori": {
+      "description": "Fanart of Basil from Omori. "
+    },
     "tf2/merasmus": {
       "description": "Fanart of Merasmus from Team Fortress 2. (mix of foxy plushie and merasmus)"
     }

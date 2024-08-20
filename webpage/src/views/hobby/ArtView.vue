@@ -34,6 +34,7 @@ const art = [
   {id: "pfp/2023", month: "june", year: "2023", images: ['1.png','2.gif']},
   {id: "mix/snails-house", month: "january", year: "2023", images: ['1.jpg']},
   {id: "pfp/2022", month: "october", year: "2022", images: ['2.png','3.png']},
+  {id: "mix/omori", month: "october", year: "2022", images: ['1.jpg']},
   {id: "mix/oneshot", month: "september", year: "2022", images: ['1.jpg']},
   {id: "pfp/2022", month: "june", year: "2022", images: ['1.png']},
   {id: "helltaker", month: "may", year: "2021", images: ['1.jpeg'], vertical: true}
