@@ -2,7 +2,7 @@
   <ViewLayout>
     <!-- LEFT CONTAINER -->
     <template #left-col>
-      <ArtComponent v-for="paint in art.filter((element, index) => index % 2 === 0)" :art="paint"/>
+      <ArtComponent v-for="paint in getArt('left')" :art="paint"/>
     </template>
 
     <!-- CENTER CONTAINER -->
@@ -12,7 +12,7 @@
 
     <!-- RIGHT CONTAINER -->
     <template #right-col>
-      <ArtComponent v-for="paint in art.filter((element, index) => index % 2 !== 0)" :art="paint"/>
+      <ArtComponent v-for="paint in getArt('right')" :art="paint"/>
     </template>
 
   </ViewLayout>
@@ -22,6 +22,7 @@
 import { useTranslation } from "i18next-vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import ArtComponent from "@/components/art/ArtComponent.vue";
+import {isMobile} from "@/scripts/utils";
 
 const { t } = useTranslation();
 
@@ -40,6 +41,23 @@ const art = [
   {id: "pfp/2022", month: "june", year: "2022", images: ['1.png'], vertical: false},
   {id: "helltaker", month: "may", year: "2021", images: ['1.jpeg'], vertical: true}
 ]
+
+function getArt( position: String){
+  if(isMobile()){
+    if(position === 'left'){
+      return art.slice(0, Math.floor(art.length / 2));
+    }else{
+      return art.slice(Math.floor(art.length / 2));
+    }
+  }
+  else{
+    if(position === 'left'){
+      return art.filter((element, index) => index % 2 === 0);
+    }else{
+      return art.filter((element, index) => index % 2 !== 0);
+    }
+  }
+}
 </script>
 
 <style scoped>
