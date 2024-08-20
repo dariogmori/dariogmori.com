@@ -42,6 +42,12 @@ public class SpotifyUserService {
     }
 
     private SpotifyUser updateSpotifyUser(SpotifyUser spotifyUser) {
+        for( Song song : spotifyUser.getTopSongs()){
+            song.setUser(null);
+        }
+        for( Artist artist : spotifyUser.getTopArtists()){
+            artist.setUser(null);
+        }
         List<Song> songsList = spotifySongsJsonModelMapper.apply(spotifyRequestUtils.getTopSongs());
         for( Song song : songsList){
             song.setUser(spotifyUser);
