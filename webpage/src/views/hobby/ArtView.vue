@@ -4,6 +4,7 @@
     <template #left-col>
       <ArtComponent id="ace-attorney"  :images="['maya.png','gumshoe.png','edgeworth.png']" :month="'august'" :year="'2024'"/>
       <ArtComponent id="pfp2024"  :images="['2.png','3.png','4.png','1.png','5.png','6.png']" :month="'march'" :year="'2024'"/>
+      <ArtComponent id="helltaker" :images="['1.jpeg']" :month="'may'" :year="'2021'"/>
     </template>
 
     <!-- CENTER CONTAINER -->
