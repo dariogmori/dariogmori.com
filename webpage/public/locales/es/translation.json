@@ -64,11 +64,35 @@
     "me-sketches": {
       "description": "Bocetos de mi persona. Practicando anatomía y perspectivas."
     },
-    "pfp2023": {
+    "pfp/2022": {
+      "description": "Foto de perfil que usé en 2022."
+    },
+    "pfp/2023": {
       "description": "La foto de perfil que usé en 2023. También me hice un modelo de Vtuber que nunca usé."
     },
-    "pfp2024": {
+    "pfp/2024": {
       "description": "El set de fotos de perfil que usé en 2024."
+    },
+    "helltaker": {
+      "description": "Fanart de Helltaker. Hecho con rotuladores."
+    },
+    "mix/jose-emilio": {
+      "description": "Jose Emilio."
+    },
+    "mix/snails-house": {
+        "description": "Arte hecho en Microsoft paint basado en Snail's House."
+    },
+    "mix/oneshot": {
+        "description": "Fanart de Oneshot. "
+    },
+    "mix/omori": {
+        "description": "Fanart de Basil de Omori. "
+    },
+    "class": {
+        "description": "Arte hecha en mis clases de arte."
+    },
+    "tf2/merasmus": {
+      "description": "Fanart de Merasmus de Team Fortress 2. (mix del foxy plushie y merasmus)"
     }
   },
   "month": {
