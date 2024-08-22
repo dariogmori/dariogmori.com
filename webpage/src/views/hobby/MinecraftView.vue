@@ -25,6 +25,13 @@
       <LayoutRow>
         <iframe src="http://map.dariogmori.com:8123/" style="width: 100%; height: 30vh;"></iframe>
       </LayoutRow>
+      <LayoutRow>
+        <el-carousel indicator-position="outside" :interval="4000" height="33vh" style="width:100%;">
+          <el-carousel-item v-for="image_name in images" >
+            <img :src="'../../img/hobby/minecraft/' + image_name" class="image-display" style="width: 100%">
+          </el-carousel-item>
+        </el-carousel>
+      </LayoutRow>
     </template>
 
   </ViewLayout>
@@ -36,6 +43,21 @@ import ViewLayout from "@/components/layout/ViewLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
 
 const { t } = useTranslation();
+
+const images = [
+  '1.png',
+  '2.png',
+  '3.png',
+  '4.png',
+  '5.png',
+  '6.png',
+  '7.png',
+  '8.png',
+  '9.png',
+  '10.png',
+  '11.png',
+  '12.png'
+]
 </script>
 
 <style scoped>
