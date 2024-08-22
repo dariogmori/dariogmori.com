@@ -1,7 +1,7 @@
 <template>
   <LayoutRow :justify="'center'" :align="'middle'" >
     <h1>{{ t('month.'+ props.art.month) + ' ' + props.art.year }}</h1>
-    <el-carousel :interval="4000" type="card" height="33vh" style="width:100%;">
+    <el-carousel :interval="4000" type="card" indicator-position="outside" height="33vh" style="width:100%;">
       <el-carousel-item v-for="image_name in props.art.images" >
         <img :src="'../../img/hobby/art/' + props.art.id + '/' + image_name" class="image-display" :class="{ 'square-image' : !props.art.vertical, 'vertical-image' : props.art.vertical }" >
       </el-carousel-item>
