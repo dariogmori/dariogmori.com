@@ -17,7 +17,7 @@
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <img src="../../assets/hobby/minecraft/logo.gif" class="logo" style="width: 60%; ">
+      <img src="../../../public/img/hobby/minecraft/logo.gif" class="logo" style="width: 60%; ">
     </template>
 
     <!-- RIGHT CONTAINER -->
@@ -41,9 +41,15 @@
 import { useTranslation } from "i18next-vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
+import {onMounted} from "vue";
 
 const { t } = useTranslation();
+import { useImageStore } from '@/stores/imageStore';
 
+onMounted(() => {
+  const imageStore = useImageStore()
+  imageStore.setImageUrl('./img/hobby/minecraft/logo.gif')
+})
 const images = [
   '1.png',
   '2.png',
