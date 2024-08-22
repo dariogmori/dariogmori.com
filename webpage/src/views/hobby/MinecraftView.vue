@@ -3,7 +3,7 @@
     <!-- LEFT CONTAINER -->
     <template #left-col>
       <el-col>
-        <img alt="skin" src="/img/hobby/minecraft/body.png" class="image-display" style="width: 90%">
+        <img alt="skin" src="/img/hobby/minecraft/body.png" class="image-display" style="width: 70%">
         <canvas id="minecraftCanvas" style="width:30%;"></canvas>
       </el-col>
       <LayoutRow>
