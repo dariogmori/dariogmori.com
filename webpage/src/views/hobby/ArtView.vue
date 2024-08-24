@@ -27,8 +27,8 @@ import {isMobile} from "@/scripts/utils";
 const { t } = useTranslation();
 
 const art = [
-  {id: "ace-attorney", month: "august", year: "2024", images: ['maya.png','gumshoe.png','edgeworth.png'], vertical: false},
-  {id: "me-sketches", month: "august", year: "2024", images: ['1.png','2.png','3.png','4.png'], vertical: false},
+  {id: "ace-attorney", month: "august", year: "2024", images: ['maya.png','gumshoe.png','edgeworth.png','judge.png'], vertical: false},
+  {id: "me-sketches", month: "august", year: "2024", images: ['1.png','2.png','3.png','4.png','5.png'], vertical: false},
   {id: "mix/jose-emilio", month: "april", year: "2024", images: ['kiwi.gif'], vertical: false},
   {id: "pfp/2024", month: "march", year: "2024", images: ['2.png','3.png','4.png','1.png','5.png','6.png'], vertical: false},
   {id: "class", month: "december", year: "2023", images: ['1.jpg','2.png','3.jpg','4.jpg','5.jpg'], vertical: false},
