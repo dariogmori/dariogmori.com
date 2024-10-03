@@ -57,7 +57,7 @@ const props = defineProps<{
   }
   .image-container .author-text {
     position: absolute;
-    top: 80%;
+    top: 84%;
     left: 20%;
     transform: translate(-0%, -50%);
     white-space: nowrap;
