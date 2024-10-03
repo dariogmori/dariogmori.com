@@ -11,9 +11,6 @@
           <el-button type="primary" @click="openItchioLink()">{{ t('home.github.button') }}</el-button>
         </el-col>
       </LayoutRow>
-      <LayoutRow :justify="'center'">
-        <TopSongsComponent />
-      </LayoutRow>
     </template>
 
     <!-- CENTER CONTAINER -->
@@ -31,9 +28,6 @@
         <el-col>
           <el-button type="primary" @click="openGithubLink()">{{ t('home.github.button') }}</el-button>
         </el-col>
-      </LayoutRow>
-      <LayoutRow :justify="'center'">
-        <TopArtistsComponent />
       </LayoutRow>
     </template>
 
