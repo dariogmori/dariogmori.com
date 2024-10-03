@@ -6,13 +6,6 @@
         <img alt="skin" src="/img/hobby/minecraft/body.png" class="image-display" style="width: 70%">
         <canvas id="minecraftCanvas" style="width:30%;"></canvas>
       </el-col>
-      <LayoutRow>
-        <el-col>
-          <p>
-            {{ t('minecraft.description') }}
-          </p>
-        </el-col>
-      </LayoutRow>
     </template>
 
     <!-- CENTER CONTAINER -->
@@ -22,15 +15,24 @@
 
     <!-- RIGHT CONTAINER -->
     <template #right-col>
+      <!--
       <LayoutRow>
         <iframe src="http://map.dariogmori.com:8123/" style="width: 100%; height: 30vh;"></iframe>
       </LayoutRow>
+      -->
       <LayoutRow>
         <el-carousel indicator-position="outside" :interval="4000" height="33vh" style="width:100%;">
           <el-carousel-item v-for="image_name in images" >
             <img :src="'../../img/hobby/minecraft/' + image_name" class="image-display" style="width: 100%">
           </el-carousel-item>
         </el-carousel>
+      </LayoutRow>
+      <LayoutRow>
+        <el-col>
+          <p>
+            {{ t('minecraft.description') }}
+          </p>
+        </el-col>
       </LayoutRow>
     </template>
 
