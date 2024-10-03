@@ -39,6 +39,9 @@
           </el-row>
         </el-col>
       </LayoutRow>
+      <LayoutRow :justify="'center'">
+        <TopSongsComponent />
+      </LayoutRow>
       <LayoutRow>
         <el-col :span="14">
           <p>
@@ -71,6 +74,10 @@
       <LayoutRow>
         <img alt="me again" src="/img/me-2.jpg" class="image-display" style="width: 80%; rotate:10deg;">
       </LayoutRow>
+
+      <LayoutRow :justify="'center'">
+        <TopArtistsComponent />
+      </LayoutRow>
     </template>
 
   </ViewLayout>
@@ -86,6 +93,8 @@ import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
+import TopSongsComponent from "@/components/spotify/TopSongsComponent.vue";
+import TopArtistsComponent from "@/components/spotify/TopArtistsComponent.vue";
 const { t } = useTranslation();
 const config = reactive({
   theme: 'light',

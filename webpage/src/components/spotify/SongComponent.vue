@@ -52,13 +52,15 @@ const props = defineProps<{
     font-size: 18px;
     font-weight: bold;
     opacity: 0;
+    white-space: nowrap;
     transition: 0.5s ease;
   }
   .image-container .author-text {
     position: absolute;
-    top: 80%;
+    top: 84%;
     left: 20%;
     transform: translate(-0%, -50%);
+    white-space: nowrap;
     font-weight: bold;
     opacity: 0;
     transition: 0.5s ease;

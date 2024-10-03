@@ -11,9 +11,6 @@
           <el-button type="primary" @click="openItchioLink()">{{ t('home.github.button') }}</el-button>
         </el-col>
       </LayoutRow>
-      <LayoutRow :justify="'center'">
-        <TopSongsComponent />
-      </LayoutRow>
     </template>
 
     <!-- CENTER CONTAINER -->
@@ -24,16 +21,13 @@
     <!-- RIGHT CONTAINER -->
     <template #right-col>
       <LayoutRow :justify="'center'">
-        <img src="../assets/home/github.png"  alt="github screenshot" class="image-display" style="width:60%;"/>
+        <img src="../assets/home/github.png"  alt="github screenshot" class="image-display" style="width:55%;"/>
         <el-col>
           <p>{{ t('home.github.recommendation') }}</p>
         </el-col>
         <el-col>
           <el-button type="primary" @click="openGithubLink()">{{ t('home.github.button') }}</el-button>
         </el-col>
-      </LayoutRow>
-      <LayoutRow :justify="'center'">
-        <TopArtistsComponent />
       </LayoutRow>
     </template>
 
