@@ -18,12 +18,6 @@
           <el-menu-item index="2-1" @click="goToRoute('/about-me')">{{ t('about-me.title') }}</el-menu-item>
         </el-menu-item>
         <el-sub-menu index="3">
-          <template #title>Hobbies</template>
-          <el-menu-item index="3-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
-          <el-menu-item index="3-2" @click="goToRoute('/minecraft')">Minecraft </el-menu-item>
-          <el-menu-item index="3-3" @click="goToRoute('/art')">{{ t('art.title') }}</el-menu-item>
-        </el-sub-menu>
-        <el-sub-menu index="4">
           <template #title>{{ t('projects.title') }}</template>
           <el-menu-item index="4-1" @click="goToRoute('/games/big-crunch')">Big-Crunch</el-menu-item>
           <el-menu-item index="4-2" @click="goToRoute('/games/how-do-i-even-win-this-game')">HDIEWTG?</el-menu-item>
@@ -31,6 +25,12 @@
           <el-menu-item index="4-4" @click="goToRoute('/games/the-half-life-of-flerovium')">The half life of flerovium</el-menu-item>
           <el-menu-item index="4-5" @click="goToRoute('/games/medium-expendedore')">Medium Expendedore</el-menu-item>
           <el-menu-item index="4-6" @click="goToRoute('/games/kiwiq')">Kiwiq</el-menu-item>
+        </el-sub-menu>
+        <el-sub-menu index="4">
+          <template #title>Hobbies</template>
+          <el-menu-item index="3-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
+          <el-menu-item index="3-2" @click="goToRoute('/minecraft')">Minecraft </el-menu-item>
+          <el-menu-item index="3-3" @click="goToRoute('/art')">{{ t('art.title') }}</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="5">
           <template #title>Settings</template>
