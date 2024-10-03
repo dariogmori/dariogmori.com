@@ -5,7 +5,7 @@
       <h3><a :href="props.artist.profile_url" target="_blank">{{props.artist.name}}</a></h3>
     </div>
     <div class="genre-text">
-      <el-tag v-for="genre in props.artist.genres" style="margin-right: 10%;">{{genre}}</el-tag>
+      <el-tag v-for="genre in JSON.parse(props.artist.genres)" style="margin-right: 10%;">{{genre}}</el-tag>
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@
       name: string,
       avatar_url: string,
       profile_url: string,
-      genres: Array<string>
+      genres: string
     }
   }>()
 </script>
