@@ -66,3 +66,9 @@
 .el-carousel__button{
     background-color: var(--main-color) !important;
 }
+a:visited {
+    color: var(--main-color) !important;
+}
+a:hover {
+    color: var(--hover-color) !important;
+}
