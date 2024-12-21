@@ -46,9 +46,7 @@
           </el-row>
           <el-row :justify="'center'">
             <el-col :span="20">
-              <p>
-                Soon-to-be Software Engineering graduate that looks to get their first job as a junior developer, highly motivated to learn as much as possible and give it their all. Capable of developing web applications (see examples in my webpage), having worked with Java Spring Boot 3 and Vue.js.
-              </p>
+              <p>{{ t('home.about-me')}}</p>
             </el-col>
           </el-row>
         </el-col>
@@ -59,34 +57,34 @@
       <el-divider></el-divider>
       <el-row :justify="'center'" class="header-color">
         <el-col>
-          <h2>Experience</h2>
+          <h2>{{t('home.experience.title')}}</h2>
         </el-col>
-        <ExperienceComponent title="Junior Platform Engineer" company="Resizes" location="Gijón" :dates="['December 2024 - Present']"/>
-        <ExperienceComponent title="Software Engineer Intern" company="Simbiosys" location="Gijón" :dates="['October 2021 - July 2022', 'September 2023 - January 2024']"/>
+        <ExperienceComponent :title="t('home.experience.resizes-title')" company="Resizes" location="Gijón" :dates="[t('month.december') + ' 2024 - ' + t('home.experience.present')]"/>
+        <ExperienceComponent :title="t('home.experience.simbio-title')" company="Simbiosys" location="Gijón" :dates="[t('month.october') +  ' 2021 - ' + t('month.october') + ' 2022', t('month.september') + ' 2023 - ' + t('month.january') + ' 2024']"/>
       </el-row>
       <el-divider></el-divider>
       <el-row :justify="'center'" class="header-color">
         <el-col>
-          <h2>Education</h2>
+          <h2>{{ t('home.education.title') }}</h2>
         </el-col>
-        <h3>Software Engineering Degree, University of Oviedo</h3>
-        <p>September 2020 - November 2024</p>
+        <h3>{{ t('home.education.degree')}}, {{t('home.education.university') }}</h3>
+        <p>{{ t('month.september') + ' 2020 - ' + t('month.november') + ' 2024' }} </p>
       </el-row>
       <el-divider></el-divider>
       <el-row :justify="'center'" class="header-color">
         <el-col>
-          <h2>Languages</h2>
+          <h2>{{ t('home.languages.title') }}</h2>
         </el-col>
         <el-col :span="8">
-          <h3>Spanish</h3>
-          <p>Native</p>
+          <h3>{{ t('home.languages.spanish') }}</h3>
+          <p>{{ t('home.languages.native') }}</p>
         </el-col>
         <el-col :span="8">
-          <h3>English</h3>
+          <h3>{{ t('home.languages.english') }}</h3>
           <p>C1 Advanced Grade A</p>
         </el-col>
         <el-col :span="8">
-          <h3>Japanese</h3>
+          <h3>{{ t('home.languages.japanese') }}</h3>
           <p>JLPT N4 Certificate</p>
         </el-col>
       </el-row>
