@@ -1,18 +1,5 @@
 <template>
   <ViewLayout>
-    <!-- LEFT CONTAINER -->
-    <template #left-col>
-      <LayoutRow :justify="'center'">
-        <img src="../assets/home/itchio.png" alt="itchio logo" class="image-display" style="width:40%;image-rendering: crisp-edges;"/>
-        <el-col>
-          <p>{{ t('home.itchio.recommendation') }}</p>
-        </el-col>
-        <el-col>
-          <el-button type="primary" @click="openItchioLink()">{{ t('home.github.button') }}</el-button>
-        </el-col>
-      </LayoutRow>
-    </template>
-
     <!-- CENTER CONTAINER -->
     <template #center-col>
       <el-row class="header-color">
@@ -20,14 +7,41 @@
           <h1> Darío Gutiérrez Mori </h1>
           <h3> Junior Platform Engineer</h3>
           <el-row :justify="'space-between'">
-            <el-col :span="14">
-              <p>dariogmori@gmail.com</p>
+            <el-col :span="8">
+              <a href="https://toto-hitori.itch.io/">
+                <el-row :justify="'center'">
+                  <el-col :span="4">
+                    <img src="../assets/home/itchio.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
+                  </el-col>
+                  <el-col :span="12" style="color:var(--background-color)">
+                    <p>Itch.io</p>
+                  </el-col>
+                </el-row>
+              </a>
             </el-col>
-            <el-col :span="5">
-              <p>LinkedIn</p>
+            <el-col :span="8">
+              <a href="https://www.linkedin.com/in/dariogmori/">
+                <el-row :justify="'center'">
+                  <el-col :span="4">
+                    <img src="../assets/home/linkedin.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
+                  </el-col>
+                  <el-col :span="12" style="color:var(--background-color)">
+                    <p>LinkedIn</p>
+                  </el-col>
+                </el-row>
+              </a>
             </el-col>
-            <el-col :span="5">
-              <p>GitHub</p>
+            <el-col :span="8">
+              <a href="https://https://github.com/Toto-hitori">
+                <el-row :justify="'center'">
+                  <el-col :span="4">
+                    <img src="../assets/home/github.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
+                  </el-col>
+                  <el-col :span="12" style="color:var(--background-color)">
+                    <p>GitHub</p>
+                  </el-col>
+                </el-row>
+              </a>
             </el-col>
           </el-row>
           <el-row :justify="'center'">
@@ -77,20 +91,6 @@
         </el-col>
       </el-row>
     </template>
-
-    <!-- RIGHT CONTAINER -->
-    <template #right-col>
-      <LayoutRow :justify="'center'">
-        <img src="../assets/home/github.png"  alt="github screenshot" class="image-display" style="width:55%;"/>
-        <el-col>
-          <p>{{ t('home.github.recommendation') }}</p>
-        </el-col>
-        <el-col>
-          <el-button type="primary" @click="openGithubLink()">{{ t('home.github.button') }}</el-button>
-        </el-col>
-      </LayoutRow>
-    </template>
-
   </ViewLayout>
 </template>
 
@@ -133,14 +133,4 @@ onMounted(() => {
     document.documentElement.setAttribute('data-lang', config.lang)
   }
 })
-
-function getLogoURI() {
-  return '/img/home/logo-' + config.theme + '.png'
-}
-
-function openGithubLink() {
-  window.open('https://github.com/Toto-hitori/dariogmori.com', '_blank')
-}function openItchioLink() {
-  window.open('https://toto-hitori.itch.io/', '_blank')
-}
 </script>
