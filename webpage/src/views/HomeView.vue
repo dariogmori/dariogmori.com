@@ -15,7 +15,45 @@
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <el-image :src="getLogoURI()" class="logo" />
+      <el-row>
+        <el-col :span="16">
+          <h1> Darío Gutiérrez Mori </h1>
+          <h3> Junior Platform Engineer</h3>
+          <el-row :justify="'space-between'">
+            <el-col :span="8">
+              <p>dariogmori@gmail.com</p>
+            </el-col>
+            <el-col :span="4">
+              <p>LinkedIn</p>
+            </el-col>
+            <el-col :span="4">
+              <p>GitHub</p>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="8">
+          <el-image :src="'/img/me.jpg'" style="width: 80%;"></el-image>
+        </el-col>
+      </el-row>
+      <el-row :justify="'center'">
+        <h2>About me</h2>
+        <p>
+          Soon-to-be Software Engineering graduate that looks to get their first job as a junior developer, highly motivated to learn as much as possible and give it their all. Capable of developing web applications (see examples in my webpage), having worked with Java Spring Boot 3 and Vue.js.
+        </p>
+      </el-row>
+      <el-divider></el-divider>
+      <el-row :justify="'center'">
+        <el-col>
+          <h2>Experience</h2>
+        </el-col>
+        <el-col>
+          <h3>Software Engineer @ Simbiosys, Gijón</h3>
+        </el-col>
+        <el-col>
+          <p> October 2021 - July 2022</p>
+          <p> September 2023 - January 2024</p>
+        </el-col>
+      </el-row>
     </template>
 
     <!-- RIGHT CONTAINER -->
