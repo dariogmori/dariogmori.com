@@ -8,7 +8,7 @@
       <el-menu
           mode="horizontal"
           :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
-          style="position:fixed;bottom:0vh;"
+          style="position:fixed; bottom:0vh; border: 4px dashed var(--main-color);"
           :ellipsis="true"
       >
         <el-menu-item index="1">
