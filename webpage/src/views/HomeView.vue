@@ -46,8 +46,10 @@
         <el-col>
           <h2>Experience</h2>
         </el-col>
-        <ExperienceComponent :title="'Software Engineer'" :company="'Simbiosys'" location="Gijón" :dates="['October 2021 - July 2022', 'September 2023 - January 2024']"/>
+        <ExperienceComponent title="Junior Platform Engineer" company="Resizes" location="Gijón" :dates="['December 2024 - Present']"/>
+        <ExperienceComponent title="Software Engineer Intern" company="Simbiosys" location="Gijón" :dates="['October 2021 - July 2022', 'September 2023 - January 2024']"/>
       </el-row>
+      <el-divider></el-divider>
     </template>
 
     <!-- RIGHT CONTAINER -->
