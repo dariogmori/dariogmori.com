@@ -20,13 +20,13 @@
           <h1> Darío Gutiérrez Mori </h1>
           <h3> Junior Platform Engineer</h3>
           <el-row :justify="'space-between'">
-            <el-col :span="8">
+            <el-col :span="14">
               <p>dariogmori@gmail.com</p>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="5">
               <p>LinkedIn</p>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="5">
               <p>GitHub</p>
             </el-col>
           </el-row>
@@ -46,13 +46,7 @@
         <el-col>
           <h2>Experience</h2>
         </el-col>
-        <el-col>
-          <h3>Software Engineer @ Simbiosys, Gijón</h3>
-        </el-col>
-        <el-col>
-          <p> October 2021 - July 2022</p>
-          <p> September 2023 - January 2024</p>
-        </el-col>
+        <ExperienceComponent :title="'Software Engineer'" :company="'Simbiosys'" location="Gijón" :dates="['October 2021 - July 2022', 'September 2023 - January 2024']"/>
       </el-row>
     </template>
 
@@ -84,6 +78,7 @@ import ViewLayout from "@/components/layout/ViewLayout.vue";
 import LayoutRow from "@/components/layout/LayoutRow.vue";
 import TopSongsComponent from "@/components/spotify/TopSongsComponent.vue";
 import TopArtistsComponent from "@/components/spotify/TopArtistsComponent.vue";
+import ExperienceComponent from "@/components/ExperienceComponent.vue";
 
 
 const { t } = useTranslation();
