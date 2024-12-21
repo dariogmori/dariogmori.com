@@ -15,8 +15,8 @@
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <el-row>
-        <el-col :span="16">
+      <el-row class="header-color">
+        <el-col :span="16" >
           <h1> Darío Gutiérrez Mori </h1>
           <h3> Junior Platform Engineer</h3>
           <el-row :justify="'space-between'">
@@ -30,19 +30,20 @@
               <p>GitHub</p>
             </el-col>
           </el-row>
+          <el-row :justify="'center'">
+            <el-col :span="20">
+              <p>
+                Soon-to-be Software Engineering graduate that looks to get their first job as a junior developer, highly motivated to learn as much as possible and give it their all. Capable of developing web applications (see examples in my webpage), having worked with Java Spring Boot 3 and Vue.js.
+              </p>
+            </el-col>
+          </el-row>
         </el-col>
         <el-col :span="8">
           <el-image :src="'/img/me.jpg'" style="width: 80%;"></el-image>
         </el-col>
       </el-row>
-      <el-row :justify="'center'">
-        <h2>About me</h2>
-        <p>
-          Soon-to-be Software Engineering graduate that looks to get their first job as a junior developer, highly motivated to learn as much as possible and give it their all. Capable of developing web applications (see examples in my webpage), having worked with Java Spring Boot 3 and Vue.js.
-        </p>
-      </el-row>
       <el-divider></el-divider>
-      <el-row :justify="'center'">
+      <el-row :justify="'center'" class="header-color">
         <el-col>
           <h2>Experience</h2>
         </el-col>
@@ -96,6 +97,13 @@
 <style scoped>
 @import '../assets/styles/palette.css';
 @import '../assets/styles/view.css';
+
+.header-color {
+  background-color: var(--main-color);
+  color: var(--background-color);
+  border: 4px dashed var(--background-color);
+  padding: 5px;
+}
 </style>
 
 <script setup lang="ts">
