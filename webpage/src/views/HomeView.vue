@@ -50,6 +50,31 @@
         <ExperienceComponent title="Software Engineer Intern" company="Simbiosys" location="Gijón" :dates="['October 2021 - July 2022', 'September 2023 - January 2024']"/>
       </el-row>
       <el-divider></el-divider>
+      <el-row :justify="'center'" class="header-color">
+        <el-col>
+          <h2>Education</h2>
+        </el-col>
+        <h3>Software Engineering Degree, University of Oviedo</h3>
+        <p>September 2020 - November 2024</p>
+      </el-row>
+      <el-divider></el-divider>
+      <el-row :justify="'center'" class="header-color">
+        <el-col>
+          <h2>Languages</h2>
+        </el-col>
+        <el-col :span="8">
+          <h3>Spanish</h3>
+          <p>Native</p>
+        </el-col>
+        <el-col :span="8">
+          <h3>English</h3>
+          <p>C1 Advanced Grade A</p>
+        </el-col>
+        <el-col :span="8">
+          <h3>Japanese</h3>
+          <p>JLPT N4 Certificate</p>
+        </el-col>
+      </el-row>
     </template>
 
     <!-- RIGHT CONTAINER -->
