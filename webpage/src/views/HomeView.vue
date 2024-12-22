@@ -2,58 +2,8 @@
   <ViewLayout>
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <el-row class="header-color">
-        <el-col :span="16" >
-          <h1> Darío Gutiérrez Mori </h1>
-          <h3> Junior Platform Engineer</h3>
-          <el-row :justify="'space-between'">
-            <el-col :span="8">
-              <a href="https://toto-hitori.itch.io/">
-                <el-row :justify="'center'">
-                  <el-col :span="4">
-                    <img src="../assets/home/itchio.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
-                  </el-col>
-                  <el-col :span="12" style="color:var(--background-color)">
-                    <p>Itch.io</p>
-                  </el-col>
-                </el-row>
-              </a>
-            </el-col>
-            <el-col :span="8">
-              <a href="https://www.linkedin.com/in/dariogmori/">
-                <el-row :justify="'center'">
-                  <el-col :span="4">
-                    <img src="../assets/home/linkedin.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
-                  </el-col>
-                  <el-col :span="12" style="color:var(--background-color)">
-                    <p>LinkedIn</p>
-                  </el-col>
-                </el-row>
-              </a>
-            </el-col>
-            <el-col :span="8">
-              <a href="https://https://github.com/Toto-hitori">
-                <el-row :justify="'center'">
-                  <el-col :span="4">
-                    <img src="../assets/home/github.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
-                  </el-col>
-                  <el-col :span="12" style="color:var(--background-color)">
-                    <p>GitHub</p>
-                  </el-col>
-                </el-row>
-              </a>
-            </el-col>
-          </el-row>
-          <el-row :justify="'center'">
-            <el-col :span="20">
-              <p>{{ t('home.about-me')}}</p>
-            </el-col>
-          </el-row>
-        </el-col>
-        <el-col :span="8">
-          <el-image :src="'/img/me.jpg'" style="width: 80%;"></el-image>
-        </el-col>
-      </el-row>
+      <DescriptionAboutMeComponentMobile v-if="isMobile()"/>
+      <DescriptionAboutMeComponent v-if="!isMobile()"/>
       <el-divider></el-divider>
       <el-row :justify="'center'" class="header-color">
         <el-col>
@@ -108,10 +58,10 @@
 import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
-import LayoutRow from "@/components/layout/LayoutRow.vue";
-import TopSongsComponent from "@/components/spotify/TopSongsComponent.vue";
-import TopArtistsComponent from "@/components/spotify/TopArtistsComponent.vue";
 import ExperienceComponent from "@/components/ExperienceComponent.vue";
+import DescriptionAboutMeComponentMobile from "@/components/home/DescriptionAboutMeComponentMobile.vue";
+import {isMobile} from "@/scripts/utils";
+import DescriptionAboutMeComponent from "@/components/home/DescriptionAboutMeComponent.vue";
 
 
 const { t } = useTranslation();
