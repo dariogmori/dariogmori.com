@@ -1,11 +1,23 @@
 {
   "home" : {
-    "github": {
-      "recommendation":"Echale un vistazo al repo de esta página!",
-      "button": "Click aquí!"
+    "about-me": "Actualmente un padawan como Ingeniero de Plataforma, aprendiendo las artes de Terraform y K8s. También capaz de desarrollar aplicaciones web, habiendo trabajado con Java Spring Boot 3 y Vue.js.",
+    "experience": {
+      "title": "Experiencia",
+      "present": "Actualidad",
+      "resizes-title": "Ingeniero de Plataforma Junior",
+      "simbio-title": "Ingeniero de Software en Prácticas"
     },
-    "itchio": {
-      "recommendation": "Visita mi perfil de itch.io para jugar a mis jueguitos!"
+    "education": {
+      "title": "Educación",
+      "university": "Universidad de Oviedo",
+      "degree": "Grado en Ingeniería del Software"
+    },
+    "languages": {
+      "title": "Idiomas",
+      "native": "Nativo",
+      "spanish": "Castellano",
+      "english": "Inglés",
+      "japanese": "Japonés"
     }
   },
   "about-me" : {

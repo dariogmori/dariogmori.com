@@ -1,51 +1,67 @@
 <template>
   <ViewLayout>
-    <!-- LEFT CONTAINER -->
-    <template #left-col>
-      <LayoutRow :justify="'center'">
-        <img src="../assets/home/itchio.png" alt="itchio logo" class="image-display" style="width:40%;image-rendering: crisp-edges;"/>
-        <el-col>
-          <p>{{ t('home.itchio.recommendation') }}</p>
-        </el-col>
-        <el-col>
-          <el-button type="primary" @click="openItchioLink()">{{ t('home.github.button') }}</el-button>
-        </el-col>
-      </LayoutRow>
-    </template>
-
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <el-image :src="getLogoURI()" class="logo" />
-    </template>
-
-    <!-- RIGHT CONTAINER -->
-    <template #right-col>
-      <LayoutRow :justify="'center'">
-        <img src="../assets/home/github.png"  alt="github screenshot" class="image-display" style="width:55%;"/>
+      <DescriptionAboutMeComponentMobile v-if="isMobile()"/>
+      <DescriptionAboutMeComponent v-if="!isMobile()"/>
+      <el-divider></el-divider>
+      <el-row :justify="'center'" class="header-color">
         <el-col>
-          <p>{{ t('home.github.recommendation') }}</p>
+          <h2>{{t('home.experience.title')}}</h2>
         </el-col>
+        <ExperienceComponent :title="t('home.experience.resizes-title')" company="Resizes" location="Gijón" :dates="[t('month.december') + ' 2024 - ' + t('home.experience.present')]"/>
+        <ExperienceComponent :title="t('home.experience.simbio-title')" company="Simbiosys" location="Gijón" :dates="[t('month.october') +  ' 2021 - ' + t('month.october') + ' 2022', t('month.september') + ' 2023 - ' + t('month.january') + ' 2024']"/>
+      </el-row>
+      <el-divider></el-divider>
+      <el-row :justify="'center'" class="header-color">
         <el-col>
-          <el-button type="primary" @click="openGithubLink()">{{ t('home.github.button') }}</el-button>
+          <h2>{{ t('home.education.title') }}</h2>
         </el-col>
-      </LayoutRow>
+        <h3>{{ t('home.education.degree')}}, {{t('home.education.university') }}</h3>
+        <p>{{ t('month.september') + ' 2020 - ' + t('month.november') + ' 2024' }} </p>
+      </el-row>
+      <el-divider></el-divider>
+      <el-row :justify="'center'" class="header-color">
+        <el-col>
+          <h2>{{ t('home.languages.title') }}</h2>
+        </el-col>
+        <el-col :span="8">
+          <h3>{{ t('home.languages.spanish') }}</h3>
+          <p>{{ t('home.languages.native') }}</p>
+        </el-col>
+        <el-col :span="8">
+          <h3>{{ t('home.languages.english') }}</h3>
+          <p>C1 Advanced Grade A</p>
+        </el-col>
+        <el-col :span="8">
+          <h3>{{ t('home.languages.japanese') }}</h3>
+          <p>JLPT N4 Certificate</p>
+        </el-col>
+      </el-row>
     </template>
-
   </ViewLayout>
 </template>
 
 <style scoped>
 @import '../assets/styles/palette.css';
 @import '../assets/styles/view.css';
+
+.header-color {
+  background-color: var(--main-color);
+  color: var(--background-color);
+  border: 4px dashed var(--background-color);
+  padding: 5px;
+}
 </style>
 
 <script setup lang="ts">
 import { useTranslation } from "i18next-vue";
 import { onMounted, reactive } from "vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
-import LayoutRow from "@/components/layout/LayoutRow.vue";
-import TopSongsComponent from "@/components/spotify/TopSongsComponent.vue";
-import TopArtistsComponent from "@/components/spotify/TopArtistsComponent.vue";
+import ExperienceComponent from "@/components/ExperienceComponent.vue";
+import DescriptionAboutMeComponentMobile from "@/components/home/DescriptionAboutMeComponentMobile.vue";
+import {isMobile} from "@/scripts/utils";
+import DescriptionAboutMeComponent from "@/components/home/DescriptionAboutMeComponent.vue";
 
 
 const { t } = useTranslation();
@@ -65,14 +81,4 @@ onMounted(() => {
     document.documentElement.setAttribute('data-lang', config.lang)
   }
 })
-
-function getLogoURI() {
-  return '/img/home/logo-' + config.theme + '.png'
-}
-
-function openGithubLink() {
-  window.open('https://github.com/Toto-hitori/dariogmori.com', '_blank')
-}function openItchioLink() {
-  window.open('https://toto-hitori.itch.io/', '_blank')
-}
 </script>
