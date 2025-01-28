@@ -37,7 +37,7 @@ function openAriLink() {
 }
 
 function openGameLink() {
-  window.open('https://toto-hitori.itch.io/a-nice-place-4-art', '_blank')
+  window.open('https://dariogmori.itch.io/medium-expendedore', '_blank')
 }
 </script>
 

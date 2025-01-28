@@ -36,7 +36,7 @@ const game = {
 const { t } = useTranslation();
 
 function openGameLink() {
-  window.open('https://toto-hitori.itch.io/a-nice-place-4-art', '_blank')
+  window.open('https://dariogmori.itch.io/the-half-life-of-flevorium', '_blank')
 }
 </script>
 
