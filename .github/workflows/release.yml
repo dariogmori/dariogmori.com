@@ -34,7 +34,7 @@ jobs:
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          name: Toto-hitori/dariogmori.com/webpage-webapp
+          name: dariogmori/dariogmori.com/webpage-webapp
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
@@ -55,7 +55,7 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
           SSL_PASSWORD: ${{ secrets.SSL_PASSWORD }}
         with:
-          name: Toto-hitori/dariogmori.com/webpage-api
+          name: dariogmori/dariogmori.com/webpage-api
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
@@ -83,7 +83,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           workdir: dariogmori.com
           command: |
-            wget https://raw.githubusercontent.com/Toto-hitori/dariogmori.com/main/docker-compose.yml -O docker-compose.yml
+            wget https://raw.githubusercontent.com/dariogmori/dariogmori.com/main/docker-compose.yml -O docker-compose.yml
             rm -f .env
             echo "DATABASE_USER=${{ secrets.DATABASE_USER }}" >> .env
             echo "DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}" >> .env
