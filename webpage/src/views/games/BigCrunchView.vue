@@ -41,7 +41,7 @@ const game = {
 }
 const { t } = useTranslation();
 function openGameLink() {
-  window.open('https://toto-hitori.itch.io/big-crunch', '_blank')
+  window.open('https://dariogmori.itch.io/big-crunch', '_blank')
 }
 </script>
 

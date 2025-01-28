@@ -37,10 +37,6 @@ const { t } = useTranslation();
 function openRepoLink() {
   window.open('https://github.com/Arquisoft/wiq_en2b', '_blank')
 }
-
-function openGameLink() {
-  window.open('https://toto-hitori.itch.io/a-nice-place-4-art', '_blank')
-}
 </script>
 
 <style scoped>
