@@ -1,6 +1,7 @@
 # Dario G. Mori's personal webpage
 
-![image](https://github.com/user-attachments/assets/cf62d8c6-5e99-4389-967f-eefd09fa6a71)
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/144ac45b-238a-4813-b5b2-ec3e5301c6aa" />
+
 
 Checkout my page at:
 https://dariogmori.com
