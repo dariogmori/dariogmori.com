@@ -5,7 +5,7 @@
       <h3> Junior Platform Engineer</h3>
       <el-row :justify="'space-between'">
         <el-col :span="8">
-          <a href="https://toto-hitori.itch.io/">
+          <a href="https://dariogmori.itch.io/">
             <el-row :justify="'center'">
               <el-col :span="4">
                 <img src="../../assets/home/itchio.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
@@ -29,7 +29,7 @@
           </a>
         </el-col>
         <el-col :span="8">
-          <a href="https://github.com/Toto-hitori">
+          <a href="https://github.com/dariogmori">
             <el-row :justify="'center'">
               <el-col :span="4">
                 <img src="../../assets/home/github.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
