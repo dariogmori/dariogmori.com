@@ -18,7 +18,7 @@ services:
   api:
     container_name: api-dariogmori
     profiles: ["dev", "prod"]
-    image: ghcr.io/toto-hitori/dariogmori.com/webpage-api:latest
+    image: ghcr.io/dariogmori/dariogmori.com/webpage-api:latest
     environment:
       - DATABASE_URL=jdbc:postgresql://postgresql-dariogmori:5432/api
       - DATABASE_USER=${DATABASE_USER}
@@ -40,7 +40,7 @@ services:
   webpage:
     container_name: webapp-dariogmori
     profiles: [ "dev", "prod" ]
-    image: ghcr.io/toto-hitori/dariogmori.com/webpage-webapp:latest
+    image: ghcr.io/dariogmori/dariogmori.com/webpage-webapp:latest
     build:
       context: ./webpage
     ports:
