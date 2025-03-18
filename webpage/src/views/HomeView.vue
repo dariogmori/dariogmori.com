@@ -47,7 +47,7 @@
 @import '../assets/styles/view.css';
 
 .header-color {
-  background-color: var(--main-color-semi);
+  background-color: var(--main-color);
   color: var(--background-color);
   border: 4px dashed var(--background-color);
   padding: 5px;
