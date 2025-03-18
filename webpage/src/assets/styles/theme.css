@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root {
     background: var(--yellow);
+    background-image: linear-gradient(var(--secondary-color-semi), var(--support-color)), url('https://i.pinimg.com/originals/f5/4f/0a/f54f0a19265a262a917ed0d343193354.gif');
     --background-color:var(--yellow);
     --main-color:var(--grenate);
+    --main-color-semi: var(--grenate-semi);
+    --secondary-color-semi: var(--yellow-semi);
+    --support-color:var(--white);
     --hover-color:var(--light-orange);
     --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
@@ -30,8 +34,12 @@
 
 [data-theme="dark"] {
     background: var(--grenate);
+    background-image: linear-gradient(var(--secondary-color-semi), var(--support-color)), url('https://i.pinimg.com/originals/f5/4f/0a/f54f0a19265a262a917ed0d343193354.gif');
     --background-color:var(--grenate);
     --main-color:var(--yellow);
+    --main-color-semi: var(--yellow-semi);
+    --secondary-color-semi: var(--grenate-semi);
+    --support-color:var(--red);
     --hover-color:var(--red);
     --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
