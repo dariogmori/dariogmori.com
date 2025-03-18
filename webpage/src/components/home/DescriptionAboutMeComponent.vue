@@ -1,5 +1,5 @@
 <template>
-  <el-row class="header-color">
+  <el-row class="header-color" >
     <el-col :span="16" >
       <h1> Darío Gutiérrez Mori </h1>
       <h3> Junior Platform Engineer</h3>
