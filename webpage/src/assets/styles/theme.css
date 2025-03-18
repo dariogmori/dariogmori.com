@@ -4,6 +4,7 @@
     background: var(--yellow);
     --background-color:var(--yellow);
     --main-color:var(--grenate);
+    --main-color-semi: var(--grenate-semi);
     --hover-color:var(--light-orange);
     --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
@@ -32,6 +33,7 @@
     background: var(--grenate);
     --background-color:var(--grenate);
     --main-color:var(--yellow);
+    --main-color-semi: var(--yellow-semi);
     --hover-color:var(--red);
     --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
