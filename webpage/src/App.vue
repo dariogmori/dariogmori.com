@@ -34,7 +34,9 @@
         </el-sub-menu>
         <el-sub-menu index="5">
           <template #title>Settings</template>
-          <el-menu-item index="5-1" @click="toggleTheme">{{ languageMode() }}</el-menu-item>
+          <el-menu-item index="5-1" @click="setTheme('light')">{{ t('config.theme.light-mode') }}</el-menu-item>
+          <el-menu-item index="5-1" @click="setTheme('dark')">{{ t('config.theme.dark-mode') }}</el-menu-item>
+          <el-menu-item index="5-1" @click="setTheme('dark-typical')">{{ 'Dark Typical' }}</el-menu-item>
           <el-menu-item index="5-2" @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-menu-item>
           <el-menu-item index="5-3" @click="changeLanguage('en')">{{ t('config.language.english') }}</el-menu-item>
         </el-sub-menu>
@@ -105,8 +107,8 @@ onMounted(() => {
     changeLanguage(config.lang)
   }
 })
-function toggleTheme () {
-  config.theme = config.theme === 'light' ? 'dark' : 'light'
+function setTheme (theme: string) {
+  config.theme = theme
   document.documentElement.setAttribute('data-theme', config.theme)
   localStorage.setItem('theme', config.theme) // Save the current theme to local storage
 }
@@ -115,9 +117,6 @@ function changeLanguage ( lang: string) {
   document.documentElement.setAttribute('data-lang', config.lang)
   localStorage.setItem('lang', config.lang) // Save the current language to local storage
   i18next.changeLanguage(lang)
-}
-function languageMode () {
-  return config.theme === 'dark' ? t('config.theme.light-mode') : t('config.theme.dark-mode')
 }
 
 function goToRoute(route: string) {

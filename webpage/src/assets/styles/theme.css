@@ -34,12 +34,12 @@
 
 [data-theme="dark"] {
     background: var(--grenate);
-    background-image: linear-gradient(var(--secondary-color-semi), var(--support-color)), url('https://i.pinimg.com/originals/f5/4f/0a/f54f0a19265a262a917ed0d343193354.gif');
+    background-image: linear-gradient(var(--support-color), var(--secondary-color-semi)), url('https://i.pinimg.com/originals/f5/4f/0a/f54f0a19265a262a917ed0d343193354.gif');
     --background-color:var(--grenate);
     --main-color:var(--yellow);
     --main-color-semi: var(--yellow-semi);
-    --secondary-color-semi: var(--grenate-semi);
-    --support-color:var(--red);
+    --secondary-color-semi: var(--grenate);
+    --support-color:var(--red-semi);
     --hover-color:var(--red);
     --el-color-white: var(--background-color) !important;
     --el-color-primary: var(--main-color) !important;
@@ -64,6 +64,19 @@
     --el-font-family: 'Press Start 2P' !important;
 }
 
+[data-theme="dark-typical"] {
+    background: var(--darker-sea-blue);
+    background-image: linear-gradient(var(--secondary-color-semi),var(--support-color)), url('https://images.unsplash.com/photo-1528353518104-dbd48bee7bc4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JTIwbmlnaHQlMjBza3l8ZW58MHx8MHx8fDA%3D');
+    --background-color:var(--darker-sea-blue);
+    --main-color:var(--white);
+    --main-color-semi: var(--white-semi);
+    --secondary-color-semi: var(--darker-sea-blue-semi);
+    --support-color:var(--dark-sea-blue);
+    --hover-color:var(--dark-blue);
+    --hover-color:var(--dark-blue);
+    transition: background-color 0.5s, main-color 0.5s;
+    --el-font-family: 'Press Start 2P' !important;
+}
 .el-button{
     font-family: var(--el-font-family) !important;
 }
