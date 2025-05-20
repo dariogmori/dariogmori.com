@@ -54,6 +54,11 @@ const routes= [
     path: '/games/kiwiq',
     name: 'kiwiq',
     component: () => import('../views/games/KiwiqView.vue')
+  },
+  {
+    path: '/talks/sustainable-platform-engineering',
+    name: 'sustainable-platform-engineering',
+    component: () => import('../views/talks/SustainablePlatformEngineering.vue')
   }
 ]
 
