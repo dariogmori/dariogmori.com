@@ -38,6 +38,18 @@
           <p>JLPT N4 Certificate</p>
         </el-col>
       </el-row>
+      <el-divider></el-divider>
+      <el-row :justify="'center'" class="header-color">
+        <el-col>
+          <h2>{{ t('home.certifications.title') }}</h2>
+        </el-col>
+        <el-col :span="8">
+          <a href="https://www.credly.com/badges/763920b2-175d-4ceb-a670-7fbfcf59ba06/public_url">
+            <img src="../assets/home/cloud-practitioner.png" style="width: 80%;" class="image-display"/>
+            <h3 style="color:var(--background-color);">AWS Cloud Practitioner</h3>
+          </a>
+        </el-col>
+      </el-row>
     </template>
   </ViewLayout>
 </template>
