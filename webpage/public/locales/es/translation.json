@@ -62,7 +62,10 @@
     }
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Proyectos",
+    "talks": {
+      "title":"Charlas"
+    }
   },
   "celeste": {
     "title": "Celeste",

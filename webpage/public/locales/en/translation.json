@@ -31,7 +31,10 @@
     "mushrooms": "I like to pick up mushrooms! I tend to pick up only the ones I know but always look up species I am not familiar with to learn more!"
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "talks": {
+      "title":"Talks"
+    }
   },
   "games": {
     "released": "Released",
