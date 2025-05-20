@@ -18,6 +18,9 @@
         "spanish": "Spanish",
         "english": "English",
         "japanese": "Japanese"
+    },
+    "certifications":{
+      "title": "Certifications"
     }
   },
   "about-me" : {
