@@ -66,7 +66,13 @@
   "projects": {
     "title": "Proyectos",
     "talks": {
-      "title":"Charlas"
+      "title":"Charlas",
+      "kcd-guadalajara": {
+        "description": "En marzo de 2025 di mi primera charla acerca de como (intentar) alcanzar la sostenibilidad durante nuestras tareas de ingeniería de plataforma. Me centré principalmente en las prácticas que se pueden usar para hacer que nuestros workloads produzcan menos CO2 :)",
+        "slides": "Descarga las diapos aquí!",
+        "thanks": "Gracias a KCD Guadalajara por invitarme a un evento tan chulo!",
+        "to_be_fair": "Para ser completamente honesto, lo que menciono en esta charla solo es la punta del iceberg con lo que respecta a encontrar una solución para la crisis en la que nos hallamos. Una solución DEBE pasar por una profunda modificación del consumismo que tenemos atado a nuestras vidas. Hasta que no consigamos adjustar las expectativas que tenemos para con la tecnología, que demandamos y cuando lo demandamos, este problema será irresoluble. Piensalo dos veces antes de consumir a lo loco!"
+      }
     }
   },
   "celeste": {
