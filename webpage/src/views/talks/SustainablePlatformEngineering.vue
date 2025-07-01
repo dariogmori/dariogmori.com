@@ -2,6 +2,11 @@
     <div>
         <ViewLayout>
             <template #left-col>
+                <LayoutRow>
+                    <p>
+                        {{ t('projects.talks.kcd-guadalajara.description') }}
+                    </p>
+                </LayoutRow>
                 <LayoutRow :justify="'end'">
                     <el-carousel indicator-position="outside" :interval="4000" height="33vh" style="width:100%;">
                         <el-carousel-item>
@@ -15,11 +20,13 @@
                         </el-carousel-item>
                     </el-carousel>
                 </LayoutRow>
-                
+                <LayoutRow :justify="'center'">
+                    <p> {{ t('projects.talks.kcd-guadalajara.thanks') }}</p>
+                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/logo-kcd.jpg" class="image-display" style="width: 120px; ">
+                </LayoutRow>
             </template>
 
             <template #center-col>
-                <img alt="Main Presentation" src="/img/projects/talks/sustainability/logo-kcd.jpg" class="image-display" style="width: 120px; ">
                 <h1> Sustainable Platform Engineering? </h1>
                 <h3>Having a green thumb without shooting up the costs</h3>
                 </template>
@@ -28,7 +35,14 @@
                 
                 <LayoutRow :justify="'end'">
                     <iframe width="100%" height="355" src="https://www.youtube.com/embed/lTLttAcs1zE?si=EdE_M3TAI53or9WX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <a href="https://www.slideshare.net/slideshow/sustainable-platform-engineering-having-a-green-thumb-without-shooting-up-the-costs-dario-gutierrez-mori/277450234"> Slides  </a>
+                </LayoutRow>
+                <LayoutRow :justify="'center'">
+                    <p>>>></p>
+                    <a href="https://www.slideshare.net/slideshow/sustainable-platform-engineering-having-a-green-thumb-without-shooting-up-the-costs-dario-gutierrez-mori/277450234"> {{ t('projects.talks.kcd-guadalajara.slides') }} </a>
+                    <p>{{'<<<'}}</p>
+                </LayoutRow>
+                <LayoutRow :justify="'center'">
+                    <p> {{ t('projects.talks.kcd-guadalajara.to_be_fair') }}</p>
                 </LayoutRow>
             
             </template>
@@ -41,8 +55,7 @@
                     <el-button class="cool-3d-text" @click="ad.show = false" style="border: 3px solid var(--main-color);">x</el-button>
                 </div>
                 <a href="https://www.youtube.com/watch?v=lTLttAcs1zE" target="_blank" rel="noopener noreferrer">
-                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/promo-1.jpg" style="width: 100%; cursor: pointer;border: 3px solid var(--background-color);"
-                    />
+                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/promo-1.jpg" style="width: 100%; cursor: pointer;border: 3px solid var(--background-color);"/>
                 </a>
             </div>
             
@@ -89,6 +102,11 @@ import { reactive } from "vue";
     animation: ad 1s linear infinite;
   }
   @keyframes ad {
+    0% { width: 20%; }
+    50% { width: 21%; }
+    100% { width: 20%; }
+  }
+   @keyframes ad {
     0% { width: 20%; }
     50% { width: 21%; }
     100% { width: 20%; }
