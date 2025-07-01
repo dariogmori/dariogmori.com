@@ -6,9 +6,9 @@
           <img src="./assets/home/layer-background.png" alt="Back layer" />
         </div>
         <div class="parallax-layer layer-back">
-          <img src="./assets/home/layer-4.png" alt="Back layer" />
+          <img src="./assets/home/layer-4.png" alt="Back-2 layer" />
         </div>
-        <div class="parallax-layer layer-back">
+        <div class="parallax-layer layer-mid-2">
           <img src="./assets/home/layer-3.png" alt="Back layer" />
         </div>
         <div class="parallax-layer layer-mid">
@@ -19,12 +19,12 @@
         </div>
       </div>
     <div class="parallax-content">
-          <div style="z-index: -1; margin-bottom: 10vh" >
+          <div style="margin-bottom: 10vh" >
             <router-view/>
           </div>
           <!--<iframe  v-if="!isMobile()" src="../game/webpage.html" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%; height:50%; border: 0; "></iframe>-->
     </div>
-    <el-row justify="center" style="z-index: 4; margin-bottom: 10vh" >
+    <el-row justify="center" style="z-index: 11; margin-bottom: 10vh" >
             <el-menu 
                 mode="horizontal"
                 :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
@@ -121,7 +121,6 @@ nav a.router-link-exact-active {
   left: 0;
   width: 100%;
   pointer-events: none;
-  z-index: 0;
   overflow-x: hidden;
 }
 
@@ -137,11 +136,14 @@ nav a.router-link-exact-active {
   transform: translateZ(0);
   z-index: 2;
 }
-.layer-mid {
+.layer-mid-2 {
   z-index: 3;
 }
-.layer-front {
+.layer-mid {
   z-index: 4;
+}
+.layer-front {
+  z-index: 5;
 }
 
 .parallax-content {
@@ -204,6 +206,7 @@ const handleScroll = () => {
   }
 
   setLayerTransform('.layer-back', -0.3)
+  setLayerTransform('.layer-mid-2', -0.4)
   setLayerTransform('.layer-mid', -0.5)
   setLayerTransform('.layer-front', -0.7)
 }
