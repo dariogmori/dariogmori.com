@@ -1,23 +1,23 @@
 <template>
   
   <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() } " >
-    <div>
-        <div class="parallax-layer layer-background">
-          <img src="./assets/home/layer-background.png" alt="Back layer" />
-        </div>
-        <div class="parallax-layer layer-back">
-          <img src="./assets/home/layer-4.png" alt="Back-2 layer" />
-        </div>
-        <div class="parallax-layer layer-mid-2">
-          <img src="./assets/home/layer-3.png" alt="Back layer" />
-        </div>
-        <div class="parallax-layer layer-mid">
-          <img src="./assets/home/layer-2.png" alt="Mid layer" />
-        </div>
-        <div class="parallax-layer layer-front">
-          <img src="./assets/home/layer-1.png"  alt="Front layer" />
-        </div>
+    <div class="parallax-container">
+      <div class="parallax-layer layer-background">
+        <img src="./assets/home/layer-background.png" alt="Back layer" />
       </div>
+      <div class="parallax-layer layer-back">
+        <img src="./assets/home/layer-4.png" alt="Back-2 layer" />
+      </div>
+      <div class="parallax-layer layer-mid-2">
+        <img src="./assets/home/layer-3.png" alt="Back layer" />
+      </div>
+      <div class="parallax-layer layer-mid">
+        <img src="./assets/home/layer-2.png" alt="Mid layer" />
+      </div>
+      <div class="parallax-layer layer-front">
+        <img src="./assets/home/layer-1.png"  alt="Front layer" />
+      </div>
+    </div>
     <div class="parallax-content">
           <div style="margin-bottom: 10vh" >
             <router-view/>
@@ -150,6 +150,15 @@ nav a.router-link-exact-active {
   position: relative;
   z-index: 10;
   overflow-x: visible;
+}
+
+.parallax-layer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(1.5px);
+  z-index: 10; /* Adjust to sit above layers, but maybe below text if needed */
+  pointer-events: none; /* Allow interaction through the layer */
 }
 </style>
 <script setup lang="ts">
