@@ -3,19 +3,19 @@
   <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() } " >
     <div class="parallax-container">
       <div class="parallax-layer layer-background">
-        <img src="./assets/home/layer-background.png" alt="Back layer" />
+        <img :src="'/img/backgrounds/' + config.theme + '/layer-background.png'" alt="Back layer" />
       </div>
       <div class="parallax-layer layer-back">
-        <img src="./assets/home/layer-4.png" alt="Back-2 layer" />
+        <img :src="'/img/backgrounds/' + config.theme + '/layer-4.png'" alt="Back-2 layer" />
       </div>
       <div class="parallax-layer layer-mid-2">
-        <img src="./assets/home/layer-3.png" alt="Back layer" />
+        <img :src="'/img/backgrounds/' + config.theme + '/layer-3.png'" alt="Back layer" />
       </div>
       <div class="parallax-layer layer-mid">
-        <img src="./assets/home/layer-2.png" alt="Mid layer" />
+        <img :src="'/img/backgrounds/' + config.theme + '/layer-2.png'" alt="Mid layer" />
       </div>
       <div class="parallax-layer layer-front">
-        <img src="./assets/home/layer-1.png"  alt="Front layer" />
+        <img :src="'/img/backgrounds/' + config.theme + '/layer-1.png'"  alt="Front layer" />
       </div>
     </div>
     <div class="parallax-content">
