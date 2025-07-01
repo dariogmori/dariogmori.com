@@ -190,7 +190,8 @@ onMounted(() => {
 function setTheme (theme: string) {
   config.theme = theme
   document.documentElement.setAttribute('data-theme', config.theme)
-  localStorage.setItem('theme', config.theme) // Save the current theme to local storage
+  localStorage.setItem('theme', config.theme) // Save the current theme to local storageç
+  location.reload();
 }
 function changeLanguage ( lang: string) {
   config.lang = lang
