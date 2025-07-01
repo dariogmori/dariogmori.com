@@ -64,6 +64,8 @@
   border: 4px dashed var(--background-color);
   padding: 5px;
 }
+
+
 </style>
 
 <script setup lang="ts">
