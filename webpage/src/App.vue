@@ -1,7 +1,7 @@
 <template>
-  <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() }">
-    <div class="parallax-wrapper layer-back" style="overflow-y: hidden; max-height: 100vh;">
-      <div>
+  
+  <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() } " >
+    <div>
         <div class="parallax-layer layer-background">
           <img src="./assets/home/layer-background.png" alt="Back layer" />
         </div>
@@ -18,12 +18,11 @@
           <img src="./assets/home/layer-1.png"  alt="Front layer" />
         </div>
       </div>
-      <div class="parallax-content">
+    <div class="parallax-content">
           <div style="z-index: -1; margin-bottom: 10vh" >
             <router-view/>
           </div>
           <!--<iframe  v-if="!isMobile()" src="../game/webpage.html" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%; height:50%; border: 0; "></iframe>-->
-      </div>
     </div>
     <el-row justify="center" style="z-index: 4; margin-bottom: 10vh" >
             <el-menu 
@@ -204,9 +203,9 @@ const handleScroll = () => {
     }
   }
 
-  setLayerTransform('.layer-back', 0.3)
-  setLayerTransform('.layer-mid', 0.5)
-  setLayerTransform('.layer-front', 0.7)
+  setLayerTransform('.layer-back', -0.3)
+  setLayerTransform('.layer-mid', -0.5)
+  setLayerTransform('.layer-front', -0.7)
 }
 
 onMounted(() => {
