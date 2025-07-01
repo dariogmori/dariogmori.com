@@ -197,9 +197,10 @@ function goToRoute(route: string) {
 const handleScroll = () => {
   const scrollY = window.scrollY
   const setLayerTransform = (selector: string, speed: number) => {
+    const modifier = isMobile() ? 0.1 : 1;
     const el = document.querySelector(selector) as HTMLElement
     if (el) {
-      el.style.transform = `translateY(${scrollY * speed}px)`
+      el.style.transform = `translateY(${scrollY * speed * modifier}px)`
     }
   }
 
