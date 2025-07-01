@@ -198,10 +198,8 @@ const handleScroll = () => {
   const scrollY = window.scrollY
   const setLayerTransform = (selector: string, speed: number) => {
     const el = document.querySelector(selector) as HTMLElement
-      console.log(`translateY(${scrollY * speed}px)`)
     if (el) {
       el.style.transform = `translateY(${scrollY * speed}px)`
-      console.log(`translateY(${scrollY * speed}px)`)
     }
   }
 
