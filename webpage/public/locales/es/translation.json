@@ -31,6 +31,8 @@
     "mushrooms": "Me encanta recoger setas! Solo las que conozco, claro (aunque me gusta descubrir nuevas especies)."
   },
   "games": {
+    "title":"Jueguitos",
+    "released": "Lanzado",
     "big-crunch": {
       "description": "Recolecta bebidas cafeinadas para aprobar el examen final!\n\nEste juego fue desarrollado para la Game Jam del Techfest 2022 de la EII de Uniovi.\n\n",
       "first-game": "Mi primerito juego!",

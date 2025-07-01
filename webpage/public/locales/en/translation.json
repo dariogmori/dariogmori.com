@@ -33,11 +33,19 @@
   "projects": {
     "title": "Projects",
     "talks": {
-      "title":"Talks"
+      "title":"Talks",
+      "kcd-guadalajara": {
+        "description": "Back in March 2025 I gave my first talk about how to (try to) achieve sustainability when approaching platform engineering. I centered mainly in discussing the practices that can be employed to make our workloads less carbon intensive :) ",
+        "slides": "Download the slides here!",
+        "thanks": "Thanks to KCD Guadalajara for inviting me to participate in such a cool event!",
+        "to_be_fair": "To be completely honest, what I talked about in this talk is just the surface of a solution that MUST include a deep modification of our way to consumerism way of living. Until we do not adjust our expectations with regards to technology, what we demand and how we demand it, this problem will be unsolvable. Think twice before consuming!"
+      
+      }
     }
   },
   "games": {
     "released": "Released",
+    "title":"Games",
     "tags": "Tags",
     "big-crunch": {
       "description": "Collect caffeinated drinks to pass the final exam! This game was developed for Uniovi's EII Techfest 2022 Game Jam.",
