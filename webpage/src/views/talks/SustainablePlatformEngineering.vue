@@ -24,11 +24,10 @@
 
         <template #right-col>
             <LayoutRow :justify="'end'">
+                <iframe width="100%" height="355" src="https://www.youtube.com/embed/lTLttAcs1zE?si=EdE_M3TAI53or9WX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <a href="https://www.slideshare.net/slideshow/sustainable-platform-engineering-having-a-green-thumb-without-shooting-up-the-costs-dario-gutierrez-mori/277450234"> Slides  </a>
             </LayoutRow>
-            <a href="https://www.youtube.com/watch?v=88AbNnnwkb4"> Youtube</a>
-            
-            <img alt="Main Presentation" src="/img/projects/talks/sustainability/logo-kcd.jpg" class="image-display" style="width: 90%; ">
+           
         </template>
     </ViewLayout>
   </template>
