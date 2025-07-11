@@ -1,15 +1,13 @@
 import App from './App.vue'
 import router from './router'
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
 
 import './assets/styles/theme.css'
+import { createApp } from 'vue'
 
 // i18n
 import i18next from 'i18next'
 import I18NextVue from 'i18next-vue'
 import Backend from 'i18next-http-backend'
-
 //element plus
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -30,7 +28,6 @@ i18next
         }
     });
 
-app.use(createPinia())
 app.use(ElementPlus)
 app.use(router)
 app.use(I18NextVue, { i18next })

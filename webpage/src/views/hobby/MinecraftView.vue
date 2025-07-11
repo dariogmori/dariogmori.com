@@ -49,11 +49,8 @@ import {onMounted} from "vue";
 import * as skinview3d from "skinview3d";
 
 const { t } = useTranslation();
-import { useImageStore } from '@/stores/imageStore';
 
 onMounted(() => {
-  const imageStore = useImageStore()
-  imageStore.setImageUrl('./img/hobby/minecraft/logo.gif')
   loadMinecraftSkin();
 })
 const images = [
