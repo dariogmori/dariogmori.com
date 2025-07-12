@@ -12,7 +12,6 @@ import Backend from 'i18next-http-backend'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
-import './assets/styles/theme.css';
 const app = createApp(App)
 
 i18next

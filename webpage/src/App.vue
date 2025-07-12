@@ -169,7 +169,7 @@ import {isMobile} from "@/scripts/utils";
 import router from "@/router";
 
 const config = reactive({
-  theme: 'light',
+  theme: 'dark-typical',
   lang: 'es'
 })
 onMounted(() => {
@@ -203,22 +203,25 @@ function changeLanguage ( lang: string) {
 function goToRoute(route: string) {
   router.push(route)
 }
+const layers = [
+  { selector: '.layer-back', speed: -0.3 },
+  { selector: '.layer-mid-2', speed: -0.4 },
+  { selector: '.layer-mid', speed: -0.5 },
+  { selector: '.layer-front', speed: -0.7 },
+];
+
+const isMobileModifier = isMobile() ? 0.1 : 1;
 
 const handleScroll = () => {
-  const scrollY = window.scrollY
-  const setLayerTransform = (selector: string, speed: number) => {
-    const modifier = isMobile() ? 0.1 : 1;
-    const el = document.querySelector(selector) as HTMLElement
+  const scrollY = window.scrollY;
+
+  for (const { selector, speed } of layers) {
+    const el = document.querySelector<HTMLElement>(selector);
     if (el) {
-      el.style.transform = `translateY(${scrollY * speed * modifier}px)`
+      el.style.transform = `translateY(${scrollY * speed * isMobileModifier}px)`;
     }
   }
-
-  setLayerTransform('.layer-back', -0.3)
-  setLayerTransform('.layer-mid-2', -0.4)
-  setLayerTransform('.layer-mid', -0.5)
-  setLayerTransform('.layer-front', -0.7)
-}
+};
 
 onMounted(() => {
   
