@@ -1,99 +1,99 @@
-name: Release
+# name: Release
 
-on:
-  push:
-    branches:
-      - main
-jobs:
-  unit-tests:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-      - run: mvn clean verify
-        working-directory: webpage-api
-        env:
-          DATABASE_USER: ${{ secrets.DATABASE_USER }}
-          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
-          JWT_SECRET: ${{ secrets.JWT_SECRET }}
-          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-          SPOTIFY_BASIC_PASS: ${{ secrets.SPOTIFY_BASIC_PASS }}
-          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-  docker-push-webapp:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    needs: [ unit-tests ]
-    steps:
-      - uses: actions/checkout@v4
-      - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@v5
-        with:
-          name: dariogmori/dariogmori.com/webpage-webapp
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: ghcr.io
-          workdir: webpage
-  docker-push-api:
-    runs-on: ubuntu-latest
-    needs: [ unit-tests ]
-    steps:
-      - uses: actions/checkout@v4
-      - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@v5
-        env:
-          DATABASE_USER: ${{ secrets.DATABASE_USER }}
-          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
-          JWT_SECRET: ${{ secrets.JWT_SECRET }}
-          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-          SPOTIFY_BASIC_PASS: ${{ secrets.SPOTIFY_BASIC_PASS }}
-          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-          SSL_PASSWORD: ${{ secrets.SSL_PASSWORD }}
-        with:
-          name: dariogmori/dariogmori.com/webpage-api
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: ghcr.io
-          workdir: webpage-api
-          buildargs: |
-            DATABASE_USER
-            DATABASE_PASSWORD
-            JWT_SECRET
-            SSL_PASSWORD
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   unit-tests:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#       - uses: actions/setup-java@v4
+#         with:
+#           distribution: 'temurin'
+#           java-version: '17'
+#       - run: mvn clean verify
+#         working-directory: webpage-api
+#         env:
+#           DATABASE_USER: ${{ secrets.DATABASE_USER }}
+#           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+#           JWT_SECRET: ${{ secrets.JWT_SECRET }}
+#           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+#           SPOTIFY_BASIC_PASS: ${{ secrets.SPOTIFY_BASIC_PASS }}
+#           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+#   docker-push-webapp:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: read
+#       packages: write
+#     needs: [ unit-tests ]
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Publish to Registry
+#         uses: elgohr/Publish-Docker-Github-Action@v5
+#         with:
+#           name: dariogmori/dariogmori.com/webpage-webapp
+#           username: ${{ github.actor }}
+#           password: ${{ secrets.GITHUB_TOKEN }}
+#           registry: ghcr.io
+#           workdir: webpage
+#   docker-push-api:
+#     runs-on: ubuntu-latest
+#     needs: [ unit-tests ]
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Publish to Registry
+#         uses: elgohr/Publish-Docker-Github-Action@v5
+#         env:
+#           DATABASE_USER: ${{ secrets.DATABASE_USER }}
+#           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+#           JWT_SECRET: ${{ secrets.JWT_SECRET }}
+#           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+#           SPOTIFY_BASIC_PASS: ${{ secrets.SPOTIFY_BASIC_PASS }}
+#           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+#           SSL_PASSWORD: ${{ secrets.SSL_PASSWORD }}
+#         with:
+#           name: dariogmori/dariogmori.com/webpage-api
+#           username: ${{ github.actor }}
+#           password: ${{ secrets.GITHUB_TOKEN }}
+#           registry: ghcr.io
+#           workdir: webpage-api
+#           buildargs: |
+#             DATABASE_USER
+#             DATABASE_PASSWORD
+#             JWT_SECRET
+#             SSL_PASSWORD
 
-  deploy:
-    name: Deploy over SSH
-    runs-on: ubuntu-latest
-    needs: [docker-push-api,docker-push-webapp]
-    steps:
-      - name: Deploy over SSH
-        uses: fifsky/ssh-action@master
-        env:
-          DATABASE_USER: ${{ secrets.DATABASE_USER }}
-          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
-          JWT_SECRET: ${{ secrets.JWT_SECRET }}
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          user: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          workdir: dariogmori.com
-          command: |
-            wget https://raw.githubusercontent.com/dariogmori/dariogmori.com/main/docker-compose.yml -O docker-compose.yml
-            rm -f .env
-            echo "DATABASE_USER=${{ secrets.DATABASE_USER }}" >> .env
-            echo "DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}" >> .env
-            echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> .env
-            echo "API_URI=https://${{ secrets.APP_DOMAIN }}:8443" >> .env
-            echo "SSL_PASSWORD=${{ secrets.SSL_PASSWORD }}" >> .env
-            echo "SPOTIFY_CLIENT_ID=${{ secrets.SPOTIFY_CLIENT_ID }}" >> .env
-            echo "SPOTIFY_BASIC_PASS=${{ secrets.SPOTIFY_BASIC_PASS }}" >> .env
-            echo "SPOTIFY_REFRESH_TOKEN=${{ secrets.SPOTIFY_REFRESH_TOKEN }}" >> .env 
-            docker compose --profile prod down
-            docker compose --profile prod up -d --pull always
-            docker image prune -f
+#   deploy:
+#     name: Deploy over SSH
+#     runs-on: ubuntu-latest
+#     needs: [docker-push-api,docker-push-webapp]
+#     steps:
+#       - name: Deploy over SSH
+#         uses: fifsky/ssh-action@master
+#         env:
+#           DATABASE_USER: ${{ secrets.DATABASE_USER }}
+#           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+#           JWT_SECRET: ${{ secrets.JWT_SECRET }}
+#         with:
+#           host: ${{ secrets.DEPLOY_HOST }}
+#           user: ${{ secrets.DEPLOY_USER }}
+#           key: ${{ secrets.DEPLOY_KEY }}
+#           workdir: dariogmori.com
+#           command: |
+#             wget https://raw.githubusercontent.com/dariogmori/dariogmori.com/main/docker-compose.yml -O docker-compose.yml
+#             rm -f .env
+#             echo "DATABASE_USER=${{ secrets.DATABASE_USER }}" >> .env
+#             echo "DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}" >> .env
+#             echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> .env
+#             echo "API_URI=https://${{ secrets.APP_DOMAIN }}:8443" >> .env
+#             echo "SSL_PASSWORD=${{ secrets.SSL_PASSWORD }}" >> .env
+#             echo "SPOTIFY_CLIENT_ID=${{ secrets.SPOTIFY_CLIENT_ID }}" >> .env
+#             echo "SPOTIFY_BASIC_PASS=${{ secrets.SPOTIFY_BASIC_PASS }}" >> .env
+#             echo "SPOTIFY_REFRESH_TOKEN=${{ secrets.SPOTIFY_REFRESH_TOKEN }}" >> .env 
+#             docker compose --profile prod down
+#             docker compose --profile prod up -d --pull always
+#             docker image prune -f
