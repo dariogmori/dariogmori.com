@@ -56,7 +56,7 @@
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <el-image :src="getLogoURI()" class="logo" />
+      <el-image :src="getLogoURI()" class="logo" alt="About me logo"/>
     </template>
 
     <!-- RIGHT CONTAINER -->

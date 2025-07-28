@@ -1,6 +1,6 @@
 <template>
   <div class="image-container">
-    <img :src="artist.avatar_url" style="width:100%;" />
+    <img :src="artist.avatar_url" style="width:100%;" :alt="props.artist.name + ' cover'"/>
     <div class="artist-text">
       <h3><a :href="props.artist.profile_url" target="_blank">{{props.artist.name}}</a></h3>
     </div>
