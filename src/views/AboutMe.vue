@@ -3,16 +3,16 @@
     <!-- LEFT CONTAINER -->
     <template #left-col>
       <LayoutRow :justify="'end'">
-        <img alt="Me" src="/img/me-1.jpg" class="image-display" style="width: 90%; rotate: -10deg">
+        <img src="/img/me-1.jpg" class="image-display" style="width: 90%; rotate: -10deg" alt="Image of me">
       </LayoutRow>
       <LayoutRow :justify="'end'">
         <el-col :span="7">
           <el-row>
             <el-col :span="12">
-              <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges;">
+              <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges;" alt="Flag of Guatemala">
             </el-col>
             <el-col :span="12">
-              <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; rotate: 10deg; image-rendering: crisp-edges;">
+              <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; rotate: 10deg; image-rendering: crisp-edges;" alt="Flag of Asturias">
             </el-col>
           </el-row>
         </el-col>
@@ -31,7 +31,7 @@
         <el-col :span="7">
           <el-row>
             <el-col :span="12">
-              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); ">
+              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); " alt="Non binary flag">
             </el-col>
             <el-col :span="12">
               <h3 style="rotate:10deg"> he/they/she </h3>
@@ -49,7 +49,7 @@
           </p>
         </el-col>
         <el-col :span="7">
-          <img alt="Mushrooms" src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;">
+          <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Mushrooms" >
         </el-col>
       </LayoutRow>
     </template>
@@ -68,11 +68,11 @@
           </p>
         </el-col>
         <el-col :span="7">
-          <img alt="Profile picture" src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;">
+          <img src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Profile picture">
         </el-col>
       </LayoutRow>
       <LayoutRow>
-        <img alt="me again" src="/img/me-2.jpg" class="image-display" style="width: 80%; rotate:10deg;">
+        <img src="/img/me-2.jpg" class="image-display" style="width: 80%; rotate:10deg;" alt="Image of me">
       </LayoutRow>
 
       <LayoutRow :justify="'center'">
