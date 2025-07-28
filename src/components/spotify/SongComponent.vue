@@ -1,5 +1,5 @@
 <template>
-  <div class="image-container">
+  <div class="image-container" style="width:100%;">
     <img :src="song.cover_url" style="width:100%;" :alt="props.song.name + ' cover'"/>
     <div class="hover-text">
       <h3><a :href="props.song.url" target="_blank">{{props.song.name}}</a></h3>
