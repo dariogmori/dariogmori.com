@@ -169,7 +169,7 @@ import {isMobile} from "@/scripts/utils";
 import router from "@/router";
 
 const config = reactive({
-  theme: 'dark-typical',
+  theme: 'light',
   lang: 'es'
 })
 onMounted(() => {
