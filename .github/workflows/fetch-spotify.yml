@@ -33,12 +33,13 @@ jobs:
             filename=$(basename "$file")
             node .github/scripts/pixelart.js "$file" "public/img/pixels/$filename" 64 1
           done
+          mv src/data/info.json public/data/info.json
 
       - name: Commit & push pixel art
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/info.json
+          git add public/data/info.json
           git add public/img/pixels/*
           git commit -m "chore: update spotify pixel art [skip ci]" || echo "No changes"
           git push

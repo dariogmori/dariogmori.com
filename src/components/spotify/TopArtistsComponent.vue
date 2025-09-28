@@ -21,7 +21,7 @@ import {onMounted, reactive} from "vue";
     }
   })
  onMounted(async () =>{
-   const response = await fetch('/src/data/info.json');
+   const response = await fetch('/data/info.json');
     const data = await response.json();
     config.user = data;
     console.log(data);
