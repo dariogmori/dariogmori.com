@@ -3,7 +3,7 @@ import path from "path";
 import fetch from "node-fetch";
 
 const API_URL = "https://api.dariogmori.com/spotify/info";
-const OUT_DIR = "data/spotify";
+const OUT_DIR = "src/data";
 
 async function downloadImage(url, filename) {
   if (!url) return;
