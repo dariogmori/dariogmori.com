@@ -28,15 +28,16 @@ jobs:
 
       - name: Pixelate Spotify images
         run: |
+          mkdir -p src/data/pixels
           for file in src/data/*.jpg; do
             filename=$(basename "$file")
-            node .github/scripts/pixelart.js "$file" "src/data/$filename" 32 1
+            node .github/scripts/pixelart.js "$file" "src/data/pixels/$filename" 32 1
           done
 
       - name: Commit & push pixel art
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/*
+          git add src/data/pixels/*
           git commit -m "chore: update spotify pixel art [skip ci]" || echo "No changes"
           git push
