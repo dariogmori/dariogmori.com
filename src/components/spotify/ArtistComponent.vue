@@ -1,6 +1,6 @@
 <template>
   <div class="image-container" style="width:100%;">
-    <img :src="artist.avatar_url" style="width:100%;" :alt="props.artist.name + ' cover'"/>
+    <img :src="`/img/pixels/artist_${props.index + 1}.jpg`" style="width:100%;" :alt="props.artist.name + ' cover'" class="logo"/>
     <div class="artist-text">
       <h3><a :href="props.artist.profile_url" target="_blank">{{props.artist.name}}</a></h3>
     </div>
@@ -17,11 +17,17 @@
       avatar_url: string,
       profile_url: string,
       genres: string
-    }
+    },
+    index: number
   }>()
 </script>
 
 <style scoped>
+
+.logo{
+    image-rendering: crisp-edges;
+}
+
 .image-container {
   position: relative;
   display: inline-block;

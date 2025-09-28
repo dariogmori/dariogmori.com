@@ -1,6 +1,6 @@
 <template>
   <div class="image-container" style="width:100%;">
-    <img :src="song.cover_url" style="width:100%;" :alt="props.song.name + ' cover'"/>
+    <img :src="`/img/pixels/song_${props.index + 1}.jpg`" style="width:100%;" :alt="props.song.name + ' cover'" class="logo"/>
     <div class="hover-text">
       <h3><a :href="props.song.url" target="_blank">{{props.song.name}}</a></h3>
     </div>
@@ -18,6 +18,7 @@ class Artist {
     this.name = name;
     this.profile_url = profile_url;
   }
+  index: number;
 }
 
 const props = defineProps<{
@@ -28,10 +29,15 @@ const props = defineProps<{
       artists: Artist[],
       artist_url: string
     }
+    index: number
   }>()
 </script>
 
 <style scoped>
+
+  .logo{
+    image-rendering: crisp-edges;
+  }
   .image-container {
     position: relative;
     display: inline-block;
