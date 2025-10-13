@@ -4,19 +4,19 @@
   "profile_url": "https://open.spotify.com/user/mayitapipo",
   "top_songs": [
     {
-      "name": "Lo Vamos a Petar",
-      "url": "https://open.spotify.com/track/0uVNMTVrUSNo9p2BoK1j4n",
+      "name": "You and I",
+      "url": "https://open.spotify.com/track/6hLLvEf7rvWB40NzppPRbX",
       "artists": [
         {
-          "name": "Joan De Son Rapinya",
+          "name": "Alice Phoebe Lou",
           "followers": 0,
           "genres": "",
           "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/3RLOpErihaWKvCtszse4Fl"
+          "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851389d51896cc6c3ba02925ea7",
-      "duration_ms": 179512
+      "cover_url": "https://i.scdn.co/image/ab67616d000048511454106acf628dea3b4f95d5",
+      "duration_ms": 168513
     },
     {
       "name": "Lycoris",
@@ -24,9 +24,9 @@
       "artists": [
         {
           "name": "Ujico*",
-          "followers": 20204,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
           "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
         }
       ],
@@ -34,93 +34,86 @@
       "duration_ms": 142040
     },
     {
-      "name": "Penguin Dream",
-      "url": "https://open.spotify.com/track/3PN9nGvABXRNvGjaONSVHR",
+      "name": "Rebellions Are Built on Hope",
+      "url": "https://open.spotify.com/track/2y0ujQbyIKpfmGnex4VJZU",
       "artists": [
         {
-          "name": "Snail's House",
-          "followers": 407431,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
-          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851d3132ab455e35ba65366a477",
-      "duration_ms": 224118
-    },
-    {
-      "name": "-planetarium-",
-      "url": "https://open.spotify.com/track/5N0a0BVxYAVEyoO5QsvDGG",
-      "artists": [
-        {
-          "name": "Snail's House",
-          "followers": 407431,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
-          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851d3132ab455e35ba65366a477",
-      "duration_ms": 203663
-    },
-    {
-      "name": "Tokyo Night Flyght - Moe Shop Remix",
-      "url": "https://open.spotify.com/track/6Pn4gmijAPYREluvv5YYiu",
-      "artists": [
-        {
-          "name": "TiMEMAXERAS",
+          "name": "Michael Giacchino",
           "followers": 0,
           "genres": "",
           "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/72onGbpvrLqvBRNMsZM0si"
-        },
+          "profile_url": "https://open.spotify.com/artist/4kLvhMAuCloLxoP1aVM7Lr"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d000048514b90a8d70f47d3e111d038ce",
+      "duration_ms": 176066
+    },
+    {
+      "name": "Trobbio",
+      "url": "https://open.spotify.com/track/4924WQTjF0gHBBQbi5Tdo0",
+      "artists": [
         {
-          "name": "Moe Shop",
+          "name": "Christopher Larkin",
           "followers": 0,
           "genres": "",
           "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
+          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d000048519260af411719f1c3f5f85922",
-      "duration_ms": 176738
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851e9bb10e381fbd4f78ce2a511",
+      "duration_ms": 121147
+    },
+    {
+      "name": "He's Here For Us",
+      "url": "https://open.spotify.com/track/53n7BB3bXGdiadKybuh0Pr",
+      "artists": [
+        {
+          "name": "Michael Giacchino",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/4kLvhMAuCloLxoP1aVM7Lr"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d000048514b90a8d70f47d3e111d038ce",
+      "duration_ms": 200466
     }
   ],
   "top_artists": [
     {
       "name": "Snail's House",
-      "followers": 407431,
+      "followers": 407664,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
-      "name": "Michael Giacchino",
-      "followers": 425727,
-      "genres": "[\"soundtrack\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f1789945209ac13720afd7eea2e3",
-      "profile_url": "https://open.spotify.com/artist/4kLvhMAuCloLxoP1aVM7Lr"
-    },
-    {
       "name": "Ujico*",
-      "followers": 20204,
-      "genres": "[\"future bass\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
       "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
     },
     {
-      "name": "John Williams",
-      "followers": 1593903,
-      "genres": "[\"soundtrack\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f17886b13e4d2e65ebf694384ef4",
-      "profile_url": "https://open.spotify.com/artist/3dRfiJ2650SZu6GbydcHNb"
+      "name": "Alice Phoebe Lou",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
+      "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
-      "name": "Brandon Roberts",
-      "followers": 5275,
-      "genres": "[]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f17836205cf50e5038001670b1ce",
-      "profile_url": "https://open.spotify.com/artist/7EDDArVp3EXwuDx8HUQrTo"
+      "name": "Michael Giacchino",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
+      "profile_url": "https://open.spotify.com/artist/4kLvhMAuCloLxoP1aVM7Lr"
+    },
+    {
+      "name": "Christopher Larkin",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
+      "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
     }
   ]
 }
