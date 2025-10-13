@@ -1,0 +1,42 @@
+name: Fetch Spotify & Pixelate
+
+on:
+  schedule:
+    - cron: "0 0 */1 * *" # every day at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  spotify-pixel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install jimp@0.22.12 node-fetch@3
+
+      - name: Fetch Spotify images
+        run: node .github/scripts/fetch-spotify.js
+
+      - name: Pixelate Spotify images
+        run: |
+          mkdir -p src/data/pixels
+          for file in src/data/*.jpg; do
+            filename=$(basename "$file")
+            node .github/scripts/pixelart.js "$file" "public/img/pixels/$filename" 64 1
+          done
+          mv src/data/info.json public/data/info.json
+
+      - name: Commit & push pixel art
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/info.json
+          git add public/img/pixels/*
+          git commit -m "chore: update spotify pixel art [skip ci]" || echo "No changes"
+          git push
