@@ -9,9 +9,9 @@
       "artists": [
         {
           "name": "Alice Phoebe Lou",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 528448,
+          "genres": "[]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
           "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
         }
       ],
@@ -24,9 +24,9 @@
       "artists": [
         {
           "name": "Ujico*",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 20330,
+          "genres": "[\"future bass\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
           "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
         }
       ],
@@ -39,9 +39,9 @@
       "artists": [
         {
           "name": "Michael Giacchino",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 427653,
+          "genres": "[\"soundtrack\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f1789945209ac13720afd7eea2e3",
           "profile_url": "https://open.spotify.com/artist/4kLvhMAuCloLxoP1aVM7Lr"
         }
       ],
@@ -54,9 +54,9 @@
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 169622,
+          "genres": "[\"soundtrack\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
         }
       ],
@@ -69,9 +69,9 @@
       "artists": [
         {
           "name": "Michael Giacchino",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 427653,
+          "genres": "[\"soundtrack\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f1789945209ac13720afd7eea2e3",
           "profile_url": "https://open.spotify.com/artist/4kLvhMAuCloLxoP1aVM7Lr"
         }
       ],
@@ -89,30 +89,30 @@
     },
     {
       "name": "Ujico*",
-      "followers": 0,
-      "genres": "",
-      "avatar_url": null,
+      "followers": 20330,
+      "genres": "[\"future bass\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
       "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
     },
     {
       "name": "Alice Phoebe Lou",
-      "followers": 0,
-      "genres": "",
-      "avatar_url": null,
+      "followers": 528448,
+      "genres": "[]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
       "name": "Michael Giacchino",
-      "followers": 0,
-      "genres": "",
-      "avatar_url": null,
+      "followers": 427653,
+      "genres": "[\"soundtrack\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f1789945209ac13720afd7eea2e3",
       "profile_url": "https://open.spotify.com/artist/4kLvhMAuCloLxoP1aVM7Lr"
     },
     {
       "name": "Christopher Larkin",
-      "followers": 0,
-      "genres": "",
-      "avatar_url": null,
+      "followers": 169622,
+      "genres": "[\"soundtrack\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
       "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
     }
   ]
