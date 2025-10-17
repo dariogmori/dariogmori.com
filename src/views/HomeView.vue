@@ -49,6 +49,12 @@
             <h3 style="color:var(--background-color);">AWS Cloud Practitioner</h3>
           </a>
         </el-col>
+        <el-col :span="8">
+          <a href="https://www.credly.com/badges/e6d17c17-454c-40fb-9e88-e033e3dd1653/public_url">
+            <img src="../assets/home/solutions-architect.png" style="width: 80%;" class="image-display"/>
+            <h3 style="color:var(--background-color);">AWS Solutions Architect</h3>
+          </a>
+        </el-col>
       </el-row>
     </template>
   </ViewLayout>
