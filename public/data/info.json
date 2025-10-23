@@ -9,9 +9,9 @@
       "artists": [
         {
           "name": "Alice Phoebe Lou",
-          "followers": 530257,
-          "genres": "[]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
           "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
         }
       ],
@@ -19,29 +19,14 @@
       "duration_ms": 168513
     },
     {
-      "name": "Trobbio",
-      "url": "https://open.spotify.com/track/6rRG7ExvKd2nm2xhQBlqbm",
-      "artists": [
-        {
-          "name": "Christopher Larkin",
-          "followers": 172701,
-          "genres": "[\"soundtrack\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
-          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
-      "duration_ms": 121208
-    },
-    {
       "name": "Lost Lace",
       "url": "https://open.spotify.com/track/7GJoCZnyexoovkAFMiVI9L",
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 172701,
-          "genres": "[\"soundtrack\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
         }
       ],
@@ -49,14 +34,29 @@
       "duration_ms": 172222
     },
     {
+      "name": "Trobbio",
+      "url": "https://open.spotify.com/track/6rRG7ExvKd2nm2xhQBlqbm",
+      "artists": [
+        {
+          "name": "Christopher Larkin",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
+      "duration_ms": 121208
+    },
+    {
       "name": "Cogwork Dancers",
       "url": "https://open.spotify.com/track/7oajjWcznUZk75LIx1iLP2",
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 172701,
-          "genres": "[\"soundtrack\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
         }
       ],
@@ -64,53 +64,53 @@
       "duration_ms": 153971
     },
     {
-      "name": "Lycoris",
-      "url": "https://open.spotify.com/track/1TtMJQ2ErxrLnO5HI9VmTM",
+      "name": "Lace",
+      "url": "https://open.spotify.com/track/09W2SsN4qft3rTF0CcdruK",
       "artists": [
         {
-          "name": "Ujico*",
-          "followers": 20395,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
-          "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
+          "name": "Christopher Larkin",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851a8ed2a03c965f6e82292bf60",
-      "duration_ms": 142040
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
+      "duration_ms": 165604
     }
   ],
   "top_artists": [
     {
+      "name": "Christopher Larkin",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
+      "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
+    },
+    {
       "name": "Snail's House",
-      "followers": 407857,
+      "followers": 407877,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
-      "name": "Christopher Larkin",
-      "followers": 172701,
-      "genres": "[\"soundtrack\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
-      "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
-    },
-    {
       "name": "Alice Phoebe Lou",
-      "followers": 530257,
-      "genres": "[]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
       "name": "Ujico*",
-      "followers": 20395,
+      "followers": 20400,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
       "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
     },
     {
       "name": "Yu-Peng Chen",
-      "followers": 201626,
+      "followers": 201665,
       "genres": "[\"soundtrack\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1784d6a491aecf0e36870aa3a21",
       "profile_url": "https://open.spotify.com/artist/6CY7WNJfd5uZclcS3WeEjx"
