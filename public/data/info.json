@@ -4,6 +4,21 @@
   "profile_url": "https://open.spotify.com/user/mayitapipo",
   "top_songs": [
     {
+      "name": "Lost Lace",
+      "url": "https://open.spotify.com/track/7GJoCZnyexoovkAFMiVI9L",
+      "artists": [
+        {
+          "name": "Christopher Larkin",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
+      "duration_ms": 172222
+    },
+    {
       "name": "You and I",
       "url": "https://open.spotify.com/track/6hLLvEf7rvWB40NzppPRbX",
       "artists": [
@@ -19,8 +34,8 @@
       "duration_ms": 168513
     },
     {
-      "name": "Lost Lace",
-      "url": "https://open.spotify.com/track/7GJoCZnyexoovkAFMiVI9L",
+      "name": "Lace",
+      "url": "https://open.spotify.com/track/09W2SsN4qft3rTF0CcdruK",
       "artists": [
         {
           "name": "Christopher Larkin",
@@ -31,7 +46,7 @@
         }
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
-      "duration_ms": 172222
+      "duration_ms": 165604
     },
     {
       "name": "Trobbio",
@@ -62,21 +77,6 @@
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
       "duration_ms": 153971
-    },
-    {
-      "name": "Lace",
-      "url": "https://open.spotify.com/track/09W2SsN4qft3rTF0CcdruK",
-      "artists": [
-        {
-          "name": "Christopher Larkin",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
-      "duration_ms": 165604
     }
   ],
   "top_artists": [
@@ -89,7 +89,7 @@
     },
     {
       "name": "Snail's House",
-      "followers": 407877,
+      "followers": 407910,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
@@ -103,14 +103,14 @@
     },
     {
       "name": "Ujico*",
-      "followers": 20400,
+      "followers": 20410,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
       "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
     },
     {
       "name": "Yu-Peng Chen",
-      "followers": 201665,
+      "followers": 201706,
       "genres": "[\"soundtrack\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1784d6a491aecf0e36870aa3a21",
       "profile_url": "https://open.spotify.com/artist/6CY7WNJfd5uZclcS3WeEjx"
