@@ -64,8 +64,8 @@
       "duration_ms": 169652
     },
     {
-      "name": "Trobbio",
-      "url": "https://open.spotify.com/track/6rRG7ExvKd2nm2xhQBlqbm",
+      "name": "Lace",
+      "url": "https://open.spotify.com/track/09W2SsN4qft3rTF0CcdruK",
       "artists": [
         {
           "name": "Christopher Larkin",
@@ -76,7 +76,7 @@
         }
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
-      "duration_ms": 121208
+      "duration_ms": 165604
     }
   ],
   "top_artists": [
@@ -95,22 +95,22 @@
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
-      "name": "岩垂徳行",
-      "followers": 3045,
-      "genres": "[\"japanese vgm\",\"soundtrack\"]",
-      "avatar_url": "https://i.scdn.co/image/ab67616d00004851244baa6b164b1f3c5ddb2f2a",
-      "profile_url": "https://open.spotify.com/artist/00mQlPRw20tGWmJeEivmge"
-    },
-    {
       "name": "Snail's House",
-      "followers": 408160,
+      "followers": 408175,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
+      "name": "岩垂徳行",
+      "followers": 3049,
+      "genres": "[\"japanese vgm\",\"soundtrack\"]",
+      "avatar_url": "https://i.scdn.co/image/ab67616d00004851244baa6b164b1f3c5ddb2f2a",
+      "profile_url": "https://open.spotify.com/artist/00mQlPRw20tGWmJeEivmge"
+    },
+    {
       "name": "Toby Fox",
-      "followers": 2103392,
+      "followers": 2104707,
       "genres": "[\"soundtrack\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178cce32307d0f312e8faf01bae",
       "profile_url": "https://open.spotify.com/artist/57DlMWmbVIf2ssJ8QBpBau"
