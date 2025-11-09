@@ -9,7 +9,7 @@
       "artists": [
         {
           "name": "Alice Phoebe Lou",
-          "followers": 535827,
+          "followers": 536016,
           "genres": "[]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
           "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
@@ -24,7 +24,7 @@
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 177766,
+          "followers": 178009,
           "genres": "[\"soundtrack\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
@@ -39,7 +39,7 @@
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 177766,
+          "followers": 178009,
           "genres": "[\"soundtrack\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
@@ -54,7 +54,7 @@
       "artists": [
         {
           "name": "Alice Phoebe Lou",
-          "followers": 535827,
+          "followers": 536016,
           "genres": "[]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
           "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
@@ -69,7 +69,7 @@
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 177766,
+          "followers": 178009,
           "genres": "[\"soundtrack\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
@@ -82,35 +82,35 @@
   "top_artists": [
     {
       "name": "Christopher Larkin",
-      "followers": 177766,
+      "followers": 178009,
       "genres": "[\"soundtrack\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
       "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
     },
     {
       "name": "Alice Phoebe Lou",
-      "followers": 535827,
+      "followers": 536016,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
       "name": "Snail's House",
-      "followers": 408227,
+      "followers": 408262,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
       "name": "岩垂徳行",
-      "followers": 3050,
+      "followers": 3051,
       "genres": "[\"japanese vgm\",\"soundtrack\"]",
       "avatar_url": "https://i.scdn.co/image/ab67616d00004851244baa6b164b1f3c5ddb2f2a",
       "profile_url": "https://open.spotify.com/artist/00mQlPRw20tGWmJeEivmge"
     },
     {
       "name": "Toby Fox",
-      "followers": 2106138,
+      "followers": 2107677,
       "genres": "[\"soundtrack\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178cce32307d0f312e8faf01bae",
       "profile_url": "https://open.spotify.com/artist/57DlMWmbVIf2ssJ8QBpBau"
