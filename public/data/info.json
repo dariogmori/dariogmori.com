@@ -9,9 +9,9 @@
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 178753,
+          "genres": "[\"soundtrack\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
         }
       ],
@@ -19,49 +19,19 @@
       "duration_ms": 107392
     },
     {
-      "name": "Lost Lace",
-      "url": "https://open.spotify.com/track/7GJoCZnyexoovkAFMiVI9L",
-      "artists": [
-        {
-          "name": "Christopher Larkin",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
-      "duration_ms": 172222
-    },
-    {
       "name": "Sailor",
       "url": "https://open.spotify.com/track/05NKjLoBj7RSB7FmBHD389",
       "artists": [
         {
           "name": "Alice Phoebe Lou",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 536718,
+          "genres": "[]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
           "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
         }
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d00004851c0319622f9f6f826ef23e700",
       "duration_ms": 169652
-    },
-    {
-      "name": "Trobbio",
-      "url": "https://open.spotify.com/track/6rRG7ExvKd2nm2xhQBlqbm",
-      "artists": [
-        {
-          "name": "Christopher Larkin",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
-      "duration_ms": 121208
     },
     {
       "name": "Mentirosa",
@@ -77,43 +47,73 @@
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d00004851191411b60f6b164e7a1c13dd",
       "duration_ms": 194800
+    },
+    {
+      "name": "Trobbio",
+      "url": "https://open.spotify.com/track/6rRG7ExvKd2nm2xhQBlqbm",
+      "artists": [
+        {
+          "name": "Christopher Larkin",
+          "followers": 178753,
+          "genres": "[\"soundtrack\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
+          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
+      "duration_ms": 121208
+    },
+    {
+      "name": "Lost Lace",
+      "url": "https://open.spotify.com/track/7GJoCZnyexoovkAFMiVI9L",
+      "artists": [
+        {
+          "name": "Christopher Larkin",
+          "followers": 178753,
+          "genres": "[\"soundtrack\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
+          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
+      "duration_ms": 172222
     }
   ],
   "top_artists": [
     {
       "name": "Christopher Larkin",
-      "followers": 0,
-      "genres": "",
-      "avatar_url": null,
+      "followers": 178753,
+      "genres": "[\"soundtrack\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
       "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
     },
     {
       "name": "Alice Phoebe Lou",
-      "followers": 0,
-      "genres": "",
-      "avatar_url": null,
+      "followers": 536718,
+      "genres": "[]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
-      "name": "Toby Fox",
-      "followers": 2110877,
-      "genres": "[\"soundtrack\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f178cce32307d0f312e8faf01bae",
-      "profile_url": "https://open.spotify.com/artist/57DlMWmbVIf2ssJ8QBpBau"
-    },
-    {
-      "name": "Sawano Hiroyuki",
-      "followers": 730441,
-      "genres": "[\"anime\",\"soundtrack\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f1787bd33413d188115f3d40e8e1",
-      "profile_url": "https://open.spotify.com/artist/0Riv2KnFcLZA3JSVryRg4y"
-    },
-    {
       "name": "Snail's House",
-      "followers": 408315,
+      "followers": 408355,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
+    },
+    {
+      "name": "Moe Shop",
+      "followers": 318084,
+      "genres": "[\"future bass\",\"hyperpop\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f17818cc2390dfccdd20efddb5a9",
+      "profile_url": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
+    },
+    {
+      "name": "Sawano Hiroyuki",
+      "followers": 730719,
+      "genres": "[\"anime\",\"soundtrack\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f1787bd33413d188115f3d40e8e1",
+      "profile_url": "https://open.spotify.com/artist/0Riv2KnFcLZA3JSVryRg4y"
     }
   ]
 }
