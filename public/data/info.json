@@ -9,44 +9,14 @@
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 181912,
-          "genres": "[\"soundtrack\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
         }
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
       "duration_ms": 107392
-    },
-    {
-      "name": "Sailor",
-      "url": "https://open.spotify.com/track/05NKjLoBj7RSB7FmBHD389",
-      "artists": [
-        {
-          "name": "Alice Phoebe Lou",
-          "followers": 539402,
-          "genres": "[]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
-          "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851c0319622f9f6f826ef23e700",
-      "duration_ms": 169652
-    },
-    {
-      "name": "Popsicle",
-      "url": "https://open.spotify.com/track/6jHCHqo7ctMQOMPBn1pNWU",
-      "artists": [
-        {
-          "name": "Snail's House",
-          "followers": 408662,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
-          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851943d2d74d2d39b546e744a19",
-      "duration_ms": 246575
     },
     {
       "name": "be mine",
@@ -64,14 +34,44 @@
       "duration_ms": 281401
     },
     {
+      "name": "Sailor",
+      "url": "https://open.spotify.com/track/05NKjLoBj7RSB7FmBHD389",
+      "artists": [
+        {
+          "name": "Alice Phoebe Lou",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851c0319622f9f6f826ef23e700",
+      "duration_ms": 169652
+    },
+    {
+      "name": "Popsicle",
+      "url": "https://open.spotify.com/track/6jHCHqo7ctMQOMPBn1pNWU",
+      "artists": [
+        {
+          "name": "Snail's House",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851943d2d74d2d39b546e744a19",
+      "duration_ms": 246575
+    },
+    {
       "name": "Trobbio",
       "url": "https://open.spotify.com/track/6rRG7ExvKd2nm2xhQBlqbm",
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 181912,
-          "genres": "[\"soundtrack\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
         }
       ],
@@ -82,38 +82,38 @@
   "top_artists": [
     {
       "name": "Snail's House",
-      "followers": 408662,
-      "genres": "[\"future bass\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
       "name": "Alice Phoebe Lou",
-      "followers": 539402,
-      "genres": "[]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
       "name": "Moe Shop",
-      "followers": 318717,
+      "followers": 318803,
       "genres": "[\"future bass\",\"hyperpop\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17818cc2390dfccdd20efddb5a9",
       "profile_url": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
     },
     {
+      "name": "strongboi",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
+      "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
+    },
+    {
       "name": "C418",
-      "followers": 1341134,
+      "followers": 1342324,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178a9b8234e3071836212561d19",
       "profile_url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
-    },
-    {
-      "name": "Christopher Larkin",
-      "followers": 181912,
-      "genres": "[\"soundtrack\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
-      "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
     }
   ]
 }
