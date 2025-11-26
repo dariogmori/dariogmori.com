@@ -4,21 +4,6 @@
   "profile_url": "https://open.spotify.com/user/mayitapipo",
   "top_songs": [
     {
-      "name": "Skarrsinger Karmelita",
-      "url": "https://open.spotify.com/track/76T2lZELTmk2jqrQKKGLUN",
-      "artists": [
-        {
-          "name": "Christopher Larkin",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
-      "duration_ms": 107392
-    },
-    {
       "name": "be mine",
       "url": "https://open.spotify.com/track/7ng3kxT3YNzlR7qRUbkc66",
       "artists": [
@@ -32,6 +17,21 @@
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d00004851efea99a9738cbf09f586e134",
       "duration_ms": 281401
+    },
+    {
+      "name": "Skarrsinger Karmelita",
+      "url": "https://open.spotify.com/track/76T2lZELTmk2jqrQKKGLUN",
+      "artists": [
+        {
+          "name": "Christopher Larkin",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485141e05ca4d7795758c095c7af",
+      "duration_ms": 107392
     },
     {
       "name": "Sailor",
@@ -95,13 +95,6 @@
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
-      "name": "Moe Shop",
-      "followers": 318803,
-      "genres": "[\"future bass\",\"hyperpop\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f17818cc2390dfccdd20efddb5a9",
-      "profile_url": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
-    },
-    {
       "name": "strongboi",
       "followers": 0,
       "genres": "",
@@ -109,8 +102,15 @@
       "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
     },
     {
+      "name": "Moe Shop",
+      "followers": 318863,
+      "genres": "[\"future bass\",\"hyperpop\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f17818cc2390dfccdd20efddb5a9",
+      "profile_url": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
+    },
+    {
       "name": "C418",
-      "followers": 1342324,
+      "followers": 1343371,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178a9b8234e3071836212561d19",
       "profile_url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
