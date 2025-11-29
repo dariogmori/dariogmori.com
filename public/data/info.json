@@ -9,7 +9,7 @@
       "artists": [
         {
           "name": "strongboi",
-          "followers": 67309,
+          "followers": 67360,
           "genres": "[\"bedroom pop\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
           "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
@@ -17,36 +17,6 @@
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d00004851efea99a9738cbf09f586e134",
       "duration_ms": 281401
-    },
-    {
-      "name": "Popsicle",
-      "url": "https://open.spotify.com/track/6jHCHqo7ctMQOMPBn1pNWU",
-      "artists": [
-        {
-          "name": "Snail's House",
-          "followers": 408820,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
-          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851943d2d74d2d39b546e744a19",
-      "duration_ms": 246575
-    },
-    {
-      "name": "special",
-      "url": "https://open.spotify.com/track/06pGjykKy9y55C5o9Unk0p",
-      "artists": [
-        {
-          "name": "strongboi",
-          "followers": 67309,
-          "genres": "[\"bedroom pop\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
-          "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d000048513c24b51731f8f52654089b8a",
-      "duration_ms": 138861
     },
     {
       "name": "Skarrsinger Karmelita",
@@ -64,12 +34,42 @@
       "duration_ms": 107392
     },
     {
+      "name": "Popsicle",
+      "url": "https://open.spotify.com/track/6jHCHqo7ctMQOMPBn1pNWU",
+      "artists": [
+        {
+          "name": "Snail's House",
+          "followers": 408856,
+          "genres": "[\"future bass\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
+          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851943d2d74d2d39b546e744a19",
+      "duration_ms": 246575
+    },
+    {
+      "name": "special",
+      "url": "https://open.spotify.com/track/06pGjykKy9y55C5o9Unk0p",
+      "artists": [
+        {
+          "name": "strongboi",
+          "followers": 67360,
+          "genres": "[\"bedroom pop\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
+          "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d000048513c24b51731f8f52654089b8a",
+      "duration_ms": 138861
+    },
+    {
       "name": "one thing",
       "url": "https://open.spotify.com/track/5m64zBgG0oPrcBSsbjkbli",
       "artists": [
         {
           "name": "strongboi",
-          "followers": 67309,
+          "followers": 67360,
           "genres": "[\"bedroom pop\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
           "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
@@ -82,35 +82,35 @@
   "top_artists": [
     {
       "name": "Snail's House",
-      "followers": 408820,
+      "followers": 408856,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
       "name": "strongboi",
-      "followers": 67309,
+      "followers": 67360,
       "genres": "[\"bedroom pop\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
       "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
     },
     {
       "name": "Alice Phoebe Lou",
-      "followers": 540156,
+      "followers": 540324,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
       "name": "Moe Shop",
-      "followers": 319014,
+      "followers": 319071,
       "genres": "[\"future bass\",\"hyperpop\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17818cc2390dfccdd20efddb5a9",
       "profile_url": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
     },
     {
       "name": "C418",
-      "followers": 1345523,
+      "followers": 1346427,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178a9b8234e3071836212561d19",
       "profile_url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
