@@ -9,7 +9,7 @@
       "artists": [
         {
           "name": "strongboi",
-          "followers": 67971,
+          "followers": 68029,
           "genres": "[\"bedroom pop\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
           "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
@@ -24,7 +24,7 @@
       "artists": [
         {
           "name": "strongboi",
-          "followers": 67971,
+          "followers": 68029,
           "genres": "[\"bedroom pop\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
           "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
@@ -39,7 +39,7 @@
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 186049,
+          "followers": 186281,
           "genres": "[\"soundtrack\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
@@ -49,12 +49,27 @@
       "duration_ms": 107352
     },
     {
+      "name": "Me equivocaría otra vez",
+      "url": "https://open.spotify.com/track/5SMdW9cbM4wTMMPI8Ck08a",
+      "artists": [
+        {
+          "name": "Fito y Fitipaldis",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/1tZ99AnqyjgrmPwLfGU5eo"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851c78c3bfdd0f4b88b9dc2fcb8",
+      "duration_ms": 306240
+    },
+    {
       "name": "one thing",
       "url": "https://open.spotify.com/track/5m64zBgG0oPrcBSsbjkbli",
       "artists": [
         {
           "name": "strongboi",
-          "followers": 67971,
+          "followers": 68029,
           "genres": "[\"bedroom pop\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
           "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
@@ -62,55 +77,40 @@
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d0000485148e7f8477a5962994c4a0775",
       "duration_ms": 282916
-    },
-    {
-      "name": "Popsicle",
-      "url": "https://open.spotify.com/track/6jHCHqo7ctMQOMPBn1pNWU",
-      "artists": [
-        {
-          "name": "Snail's House",
-          "followers": 409385,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
-          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851943d2d74d2d39b546e744a19",
-      "duration_ms": 246575
     }
   ],
   "top_artists": [
     {
       "name": "strongboi",
-      "followers": 67971,
+      "followers": 68029,
       "genres": "[\"bedroom pop\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
       "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
     },
     {
       "name": "Snail's House",
-      "followers": 409385,
+      "followers": 409419,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
       "name": "Alice Phoebe Lou",
-      "followers": 542914,
+      "followers": 543170,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
       "name": "Christopher Larkin",
-      "followers": 186049,
+      "followers": 186281,
       "genres": "[\"soundtrack\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
       "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
     },
     {
       "name": "Moe Shop",
-      "followers": 320199,
+      "followers": 320303,
       "genres": "[\"future bass\",\"hyperpop\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17818cc2390dfccdd20efddb5a9",
       "profile_url": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
