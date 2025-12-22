@@ -9,7 +9,7 @@
       "artists": [
         {
           "name": "strongboi",
-          "followers": 68528,
+          "followers": 68568,
           "genres": "[\"bedroom pop\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
           "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
@@ -19,27 +19,12 @@
       "duration_ms": 281401
     },
     {
-      "name": "special",
-      "url": "https://open.spotify.com/track/06pGjykKy9y55C5o9Unk0p",
-      "artists": [
-        {
-          "name": "strongboi",
-          "followers": 68528,
-          "genres": "[\"bedroom pop\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
-          "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d000048513c24b51731f8f52654089b8a",
-      "duration_ms": 138861
-    },
-    {
       "name": "Me equivocaría otra vez",
       "url": "https://open.spotify.com/track/5SMdW9cbM4wTMMPI8Ck08a",
       "artists": [
         {
           "name": "Fito y Fitipaldis",
-          "followers": 2430475,
+          "followers": 2431439,
           "genres": "[]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f1785515537857141ca2ad475f50",
           "profile_url": "https://open.spotify.com/artist/1tZ99AnqyjgrmPwLfGU5eo"
@@ -49,12 +34,27 @@
       "duration_ms": 306240
     },
     {
+      "name": "special",
+      "url": "https://open.spotify.com/track/06pGjykKy9y55C5o9Unk0p",
+      "artists": [
+        {
+          "name": "strongboi",
+          "followers": 68568,
+          "genres": "[\"bedroom pop\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
+          "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d000048513c24b51731f8f52654089b8a",
+      "duration_ms": 138861
+    },
+    {
       "name": "one thing",
       "url": "https://open.spotify.com/track/5m64zBgG0oPrcBSsbjkbli",
       "artists": [
         {
           "name": "strongboi",
-          "followers": 68528,
+          "followers": 68568,
           "genres": "[\"bedroom pop\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
           "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
@@ -69,7 +69,7 @@
       "artists": [
         {
           "name": "Christopher Larkin",
-          "followers": 188559,
+          "followers": 188795,
           "genres": "[\"soundtrack\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
           "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
@@ -82,38 +82,38 @@
   "top_artists": [
     {
       "name": "strongboi",
-      "followers": 68528,
+      "followers": 68568,
       "genres": "[\"bedroom pop\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
       "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
     },
     {
-      "name": "Alice Phoebe Lou",
-      "followers": 544897,
-      "genres": "[]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
-      "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
-    },
-    {
       "name": "Christopher Larkin",
-      "followers": 188559,
+      "followers": 188795,
       "genres": "[\"soundtrack\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17822c3ebc48fc86c3bfdc47dfe",
       "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
     },
     {
       "name": "Fito y Fitipaldis",
-      "followers": 2430475,
+      "followers": 2431439,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1785515537857141ca2ad475f50",
       "profile_url": "https://open.spotify.com/artist/1tZ99AnqyjgrmPwLfGU5eo"
     },
     {
       "name": "Nicholas Britell",
-      "followers": 182535,
+      "followers": 182659,
       "genres": "[\"score\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178ac71b9e9c61e3b989058015a",
       "profile_url": "https://open.spotify.com/artist/18oYqNtcLUHrqO7LfX7qni"
+    },
+    {
+      "name": "Alice Phoebe Lou",
+      "followers": 545042,
+      "genres": "[]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
+      "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     }
   ]
 }
