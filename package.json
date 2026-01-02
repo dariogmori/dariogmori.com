@@ -17,9 +17,9 @@
   "dependencies": {
     "axios": "^1.7.2",
     "element-plus": "^2.7.5",
-    "i18next": "^23.11.5",
-    "i18next-http-backend": "^2.5.2",
-    "i18next-vue": "^4.0.0",
+    "i18next": "^25.0.0",
+    "i18next-http-backend": "^3.0.0",
+    "i18next-vue": "^5.4.0",
     "sass": "^1.77.5",
     "serve": "^14.2.3",
     "skinview3d": "^3.4.1",
