@@ -1,7 +1,7 @@
 <template>
   
   <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() } " >
-    <div class="parallax-container">
+    <!-- <div class="parallax-container">
       <div class="parallax-layer layer-background">
         <img :src="'/img/backgrounds/' + config.theme + '/layer-background.png'" alt="layer-background" />
       </div>
@@ -18,12 +18,12 @@
         <img :src="'/img/backgrounds/' + config.theme + '/layer-1.png'"  alt="layer-1" />
       </div>
     </div>
+    -->
     <div class="parallax-content">
           <div style="margin-bottom: 10vh" >
             <router-view/>
-          </div>
-          <!--<iframe  v-if="!isMobile()" src="../game/webpage.html" style=" z-index: 1; position: fixed; bottom:10vh; left:35%; width: 30%; height:50%; border: 0; "></iframe>-->
-    </div>
+      </div>
+    </div> 
     <el-row justify="center" style="z-index: 11; margin-bottom: 10vh" >
             <el-menu 
                 mode="horizontal"
@@ -52,6 +52,7 @@
                   <template #title>{{ t('projects.talks.title') }}</template>
                   <el-menu-item index="3-2-1" @click="goToRoute('/talks/sustainable-platform-engineering')">Sustainable Platform Engineering?</el-menu-item>
                 </el-sub-menu>
+                <el-menu-item index="3-3" @click="goToRoute('/blog')">Blog</el-menu-item>
               </el-sub-menu>
               <el-sub-menu index="4">
                 <template #title>Hobbies</template>
