@@ -2,7 +2,7 @@
   <el-row class="header-color" >
     <el-col :span="16" >
       <h1> Darío Gutiérrez Mori </h1>
-      <h3> Junior Platform Engineer</h3>
+      <h3> Mid Platform Engineer</h3>
       <el-row :justify="'space-between'">
         <el-col :span="8">
           <a href="https://dariogmori.itch.io/">
