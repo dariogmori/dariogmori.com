@@ -2,10 +2,10 @@
   <div class="image-container" style="width:100%;">
     <img :src="`/img/pixels/song_${props.index + 1}.jpg`" style="width:100%;" :alt="props.song.name + ' cover'" class="logo"/>
     <div class="hover-text">
-      <h3><a :href="props.song.url" target="_blank">{{props.song.name}}</a></h3>
+      <h3><a :href="props.song.url" target="_blank" class="link-bright">{{props.song.name}}</a></h3>
     </div>
     <div class="author-text">
-      <a v-for="artist in props.song.artists" :href="artist.profile_url" target="_blank" style="margin-right: 10%">{{artist.name}}</a>
+      <a v-for="artist in props.song.artists" :href="artist.profile_url" target="_blank" style="margin-right: 10%" class="link-bright">{{artist.name}}</a>
     </div>
   </div>
 </template>
@@ -75,7 +75,9 @@ const props = defineProps<{
   .image-container:hover img {
     filter: brightness(50%);
   }
-
+  a {
+  color: var(--el-color-white);
+  }
   .image-container:hover .hover-text {
     opacity: 1;
     left:10%;

@@ -9,7 +9,7 @@
     --secondary-color-semi: var(--darker-sea-blue-semi);
     --support-color:var(--yellow);
     --hover-color:var(--dark-blue);
-    --el-color-white: var(--primary-color) !important;
+    --el-color-white: var(--main-color) !important;
     --el-color-primary: var(--secondary-color) !important;
     --el-color-primary-light-3: var(--hover-color) !important;
     --el-color-primary-light-5: var(--hover-color) !important;
@@ -22,7 +22,7 @@
     --el-border-color: var(--secondary-color) !important;
     --el-border-color-light: var(--secondary-color) !important;
     --el-border-color-lighter: var(--secondary-color) !important;
-    --el-color-info: var(--secondary-color) !important;
+    --el-color-info: var(--main-color) !important;
     --el-color-info-light-3: var(--hover-color) !important;
     --el-color-info-light-5: var(--hover-color) !important;
     --el-color-info-light-7: var(--hover-color) !important;
@@ -88,11 +88,18 @@
     background-color: var(--main-color) !important;
 }
 a:visited {
-    color: var(--secondary-color) !important;
+    color: var(--secondary-color);
 }
 a{
-    color: var(--secondary-color) !important;
+    color: var(--secondary-color);
 }
 a:hover {
-    color: var(--hover-color) !important;
+    color: var(--hover-color);
+}
+
+.link-bright{
+    color: var(--el-color-white);
+}
+.link-bright:hover{
+    color: var(--hover-color);
 }
