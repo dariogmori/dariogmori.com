@@ -4,13 +4,10 @@
         <el-row :justify="'center'" class="header-color">
             <el-col :span="20">
             <p>As you may have heard these past few weeks, we are experiencing a RAM “shortage” (writing this as of December 27th 2025). This crisis has been mainly caused by the increase in demand caused by big corporations aimlessly running to be the first to reach this “AI superproduct” that nobody really wants <i>(1)</i>. </p>
-            <br>
             <p>
               Due to this wonderful thing known as “capitalism” it would be stupid to assume that this concentration of resources by these companies will not affect us as individual consumers. It would be even more idiotic to believe that if these corporations decide not to pass this increase in operation costs to us consumers they do it in good faith. It is in their best interest to slowly asphyxiate us rather than shock us with an immediate increase. 
             </p>
-            <br>
             <img src="../../assets/blog/27-12-2025/cloud-burning.gif">
-            <br>
             <p>
               The entire concept of `cloud computing` completely depends on consumers’ wishes for immediacy (in both scalability and deployability), removing any sense of planning needed while also conveniently removing the concept of ownership from the infrastructure you consume. We are completely in the hands of a few companies that completely control our infrastructure and offer little to no transparency on how their pricing works or how it has changed over time <i>(2)</i>. On the internet you can find how Amazon, for example, does not offer historical data about their pricing while Google’s AI keeps insisting it has been consistently been reduced through the years (offering no sources to back these claims).
             </p>
@@ -22,7 +19,6 @@
              <p>
               I really do not want to repeat the overly used phrase of “You will own nothing and be happy”, but cliches exist for a reason, and this is another way capitalism cleverly achieves its goal of disowning the average Joe and concentrating riches among a few powerful actors.
             </p>
-            <br>
             <p>
               It is why this is my call to action to you, dear viewer to try to run away from centralised, cloud, externally owned infrastructure (or even services) and try to regain control under your own infrastructure. In the following weeks I will follow this post with other publications about my tinkering with tools such as PostmarketOS <i>(3)</i> or Lightweight Music Server <i>(4)</i> to achieve this for myself and show how easy (or not) it is to achieve this.  
             </p>
