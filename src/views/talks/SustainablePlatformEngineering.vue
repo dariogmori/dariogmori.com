@@ -55,7 +55,7 @@
                     <el-button class="cool-3d-text" @click="ad.show = false" style="border: 3px solid var(--main-color);">x</el-button>
                 </div>
                 <a href="https://www.youtube.com/watch?v=lTLttAcs1zE" target="_blank" rel="noopener noreferrer">
-                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/promo-1.jpg" style="width: 100%; cursor: pointer;border: 3px solid var(--background-color);"/>
+                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/promo-1.jpg" style="width: 100%; cursor: pointer;border: 3px solid var(--secondary-color);"/>
                 </a>
             </div>
             
@@ -114,9 +114,9 @@ import { reactive } from "vue";
   .cool-3d-text {
     color: var(--main-color);
     text-shadow:
-        -2px -2px 0 var(--background-color),
-        1px -1px 0 var(--background-color),
-        -1px  1px 0 var(--background-color),
-        1px  1px 0 var(--background-color);           
+        -2px -2px 0 var(--secondary-color),
+        1px -1px 0 var(--secondary-color),
+        -1px  1px 0 var(--secondary-color),
+        1px  1px 0 var(--secondary-color);           
   }
   </style>

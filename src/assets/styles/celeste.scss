@@ -5,8 +5,8 @@
     background-position: bottom right;
     background-size:100%;
     background-repeat: no-repeat;
-    color: var(--background-color);
-    border-color:var(--background-color);
+    color: var(--secondary-color);
+    border-color:var(--secondary-color);
     border-radius: 10px;
     border:3px;
     flex:auto;
@@ -20,16 +20,16 @@
     margin:5px;
     background-color: var(--hover-color);
     opacity:0.9;
-    color: var(--background-color);
+    color: var(--secondary-color);
     border-radius: 10px;
-    border-color: var(--background-color);
+    border-color: var(--secondary-color);
     border:solid 5px;
     flex:auto;
 }
 .avatar{
     border-radius:10px;
     width:80%;
-    border-color: var(--background-color);
+    border-color: var(--secondary-color);
     border:solid 5px;
     background:var(--hover-color);
 }
@@ -59,7 +59,7 @@
 }
 .el-menu-demo{
     background-color: var(--hover-color);
-    border-color: var(--background-color);
+    border-color: var(--secondary-color);
     opacity:0.9;
 }
 
