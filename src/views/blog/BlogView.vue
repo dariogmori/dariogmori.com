@@ -4,7 +4,7 @@
         <el-row :justify="'center'" class="header-color">
             <el-col :span="20">
             <p>
-              As you may have heard these past few weeks, we are experiencing a RAM “shortage” <i>(writing this as of December 27th 2025)</i>.
+              As you may have heard these past few weeks, we are experiencing a RAM “shortage” <i>(writing this as of December 27th 2025, welcome to my end of the year rant)</i>.
               This crisis has been mainly caused by the increase in demand caused by big corporations aimlessly running to be 
               the first to reach this <i>“AI superproduct”</i> that nobody really wants or needs<i>(1)</i>.
             </p>
