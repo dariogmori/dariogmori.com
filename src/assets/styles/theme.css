@@ -8,25 +8,25 @@
     --main-color-semi: var(--grenate-semi);
     --secondary-color-semi: var(--darker-sea-blue-semi);
     --support-color:var(--yellow);
-    --hover-color:var(--light-orange);
-    --el-color-white: var(--secondary-color) !important;
-    --el-color-primary: var(--main-color) !important;
+    --hover-color:var(--dark-blue);
+    --el-color-white: var(--primary-color) !important;
+    --el-color-primary: var(--secondary-color) !important;
     --el-color-primary-light-3: var(--hover-color) !important;
     --el-color-primary-light-5: var(--hover-color) !important;
     --el-color-primary-light-7: var(--hover-color) !important;
     --el-color-primary-light-8: var(--hover-color) !important;
     --el-color-primary-light-9: var(--hover-color) !important;
     --el-color-secondary: var(--secondary-color) !important;
-    --el-text-color-primary: var(--main-color) !important;
-    --el-fill-color-blank: var(--secondary-color) !important;
-    --el-border-color: var(--main-color) !important;
-    --el-border-color-light: var(--main-color) !important;
-    --el-border-color-lighter: var(--main-color) !important;
-    --el-color-info: var(--main-color) !important;
+    --el-text-color-primary: var(--secondary-color) !important;
+    --el-fill-color-blank: var(--main-color) !important;
+    --el-border-color: var(--secondary-color) !important;
+    --el-border-color-light: var(--secondary-color) !important;
+    --el-border-color-lighter: var(--secondary-color) !important;
+    --el-color-info: var(--secondary-color) !important;
     --el-color-info-light-3: var(--hover-color) !important;
     --el-color-info-light-5: var(--hover-color) !important;
     --el-color-info-light-7: var(--hover-color) !important;
-    --el-color-info-light-8: var(--main-color) !important;
+    --el-color-info-light-8: var(--secondary-color) !important;
     --el-color-info-light-9: var(--hover-color) !important;
     transition: background-color 0.5s, main-color 0.5s;
     --el-font-family: 'Press Start 2P' !important;
@@ -88,10 +88,10 @@
     background-color: var(--main-color) !important;
 }
 a:visited {
-    color: var(--main-color) !important;
+    color: var(--secondary-color) !important;
 }
 a{
-    color: var(--main-color) !important;
+    color: var(--secondary-color) !important;
 }
 a:hover {
     color: var(--hover-color) !important;

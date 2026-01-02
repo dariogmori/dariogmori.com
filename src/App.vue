@@ -28,7 +28,7 @@
             <el-menu 
                 mode="horizontal"
                 :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
-                style="position:fixed; bottom:0vh; border: 4px dashed var(--main-color);"
+                style="position:fixed; bottom:0vh; border: 4px solid var(--secondary-color);"
                 :ellipsis="true"
             >
               <el-menu-item index="1">
@@ -83,7 +83,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 nav {
@@ -92,11 +92,11 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 nav a.router-link-exact-active {
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 .mobile{
   width:98%;
