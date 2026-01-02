@@ -1,8 +1,8 @@
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
 import './assets/styles/theme.css'
-import { createApp } from 'vue'
 
 // i18n
 import i18next from 'i18next'
@@ -12,23 +12,29 @@ import Backend from 'i18next-http-backend'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
-const app = createApp(App)
+const savedLang = localStorage.getItem('lang') || 'en'
 
-i18next
+async function bootstrap() {
+  await i18next
     .use(Backend)
     .init({
-        lng: 'en',
-        fallbackLng: 'en',
-        backend:{
-            loadPath: '/locales/{{lng}}/{{ns}}.json'
-        },
-        interpolation: {
-            escapeValue: false,
-        }
-    });
+      lng: savedLang,
+      fallbackLng: 'en',
+      backend: {
+        loadPath: '/locales/{{lng}}/{{ns}}.json'
+      },
+      interpolation: {
+        escapeValue: false
+      }
+    })
 
-app.use(ElementPlus)
-app.use(router)
-app.use(I18NextVue, { i18next })
-app.mount('#app')
+  const app = createApp(App)
 
+  app.use(ElementPlus)
+  app.use(router)
+  app.use(I18NextVue, { i18next })
+
+  app.mount('#app')
+}
+
+bootstrap()
