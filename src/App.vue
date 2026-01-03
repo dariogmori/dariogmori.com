@@ -20,8 +20,8 @@
     </div>
     -->
     <div class="parallax-content">
-          <div style="margin-bottom: 10vh" >
-            <router-view/>
+      <div style="margin-bottom: 10vh" >
+        <router-view/>
       </div>
     </div> 
     <el-row justify="center" style="z-index: 11; margin-bottom: 10vh" >
@@ -31,14 +31,10 @@
                 style="position:fixed; bottom:0vh; border: 4px solid var(--secondary-color);"
                 :ellipsis="true"
             >
-              <el-menu-item index="1">
-                <el-menu-item index="4-1" @click="goToRoute('/')">Home</el-menu-item>
-              </el-menu-item>
-              <el-menu-item index="2">
-                <el-menu-item index="2-1" @click="goToRoute('/about-me')">{{ t('about-me.title') }}</el-menu-item>
-              </el-menu-item>
+              <el-menu-item index="1" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</el-menu-item>
+              <el-menu-item index="2" @click="goToRoute('/about-me')"><el-icon><UserFilled /></el-icon>{{ isMobile() ? '': t('about-me.title') }}</el-menu-item>
               <el-sub-menu index="3">
-                <template #title>{{ t('projects.title') }}</template>
+                <template #title><el-icon><Management /></el-icon>{{ isMobile() ? '': t('projects.title') }}</template>
                 <el-sub-menu index="3-1">
                   <template #title>{{ t('games.title') }}</template>
                   <el-menu-item index="3-1-1" @click="goToRoute('/games/big-crunch')">Big-Crunch</el-menu-item>
@@ -55,13 +51,13 @@
                 <el-menu-item index="3-3" @click="goToRoute('/blog')">Blog</el-menu-item>
               </el-sub-menu>
               <el-sub-menu index="4">
-                <template #title>Hobbies</template>
+                <template #title><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Hobbies' }}</template>
                 <el-menu-item index="4-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
                 <el-menu-item index="4-2" @click="goToRoute('/minecraft')">Minecraft </el-menu-item>
                 <el-menu-item index="4-3" @click="goToRoute('/art')">{{ t('art.title') }}</el-menu-item>
               </el-sub-menu>
               <el-sub-menu index="5">
-                <template #title>Settings</template>
+                <template #title><el-icon><Tools /></el-icon></template>
                 <!-- <el-menu-item index="5-1" @click="setTheme('light')">{{ t('config.theme.light-mode') }}</el-menu-item>
                 <el-menu-item index="5-1" @click="setTheme('dark')">{{ t('config.theme.dark-mode') }}</el-menu-item>
                 <el-menu-item index="5-1" @click="setTheme('dark-typical')">{{ 'Dark Typical' }}</el-menu-item> -->

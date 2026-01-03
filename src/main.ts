@@ -14,6 +14,9 @@ import 'element-plus/dist/index.css'
 
 const savedLang = localStorage.getItem('lang') || 'en'
 
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+
+
 async function bootstrap() {
   await i18next
     .use(Backend)
@@ -29,6 +32,10 @@ async function bootstrap() {
     })
 
   const app = createApp(App)
+
+  for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+    app.component(key, component)
+  }
 
   app.use(ElementPlus)
   app.use(router)
