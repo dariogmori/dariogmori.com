@@ -5,21 +5,40 @@
       <h3><a :href="props.artist.profile_url" target="_blank" class="link-bright">{{props.artist.name}}</a></h3>
     </div>
     <div class="genre-text">
-      <el-tag v-for="genre in JSON.parse(props.artist.genres)" :type="'info'" style="margin-right: 10%;">{{genre}}</el-tag>
+      <el-tag
+        v-for="genre in genresArray"
+        :key="genre"
+        type="info"
+        style="margin-right: 10%;"
+      >{{genre}}</el-tag>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-  const props = defineProps<{
-    artist: {
-      name: string,
-      avatar_url: string,
-      profile_url: string,
-      genres: string
-    },
-    index: number
-  }>()
+import { computed } from 'vue'
+
+const props = defineProps<{
+  artist: {
+    name: string,
+    avatar_url: string | null,
+    profile_url: string,
+    genres: string
+  },
+  index: number
+}>()
+
+// Safely parse genres
+const genresArray = computed(() => {
+  if (!props.artist.genres) return []
+  try {
+    const parsed = JSON.parse(props.artist.genres)
+    return Array.isArray(parsed) ? parsed : []
+  } catch {
+    console.warn(`Invalid genres for artist ${props.artist.name}:`, props.artist.genres)
+    return []
+  }
+})
 </script>
 
 <style scoped>
