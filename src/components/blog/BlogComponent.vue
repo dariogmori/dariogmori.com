@@ -1,6 +1,6 @@
 <template>
   <el-row justify="space-evenly">
-    <el-col :span="16" class="center-container" align="center">
+    <el-col :span="getSpanBlog()" class="center-container" align="center">
       <h2>{{ date }}</h2>
       <h1>{{ title }}</h1>
       <el-divider></el-divider>
@@ -12,6 +12,8 @@
 </template>
 
 <script setup lang="ts">
+import { getSpanBlog } from '@/scripts/layout';
+
 const props = defineProps<{
   date: string,
   title: string

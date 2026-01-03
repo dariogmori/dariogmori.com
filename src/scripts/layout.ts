@@ -10,3 +10,7 @@ export function getSpan(index: number) {
             return isMobile() ? 24 : 8
     }
 }
+
+export function getSpanBlog(){
+    return isMobile() ? 24: 20;
+}
