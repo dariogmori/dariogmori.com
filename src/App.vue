@@ -29,7 +29,7 @@
           mode="horizontal"
           :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
           style="position:fixed; bottom:0vh; border: 4px solid var(--secondary-color);"
-          :ellipsis="true"
+          :ellipsis="false"
       >
         <el-menu-item index="1" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</el-menu-item>
         <el-menu-item index="2" @click="goToRoute('/about-me')"><el-icon><UserFilled /></el-icon>{{ isMobile() ? '': t('about-me.title') }}</el-menu-item>
