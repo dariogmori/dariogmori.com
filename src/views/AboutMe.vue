@@ -14,48 +14,48 @@
         </el-col>
       </LayoutRow>
       <el-divider></el-divider>
-      <LayoutRow :justify="'end'">
-        <el-col :span="7">
+      <LayoutRow :justify="'center'">
+        <el-col :span="12">
           <el-row>
             <el-col :span="12">
-              <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges;" alt="Flag of Guatemala">
+              <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges;" alt="Flag of Guatemala">
             </el-col>
             <el-col :span="12">
-              <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; rotate: 10deg; image-rendering: crisp-edges;" alt="Flag of Asturias">
+              <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; max-width: 150px; rotate: 10deg; image-rendering: crisp-edges;" alt="Flag of Asturias">
             </el-col>
           </el-row>
         </el-col>
-        <el-col :span="14">
+        <el-col :span="20">
           <p>
             {{ t('about-me.nationality') }}
           </p>
         </el-col>
       </LayoutRow>
-      <LayoutRow>
-        <el-col :span="14">
-          <p>
-            {{ t('about-me.gender') }}
-          </p>
-        </el-col>
-        <el-col :span="7">
+      <LayoutRow justify="center">
+        <el-col :span="12">
           <el-row>
             <el-col :span="12">
-              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); " alt="Non binary flag">
+              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); " alt="Non binary flag">
             </el-col>
             <el-col :span="12">
               <h3 style="rotate:10deg"> he/they/she </h3>
             </el-col>
           </el-row>
         </el-col>
+        <el-col :span="20">
+          <p>
+            {{ t('about-me.gender') }}
+          </p>
+        </el-col>
       </LayoutRow>
-      <LayoutRow>
-        <el-col :span="14">
+      <LayoutRow justify="center">
+        <el-col :span="12">
+          <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Mushrooms" >
+        </el-col>
+        <el-col :span="20">
           <p>
             {{ t('about-me.mushrooms') }}
           </p>
-        </el-col>
-        <el-col :span="7">
-          <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Mushrooms" >
         </el-col>
       </LayoutRow>
       <el-divider></el-divider>
