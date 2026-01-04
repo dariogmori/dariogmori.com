@@ -1,6 +1,6 @@
 {
   "home" : {
-    "about-me": "Actualmente un padawan como Ingeniero de Plataforma, aprendiendo las artes de Terraform y K8s. También capaz de desarrollar aplicaciones web, habiendo trabajado con Java Spring Boot 3 y Vue.js.",
+    "about-me": "Actualmente haciendo ingeniería de Plataforma, trabajando con Kubernetes, Argocd, KubePromStack y demás.",
     "experience": {
       "title": "Experiencia",
       "present": "Actualidad",
