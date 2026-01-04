@@ -2,7 +2,7 @@
   <ViewLayout>
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <el-image :src="getLogoURI()" class="logo" alt="About me logo"/>
+      <h1>About me</h1>
       <LayoutRow :justify="'center'">
         <div style="max-width: 400px;">
           <el-col align="center">
