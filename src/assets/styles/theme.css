@@ -4,11 +4,8 @@
     background: var(--white);
     --secondary-color:var(--dark-sea-blue-1);
     --main-color:var(--white);
-    --main-color-semi: var(--grenate-semi);
-    --secondary-color-semi: var(--darker-sea-blue-semi);
-    --support-color:var(--yellow);
     --hover-color:var(--dark-blue);
-    --el-color-white: var(--main-color) !important;
+    --el-color-white: var(--white) !important;
     --el-color-primary: var(--secondary-color) !important;
     --el-color-primary-light-3: var(--hover-color) !important;
     --el-color-primary-light-5: var(--hover-color) !important;
@@ -33,10 +30,8 @@
 
 [data-theme="dark"] {
     background: var(--grenate);
-    background-image: linear-gradient(var(--support-color), var(--secondary-color-semi)), url('https://i.pinimg.com/originals/f5/4f/0a/f54f0a19265a262a917ed0d343193354.gif');
     --secondary-color:var(--grenate);
     --main-color:var(--yellow);
-    --main-color-semi: var(--yellow-semi);
     --secondary-color-semi: var(--grenate);
     --support-color:var(--red-semi);
     --hover-color:var(--red);
@@ -64,15 +59,10 @@
 }
 
 [data-theme="dark-typical"] {
-    background: var(--darker-sea-blue);
-    background-image: linear-gradient(var(--secondary-color-semi),var(--support-color)), url('../home/background-test.png');
-    --secondary-color:var(--darker-sea-blue);
-    --main-color:var(--white);
-    --main-color-semi: var(--white-semi);
-    --secondary-color-semi: var(--darker-sea-blue-semi);
-    --support-color:var(--dark-sea-blue);
-    --hover-color:var(--dark-blue);
-    --hover-color:var(--dark-blue);
+    background: var(--dark-sea-blue);
+    --main-color:var(--dark-sea-blue);
+    --secondary-color:var(--lighter-gray);
+    --hover-color:var(--darker-blue);
     transition: background-color 0.5s, main-color 0.5s;
     --el-font-family: 'Press Start 2P' !important;
 }
