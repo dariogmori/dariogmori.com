@@ -4,25 +4,7 @@
     <template #center-col>
       <h1>About me</h1>
       <LayoutRow :justify="'center'">
-        <div style="max-width: 400px;">
-          <el-col align="center">
-            <el-row style="max-width: 60%;">
-              <el-col>
-                <img src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Profile picture">
-              </el-col>
-            </el-row>
-          </el-col>
-          <el-col :span="24">
-            <p>
-              {{ t('about-me.description') }}
-            </p>
-            </el-col>
-        </div>
-       
-      </LayoutRow>
-      <el-divider></el-divider>
-      <LayoutRow :justify="'center'">
-        <div style="max-width: 400px;">
+        <div class="about-me-fact">
           <el-col align="center">
             <el-row style="max-width: 60%;">
               <el-col :span="12">
@@ -39,7 +21,7 @@
             </p>
           </el-col>
         </div>
-        <div style="max-width: 400px;">
+        <div class="about-me-fact">
           <el-col align="center">
             <el-row style="max-width: 60%;">
               <el-col :span="12">
@@ -56,7 +38,7 @@
             </p>
           </el-col>
         </div>
-        <div style="max-width: 400px;">
+        <div class="about-me-fact">
           <el-col align="center">
             <el-row style="max-width: 60%;">
               <el-col :span="24">
@@ -70,6 +52,20 @@
             </p>
           </el-col>
         </div>  
+        <!-- <div class="about-me-fact">
+          <el-col align="center">
+            <el-row style="max-width: 60%;">
+              <el-col>
+                <img src="../assets/about-me/me.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Profile picture">
+              </el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="24">
+            <p>
+              {{ t('about-me.description') }}
+            </p>
+            </el-col>
+        </div> -->
       </LayoutRow>
       <el-divider></el-divider>
       <LayoutRow justify="space-around">
@@ -93,6 +89,9 @@
 <style scoped>
 @import '../assets/styles/palette.css';
 @import '../assets/styles/view.css';
+.about-me-fact{
+  max-width: 400px;
+}
 </style>
 
 <script setup lang="ts">
