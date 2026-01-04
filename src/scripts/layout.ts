@@ -5,7 +5,7 @@ export function getSpan(index: number) {
         case 0:
             return isMobile() ? 24 : 8
         case 1:
-            return isMobile() ? 24 : 12
+            return isMobile() ? 24 : 14
         case 2:
             return isMobile() ? 24 : 8
     }
