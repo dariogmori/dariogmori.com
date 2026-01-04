@@ -1,10 +1,19 @@
 <template>
   <ViewLayout>
-    <!-- LEFT CONTAINER -->
-    <template #left-col>
-      <LayoutRow :justify="'end'">
-        <img src="/img/me-1.jpg" class="image-display" style="width: 90%; rotate: -10deg" alt="Image of me">
+    <!-- CENTER CONTAINER -->
+    <template #center-col>
+      <el-image :src="getLogoURI()" class="logo" alt="About me logo"/>
+      <LayoutRow>
+        <el-col :span="14">
+          <p >
+            {{ t('about-me.description') }}
+          </p>
+        </el-col>
+        <el-col :span="7">
+          <img src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Profile picture">
+        </el-col>
       </LayoutRow>
+      <el-divider></el-divider>
       <LayoutRow :justify="'end'">
         <el-col :span="7">
           <el-row>
@@ -39,9 +48,6 @@
           </el-row>
         </el-col>
       </LayoutRow>
-      <LayoutRow :justify="'center'">
-        <TopSongsComponent />
-      </LayoutRow>
       <LayoutRow>
         <el-col :span="14">
           <p>
@@ -52,31 +58,19 @@
           <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Mushrooms" >
         </el-col>
       </LayoutRow>
-    </template>
-
-    <!-- CENTER CONTAINER -->
-    <template #center-col>
-      <el-image :src="getLogoURI()" class="logo" alt="About me logo"/>
-    </template>
-
-    <!-- RIGHT CONTAINER -->
-    <template #right-col>
-      <LayoutRow>
-        <el-col :span="14">
-          <p >
-            {{ t('about-me.description') }}
-          </p>
-        </el-col>
-        <el-col :span="7">
-          <img src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Profile picture">
-        </el-col>
+      <el-divider></el-divider>
+      <LayoutRow justify="space-around">
+        <img src="/img/me-2.jpg" class="image-display" style="width: 80%; max-width: 300px;  rotate:10deg;" alt="Image of me">
+        <img src="/img/me-1.jpg" class="image-display" style="width: 90%; max-height:320px; max-width: 400px; rotate: -10deg" alt="Image of me">
       </LayoutRow>
-      <LayoutRow>
-        <img src="/img/me-2.jpg" class="image-display" style="width: 80%; rotate:10deg;" alt="Image of me">
-      </LayoutRow>
-
-      <LayoutRow :justify="'center'">
-        <TopArtistsComponent />
+      <el-divider></el-divider>
+      <LayoutRow :justify="'space-between'">
+        <div style="width: 400px;">
+          <TopArtistsComponent />
+        </div>
+        <div style="width: 400px;">
+          <TopSongsComponent />
+        </div>
       </LayoutRow>
     </template>
 
