@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root {
     background: var(--white);
-    background-image: linear-gradient(var(--white), var(--white));
     --secondary-color:var(--dark-sea-blue-1);
     --main-color:var(--white);
     --main-color-semi: var(--grenate-semi);
