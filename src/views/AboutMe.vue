@@ -3,60 +3,73 @@
     <!-- CENTER CONTAINER -->
     <template #center-col>
       <el-image :src="getLogoURI()" class="logo" alt="About me logo"/>
-      <LayoutRow>
-        <el-col :span="14">
-          <p >
-            {{ t('about-me.description') }}
-          </p>
-        </el-col>
-        <el-col :span="7">
-          <img src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Profile picture">
-        </el-col>
+      <LayoutRow :justify="'center'">
+        <div style="max-width: 400px;">
+          <el-col align="center">
+            <el-row style="max-width: 60%;">
+              <el-col>
+                <img src="../assets/about-me/me.png" class="image-display" style="width: 90%;image-rendering: crisp-edges;" alt="Profile picture">
+              </el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="24">
+            <p>
+              {{ t('about-me.description') }}
+            </p>
+            </el-col>
+        </div>
+       
       </LayoutRow>
       <el-divider></el-divider>
       <LayoutRow :justify="'center'">
-        <el-col :span="12">
-          <el-row>
-            <el-col :span="12">
-              <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges;" alt="Flag of Guatemala">
-            </el-col>
-            <el-col :span="12">
-              <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; max-width: 150px; rotate: 10deg; image-rendering: crisp-edges;" alt="Flag of Asturias">
-            </el-col>
-          </el-row>
-        </el-col>
-        <el-col :span="20">
-          <p>
-            {{ t('about-me.nationality') }}
-          </p>
-        </el-col>
-      </LayoutRow>
-      <LayoutRow justify="center">
-        <el-col :span="12">
-          <el-row>
-            <el-col :span="12">
-              <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); " alt="Non binary flag">
-            </el-col>
-            <el-col :span="12">
-              <h3 style="rotate:10deg"> he/they/she </h3>
-            </el-col>
-          </el-row>
-        </el-col>
-        <el-col :span="20">
-          <p>
-            {{ t('about-me.gender') }}
-          </p>
-        </el-col>
-      </LayoutRow>
-      <LayoutRow justify="center">
-        <el-col :span="12">
-          <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Mushrooms" >
-        </el-col>
-        <el-col :span="20">
-          <p>
-            {{ t('about-me.mushrooms') }}
-          </p>
-        </el-col>
+        <div style="max-width: 400px;">
+          <el-col align="center">
+            <el-row style="max-width: 60%;">
+              <el-col :span="12">
+                <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges;" alt="Flag of Guatemala">
+              </el-col>
+              <el-col :span="12">
+                <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; max-width: 150px; rotate: 10deg; image-rendering: crisp-edges;" alt="Flag of Asturias">
+              </el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="24" align="center">
+            <p>
+              {{ t('about-me.nationality') }}
+            </p>
+          </el-col>
+        </div>
+        <div style="max-width: 400px;">
+          <el-col align="center">
+            <el-row style="max-width: 60%;">
+              <el-col :span="12">
+                <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); " alt="Non binary flag">
+              </el-col>
+              <el-col :span="12">
+                <h3 style="rotate:10deg"> he/they/she </h3>
+              </el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="24">
+            <p>
+              {{ t('about-me.gender') }}
+            </p>
+          </el-col>
+        </div>
+        <div style="max-width: 400px;">
+          <el-col align="center">
+            <el-row style="max-width: 60%;">
+              <el-col :span="24">
+                <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Mushrooms" >
+              </el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="24">
+            <p>
+              {{ t('about-me.mushrooms') }}
+            </p>
+          </el-col>
+        </div>  
       </LayoutRow>
       <el-divider></el-divider>
       <LayoutRow justify="space-around">
