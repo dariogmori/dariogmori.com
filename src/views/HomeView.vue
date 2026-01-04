@@ -9,7 +9,9 @@
         <el-col>
           <h2>{{t('home.experience.title')}}</h2>
         </el-col>
-        <ExperienceComponent :title="t('home.experience.resizes-title')" company="Resizes" location="Gijón" :dates="[t('month.december') + ' 2024 - ' + t('home.experience.present')]"/>
+        <ExperienceComponent :title="t('home.experience.resizes-title-2')" company="Resizes" location="Gijón" :dates="[t('month.december') + ' 2025 - ' + t('home.experience.present')]"/>
+        <ExperienceComponent :title="t('home.experience.resizes-title')" company="Resizes" location="Gijón" :dates="[t('month.december') + ' 2024 - ' + t('month.december') + ' 2025'] "/>
+        <el-divider style="width:80%;"></el-divider>
         <ExperienceComponent :title="t('home.experience.simbio-title')" company="Simbiosys" location="Gijón" :dates="[t('month.october') +  ' 2021 - ' + t('month.october') + ' 2022', t('month.september') + ' 2023 - ' + t('month.january') + ' 2024']"/>
       </el-row>
       <el-divider></el-divider>
@@ -67,7 +69,6 @@
 .header-color {
   background-color: var(--main-color);
   color: var(--secondary-color);
-  border: 4px dashed var(--secondary-color);
   padding: 5px;
 }
 
