@@ -142,6 +142,7 @@
       "english": "Inglés"
     },
     "theme": {
+       "name": "Tema",
       "light-mode": "Modo claro",
       "dark-mode": "Modo oscuro"
     }
