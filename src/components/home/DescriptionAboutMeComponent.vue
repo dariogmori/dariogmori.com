@@ -10,9 +10,6 @@
               <el-col :span="4">
                 <img src="../../assets/home/itchio.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
               </el-col>
-              <el-col :span="12" >
-                <p>Itch.io</p>
-              </el-col>
             </el-row>
           </a>
         </el-col>
@@ -22,9 +19,6 @@
               <el-col :span="4">
                 <img src="../../assets/home/linkedin.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
               </el-col>
-              <el-col :span="12">
-                <p>LinkedIn</p>
-              </el-col>
             </el-row>
           </a>
         </el-col>
@@ -33,9 +27,6 @@
             <el-row :justify="'center'">
               <el-col :span="4">
                 <img src="../../assets/home/github.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
-              </el-col>
-              <el-col :span="12">
-                <p>GitHub</p>
               </el-col>
             </el-row>
           </a>
