@@ -32,6 +32,7 @@ h2 {
 }
 .center-container{
   border: 1px solid var(--secondary-color);
+  background-color: var(--main-color);
 }
 .el-divider{
   width:80%;
