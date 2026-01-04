@@ -24,7 +24,7 @@
         <router-view/>
       </div>
     </div> 
-    <el-row justify="center" style="z-index: 11; margin-bottom: 10vh" >
+    <el-row justify="center" style="z-index: 11;" >
       <el-menu 
           mode="horizontal"
           :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
