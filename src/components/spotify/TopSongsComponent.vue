@@ -1,5 +1,5 @@
 <template>
-  <h1>Songs I listened to most this month</h1>
+  <h3>Songs I listened to most this month</h3>
   <el-carousel :interval="4000" type="card" height="33vh" style="width:100%;">
     <el-carousel-item v-for="(song, index) in config.user.top_songs" :key="index">
       <SongComponent :song="song" :index="index" />
