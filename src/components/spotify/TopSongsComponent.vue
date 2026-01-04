@@ -1,6 +1,6 @@
 <template>
   <h3>Songs I listened to most this month</h3>
-  <el-carousel :interval="4000" type="card" height="33vh" style="width:100%;">
+  <el-carousel :interval="4000" type="card" height="200px" style="width:100%;">
     <el-carousel-item v-for="(song, index) in config.user.top_songs" :key="index">
       <SongComponent :song="song" :index="index" />
     </el-carousel-item>
@@ -28,6 +28,8 @@ onMounted(async () => {
 });
 </script>
 
-<style scoped>
-
+<style>
+.el-carousel__mask {
+    background-color: rgba(255, 255, 255, 0);
+}
 </style>

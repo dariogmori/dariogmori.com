@@ -1,6 +1,6 @@
 <template>
   <h3>Artists I listened to most this month</h3>
-  <el-carousel :interval="4000" type="card" height="33vh" style="width:100%;">
+  <el-carousel :interval="4000" type="card" height="200px" style="width:100%;">
     <el-carousel-item v-for="(artist, index) in config.user.top_artists" :key="index">
       <ArtistComponent :artist="artist" :index="index" />
     </el-carousel-item>

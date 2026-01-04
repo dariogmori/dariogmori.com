@@ -1,5 +1,4 @@
 <template>
-  
   <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() } " >
     <!-- <div class="parallax-container">
       <div class="parallax-layer layer-background">
