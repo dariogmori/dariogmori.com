@@ -41,22 +41,23 @@
         </el-col>
       </el-row>
       <el-divider></el-divider>
-      <el-row :justify="'center'" class="header-color">
+      <el-row :justify="'space-around'" class="header-color">
         <el-col>
           <h2>{{ t('home.certifications.title') }}</h2>
         </el-col>
-        <el-col :span="8">
+        <div style="width: 300px;">
           <a href="https://www.credly.com/badges/763920b2-175d-4ceb-a670-7fbfcf59ba06/public_url">
             <img src="../assets/home/cloud-practitioner.png" style="width: 80%;" class="image-display"/>
-            <h3 style="color:var(--secondary-color);">AWS Cloud Practitioner</h3>
+            <p style="color:var(--secondary-color);">AWS Cloud Practitioner</p>
           </a>
-        </el-col>
-        <el-col :span="8">
+        </div>
+        <div style="width: 300px;">
           <a href="https://www.credly.com/badges/e6d17c17-454c-40fb-9e88-e033e3dd1653/public_url">
             <img src="../assets/home/solutions-architect.png" style="width: 80%;" class="image-display"/>
-            <h3 style="color:var(--secondary-color);">AWS Solutions Architect</h3>
+            <p style="color:var(--secondary-color);">AWS Solutions Architect</p>
           </a>
-        </el-col>
+        </div>
+        
       </el-row>
     </template>
   </ViewLayout>
