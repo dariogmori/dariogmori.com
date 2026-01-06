@@ -24,23 +24,6 @@
         <div class="about-me-fact">
           <el-col align="center">
             <el-row style="max-width: 60%;">
-              <el-col :span="12">
-                <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); " alt="Non binary flag">
-              </el-col>
-              <el-col :span="12">
-                <h3 style="rotate:10deg"> he/they/she </h3>
-              </el-col>
-            </el-row>
-          </el-col>
-          <el-col :span="24">
-            <p>
-              {{ t('about-me.gender') }}
-            </p>
-          </el-col>
-        </div>
-        <div class="about-me-fact">
-          <el-col align="center">
-            <el-row style="max-width: 60%;">
               <el-col :span="24">
                 <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Mushrooms" >
               </el-col>
@@ -71,6 +54,23 @@
       <LayoutRow justify="space-around">
         <img src="/img/me-2.jpg" class="image-display" style="width: 80%; max-width: 300px;  rotate:10deg;" alt="Image of me">
         <img src="/img/me-1.jpg" class="image-display" style="width: 90%; max-height:320px; max-width: 400px; rotate: -10deg" alt="Image of me">
+        <div class="about-me-fact" style="align-content: center;">
+          <el-col align="center" justify="center">
+            <el-row style="max-width: 60%;" align="end">
+              <el-col :span="12">
+                <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); " alt="Non binary flag">
+              </el-col>
+              <el-col :span="12">
+                <h3 style="rotate:10deg; width:50%;"> he/they/she </h3>
+              </el-col>
+            </el-row>
+            <el-row :span="24">
+              <p>
+                {{ t('about-me.gender') }}
+              </p>
+            </el-row>
+          </el-col>
+        </div>
         <img src="../assets/about-me/me-japan-oss.png" class="image-display" style="width: 90%; max-width: 500px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
       </LayoutRow>
       <el-divider></el-divider>
