@@ -21,20 +21,6 @@
             </p>
           </el-col>
         </div>
-        <div class="about-me-fact">
-          <el-col align="center">
-            <el-row style="max-width: 60%;">
-              <el-col :span="24">
-                <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Mushrooms" >
-              </el-col>
-            </el-row>
-          </el-col>
-          <el-col :span="24">
-            <p>
-              {{ t('about-me.mushrooms') }}
-            </p>
-          </el-col>
-        </div>  
         <!-- <div class="about-me-fact">
           <el-col align="center">
             <el-row style="max-width: 60%;">
@@ -72,6 +58,26 @@
           </el-col>
         </div>
         <img src="../assets/about-me/me-japan-oss.png" class="image-display" style="width: 90%; max-width: 500px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
+      </LayoutRow>
+      <el-divider></el-divider>
+      <LayoutRow justify="space-around">
+        <img src="../assets/about-me/mushrooms/cesta-mixta-pinar.png" class="image-display" style="width: 70%; max-width: 400px;  max-height:550px;  rotate:10deg;" alt="Image of me">
+        <img src="../assets/about-me/mushrooms/cesta-cocina.png" class="image-display" style="width: 70%;  max-width: 400px; max-height:580px;rotate: -10deg" alt="Image of me">
+        <div class="about-me-fact" style="align-content: center;">
+          <el-col align="center" justify="center">
+            <el-row style="max-width: 60%;" align="end">
+              <el-col :span="24">
+                <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Mushrooms" >
+              </el-col>
+            </el-row>
+            <el-row :span="24">
+              <p>
+                {{ t('about-me.mushrooms') }}
+              </p>
+            </el-row>
+          </el-col>
+        </div>
+        <img src="../assets/about-me/mushrooms/muscaria.png" class="image-display" style="width: 70%; max-width: 400px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
       </LayoutRow>
       <el-divider></el-divider>
       <LayoutRow :justify="'space-between'">
