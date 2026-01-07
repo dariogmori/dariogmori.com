@@ -60,6 +60,15 @@
         <img src="../assets/about-me/me-japan-oss.png" class="image-display" style="width: 90%; max-width: 500px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
       </LayoutRow>
       <el-divider></el-divider>
+      <LayoutRow :justify="'space-between'">
+        <div style="width: 400px;">
+          <TopArtistsComponent />
+        </div>
+        <div style="width: 400px;">
+          <TopSongsComponent />
+        </div>
+      </LayoutRow>
+      <el-divider></el-divider>
       <LayoutRow justify="space-around">
         <img src="../assets/about-me/mushrooms/cesta-mixta-pinar.png" class="image-display" style="width: 70%; max-width: 400px;  max-height:550px;  rotate:10deg;" alt="Image of me">
         <img src="../assets/about-me/mushrooms/cesta-cocina.png" class="image-display" style="width: 70%;  max-width: 400px; max-height:580px;rotate: -10deg" alt="Image of me">
@@ -78,15 +87,6 @@
           </el-col>
         </div>
         <img src="../assets/about-me/mushrooms/muscaria.png" class="image-display" style="width: 70%; max-width: 400px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
-      </LayoutRow>
-      <el-divider></el-divider>
-      <LayoutRow :justify="'space-between'">
-        <div style="width: 400px;">
-          <TopArtistsComponent />
-        </div>
-        <div style="width: 400px;">
-          <TopSongsComponent />
-        </div>
       </LayoutRow>
     </template>
 
