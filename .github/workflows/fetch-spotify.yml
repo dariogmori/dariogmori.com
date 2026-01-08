@@ -2,7 +2,7 @@ name: Fetch Spotify & Pixelate
 
 on:
   schedule:
-    - cron: "0 0 */1 * *" # every day at midnight UTC
+    - cron: "0 0 */3 * *" 
   workflow_dispatch:
 
 jobs:
