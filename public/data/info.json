@@ -9,7 +9,7 @@
       "artists": [
         {
           "name": "Fito y Fitipaldis",
-          "followers": 2445209,
+          "followers": 2446862,
           "genres": "[]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f1785515537857141ca2ad475f50",
           "profile_url": "https://open.spotify.com/artist/1tZ99AnqyjgrmPwLfGU5eo"
@@ -19,12 +19,71 @@
       "duration_ms": 306240
     },
     {
+      "name": "Iureisha",
+      "url": "https://open.spotify.com/track/3lGjJqSe49LFcnQHsucFNz",
+      "artists": [
+        {
+          "name": "Artisan",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/1kBr2EJR8AGyZ6SaVORiws"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485109f3015621dac48ce2369c47",
+      "duration_ms": 205900
+    },
+    {
+      "name": "in the pool",
+      "url": "https://open.spotify.com/track/1AvuBt1hrjsHeBxFX91Rn6",
+      "artists": [
+        {
+          "name": "kensuke ushio",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/4L0gz16xuM1as1OgYzh1SR"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d000048515bf8b362e97fdbfbb8ea4685",
+      "duration_ms": 245440
+    },
+    {
+      "name": "99 Steps",
+      "url": "https://open.spotify.com/track/7iy5CzNNrpJD3i0hx8t83n",
+      "artists": [
+        {
+          "name": "STUTS",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/0qC4CNzOUtgdmdVzRqCa1d"
+        },
+        {
+          "name": "Kohjiya",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/1jn7KGhS5f79E6efpgukdK"
+        },
+        {
+          "name": "Hana Hope",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/0HRps5F3fAsPL6QmFCdK7a"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485199900deb18102c9c54a0cc3c",
+      "duration_ms": 197870
+    },
+    {
       "name": "ブラッドサーキュレーター",
       "url": "https://open.spotify.com/track/2sFBiCSUNc3ptKrCR8JABx",
       "artists": [
         {
           "name": "ASIAN KUNG-FU GENERATION",
-          "followers": 1166418,
+          "followers": 1166925,
           "genres": "[\"j-rock\",\"anime\",\"j-pop\"]",
           "avatar_url": "https://i.scdn.co/image/ab6761610000f17840c6a6dd0715a0de86c05308",
           "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
@@ -32,88 +91,43 @@
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d00004851d816391e3bd916cfa595d67e",
       "duration_ms": 222826
-    },
-    {
-      "name": "La casa por el tejado",
-      "url": "https://open.spotify.com/track/428cFrawSqeLoyooQjAW9d",
-      "artists": [
-        {
-          "name": "Fito y Fitipaldis",
-          "followers": 2445209,
-          "genres": "[]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f1785515537857141ca2ad475f50",
-          "profile_url": "https://open.spotify.com/artist/1tZ99AnqyjgrmPwLfGU5eo"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851a618985542a38277dc088c3a",
-      "duration_ms": 267760
-    },
-    {
-      "name": "I Came for You",
-      "url": "https://open.spotify.com/track/4CQdNuJCXhWgXB5vfTurI4",
-      "artists": [
-        {
-          "name": "Nicholas Britell",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/18oYqNtcLUHrqO7LfX7qni"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d000048516788f1db657017ab39db0ad9",
-      "duration_ms": 159880
-    },
-    {
-      "name": "Silksong",
-      "url": "https://open.spotify.com/track/50Pf5xs5TG5bJplUnEJA7A",
-      "artists": [
-        {
-          "name": "Christopher Larkin",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851e9bb10e381fbd4f78ce2a511",
-      "duration_ms": 87335
     }
   ],
   "top_artists": [
     {
       "name": "Alice Phoebe Lou",
-      "followers": 548199,
+      "followers": 548612,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1785d2ce0048a6e0974b08ae73e",
       "profile_url": "https://open.spotify.com/artist/03uMw43UVu9MsQCcHVSGjX"
     },
     {
       "name": "Fito y Fitipaldis",
-      "followers": 2445209,
+      "followers": 2446862,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1785515537857141ca2ad475f50",
       "profile_url": "https://open.spotify.com/artist/1tZ99AnqyjgrmPwLfGU5eo"
     },
     {
       "name": "RADWIMPS",
-      "followers": 4949316,
+      "followers": 4953024,
       "genres": "[\"anime\",\"j-pop\",\"j-rock\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f178f7374b42bee7c71b9649ac83",
       "profile_url": "https://open.spotify.com/artist/1EowJ1WwkMzkCkRomFhui7"
     },
     {
-      "name": "strongboi",
-      "followers": 69421,
-      "genres": "[\"bedroom pop\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
-      "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
-    },
-    {
       "name": "ASIAN KUNG-FU GENERATION",
-      "followers": 1166418,
+      "followers": 1166925,
       "genres": "[\"j-rock\",\"anime\",\"j-pop\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17840c6a6dd0715a0de86c05308",
       "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
+    },
+    {
+      "name": "strongboi",
+      "followers": 69528,
+      "genres": "[\"bedroom pop\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f178c48096451ba1cab7617fb85f",
+      "profile_url": "https://open.spotify.com/artist/2ygluM9w0lmulZrMJ1pI0i"
     }
   ]
 }
