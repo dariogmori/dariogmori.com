@@ -36,7 +36,7 @@ import VideoCardComponent from "@/components/VideoCardComponent.vue";
 import { useTranslation } from "i18next-vue";
 const game = {
   id : 'big-crunch',
-  date: '21-01-2024',
+  date: '21-01-2022',
   tags: ['puzzle', 'speed-run']
 }
 const { t } = useTranslation();
