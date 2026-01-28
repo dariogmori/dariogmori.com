@@ -7,6 +7,7 @@
               <p>
                 I recently got an opportunity (thanks to my friend Anastasiia) to propose a talk to the people at <a href="https://futurefrontend.com/speakers/#dar-o-guti-rrez-mori">Future Frontend</a>(1) in Finland, and it got accepted! I am very lucky to get this opportunity, now I just gotta figure out the hard part: knowing what I am going to talk about specifically. I know I want to talk about permacomputing (and how I am slowly getting into it) and just show to the world the multiple ways you can do computing differently (cause I am so <i>different and special</i> lmao). 
               </p>
+              <img src="../../assets/blog/28-01-2026/breaking-machine1.gif">
               <p>
                 On a bit of a more personal note, this is a bit of a weird post I am writing after taking the decision to not attend Malaga Jam Weekend 20 because of personal reasons (stress and rent). The thing is I am very excited to try to find a different path from everything I have gotten surrounded with in the last year, the industry is exhausting (yes, already). 
               </p>
