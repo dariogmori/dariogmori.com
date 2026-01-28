@@ -1,5 +1,25 @@
 <template>
   <div class="fade-in">
+    <BlogComponent date="28/01/2026" title="I'm doing a talk about permacomputing! (in future tense)">
+      <template #body>
+          <el-row :justify="'center'" class="header-color">
+              <el-col :span="20">
+              <p>
+                I recently got an opportunity (thanks to my friend Anastasiia) to propose a talk to the people at <a href="https://futurefrontend.com/speakers/#dar-o-guti-rrez-mori">Future Frontend</a> in Finland, and it got accepted! I am very lucky to get this opportunity, now I just gotta figure out the hard part: knowing what I am going to talk about specifically. I know I want to talk about permacomputing (and how I am slowly getting into it) and just show to the world the multiple ways you can do computing differently (cause I am so <i>different and special</i> lmao). 
+              </p>
+              <p>
+                On a bit of a more personal note, this is a bit of a weird post I am writing after taking the decision to not attend Malaga Jam Weekend 20 because of personal reasons (stress and rent). The thing is I am very excited to try to find a different path from everything I have gotten surrounded with in the last year, the industry is exhausting (yes, already). 
+              </p>
+              <p>
+                I have always struggled with creativity as I think the creative process is something that is very unnatural to me and I have a bit of a complex when moving in such cool ambients such as the indie videogame industry or possibly permacomputing forums but I will do my best, I think the result is worth it. BTW recently found out my new favorite person (in a career way), check them out at <a href="https://www.todepond.com/">https://www.todepond.com/</a> as they create incredibly cool stuff and I aspire to do a fraction of what they do.
+              </p>
+              <p class="small-text">Might private this post if I ever have to look for a job lmao so do not be surprised if it disappears.</p>
+              </el-col>
+          </el-row>
+      </template>
+    </BlogComponent>
+    <br>
+    <br>
     <BlogComponent date="27/12/2025" title="RAM Prices and reclaiming infrastructure ownership">
       <template #body>
           <el-row :justify="'center'" class="header-color">
@@ -91,6 +111,11 @@ ul {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.small-text {
+  font-size: 8px;
+  font-style: italic;
 }
 </style>
 
