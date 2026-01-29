@@ -70,8 +70,6 @@ nav a.router-link-exact-active {
 .mobile{
   width:100%;
 }
-.desktop {
-}
 .body-desktop {
   max-width:98.8%;
 }
@@ -80,56 +78,6 @@ nav a.router-link-exact-active {
   overflow-x: hidden;
 }
 
-.parallax-wrapper {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.parallax-layer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
-  overflow-x: hidden;
-}
-
-.parallax-layer img {
-  width: 100%;
-  object-fit: cover;
-}
-.layer-background {
-  transform: translateZ(0);
-  z-index: 1;
-}
-.layer-back {
-  transform: translateZ(0);
-  z-index: 2;
-}
-.layer-mid-2 {
-  z-index: 3;
-}
-.layer-mid {
-  z-index: 4;
-}
-.layer-front {
-  z-index: 5;
-}
-
-.parallax-content {
-  position: relative;
-  z-index: 10;
-  overflow-x: visible;
-}
-
-.parallax-layer::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  backdrop-filter: blur(1.5px);
-  z-index: 10; /* Adjust to sit above layers, but maybe below text if needed */
-  pointer-events: none; /* Allow interaction through the layer */
-}
 </style>
 <script setup lang="ts">
 import { useTranslation } from 'i18next-vue'
@@ -175,28 +123,4 @@ function changeLanguage ( lang: string) {
 function goToRoute(route: string) {
   router.push(route)
 }
-const layers = [
-  { selector: '.layer-back', speed: -0.3 },
-  { selector: '.layer-mid-2', speed: -0.4 },
-  { selector: '.layer-mid', speed: -0.5 },
-  { selector: '.layer-front', speed: -0.7 },
-];
-
-const isMobileModifier = isMobile() ? 0.1 : 1;
-
-const handleScroll = () => {
-  const scrollY = window.scrollY;
-
-  for (const { selector, speed } of layers) {
-    const el = document.querySelector<HTMLElement>(selector);
-    if (el) {
-      el.style.transform = `translateY(${scrollY * speed * isMobileModifier}px)`;
-    }
-  }
-};
-
-onMounted(() => {
-  
-})
-
 </script>
