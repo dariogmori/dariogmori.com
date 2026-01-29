@@ -1,23 +1,5 @@
 <template>
   <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() } " >
-    <!-- <div class="parallax-container">
-      <div class="parallax-layer layer-background">
-        <img :src="'/img/backgrounds/' + config.theme + '/layer-background.png'" alt="layer-background" />
-      </div>
-      <div class="parallax-layer layer-back">
-        <img :src="'/img/backgrounds/' + config.theme + '/layer-4.png'" alt="layer-4" />
-      </div>
-      <div class="parallax-layer layer-mid-2">
-        <img :src="'/img/backgrounds/' + config.theme + '/layer-3.png'" alt="layer-3" />
-      </div>
-      <div class="parallax-layer layer-mid">
-        <img :src="'/img/backgrounds/' + config.theme + '/layer-2.png'" alt="layer-2" />
-      </div>
-      <div class="parallax-layer layer-front">
-        <img :src="'/img/backgrounds/' + config.theme + '/layer-1.png'"  alt="layer-1" />
-      </div>
-    </div>
-    -->
     <div class="parallax-content">
       <div style="margin-bottom: 10vh" >
         <router-view/>
@@ -127,23 +109,7 @@ nav a.router-link-exact-active {
   width: 100%;
   object-fit: cover;
 }
-.layer-background {
-  transform: translateZ(0);
-  z-index: 1;
-}
-.layer-back {
-  transform: translateZ(0);
-  z-index: 2;
-}
-.layer-mid-2 {
-  z-index: 3;
-}
-.layer-mid {
-  z-index: 4;
-}
-.layer-front {
-  z-index: 5;
-}
+
 
 .parallax-content {
   position: relative;
