@@ -9,9 +9,9 @@
       "artists": [
         {
           "name": "ASIAN KUNG-FU GENERATION",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 1172493,
+          "genres": "[\"j-rock\",\"anime\",\"j-pop\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17840c6a6dd0715a0de86c05308",
           "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
         }
       ],
@@ -24,9 +24,9 @@
       "artists": [
         {
           "name": "ASIAN KUNG-FU GENERATION",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 1172493,
+          "genres": "[\"j-rock\",\"anime\",\"j-pop\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17840c6a6dd0715a0de86c05308",
           "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
         }
       ],
@@ -68,9 +68,9 @@
       "artists": [
         {
           "name": "ASIAN KUNG-FU GENERATION",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
+          "followers": 1172493,
+          "genres": "[\"j-rock\",\"anime\",\"j-pop\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17840c6a6dd0715a0de86c05308",
           "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
         }
       ],
@@ -95,39 +95,39 @@
   ],
   "top_artists": [
     {
-      "name": "ASIAN KUNG-FU GENERATION",
-      "followers": 0,
-      "genres": "",
-      "avatar_url": null,
-      "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
-    },
-    {
       "name": "Snail's House",
-      "followers": 411233,
+      "followers": 411352,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
+      "name": "ASIAN KUNG-FU GENERATION",
+      "followers": 1172493,
+      "genres": "[\"j-rock\",\"anime\",\"j-pop\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f17840c6a6dd0715a0de86c05308",
+      "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
+    },
+    {
+      "name": "物語シリーズ",
+      "followers": 126550,
+      "genres": "[\"anime\",\"j-pop\"]",
+      "avatar_url": "https://i.scdn.co/image/ab67616d00004851168da2035a75e56b2f53c0d3",
+      "profile_url": "https://open.spotify.com/artist/0NT8fqhPoKJrd038u1Qumz"
+    },
+    {
       "name": "Ujico*",
-      "followers": 21251,
+      "followers": 21272,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
       "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
     },
     {
       "name": "Laufey",
-      "followers": 9253717,
+      "followers": 9273723,
       "genres": "[]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17898c2527b85500f68f53084f2",
       "profile_url": "https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO"
-    },
-    {
-      "name": "物語シリーズ",
-      "followers": 126416,
-      "genres": "[\"anime\",\"j-pop\"]",
-      "avatar_url": "https://i.scdn.co/image/ab67616d00004851168da2035a75e56b2f53c0d3",
-      "profile_url": "https://open.spotify.com/artist/0NT8fqhPoKJrd038u1Qumz"
     }
   ]
 }
