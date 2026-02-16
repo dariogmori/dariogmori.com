@@ -1,59 +1,10 @@
 version: '3'
 services:
-  database:
-    container_name: postgresql-dariogmori
-    environment:
-      POSTGRES_USER: ${DATABASE_USER}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-      POSTGRES_DB: api
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    ports:
-        - 5432:5432
-    image: postgres:16
-    profiles: ["dev", "prod"]
-    networks:
-      mynetwork:
-
-  api:
-    container_name: api-dariogmori
-    profiles: ["dev", "prod"]
-    image: ghcr.io/dariogmori/dariogmori.com/webpage-api:latest
-    environment:
-      - DATABASE_URL=jdbc:postgresql://postgresql-dariogmori:5432/api
-      - DATABASE_USER=${DATABASE_USER}
-      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
-      - JWT_SECRET=${JWT_SECRET}
-      - SSL_PASSWORD=${SSL_PASSWORD}
-      - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
-      - SPOTIFY_BASIC_PASS=${SPOTIFY_BASIC_PASS}
-      - SPOTIFY_REFRESH_TOKEN=${SPOTIFY_REFRESH_TOKEN}
-    ports:
-      - 8443:8443
-    networks:
-      mynetwork:
-    volumes:
-      - /certs:/etc/letsencrypt/live/dariogmori.com:ro
-    depends_on:
-      - database
-
   webpage:
-    container_name: webapp-dariogmori
-    profiles: [ "dev", "prod" ]
-    image: ghcr.io/dariogmori/dariogmori.com/webpage-webapp:latest
+    container_name: dariogmori-com
     build:
-      context: ./webpage
+      context: .
     ports:
       - 443:443
-    networks:
-      mynetwork:
     volumes:
       - /etc/letsencrypt/archive/dariogmori.com:/config/keys
-    depends_on:
-      - api
-
-volumes:
-    postgres_data:
-networks:
-    mynetwork:
-        driver: bridge
