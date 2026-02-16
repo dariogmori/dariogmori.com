@@ -1,10 +1,10 @@
 version: '3'
 services:
   webpage:
-    container_name: dariogmori-com
     build:
       context: .
-    ports:
-      - 443:443
+    user: 1000:1000
+    network_mode: "host"
+   # restart: unless-stopped
     volumes:
-      - /etc/letsencrypt/archive/dariogmori.com:/config/keys
+      - /home/dariogmori/Desktop/dariogmori.com/private_keys:/config/keys:rw
