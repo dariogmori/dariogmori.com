@@ -5,3 +5,5 @@ https://dariogmori.com
 
 To run the project run the docker-compose.yml with the needed env variables. 
 
+**NO AI HAS BEEN USED IN THIS PROJECT, ALL AI HAS AND WILL BE DELETED FROM THIS REPOSITORY**
+
