@@ -1,5 +1,36 @@
 <template>
   <div class="fade-in">
+	<BlogComponent date="17/02/2026" title="Running away from Spotify (or Apple Music if you are weird like that)">
+      <template #body>
+         <el-row :justify="'center'" class="header-color">
+             <el-col :span="20">
+	             <p>
+	             	It is well known the continuous abuses the music industry and streaming music services such as Spotify or Apple music carry out on artists (1).  
+	             	It also seems like specially Spotify has been banking on AI generated music, filling its catalogue with slop (2). In my journey to run away from the eternal wheel of SaaS and subscriptions I decided to look into self-hosted music server alternatives.
+	             </p>
+	             <p>
+				 	I stumbled upon Lightweight Music Server (3) (LMS for friends) which had Subsonic API support, meaning that it is compatible with most open source music players out there. 
+				 	For players, I chose Substreamer (4) for my mobile player (since I am stuck with iPhone until I figure out a nice phone to use with postmarketOS) and Supersonic (5) for my desktop player. You can use any player that supports the Subsonic API though so feel free to experiment and tell me why I am wrong.
+	             </p>
+	             <p>
+	               I have always struggled with creativity as I think the creative process is something that is very unnatural to me and I have a bit of a complex when moving in such cool ambients such as the indie videogame industry or possibly permacomputing forums but I will do my best, I think the result is worth it. BTW recently found out my new favorite person (in a career way), check them out at <a href="https://www.todepond.com/">https://www.todepond.com/</a> as they create incredibly cool stuff (2) and I aspire to do a fraction of what they do.
+	             </p>
+           		 <p class="small-text">Might private this post if I ever have to look for a job lmao so do not be surprised if it disappears.</p>
+              </el-col>
+         </el-row>
+       </template>
+       <template #references>
+	       <el-col :span="20">
+	       <ul>
+	         <li>(1) Spotify is abusive towards musicians both rich and poor, and here is why | Ashley Jana <a href="https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02">https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02</a></li>
+	         <li>(2) Spotify is paying out ai artist that spam the platform with ai made albums and abuse the system  <a href="https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/">https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/</a></li>
+	         <li>(3) Lightweight Music Server's Github Page  <a href="https://github.com/epoupon/lms">https://github.com/epoupon/lms</a></li>
+	       </ul>
+	       </el-col>
+       </template>
+    </BlogComponent>
+    <br>
+    <br>  
     <BlogComponent date="28/01/2026" title="I'm doing a talk about permacomputing! (in future tense)">
       <template #body>
           <el-row :justify="'center'" class="header-color">
