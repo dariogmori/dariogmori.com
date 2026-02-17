@@ -26,6 +26,7 @@
 	         <li>(2) Spotify is paying out ai artist that spam the platform with ai made albums and abuse the system  <a href="https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/">https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/</a></li>
 	         <li>(3) Lightweight Music Server's Github Page  <a href="https://github.com/epoupon/lms">https://github.com/epoupon/lms</a></li>
 	         <li>(4) Substreamer's Main Page  <a href="https://substreamerapp.com/">https://substreamerapp.com/</a></li>
+	         <li>(5) Supersonic’s Github Page  <a href="https://github.com/dweymouth/supersonic">https://github.com/dweymouth/supersonic</a></li>
 	       </ul>
 	       </el-col>
        </template>
