@@ -36,7 +36,7 @@
          	 	 <p>
          	 	 	In here, create a file named docker-compose.yaml, which will be used to run the LMS container. Create it with the following contents:
          	 	 </p>
-         	 	 <pre>
+<pre>
 <code>
 version: 3.8
 services:
@@ -54,7 +54,7 @@ services:
 x-podman:
   in_pod: false
 </code>
-         	 	 </pre>
+</pre>
          	 	 <p>
          	 	 	After this, we can run our docker-compose by executing:
          	 	 </p>
@@ -178,10 +178,15 @@ body{
 code {
   text-align:left;
   display:block;
+  margin: 5px;
+}
+pre {
+  border: 1px black solid;
 }
 samp {
   text-align:left;
   display:block;
+  border: 1px black solid;
 }
 h2 {
   font-family: 'Courier New', Courier, monospace;
