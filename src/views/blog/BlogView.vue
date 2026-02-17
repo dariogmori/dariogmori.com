@@ -55,6 +55,26 @@ x-podman:
   in_pod: false
 </code>
          	 	 </pre>
+         	 	 <p>
+         	 	 	After this, we can run our docker-compose by executing:
+         	 	 </p>
+         	 	 <samp>
+         	 	 	>> podman compose up 
+         	 	 </samp>
+         	 	 <p>
+         	 	 > NOTE: if you wish to not have the server close when you close the terminal run `podman compose up -d` so it runs in detached mode
+         	 	 </p>
+         	 	 <p>
+         	 	 	This will run our container and display the logs, if everything went according to plan we should be able to access our server by going to <a href="http://localhost:5082">http://localhost:5082</a>. Here we can create our admin user and run a scan of our songs:
+         	 	 </p>
+         	 	 <div style="display: flex; justify-content: space-evenly;">
+         	 	 	<img src="../../assets/blog/17-02-2026/lms_create_account.png" style="width:500px; max-width:80%">
+         	 	 	<img src="../../assets/blog/17-02-2026/lms_scan_songs.png" style="width:500px; max-width:80%">
+         	 	 </div>
+         	 	 <p>
+         	 	 	After running this scan we will see our songs pop up in the main menu and we can even play them!
+         	 	 </p>
+          	 	 <img src="../../assets/blog/17-02-2026/lms_play_song.png" style="width:500px; max-width:80%">
              </el-col>
          </el-row>
        </template>
