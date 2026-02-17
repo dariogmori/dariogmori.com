@@ -12,9 +12,7 @@
 				 	I stumbled upon Lightweight Music Server (3) (LMS for friends) which had Subsonic API support, meaning that it is compatible with most open source music players out there. 
 				 	For players, I chose Substreamer (4) for my mobile player (since I am stuck with iPhone until I figure out a nice phone to use with postmarketOS) and Supersonic (5) for my desktop player. You can use any player that supports the Subsonic API though so feel free to experiment and tell me why I am wrong.
 	             </p>
-	             <p>
-					
-	             </p>
+	             <h2>Setting up LMS</h2>
              </el-col>
          </el-row>
        </template>
@@ -114,6 +112,10 @@
 @import '../../assets/styles/theme.css';
 body{
     background-color: white;
+}
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
 }
 p {
   font-family: 'Courier New', Courier, monospace;
