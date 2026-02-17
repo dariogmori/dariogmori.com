@@ -15,8 +15,7 @@
 	             <p>
 					
 	             </p>
-           		 <p class="small-text">Might private this post if I ever have to look for a job lmao so do not be surprised if it disappears.</p>
-              </el-col>
+             </el-col>
          </el-row>
        </template>
        <template #references>
