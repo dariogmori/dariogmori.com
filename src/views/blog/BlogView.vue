@@ -13,6 +13,48 @@
 				 	For players, I chose Substreamer (4) for my mobile player (since I am stuck with iPhone until I figure out a nice phone to use with postmarketOS) and Supersonic (5) for my desktop player. You can use any player that supports the Subsonic API though so feel free to experiment and tell me why I am wrong.
 	             </p>
 	             <h2>Setting up LMS</h2>
+	             <p>
+	             	In order to set up Lightweight Music Server you will need the following (for my specific setup). I recommend you run some Linux distro, I run my LMS in a Steam Deck (arch):
+         	 	 </p>
+         	 	 <ul>
+         	 	 	<li>A machine with Podman/Docker installed (I will use podman in this tutorial). </li>
+         	 	 	<li>Some songs to test with.</li>
+         	 	 	<li>Time</li>
+         	 	 </ul>
+         	 	 <p>
+         	 	 	Once you have all of this set up let’s set up a directory named lms from which we will be working:
+         	 	 </p>
+         	 	 <samp>
+         	 	 	>> mkdir lms && cd lms
+         	 	 </samp>
+         	 	 <p> 
+         	 	 	We also need to create an ArtistInfo dir in which you can define the data of the artists if you wish (this step is optional).
+         	 	 </p>
+         	 	 <samp>
+         	 	 	>> mkdir ArtistInfo
+         	 	 </samp>
+         	 	 <p>
+         	 	 	In here, create a file named docker-compose.yaml, which will be used to run the LMS container. Create it with the following contents:
+         	 	 </p>
+         	 	 <pre>
+<code>
+version: 3.8
+services:
+  lms:
+    image: docker.io/epoupon/lms:latest
+   	container_name: lms
+   	restart: unless-stopped
+   	network_mode: "host"
+   	user: 1000:1000
+      userns_mode: keep-id
+      volumes:
+      	- &ltfull path to your music dir&gt:/music:ro
+       	- &ltfull path to your data dir&gt:/var/lms:rw
+       	- &ltfull path to your ArtistInfo dir&gt:/ArtistInfo:ro
+x-podman:
+  in_pod: false
+</code>
+         	 	 </pre>
              </el-col>
          </el-row>
        </template>
@@ -112,6 +154,14 @@
 @import '../../assets/styles/theme.css';
 body{
     background-color: white;
+}
+code {
+  text-align:left;
+  display:block;
+}
+samp {
+  text-align:left;
+  display:block;
 }
 h2 {
   font-family: 'Courier New', Courier, monospace;
