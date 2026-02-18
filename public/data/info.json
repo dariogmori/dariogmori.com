@@ -4,127 +4,113 @@
   "profile_url": "https://open.spotify.com/user/mayitapipo",
   "top_songs": [
     {
-      "name": "君の街まで",
-      "url": "https://open.spotify.com/track/4eeEG54H5Ay1jVmQ212vZH",
+      "name": "Thinkin' of U.",
+      "url": "https://open.spotify.com/track/61IO4pSknmkmzlLYSm7EGR",
       "artists": [
         {
-          "name": "ASIAN KUNG-FU GENERATION",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
+          "name": "Snail's House",
+          "followers": 411790,
+          "genres": "[\"future bass\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
+          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851f8dd23458921ec0c46801026",
-      "duration_ms": 215866
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851f53d9cd9bf7e60886b95a1d0",
+      "duration_ms": 145084
     },
     {
-      "name": "ブラッドサーキュレーター",
-      "url": "https://open.spotify.com/track/2sFBiCSUNc3ptKrCR8JABx",
+      "name": "それしか言えない",
+      "url": "https://open.spotify.com/track/4pGMj1OT9QPyQV5C5BlcEV",
       "artists": [
         {
-          "name": "ASIAN KUNG-FU GENERATION",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
+          "name": "Haku.",
+          "followers": 173482,
+          "genres": "[\"japanese indie\",\"j-rock\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f178d8a262b83ae1b88536530530",
+          "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851d816391e3bd916cfa595d67e",
-      "duration_ms": 222826
+      "cover_url": "https://i.scdn.co/image/ab67616d000048519c8e18bcc1b13fcceb75738e",
+      "duration_ms": 264152
     },
     {
-      "name": "99 Steps",
-      "url": "https://open.spotify.com/track/7iy5CzNNrpJD3i0hx8t83n",
+      "name": "頭の中の宇宙",
+      "url": "https://open.spotify.com/track/0XNWTfaqQY9oHKawoKLal3",
       "artists": [
         {
-          "name": "STUTS",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/0qC4CNzOUtgdmdVzRqCa1d"
-        },
-        {
-          "name": "Kohjiya",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/1jn7KGhS5f79E6efpgukdK"
-        },
-        {
-          "name": "Hana Hope",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/0HRps5F3fAsPL6QmFCdK7a"
+          "name": "Haku.",
+          "followers": 173482,
+          "genres": "[\"japanese indie\",\"j-rock\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f178d8a262b83ae1b88536530530",
+          "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d0000485199900deb18102c9c54a0cc3c",
-      "duration_ms": 197870
+      "cover_url": "https://i.scdn.co/image/ab67616d000048518e9eaed81a1087b3ed8f8bdd",
+      "duration_ms": 207179
     },
     {
-      "name": "遥か彼方",
-      "url": "https://open.spotify.com/track/5ORPYXJKlpHWIdceavSGrL",
+      "name": "奥二重で見る",
+      "url": "https://open.spotify.com/track/5OT7zL5hxwq9K0nGEYKS05",
       "artists": [
         {
-          "name": "ASIAN KUNG-FU GENERATION",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
+          "name": "Haku.",
+          "followers": 173482,
+          "genres": "[\"japanese indie\",\"j-rock\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f178d8a262b83ae1b88536530530",
+          "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d000048511f7e4a14a894499462aa82ce",
-      "duration_ms": 243346
+      "cover_url": "https://i.scdn.co/image/ab67616d0000485110d706762d3a82f7f2e26d59",
+      "duration_ms": 211019
     },
     {
-      "name": "愛を伝えたいだとか",
-      "url": "https://open.spotify.com/track/0N8Xztr4pBHJ7V0moJWhbO",
+      "name": "Cocoa",
+      "url": "https://open.spotify.com/track/1PzfhBQ3bQd5wPNHsaL7XU",
       "artists": [
         {
-          "name": "Aimyon",
-          "followers": 0,
-          "genres": "",
-          "avatar_url": null,
-          "profile_url": "https://open.spotify.com/artist/5kVZa4lFUmAQlBogl1fkd6"
+          "name": "Snail's House",
+          "followers": 411790,
+          "genres": "[\"future bass\"]",
+          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
+          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d0000485133c05e1d08fec494a30bd240",
-      "duration_ms": 235240
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851f53d9cd9bf7e60886b95a1d0",
+      "duration_ms": 218185
     }
   ],
   "top_artists": [
     {
-      "name": "ASIAN KUNG-FU GENERATION",
-      "followers": 0,
-      "genres": "",
-      "avatar_url": null,
-      "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
-    },
-    {
       "name": "Snail's House",
-      "followers": 411195,
+      "followers": 411790,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
-      "name": "Ujico*",
-      "followers": 21247,
-      "genres": "[\"future bass\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f1783e0363c8ed8dcfe1735b25ab",
-      "profile_url": "https://open.spotify.com/artist/6W1vB9PNvWf7sP6NfU9obG"
+      "name": "Haku.",
+      "followers": 173482,
+      "genres": "[\"japanese indie\",\"j-rock\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f178d8a262b83ae1b88536530530",
+      "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
     },
     {
-      "name": "Laufey",
-      "followers": 9247315,
-      "genres": "[]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f17898c2527b85500f68f53084f2",
-      "profile_url": "https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO"
+      "name": "物語シリーズ",
+      "followers": 127239,
+      "genres": "[\"anime\",\"j-pop\"]",
+      "avatar_url": "https://i.scdn.co/image/ab67616d00004851168da2035a75e56b2f53c0d3",
+      "profile_url": "https://open.spotify.com/artist/0NT8fqhPoKJrd038u1Qumz"
+    },
+    {
+      "name": "dark cat",
+      "followers": 125786,
+      "genres": "[\"future bass\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f178ebb79d498039e43123293004",
+      "profile_url": "https://open.spotify.com/artist/0CW3aaY5gtWFStE6Vj6ZHI"
     },
     {
       "name": "fusq",
-      "followers": 53583,
+      "followers": 53691,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f1781859f9bffa4273c7873eeb31",
       "profile_url": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
