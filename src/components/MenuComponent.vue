@@ -85,7 +85,7 @@ const { t, i18next } = useTranslation()
 import { onMounted, reactive } from 'vue'
 import {isMobile} from "@/scripts/utils";
 
-import { ElMenu, ElMenuItem, ElSubMenu, ElIcon} from 'element-plus';
+import { ElMenu, ElMenuItem, ElSubMenu, ElIcon } from 'element-plus';
 import router from "@/router";
 
 const config = reactive({
