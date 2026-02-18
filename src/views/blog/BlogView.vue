@@ -36,6 +36,7 @@
          	 	 <p>
          	 	 	In here, create a file named docker-compose.yaml, which will be used to run the LMS container. Create it with the following contents:
          	 	 </p>
+         	 	 
 <pre>
 <code>
 version: 3.8
@@ -75,6 +76,9 @@ x-podman:
          	 	 	After running this scan we will see our songs pop up in the main menu and we can even play them!
          	 	 </p>
           	 	 <img src="../../assets/blog/17-02-2026/lms_play_song.png" style="width:500px; max-width:80%">
+          	 	 <p>
+        	 	 	---------------------- to be continued -------------------------
+         	 	 </p>
              </el-col>
          </el-row>
        </template>
