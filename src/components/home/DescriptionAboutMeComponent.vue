@@ -40,14 +40,7 @@
     </el-col>
     <el-col :span="8" style="margin-top: 10px" align="center">
       <div class="flip-box">
-        <div class="flip-box-inner">
-          <div class="flip-box-front">
-            <img src="/img/me.jpg" alt="Me" style="width: 80%; border-radius: 10px">
-          </div>
-          <div class="flip-box-back">
-            <img src="/img/icon-happy.png" alt="Me" style="width: 80%; border-radius: 10px">
-          </div>
-        </div>
+        <img src="/img/me.jpg" alt="Me" style="width: 80%; border-radius: 10px">
       </div>
     </el-col>
   </el-row>
