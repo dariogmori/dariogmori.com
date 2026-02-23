@@ -8,6 +8,7 @@
                     </p>
                 </LayoutRow>
                 <LayoutRow :justify="'end'">
+                <!--
                     <el-carousel indicator-position="outside" :interval="4000" height="33vh" style="width:100%;">
                         <el-carousel-item>
                             <img :src="'../../img/projects/talks/sustainability/talk-title.jpg'" class="image-display" style="width: 100%">
@@ -19,6 +20,7 @@
                             <img :src="'../../img/projects/talks/sustainability/talk-1.jpg'" class="image-display" style="width: 100%">
                         </el-carousel-item>
                     </el-carousel>
+                    -->
                 </LayoutRow>
                 <LayoutRow :justify="'center'">
                     <p> {{ t('projects.talks.kcd-guadalajara.thanks') }}</p>
