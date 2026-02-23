@@ -6,7 +6,6 @@
           :ellipsis="false"
       >
         <el-menu-item index="1" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</el-menu-item>
-        <el-menu-item index="2" @click="goToRoute('/about-me')"><el-icon><UserFilled /></el-icon>{{ isMobile() ? '': t('about-me.title') }}</el-menu-item>
         <el-sub-menu index="3">
           <template #title><el-icon><Management /></el-icon>{{ isMobile() ? '': t('projects.title') }}</template>
           <el-sub-menu index="3-1">
@@ -45,9 +44,6 @@
     <div :class="{ 'mobile': isMobile(), 'desktop': !isMobile(), 'menu': true}">
     	<div class="menu-button-container">
 			<button class="menu-button" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</button>
-    	</div>
-    	<div class="menu-button-container">
-			<button class="menu-button" @click="goToRoute('/about-me')"><el-icon><UserFilled /></el-icon>{{ isMobile() ? '': t('about-me.title') }}</button>
     	</div>
     	<div class="menu-button-container">
 			<button class="menu-button" @click="goToRoute('/blog')"><el-icon><List /></el-icon>{{ isMobile() ? '': 'Blog' }}</button>
