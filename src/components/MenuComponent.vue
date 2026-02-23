@@ -42,6 +42,26 @@
           <el-menu-item index="5-3" @click="changeLanguage('en')">{{ t('config.language.english') }}</el-menu-item>
         </el-sub-menu>
     </el-menu>
+    <div :class="{ 'mobile': isMobile(), 'desktop': !isMobile(), 'menu': true}">
+    	<div class="menu-button-container">
+			<button class="menu-button" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</button>
+    	</div>
+    	<div class="menu-button-container">
+			<button class="menu-button" @click="goToRoute('/about-me')"><el-icon><UserFilled /></el-icon>{{ isMobile() ? '': t('about-me.title') }}</button>
+    	</div>
+    	<div class="menu-button-container">
+			<button class="menu-button" @click="goToRoute('/blog')"><el-icon><List /></el-icon>{{ isMobile() ? '': 'Blog' }}</button>
+    	</div>
+    	<div class="menu-button-container">
+			<button class="menu-button"><el-icon><Management /></el-icon>{{ isMobile() ? '': t('projects.title') }}</button>
+    	</div>
+    	<div class="menu-button-container">
+			<button class="menu-button"><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Hobbies' }}</button>
+    	</div>
+    	<div class="menu-button-container">
+			<button class="menu-button"><el-icon><Tools /></el-icon></button>
+    	</div>
+    </div>
 </template>
 
 <style>
@@ -70,12 +90,37 @@ nav a.router-link-exact-active {
 .mobile{
   width:100%;
 }
+.desktop{
+  width:60%;
+}
 .body-desktop {
   max-width:98.8%;
 }
 .body-mobile{
   max-width:100%;
   overflow-x: hidden;
+}
+.menu{
+  max-width:99%;
+  position:fixed;
+  bottom:100px;
+  border: 4px solid var(--secondary-color);
+  display:flex; justify-content:center;
+}
+.menu-button-container{
+  width:20%;
+}
+.menu-button{
+  font-family: var(--el-font-family) !important;
+  font-size: var(--el-font-size-base);
+  color: var(--secondary-color);
+  width:100%;
+  height:50px;
+  background: var(--main-color);
+  border:none;
+}
+.menu-button:hover{
+  background: var(--hover-color);
 }
 
 </style>

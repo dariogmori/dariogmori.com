@@ -9,7 +9,6 @@ import i18next from 'i18next'
 import I18NextVue from 'i18next-vue'
 import Backend from 'i18next-http-backend'
 //element plus
-import{ ElCol, ElRow, ElDivider } from 'element-plus'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
@@ -38,9 +37,7 @@ async function bootstrap() {
     app.component(key, component)
   }
 
-  app.use(ElCol)
-  app.use(ElRow)
-  app.use(ElDivider)
+  app.use(ElementPlus)
   app.use(router)
   app.use(I18NextVue, { i18next })
 
