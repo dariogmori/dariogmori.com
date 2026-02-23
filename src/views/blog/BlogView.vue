@@ -1,5 +1,101 @@
 <template>
   <div class="fade-in">
+	<BlogComponent date="17/02/2026" title="Running away from Spotify (or Apple Music if you are weird like that)">
+      <template #body>
+         <el-row :justify="'center'" class="header-color">
+             <el-col :span="20">
+	             <p>
+	             	It is well known the continuous abuses the music industry and streaming music services such as Spotify or Apple music carry out on artists (1).  
+	             	It also seems like specially Spotify has been banking on AI generated music, filling its catalogue with slop (2). In my journey to run away from the eternal wheel of SaaS and subscriptions I decided to look into self-hosted music server alternatives.
+	             </p>
+	             <p>
+				 	I stumbled upon Lightweight Music Server (3) (LMS for friends) which had Subsonic API support, meaning that it is compatible with most open source music players out there. 
+				 	For players, I chose Substreamer (4) for my mobile player (since I am stuck with iPhone until I figure out a nice phone to use with postmarketOS) and Supersonic (5) for my desktop player. You can use any player that supports the Subsonic API though so feel free to experiment and tell me why I am wrong.
+	             </p>
+	             <h2>Setting up LMS</h2>
+	             <p>
+	             	In order to set up Lightweight Music Server you will need the following (for my specific setup). I recommend you run some Linux distro, I run my LMS in a Steam Deck (arch):
+         	 	 </p>
+         	 	 <ul>
+         	 	 	<li>A machine with Podman/Docker installed (I will use podman in this tutorial). </li>
+         	 	 	<li>Some songs to test with.</li>
+         	 	 	<li>Time</li>
+         	 	 </ul>
+         	 	 <p>
+         	 	 	Once you have all of this set up let’s set up a directory named lms from which we will be working:
+         	 	 </p>
+         	 	 <samp>
+         	 	 	>> mkdir lms && cd lms
+         	 	 </samp>
+         	 	 <p> 
+         	 	 	We also need to create an ArtistInfo dir in which you can define the data of the artists if you wish (this step is optional).
+         	 	 </p>
+         	 	 <samp>
+         	 	 	>> mkdir ArtistInfo
+         	 	 </samp>
+         	 	 <p>
+         	 	 	In here, create a file named docker-compose.yaml, which will be used to run the LMS container. Create it with the following contents:
+         	 	 </p>
+         	 	 
+<pre>
+<code>
+version: 3.8
+services:
+  lms:
+    image: docker.io/epoupon/lms:latest
+   	container_name: lms
+   	restart: unless-stopped
+   	network_mode: "host"
+   	user: 1000:1000
+      userns_mode: keep-id
+      volumes:
+      	- &ltfull path to your music dir&gt:/music:ro
+       	- &ltfull path to your data dir&gt:/var/lms:rw
+       	- &ltfull path to your ArtistInfo dir&gt:/ArtistInfo:ro
+x-podman:
+  in_pod: false
+</code>
+</pre>
+         	 	 <p>
+         	 	 	After this, we can run our docker-compose by executing:
+         	 	 </p>
+         	 	 <samp>
+         	 	 	>> podman compose up 
+         	 	 </samp>
+         	 	 <p>
+         	 	 > NOTE: if you wish to not have the server close when you close the terminal run `podman compose up -d` so it runs in detached mode
+         	 	 </p>
+         	 	 <p>
+         	 	 	This will run our container and display the logs, if everything went according to plan we should be able to access our server by going to <a href="http://localhost:5082">http://localhost:5082</a>. Here we can create our admin user and run a scan of our songs:
+         	 	 </p>
+         	 	 <div style="display: flex; justify-content: space-evenly; max-width:100%; flex-wrap: wrap; ">
+         	 	 	<img src="../../assets/blog/17-02-2026/lms_create_account.png" style="width:500px; max-width:80%; margin: 5px;">
+         	 	 	<img src="../../assets/blog/17-02-2026/lms_scan_songs.png" style="width:500px; max-width:80%; margin: 5px;">
+         	 	 </div>
+         	 	 <p>
+         	 	 	After running this scan we will see our songs pop up in the main menu and we can even play them!
+         	 	 </p>
+          	 	 <img src="../../assets/blog/17-02-2026/lms_play_song.png" style="width:500px; max-width:80%">
+          	 	 <p>
+        	 	 	---------------------- to be continued -------------------------
+         	 	 </p>
+             </el-col>
+         </el-row>
+       </template>
+       <template #references>
+	       <el-col :span="20">
+	       <ul>
+	         <li>(1) Spotify is abusive towards musicians both rich and poor, and here is why | Ashley Jana <a href="https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02">https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02</a></li>
+	         <li>(2) Spotify is paying out ai artist that spam the platform with ai made albums and abuse the system  <a href="https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/">https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/</a></li>
+	         <li>(3) Lightweight Music Server's Github Page  <a href="https://github.com/epoupon/lms">https://github.com/epoupon/lms</a></li>
+	         <li>(4) Substreamer's Main Page  <a href="https://substreamerapp.com/">https://substreamerapp.com/</a></li>
+	         <li>(5) Supersonic’s Github Page  <a href="https://github.com/dweymouth/supersonic">https://github.com/dweymouth/supersonic</a></li>
+	       </ul>
+	       </el-col>
+       </template>
+    </BlogComponent>
+    <br>
+    <br>  
     <BlogComponent date="28/01/2026" title="I'm doing a talk about permacomputing! (in future tense)">
       <template #body>
           <el-row :justify="'center'" class="header-color">
@@ -82,6 +178,23 @@
 @import '../../assets/styles/theme.css';
 body{
     background-color: white;
+}
+code {
+  text-align:left;
+  display:block;
+  margin: 5px;
+}
+pre {
+  border: 1px black solid;
+}
+samp {
+  text-align:left;
+  display:block;
+  border: 1px black solid;
+}
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
 }
 p {
   font-family: 'Courier New', Courier, monospace;
