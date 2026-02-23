@@ -1,14 +1,4 @@
 <template>
-    <!--      <el-sub-menu index="5-1">
-            <template #title>{{ t('config.theme.name') }}</template>
-            <el-menu-item index="5-1" @click="setTheme('light')">{{ t('config.theme.light-mode') }}</el-menu-item>
-            <el-menu-item index="5-2" @click="setTheme('dark-typical')">{{ t('config.theme.dark-mode') }}</el-menu-item>
-          </el-sub-menu>
-          <el-menu-item index="5-2" @click="changeLanguage('es')">{{ t('config.language.spanish') }}</el-menu-item>
-          <el-menu-item index="5-3" @click="changeLanguage('en')">{{ t('config.language.english') }}</el-menu-item>
-        </el-sub-menu>
-    </el-menu>
-    -->
     <div :class="{ 'mobile': isMobile(), 'desktop': !isMobile(), 'menu': true}">
     	<div class="menu-button-container">
 			<button class="menu-button" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</button>
@@ -20,7 +10,7 @@
 			<button class="menu-button" @click="goToRoute('/talks/sustainable-platform-engineering')"><el-icon><Management /></el-icon>{{ isMobile() ? '': 'Talks' }}</button>
     	</div>
     	<div class="menu-button-container">
-			<button class="menu-button"><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Hobbies' }}</button>
+			<button class="menu-button"  @click="goToRoute('/art')"><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Art' }}</button>
     	</div>
     	<div class="menu-button-container">
 			<button class="menu-button" style="width:50%;" @click="toggleTheme()"><el-icon><Opportunity /></el-icon></button>
