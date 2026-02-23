@@ -74,6 +74,7 @@
 .el-menu{
     font-family: var(--el-font-family) !important;
 }
+
 .el-carousel__button{
     background-color: var(--main-color) !important;
 }
