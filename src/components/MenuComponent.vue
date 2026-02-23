@@ -1,38 +1,4 @@
 <template>
-  <!--<el-menu 
-          mode="horizontal"
-          :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
-          style="position:fixed; bottom:0vh; border: 4px solid var(--secondary-color);"
-          :ellipsis="false"
-      >
-        <el-menu-item index="1" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</el-menu-item>
-        <el-menu-item index="2" @click="goToRoute('/blog')"><el-icon><List /></el-icon>{{ isMobile() ? '': 'Blog' }}</el-menu-item>
-        <el-sub-menu index="3">
-          <template #title><el-icon><Management /></el-icon>{{ isMobile() ? '': t('projects.title') }}</template>
-          <el-sub-menu index="3-1">
-            <template #title>{{ t('games.title') }}</template>
-            <el-menu-item index="3-1-1" @click="goToRoute('/games/big-crunch')">Big-Crunch</el-menu-item>
-            <el-menu-item index="3-1-2" @click="goToRoute('/games/how-do-i-even-win-this-game')">HDIEWTG?</el-menu-item>
-            <el-menu-item index="3-1-3" @click="goToRoute('/games/a-nice-place-4-art')">A nice play 4 art</el-menu-item>
-            <el-menu-item index="3-1-4" @click="goToRoute('/games/the-half-life-of-flerovium')">The half life of flerovium</el-menu-item>
-            <el-menu-item index="3-1-5" @click="goToRoute('/games/medium-expendedore')">Medium Expendedore</el-menu-item>
-            <el-menu-item index="3-1-6" @click="goToRoute('/games/kiwiq')">Kiwiq</el-menu-item>
-          </el-sub-menu>
-          <el-sub-menu index="3-2">
-            <template #title>{{ t('projects.talks.title') }}</template>
-            <el-menu-item index="3-2-1" @click="goToRoute('/talks/sustainable-platform-engineering')">Sustainable Platform Engineering?</el-menu-item>
-          </el-sub-menu>
-        </el-sub-menu>
-        <el-sub-menu index="4">
-          <template #title><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Hobbies' }}</template>
-          <el-menu-item index="4-1" @click="goToRoute('/celeste')">{{ t('celeste.title') }}</el-menu-item>
-          <el-menu-item index="4-2" @click="goToRoute('/minecraft')">Minecraft </el-menu-item>
-          <el-menu-item index="4-3" @click="goToRoute('/art')">{{ t('art.title') }}</el-menu-item>
-        </el-sub-menu>
-        <el-sub-menu index="5">
-          <template #title><el-icon><Tools /></el-icon></template>
-    -->
-          <!--<el-menu-item index="5-1" @click="setTheme('dark-typical')">{{ 'Dark Typical' }}</el-menu-item>-->
     <!--      <el-sub-menu index="5-1">
             <template #title>{{ t('config.theme.name') }}</template>
             <el-menu-item index="5-1" @click="setTheme('light')">{{ t('config.theme.light-mode') }}</el-menu-item>
@@ -57,7 +23,8 @@
 			<button class="menu-button"><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Hobbies' }}</button>
     	</div>
     	<div class="menu-button-container">
-			<button class="menu-button"><el-icon><Tools /></el-icon></button>
+			<button class="menu-button" style="width:50%;" @click="toggleTheme()"><el-icon><Opportunity /></el-icon></button>
+			<button class="menu-button" style="width:50%;" @click="toggleLanguage()" >{{ config.lang }}</button>
     	</div>
     </div>
 </template>
@@ -145,17 +112,25 @@ onMounted(() => {
   }
   window.addEventListener('scroll', handleScroll)
 })
-function setTheme (theme: string) {
-  config.theme = theme
+
+function changeLanguage(lang: string){
+  config.lang = lang;
+  document.documentElement.setAttribute('data-lang', config.lang)
+  localStorage.setItem('lang', config.lang) // Save the current language to local storage
+  i18next.changeLanguage(config.lang)
+}
+
+function toggleTheme () {
+  config.theme = config.theme == 'light'? 'dark-typical' : 'light';
   document.documentElement.setAttribute('data-theme', config.theme)
   localStorage.setItem('theme', config.theme) // Save the current theme to local storageç
   location.reload();
 }
-function changeLanguage ( lang: string) {
-  config.lang = lang
+function toggleLanguage () {
+  config.lang = config.lang == 'es'? 'en': 'es';
   document.documentElement.setAttribute('data-lang', config.lang)
   localStorage.setItem('lang', config.lang) // Save the current language to local storage
-  i18next.changeLanguage(lang)
+  i18next.changeLanguage(config.lang)
 }
 
 function goToRoute(route: string) {
