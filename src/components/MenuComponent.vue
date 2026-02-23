@@ -1,11 +1,12 @@
 <template>
-  <el-menu 
+  <!--<el-menu 
           mode="horizontal"
           :class="{ 'mobile': isMobile(), 'desktop': !isMobile(),'el-menu' : true}"
           style="position:fixed; bottom:0vh; border: 4px solid var(--secondary-color);"
           :ellipsis="false"
       >
         <el-menu-item index="1" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</el-menu-item>
+        <el-menu-item index="2" @click="goToRoute('/blog')"><el-icon><List /></el-icon>{{ isMobile() ? '': 'Blog' }}</el-menu-item>
         <el-sub-menu index="3">
           <template #title><el-icon><Management /></el-icon>{{ isMobile() ? '': t('projects.title') }}</template>
           <el-sub-menu index="3-1">
@@ -21,7 +22,6 @@
             <template #title>{{ t('projects.talks.title') }}</template>
             <el-menu-item index="3-2-1" @click="goToRoute('/talks/sustainable-platform-engineering')">Sustainable Platform Engineering?</el-menu-item>
           </el-sub-menu>
-          <el-menu-item index="3-3" @click="goToRoute('/blog')">Blog</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="4">
           <template #title><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Hobbies' }}</template>
@@ -31,8 +31,9 @@
         </el-sub-menu>
         <el-sub-menu index="5">
           <template #title><el-icon><Tools /></el-icon></template>
+    -->
           <!--<el-menu-item index="5-1" @click="setTheme('dark-typical')">{{ 'Dark Typical' }}</el-menu-item>-->
-          <el-sub-menu index="5-1">
+    <!--      <el-sub-menu index="5-1">
             <template #title>{{ t('config.theme.name') }}</template>
             <el-menu-item index="5-1" @click="setTheme('light')">{{ t('config.theme.light-mode') }}</el-menu-item>
             <el-menu-item index="5-2" @click="setTheme('dark-typical')">{{ t('config.theme.dark-mode') }}</el-menu-item>
@@ -41,6 +42,7 @@
           <el-menu-item index="5-3" @click="changeLanguage('en')">{{ t('config.language.english') }}</el-menu-item>
         </el-sub-menu>
     </el-menu>
+    -->
     <div :class="{ 'mobile': isMobile(), 'desktop': !isMobile(), 'menu': true}">
     	<div class="menu-button-container">
 			<button class="menu-button" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</button>
@@ -49,7 +51,7 @@
 			<button class="menu-button" @click="goToRoute('/blog')"><el-icon><List /></el-icon>{{ isMobile() ? '': 'Blog' }}</button>
     	</div>
     	<div class="menu-button-container">
-			<button class="menu-button"><el-icon><Management /></el-icon>{{ isMobile() ? '': t('projects.title') }}</button>
+			<button class="menu-button" @click="goToRoute('/talks/sustainable-platform-engineering')"><el-icon><Management /></el-icon>{{ isMobile() ? '': 'Talks' }}</button>
     	</div>
     	<div class="menu-button-container">
 			<button class="menu-button"><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Hobbies' }}</button>
@@ -87,19 +89,12 @@ nav a.router-link-exact-active {
   width:100%;
 }
 .desktop{
-  width:60%;
-}
-.body-desktop {
-  max-width:98.8%;
-}
-.body-mobile{
-  max-width:100%;
-  overflow-x: hidden;
+  width:40%;
 }
 .menu{
   max-width:99%;
   position:fixed;
-  bottom:100px;
+  bottom:0px;
   border: 4px solid var(--secondary-color);
   display:flex; justify-content:center;
 }
@@ -118,6 +113,9 @@ nav a.router-link-exact-active {
 .menu-button:hover{
   background: var(--hover-color);
 }
+i{
+	font-size:18px !important;
+}
 
 </style>
 <script setup lang="ts">
@@ -126,7 +124,6 @@ const { t, i18next } = useTranslation()
 import { onMounted, reactive } from 'vue'
 import {isMobile} from "@/scripts/utils";
 
-import { ElMenu, ElMenuItem, ElSubMenu, ElIcon } from 'element-plus';
 import router from "@/router";
 
 const config = reactive({
