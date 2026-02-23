@@ -100,7 +100,6 @@ onMounted(() => {
     document.documentElement.setAttribute('data-lang', config.lang)
     changeLanguage(config.lang)
   }
-  window.addEventListener('scroll', handleScroll)
 })
 
 function changeLanguage(lang: string){
