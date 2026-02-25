@@ -69,7 +69,7 @@ x-podman:
          	 	 	This will run our container and display the logs, if everything went according to plan we should be able to access our server by going to <a href="http://localhost:5082">http://localhost:5082</a>. Here we can create our admin user and run a scan of our songs:
          	 	 </p>
          	 	 <div style="display: flex; justify-content: space-evenly; max-width:100%; flex-wrap: wrap; ">
-         	 	 	<img src="../../assets/blog/17-02-2026/lms_create_account.png" style="width:500px; max-width:80%; margin: 5px;">
+         	 	 	<img src="../../assets/blog/17-02-2026/lms_create_account.png" style="width:500px; max-width:90%; margin: 5px;">
          	 	 	<img src="../../assets/blog/17-02-2026/lms_scan_songs.png" style="width:500px; max-width:80%; margin: 5px;">
          	 	 </div>
          	 	 <p>
@@ -183,14 +183,19 @@ code {
   text-align:left;
   display:block;
   margin: 5px;
+  color: var(--white);
+  background: var(--secondary-color);
 }
 pre {
-  border: 1px black solid;
+  border: 4px var(--white) double;
+  background: var(--secondary-color);
 }
 samp {
   text-align:left;
   display:block;
-  border: 1px black solid;
+  border: 4px var(--white) double;
+  color: var(--white);
+  background: var(--secondary-color);
 }
 h2 {
   font-family: 'Courier New', Courier, monospace;
