@@ -31,7 +31,7 @@ h2 {
   font-family: 'Courier New', Courier, monospace;
 }
 .center-container{
-  border: 1px solid var(--secondary-color);
+  border: 4px double var(--secondary-color);
   background-color: var(--main-color);
 }
 .el-divider{
