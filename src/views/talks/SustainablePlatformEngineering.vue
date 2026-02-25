@@ -10,19 +10,19 @@
                 <LayoutRow :justify="'end'">
                    <el-carousel indicator-position="outside" :interval="4000" height="33vh" style="width:100%;">
                        <el-carousel-item>
-                           <img :src="'../../img/projects/talks/sustainability/talk-title.jpg'" class="image-display" style="width: 100%">
+                           <img :src="'../../img/projects/talks/sustainability/talk-title.png'" class="image-display" style="width: 100%">
                        </el-carousel-item>
                        <el-carousel-item>
-                           <img :src="'../../img/projects/talks/sustainability/guadalajara-1.jpg'" class="image-display" style="width: 50%">
+                           <img :src="'../../img/projects/talks/sustainability/guadalajara-1.png'" class="image-display" style="width: 50%">
                        </el-carousel-item>
                        <el-carousel-item>
-                           <img :src="'../../img/projects/talks/sustainability/talk-1.jpg'" class="image-display" style="width: 100%">
+                           <img :src="'../../img/projects/talks/sustainability/talk-1.png'" class="image-display" style="width: 100%">
                        </el-carousel-item>
                    </el-carousel>
                 </LayoutRow>
                 <LayoutRow :justify="'center'">
                     <p> {{ t('projects.talks.kcd-guadalajara.thanks') }}</p>
-                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/logo-kcd.jpg" class="image-display" style="width: 120px; ">
+                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/logo-kcd.png" class="image-display" style="width: 120px; ">
                 </LayoutRow>
             </template>
 
@@ -32,9 +32,10 @@
                 </template>
 
             <template #right-col>
-                
-                <LayoutRow :justify="'end'">
-                    <iframe width="100%" height="355" src="https://www.youtube.com/embed/lTLttAcs1zE?si=EdE_M3TAI53or9WX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <LayoutRow :justify="'center'">
+                    <p>>>></p>
+                    <a href="https://www.youtube.com/embed/lTLttAcs1zE?si=EdE_M3TAI53or9WX"> {{ 'Youtube Video' }} </a>
+                    <p>{{'<<<'}}</p>
                 </LayoutRow>
                 <LayoutRow :justify="'center'">
                     <p>>>></p>
@@ -55,7 +56,7 @@
                     <el-button class="cool-3d-text" @click="ad.show = false" style="border: 3px solid var(--main-color);">x</el-button>
                 </div>
                 <a href="https://www.youtube.com/watch?v=lTLttAcs1zE" target="_blank" rel="noopener noreferrer">
-                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/promo-1.jpg" style="width: 100%; cursor: pointer;border: 3px solid var(--secondary-color);"/>
+                    <img alt="Main Presentation" src="/img/projects/talks/sustainability/promo-1.png" style="width: 100%; cursor: pointer;border: 3px solid var(--secondary-color);"/>
                 </a>
             </div>
             
