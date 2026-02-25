@@ -1,6 +1,6 @@
 <template>
   <el-row justify="space-evenly">
-    <el-col :span="getSpan(1)" class="center-container" style="border;1px solid var(--secondary-color);">
+    <el-col :span="getSpan(1)" class="center-container">
       <slot name="center-col"></slot>
     </el-col>
   </el-row>
