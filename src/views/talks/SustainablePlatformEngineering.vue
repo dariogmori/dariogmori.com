@@ -32,9 +32,10 @@
                 </template>
 
             <template #right-col>
-                
-                <LayoutRow :justify="'end'">
-                    <iframe width="100%" height="355" src="https://www.youtube.com/embed/lTLttAcs1zE?si=EdE_M3TAI53or9WX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <LayoutRow :justify="'center'">
+                    <p>>>></p>
+                    <a href="https://www.youtube.com/embed/lTLttAcs1zE?si=EdE_M3TAI53or9WX"> {{ 'Youtube Video' }} </a>
+                    <p>{{'<<<'}}</p>
                 </LayoutRow>
                 <LayoutRow :justify="'center'">
                     <p>>>></p>
