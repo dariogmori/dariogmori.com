@@ -39,6 +39,7 @@ jobs:
            username: ${{ github.actor }}
            password: ${{ secrets.GITHUB_TOKEN }}
            registry: ghcr.io
+           platforms: linux/arm64
            workdir: .
 #   docker-push-api:
 #     runs-on: ubuntu-latest
