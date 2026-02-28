@@ -1,4 +1,4 @@
-FROM arm64v8/node:24 as build-stage
+FROM node:24 as build-stage
 
 COPY . /app
 WORKDIR /app
