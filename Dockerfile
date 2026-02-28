@@ -16,4 +16,4 @@ COPY  --from=build-stage /app/dist /config/www
 COPY  --from=build-stage /app/nginx.conf /etc/nginx/nginx.conf
 
 # Expose the port 443
-EXPOSE 8080
+EXPOSE 80
