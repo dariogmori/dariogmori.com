@@ -4,19 +4,56 @@
   "profile_url": "https://open.spotify.com/user/mayitapipo",
   "top_songs": [
     {
-      "name": "Thinkin' of U.",
-      "url": "https://open.spotify.com/track/61IO4pSknmkmzlLYSm7EGR",
+      "name": "Tokyo Night Flyght - Moe Shop Remix",
+      "url": "https://open.spotify.com/track/6Pn4gmijAPYREluvv5YYiu",
       "artists": [
         {
-          "name": "Snail's House",
-          "followers": 411790,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
-          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
+          "name": "TiMEMAXERAS",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/72onGbpvrLqvBRNMsZM0si"
+        },
+        {
+          "name": "Moe Shop",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
         }
       ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851f53d9cd9bf7e60886b95a1d0",
-      "duration_ms": 145084
+      "cover_url": "https://i.scdn.co/image/ab67616d000048519260af411719f1c3f5f85922",
+      "duration_ms": 176738
+    },
+    {
+      "name": "NUEVAYoL",
+      "url": "https://open.spotify.com/track/5TFD2bmFKGhoCRbX61nXY5",
+      "artists": [
+        {
+          "name": "Bad Bunny",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851bbd45c8d36e0e045ef640411",
+      "duration_ms": 183685
+    },
+    {
+      "name": "DtMF",
+      "url": "https://open.spotify.com/track/3sK8wGT43QFpWrvNQsrQya",
+      "artists": [
+        {
+          "name": "Bad Bunny",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
+          "profile_url": "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"
+        }
+      ],
+      "cover_url": "https://i.scdn.co/image/ab67616d00004851bbd45c8d36e0e045ef640411",
+      "duration_ms": 237117
     },
     {
       "name": "それしか言えない",
@@ -24,9 +61,9 @@
       "artists": [
         {
           "name": "Haku.",
-          "followers": 173482,
-          "genres": "[\"japanese indie\",\"j-rock\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f178d8a262b83ae1b88536530530",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
           "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
         }
       ],
@@ -39,81 +76,51 @@
       "artists": [
         {
           "name": "Haku.",
-          "followers": 173482,
-          "genres": "[\"japanese indie\",\"j-rock\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f178d8a262b83ae1b88536530530",
+          "followers": 0,
+          "genres": "",
+          "avatar_url": null,
           "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
         }
       ],
       "cover_url": "https://i.scdn.co/image/ab67616d000048518e9eaed81a1087b3ed8f8bdd",
       "duration_ms": 207179
-    },
-    {
-      "name": "奥二重で見る",
-      "url": "https://open.spotify.com/track/5OT7zL5hxwq9K0nGEYKS05",
-      "artists": [
-        {
-          "name": "Haku.",
-          "followers": 173482,
-          "genres": "[\"japanese indie\",\"j-rock\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f178d8a262b83ae1b88536530530",
-          "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d0000485110d706762d3a82f7f2e26d59",
-      "duration_ms": 211019
-    },
-    {
-      "name": "Cocoa",
-      "url": "https://open.spotify.com/track/1PzfhBQ3bQd5wPNHsaL7XU",
-      "artists": [
-        {
-          "name": "Snail's House",
-          "followers": 411790,
-          "genres": "[\"future bass\"]",
-          "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
-          "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
-        }
-      ],
-      "cover_url": "https://i.scdn.co/image/ab67616d00004851f53d9cd9bf7e60886b95a1d0",
-      "duration_ms": 218185
     }
   ],
   "top_artists": [
     {
+      "name": "Haku.",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
+      "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
+    },
+    {
       "name": "Snail's House",
-      "followers": 411790,
+      "followers": 412228,
       "genres": "[\"future bass\"]",
       "avatar_url": "https://i.scdn.co/image/ab6761610000f17837ce1606bdfa85907d4add14",
       "profile_url": "https://open.spotify.com/artist/29O9ZebFa65aIEvMaW5pQY"
     },
     {
-      "name": "Haku.",
-      "followers": 173482,
-      "genres": "[\"japanese indie\",\"j-rock\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f178d8a262b83ae1b88536530530",
-      "profile_url": "https://open.spotify.com/artist/5qJEtz7aC2nwA9LsjfkGVM"
+      "name": "El Tri",
+      "followers": 2024820,
+      "genres": "[\"mexican rock\",\"rock en español\",\"latin rock\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f17847be6362dc6ca3fd0de37015",
+      "profile_url": "https://open.spotify.com/artist/3HgZDevp7GspkLUAa5cKne"
     },
     {
-      "name": "物語シリーズ",
-      "followers": 127239,
-      "genres": "[\"anime\",\"j-pop\"]",
-      "avatar_url": "https://i.scdn.co/image/ab67616d00004851168da2035a75e56b2f53c0d3",
-      "profile_url": "https://open.spotify.com/artist/0NT8fqhPoKJrd038u1Qumz"
+      "name": "Bad Bunny",
+      "followers": 0,
+      "genres": "",
+      "avatar_url": null,
+      "profile_url": "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"
     },
     {
-      "name": "dark cat",
-      "followers": 125786,
-      "genres": "[\"future bass\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f178ebb79d498039e43123293004",
-      "profile_url": "https://open.spotify.com/artist/0CW3aaY5gtWFStE6Vj6ZHI"
-    },
-    {
-      "name": "fusq",
-      "followers": 53691,
-      "genres": "[\"future bass\"]",
-      "avatar_url": "https://i.scdn.co/image/ab6761610000f1781859f9bffa4273c7873eeb31",
-      "profile_url": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+      "name": "ASIAN KUNG-FU GENERATION",
+      "followers": 1179934,
+      "genres": "[\"j-rock\",\"anime\",\"j-pop\"]",
+      "avatar_url": "https://i.scdn.co/image/ab6761610000f17840c6a6dd0715a0de86c05308",
+      "profile_url": "https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt"
     }
   ]
 }
