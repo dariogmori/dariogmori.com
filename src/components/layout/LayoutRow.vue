@@ -6,7 +6,8 @@
 
 <style scoped>
 .row {
-  margin: 20px;
+  margin-top:10px;
+  margin-bottom: 10px;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
