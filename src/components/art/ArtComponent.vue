@@ -1,11 +1,13 @@
 <template>
   <LayoutRow :justify="'center'" :align="'middle'" >
-    <h1>{{ t('month.'+ props.art.month) + ' ' + props.art.year }}</h1>
-    <el-carousel :interval="4000" type="card" indicator-position="outside" height="33vh" style="width:100%;">
-      <el-carousel-item v-for="image_name in props.art.images" >
-        <img :src="'../../img/hobby/art/' + props.art.id + '/' + image_name" class="image-display" :class="{ 'square-image' : !props.art.vertical, 'vertical-image' : props.art.vertical }" >
-      </el-carousel-item>
-    </el-carousel>
+  	<div style="width:100%;">
+  	    <h2>{{ t('month.'+ props.art.month) + ' ' + props.art.year }}</h2>
+  	</div>
+	<div style="display:flex; width:90%; flex-wrap: wrap; justify-content: space-around;">
+  		<div v-for="image_name in props.art.images" style="width:40%; margin:10px;">
+  			<img :src="'../../img/hobby/art/' + props.art.id + '/' + image_name" class="image-display" style="width:100%;">
+  		</div>
+  	</div>
     <p>
       {{ t('art.' + props.art.id + '.description')}}
     </p>
@@ -23,17 +25,7 @@ const props = defineProps<{
     images: Array<String>,
     id: String,
     month: String,
-    year: String,
-    vertical: Boolean
+    year: String
   }
 }>()
 </script>
-
-<style scoped>
-.square-image {
-  width: 100%;
-}
-.vertical-image{
-  max-height: 100%;
-}
-</style>

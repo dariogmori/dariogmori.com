@@ -1,49 +1,47 @@
 <template>
-  <el-row class="header-color" >
-    <el-col :span="16" >
-      <h1> Darío Gutiérrez Mori </h1>
-      <h3> Mid Platform Engineer</h3>
-      <el-row :justify="'space-between'">
-        <el-col :span="8">
-          <a href="https://dariogmori.itch.io/">
-            <el-row :justify="'center'">
-              <el-col :span="4">
-                <img src="../../assets/home/itchio.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
-              </el-col>
-            </el-row>
-          </a>
-        </el-col>
-        <el-col :span="8">
-          <a href="https://www.linkedin.com/in/dariogmori/">
-            <el-row :justify="'center'">
-              <el-col :span="4">
-                <img src="../../assets/home/linkedin.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
-              </el-col>
-            </el-row>
-          </a>
-        </el-col>
-        <el-col :span="8">
-          <a href="https://github.com/dariogmori">
-            <el-row :justify="'center'">
-              <el-col :span="4">
-                <img src="../../assets/home/github.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
-              </el-col>
-            </el-row>
-          </a>
-        </el-col>
+  <div style="display: flex; width: 100%;">
+  	<div style="width:70%;">
+  	  <h1> Darío Gutiérrez Mori </h1>
+	  <h2> Mid Platform Engineer</h2>
+	  <div style="justify-content:space-between; display: flex;">
+         <div style="width:33%;">
+           <a href="https://dariogmori.itch.io/">
+             <div style="display: flex; justify-content: center;">
+               <div>
+                 <img src="../../assets/home/itchio.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
+               </div>
+             </div>
+           </a>
+         </div>
+        <div style="width:33%;">
+           <a href="https://www.linkedin.com/in/dariogmori/">
+             <div style="display: flex; justify-content: center;">
+               <div>
+                 <img src="../../assets/home/linkedin.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div style="width:33%;">
+           <a href="https://github.com/dariogmori">
+             <div style="display: flex; justify-content: center;">
+               <div>
+                 <img src="../../assets/home/github.png" alt="itchio logo" class="image-display" style="image-rendering: crisp-edges;"/>
+               </div>
+             </div>
+           </a>
+         </div>
+       </div>
+       <el-row :justify="'center'">
+     	 <el-col :span="20">
+    		 <p>{{ t('home.about-me')}}</p>
+         </el-col>
       </el-row>
-      <el-row :justify="'center'">
-        <el-col :span="20">
-          <p>{{ t('home.about-me')}}</p>
-        </el-col>
-      </el-row>
-    </el-col>
-    <el-col :span="8" style="margin-top: 10px" align="center">
-      <div class="flip-box">
-        <img src="/img/me.jpg" alt="Me" style="width: 80%; border-radius: 10px">
-      </div>
-    </el-col>
-  </el-row>
+  	</div>
+  	<div style="width:25%; margin: 20px;">
+  	  	<img src="/img/me.jpg" alt="Me" style="width: 80%; border-radius: 10px">
+  	</div>
+  </div>
 </template>
 <script setup lang="ts">
 import {isMobile} from "@/scripts/utils";

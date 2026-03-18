@@ -5,18 +5,7 @@
     border: 4px double var(--secondary-color);
     background-color: var(--main-color);
 }
-.left-container{
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: fadeFall 1s ease-out forwards;
-    background-color: var(--main-color);
-}
-.right-container{
-    opacity: 0;
-    transform: translateX(50px);
-    animation: fadeFall 1s ease-out forwards;
-    background-color: var(--main-color);
-}
+
 .image-display:hover {
     animation:hover-animation 0.3s ease-out forwards;
 }
