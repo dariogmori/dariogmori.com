@@ -183,18 +183,18 @@ code {
   text-align:left;
   display:block;
   margin: 5px;
-  color: var(--white);
+  color: var(--code-color);
   background: var(--secondary-color);
 }
 pre {
-  border: 4px var(--white) double;
+  border: 4px var(--code-color) double;
   background: var(--secondary-color);
 }
 samp {
   text-align:left;
   display:block;
-  border: 4px var(--white) double;
-  color: var(--white);
+  border: 4px var(--code-color) double;
+  color: var(--code-color);
   background: var(--secondary-color);
 }
 h2 {
