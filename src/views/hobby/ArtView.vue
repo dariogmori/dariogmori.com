@@ -11,7 +11,6 @@
 import { useTranslation } from "i18next-vue";
 import ViewLayout from "@/components/layout/ViewLayout.vue";
 import ArtComponent from "@/components/art/ArtComponent.vue";
-import {isMobile} from "@/scripts/utils";
 
 const { t } = useTranslation();
 
