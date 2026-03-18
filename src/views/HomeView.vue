@@ -7,7 +7,7 @@
       	<el-divider style="width:80%"></el-divider>
       </div>
       <!--<ResumeComponent />-->
-      <LayoutRow :justify="'center'">
+      <LayoutRow style="justify-content: center; ">
         <div class="about-me-fact">
           <el-col align="center">
             <el-row style="max-width: 60%;">
@@ -26,7 +26,7 @@
           </el-col>
         </div>
       </LayoutRow>
-      <LayoutRow justify="space-around">
+      <LayoutRow style="justify-content: space-around;">
         <img src="/img/me-2.jpg" class="image-display" style="width: 80%; max-width: 300px;  rotate:10deg;" alt="Image of me">
         <img src="/img/me-1.jpg" class="image-display" style="width: 90%; max-height:320px; max-width: 400px; rotate: -10deg" alt="Image of me">
         <div class="about-me-fact" style="align-content: center;">
@@ -48,7 +48,7 @@
         </div>
         <img src="../assets/about-me/me-japan-oss.png" class="image-display" style="width: 90%; max-width: 500px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
       </LayoutRow>
-      <LayoutRow :justify="'space-around'">
+      <LayoutRow style="justify-content: space-around;">
         <div style="width: 400px;">
           <TopArtistsComponent />
         </div>
@@ -56,7 +56,7 @@
           <TopSongsComponent />
         </div>
       </LayoutRow>
-      <LayoutRow justify="space-around">
+      <LayoutRow style="justify-content: space-around;">
         <img src="../assets/about-me/mushrooms/cesta-mixta-pinar.png" class="image-display" style="width: 70%; max-width: 400px;  max-height:550px;  rotate:10deg;" alt="Image of me">
         <img src="../assets/about-me/mushrooms/cesta-cocina.png" class="image-display" style="width: 70%;  max-width: 400px; max-height:580px;rotate: -10deg" alt="Image of me">
         <div class="about-me-fact" style="align-content: center;">
