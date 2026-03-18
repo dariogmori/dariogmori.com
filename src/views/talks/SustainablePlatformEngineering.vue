@@ -4,7 +4,7 @@
             <template #content>
             	<h1> Sustainable Platform Engineering? </h1>
                 <h3>Having a green thumb without shooting up the costs</h3>
-                <LayoutRow :justify="'center'">
+                <LayoutRow>
                 	<div style="width:48%; display: flex; justify-content:center;">
 	                    <p>>>></p>
 	                    <a href="https://www.youtube.com/embed/lTLttAcs1zE?si=EdE_M3TAI53or9WX" style="align-content: center; margin: 10px;"> {{ 'Youtube Video' }} </a>
@@ -16,30 +16,30 @@
 	                    <p>{{'<<<'}}</p>
                     </div>
                 </LayoutRow>
-				<LayoutRow justify="space-around">
-	               	<img :src="'../../img/projects/talks/sustainability/talk-title.png'" class="image-display" style="width: 40%; height: 30%; rotate:10deg;">
-  	                <img :src="'../../img/projects/talks/sustainability/talk-1.png'" class="image-display" style="width: 40%; height: 30%; rotate: -10deg">
+				<LayoutRow style="justify-content: space-around;">
+	               	<img :src="'../../img/projects/talks/sustainability/talk-title.png'" class="image-display" style="width: 40%; height: 30%; rotate:7deg;">
+  	                <img :src="'../../img/projects/talks/sustainability/talk-1.png'" class="image-display" style="width: 40%; height: 30%; rotate: -7deg">
 				</LayoutRow>
-				<div style="justify-content:center; display: flex;" >
+				<LayoutRow>
 	                <p style="width:80%;">
 	                	{{ t('projects.talks.kcd-guadalajara.description') }}
 	                </p>
-                </div>
+                </LayoutRow>
                 
-				<LayoutRow justify="space-around">	  
+				<LayoutRow style="justify-content: space-around;">	  
 					<img :src="'../../img/projects/talks/sustainability/guadalajara-1.png'" class="image-display"  style="width: 40%; ">
 				</LayoutRow>
-                <div style="justify-content:center; display: flex;" >
+                <LayoutRow>
 	                <p style="width:80%;"> {{ t('projects.talks.kcd-guadalajara.to_be_fair') }}</p>
-                </div>
+                </LayoutRow>
                 <img alt="Main Presentation" src="/img/projects/talks/sustainability/logo-kcd.png" class="image-display" style="width: 120px; ">
                                 
-                <LayoutRow :justify="'center'">
+                <LayoutRow>
                     <p> {{ t('projects.talks.kcd-guadalajara.thanks') }}</p>
                 </LayoutRow>
             </template>
         </ViewLayout>
-        <LayoutRow :justify="'end'">
+        <LayoutRow style="justify-content:end;">
             <div class="fake-ad" v-if="ad.show" >
                 <div style="justify-content: space-between; align-content: end; display:flex;">
                     <h3 class="cool-3d-text">
@@ -50,7 +50,6 @@
                     <img alt="Main Presentation" src="/img/projects/talks/sustainability/promo-1.png" style="width: 100%; cursor: pointer;border: 3px solid var(--secondary-color);"/>
                 </a>
             </div>
-            
         </LayoutRow>
 </div>
     
