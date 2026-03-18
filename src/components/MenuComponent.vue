@@ -54,6 +54,7 @@ nav a.router-link-exact-active {
   bottom:0px;
   border: 4px solid var(--secondary-color);
   display:flex; justify-content:center;
+  background: var(--main-color);
 }
 .menu-button-container{
   width:20%;

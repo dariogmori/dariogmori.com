@@ -12,5 +12,5 @@ export function getSpan(index: number) {
 }
 
 export function getSpanBlog(){
-    return isMobile() ? 24: 20;
+    return isMobile() ? 24: 14;
 }

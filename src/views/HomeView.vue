@@ -4,8 +4,9 @@
     <template #center-col>
       <DescriptionAboutMeComponentMobile v-if="isMobile()"/>
       <DescriptionAboutMeComponent v-if="!isMobile()"/>
-      <el-divider></el-divider>
+      
       <el-row :justify="'center'" class="header-color">
+      	<el-divider style="width:80%"></el-divider>
         <el-col>
           <h2>{{t('home.experience.title')}}</h2>
         </el-col>
@@ -13,16 +14,16 @@
         <ExperienceComponent :title="t('home.experience.resizes-title')" company="Resizes" location="Gijón" :dates="[t('month.december') + ' 2024 - ' + t('month.december') + ' 2025'] "/>
         <el-divider style="width:80%;"></el-divider>
         <ExperienceComponent :title="t('home.experience.simbio-title')" company="Simbiosys" location="Gijón" :dates="[t('month.october') +  ' 2021 - ' + t('month.october') + ' 2022', t('month.september') + ' 2023 - ' + t('month.january') + ' 2024']"/>
+      	<el-divider style="width:80%"></el-divider>
       </el-row>
-      <el-divider></el-divider>
       <el-row :justify="'center'" class="header-color">
         <el-col>
           <h2>{{ t('home.education.title') }}</h2>
         </el-col>
         <h3>{{ t('home.education.degree')}}, {{t('home.education.university') }}</h3>
         <p>{{ t('month.september') + ' 2020 - ' + t('month.november') + ' 2024' }} </p>
+        <el-divider style="width:80%"></el-divider>
       </el-row>
-      <el-divider></el-divider>
       <el-row :justify="'center'" class="header-color">
         <el-col>
           <h2>{{ t('home.languages.title') }}</h2>
@@ -39,8 +40,8 @@
           <h3>{{ t('home.languages.japanese') }}</h3>
           <p>JLPT N4 Certificate</p>
         </el-col>
+        <el-divider style="width:80%"></el-divider>
       </el-row>
-      <el-divider></el-divider>
       <el-row :justify="'space-around'" class="header-color">
         <el-col>
           <h2>{{ t('home.certifications.title') }}</h2>
@@ -57,9 +58,8 @@
             <p style="color:var(--secondary-color);">AWS Solutions Architect</p>
           </a>
         </div>
-        
+        <el-divider style="width:80%"></el-divider>
       </el-row>
-      <el-divider></el-divider>
       <LayoutRow :justify="'center'">
         <div class="about-me-fact">
           <el-col align="center">
@@ -78,8 +78,8 @@
             </p>
           </el-col>
         </div>
+        <el-divider style="width:80%"></el-divider>
       </LayoutRow>
-      <el-divider></el-divider>
       <LayoutRow justify="space-around">
         <img src="/img/me-2.jpg" class="image-display" style="width: 80%; max-width: 300px;  rotate:10deg;" alt="Image of me">
         <img src="/img/me-1.jpg" class="image-display" style="width: 90%; max-height:320px; max-width: 400px; rotate: -10deg" alt="Image of me">
@@ -101,17 +101,17 @@
           </el-col>
         </div>
         <img src="../assets/about-me/me-japan-oss.png" class="image-display" style="width: 90%; max-width: 500px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
+		<el-divider style="width:80%"></el-divider>
       </LayoutRow>
-      <el-divider></el-divider>
-      <LayoutRow :justify="'space-between'">
+      <LayoutRow :justify="'space-around'">
         <div style="width: 400px;">
           <TopArtistsComponent />
         </div>
         <div style="width: 400px;">
           <TopSongsComponent />
         </div>
+        <el-divider style="width:80%"></el-divider>
       </LayoutRow>
-      <el-divider></el-divider>
       <LayoutRow justify="space-around">
         <img src="../assets/about-me/mushrooms/cesta-mixta-pinar.png" class="image-display" style="width: 70%; max-width: 400px;  max-height:550px;  rotate:10deg;" alt="Image of me">
         <img src="../assets/about-me/mushrooms/cesta-cocina.png" class="image-display" style="width: 70%;  max-width: 400px; max-height:580px;rotate: -10deg" alt="Image of me">
