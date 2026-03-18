@@ -1,7 +1,6 @@
 <template>
   <ViewLayout>
-    <!-- CENTER CONTAINER -->
-    <template #center-col>
+    <template #content>
       <h1>About me</h1>
       <LayoutRow :justify="'center'">
         <div class="about-me-fact">
@@ -21,20 +20,6 @@
             </p>
           </el-col>
         </div>
-        <!-- <div class="about-me-fact">
-          <el-col align="center">
-            <el-row style="max-width: 60%;">
-              <el-col>
-                <img src="../assets/about-me/me.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Profile picture">
-              </el-col>
-            </el-row>
-          </el-col>
-          <el-col :span="24">
-            <p>
-              {{ t('about-me.description') }}
-            </p>
-            </el-col>
-        </div> -->
       </LayoutRow>
       <el-divider></el-divider>
       <LayoutRow justify="space-around">

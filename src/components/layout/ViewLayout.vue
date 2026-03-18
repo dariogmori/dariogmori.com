@@ -1,17 +1,7 @@
 <template>
   <el-row justify="space-evenly">
     <el-col :span="getSpan(1)" class="center-container">
-      <slot name="center-col"></slot>
-    </el-col>
-  </el-row>
-
-  <el-row justify="space-evenly">
-    <el-col :span="getSpan(0)" class="left-container" >
-      <slot name="left-col"></slot>
-    </el-col>
-
-    <el-col :span="getSpan(2)" class="right-container">
-      <slot name="right-col"></slot>
+      <slot name="content"></slot>
     </el-col>
   </el-row>
 </template>
