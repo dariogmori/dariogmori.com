@@ -1,19 +1,15 @@
 <template>
-  <el-row :justify="props.justify" :align="props.align" class="row">
+  <div class="row">
     <slot></slot>
-  </el-row>
+  </div>
 </template>
 
-<script setup lang="ts">
- const props = defineProps({
-   justify: String,
-   align: String
- });
-</script>
-
 <style scoped>
-.row{
-  margin-top:10%;
-  margin-bottom:10%;
+.row {
+  margin: 20px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 </style>
