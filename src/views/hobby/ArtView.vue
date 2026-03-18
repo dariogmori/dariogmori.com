@@ -1,20 +1,9 @@
 <template>
   <ViewLayout>
-    <!-- LEFT CONTAINER -->
-    <template #left-col>
+    <template #content>
       <ArtComponent v-for="paint in getArt('left')" :art="paint"/>
-    </template>
-
-    <!-- CENTER CONTAINER -->
-    <template #center-col>
-      <!--<img src="../../assets/hobby/art/logo.gif" class="logo" style="width: 60%; ">-->
-    </template>
-
-    <!-- RIGHT CONTAINER -->
-    <template #right-col>
       <ArtComponent v-for="paint in getArt('right')" :art="paint"/>
     </template>
-
   </ViewLayout>
 </template>
 
