@@ -5,9 +5,9 @@
         <router-view/>
       </div>
     </div> 
-    <el-row justify="center" style="z-index: 11;" >
+    <div style="z-index: 11; justify-content: center; display: flex;" >
       <MenuComponent />
-    </el-row>
+    </div>
         
   </body>
 
