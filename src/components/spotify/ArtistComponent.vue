@@ -5,12 +5,12 @@
       <h3><a :href="props.artist.profile_url" target="_blank" class="link-bright">{{props.artist.name}}</a></h3>
     </div>
     <div class="genre-text">
-      <el-tag
+      <div
         v-for="genre in genresArray"
         :key="genre"
         type="info"
-        style="margin-right: 10%;"
-      >{{genre}}</el-tag>
+        style="margin-right: 10%; background-color: var(--white);"
+      >{{genre}}</div>
     </div>
   </div>
 </template>
@@ -50,6 +50,7 @@ const genresArray = computed(() => {
 .image-container {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 
 .image-container img {

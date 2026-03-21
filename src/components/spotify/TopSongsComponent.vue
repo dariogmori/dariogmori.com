@@ -1,10 +1,10 @@
 <template>
   <h3>Songs I listened to most this month</h3>
-  <el-carousel :interval="4000" type="card" height="200px" style="width:100%;">
-    <el-carousel-item v-for="(song, index) in config.user.top_songs" :key="index">
-      <SongComponent :song="song" :index="index" />
-    </el-carousel-item>
-  </el-carousel>
+  <div style="display:flex; width:90%; flex-wrap: wrap; justify-content: space-around;">
+	<div v-for="(song, index) in config.user.top_songs" :key="index" style="width:40%; margin:10px;">
+		<SongComponent :song="song" :index="index" />
+	</div>
+  </div>
 </template>
 
 <script setup lang="ts">

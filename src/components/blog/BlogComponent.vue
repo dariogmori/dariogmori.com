@@ -1,18 +1,23 @@
 <template>
-  <el-row justify="space-evenly">
-    <el-col :span="getSpanBlog()" class="center-container" align="center">
-      <h2>{{ date }}</h2>
-      <h1>{{ title }}</h1>
-      <el-divider></el-divider>
+  <LayoutRow>
+    <div class="center-container" :class="{ desktop: !isMobile(), mobile: isMobile()}" align="center">
+	  <div style="width: 83%;">	
+	    <h2>{{ date }}</h2>
+	    <h1>{{ title }}</h1>
+      
+      <hr class="dashed">
       <slot name="body"></slot>
-      <el-divider></el-divider>
-      <slot name="references"></slot>
-    </el-col>
-  </el-row>    
+      <hr class="dashed">
+   	  <slot name="references"></slot>
+      </div>
+    </div>
+  </LayoutRow>    
 </template>
 
 <script setup lang="ts">
 import { getSpanBlog } from '@/scripts/layout';
+import LayoutRow from '@/components/layout/LayoutRow.vue'
+import { isMobile } from '@/scripts/utils'
 
 const props = defineProps<{
   date: string,
@@ -34,7 +39,14 @@ h2 {
   border: 4px double var(--secondary-color);
   background-color: var(--main-color);
 }
-.el-divider{
+hr {
   width:80%;
+}
+
+.desktop{
+	width: 58%;
+}
+.mobile{
+	width: 100%;
 }
 </style>
