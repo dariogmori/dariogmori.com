@@ -36,7 +36,7 @@ h2 {
   font-family: 'Courier New', Courier, monospace;
 }
 .center-container{
-  border: 4px double var(--secondary-color);
+  border: 6px double var(--secondary-color);
   background-color: var(--main-color);
 }
 hr {
