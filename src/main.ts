@@ -37,7 +37,7 @@ async function bootstrap() {
     app.component(key, component)
   }
 
-  app.use(ElementPlus)
+  // app.use(ElementPlus)
   app.use(router)
   app.use(I18NextVue, { i18next })
 

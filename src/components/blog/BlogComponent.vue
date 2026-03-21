@@ -47,6 +47,6 @@ hr {
 	width: 58%;
 }
 .mobile{
-	width: 100%;
+	width: 98%;
 }
 </style>
