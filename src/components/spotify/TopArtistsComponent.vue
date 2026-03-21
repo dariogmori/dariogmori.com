@@ -1,10 +1,10 @@
 <template>
   <h3>Artists I listened to most this month</h3>
-  <el-carousel :interval="4000" type="card" height="200px" style="width:100%;">
-    <el-carousel-item v-for="(artist, index) in config.user.top_artists" :key="index">
-      <ArtistComponent :artist="artist" :index="index" />
-    </el-carousel-item>
-  </el-carousel>
+  <div style="display:flex; width:90%; flex-wrap: wrap; justify-content: space-around;">
+  	<div v-for="(artist, index) in config.user.top_artists" :key="index" style="width:40%; margin:10px;">
+  		<ArtistComponent :artist="artist" :index="index" />
+  	</div>
+  </div>
 </template>
 
 <script setup lang="ts">

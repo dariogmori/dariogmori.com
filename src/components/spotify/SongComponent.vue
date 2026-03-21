@@ -41,6 +41,7 @@ const props = defineProps<{
   .image-container {
     position: relative;
     display: inline-block;
+    overflow: hidden;
   }
 
   .image-container img {

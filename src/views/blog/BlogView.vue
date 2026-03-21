@@ -2,8 +2,7 @@
   <div class="fade-in">
 	<BlogComponent date="17/02/2026" title="Running away from Spotify (or Apple Music if you are weird like that)">
       <template #body>
-         <el-row :justify="'center'" class="header-color">
-             <el-col :span="20">
+         <LayoutRow class="header-color">
 	             <p>
 	             	It is well known the continuous abuses the music industry and streaming music services such as Spotify or Apple music carry out on artists (1).  
 	             	It also seems like specially Spotify has been banking on AI generated music, filling its catalogue with slop (2). In my journey to run away from the eternal wheel of SaaS and subscriptions I decided to look into self-hosted music server alternatives.
@@ -79,11 +78,9 @@ x-podman:
           	 	 <p>
         	 	 	---------------------- to be continued -------------------------
          	 	 </p>
-             </el-col>
-         </el-row>
+         </LayoutRow>
        </template>
        <template #references>
-	       <el-col :span="20">
 	       <ul>
 	         <li>(1) Spotify is abusive towards musicians both rich and poor, and here is why | Ashley Jana <a href="https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02">https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02</a></li>
 	         <li>(2) Spotify is paying out ai artist that spam the platform with ai made albums and abuse the system  <a href="https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/">https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/</a></li>
@@ -91,15 +88,13 @@ x-podman:
 	         <li>(4) amperfy's Github Page  <a href="https://github.com/BLeeEZ/amperfy">https://github.com/BLeeEZ/amperfy</a></li>
 	         <li>(5) Supersonic’s Github Page  <a href="https://github.com/dweymouth/supersonic">https://github.com/dweymouth/supersonic</a></li>
 	       </ul>
-	       </el-col>
        </template>
     </BlogComponent>
     <br>
     <br>  
     <BlogComponent date="28/01/2026" title="I'm doing a talk about permacomputing! (in future tense)">
       <template #body>
-          <el-row :justify="'center'" class="header-color">
-              <el-col :span="20">
+          <LayoutRow class="header-color">
               <p>
                 I recently got an opportunity (thanks to my friend Anastasiia) to propose a talk to the people at <a href="https://futurefrontend.com/speakers/#dar-o-guti-rrez-mori">Future Frontend</a>(1) in Finland, and it got accepted! I am very lucky to get this opportunity, now I just gotta figure out the hard part: knowing what I am going to talk about specifically. I know I want to talk about permacomputing (and how I am slowly getting into it) and just show to the world the multiple ways you can do computing differently (cause I am so <i>different and special</i> lmao). 
               </p>
@@ -111,24 +106,20 @@ x-podman:
                 I have always struggled with creativity as I think the creative process is something that is very unnatural to me and I have a bit of a complex when moving in such cool ambients such as the indie videogame industry or possibly permacomputing forums but I will do my best, I think the result is worth it. BTW recently found out my new favorite person (in a career way), check them out at <a href="https://www.todepond.com/">https://www.todepond.com/</a> as they create incredibly cool stuff (2) and I aspire to do a fraction of what they do.
               </p>
               <p class="small-text">Might private this post if I ever have to look for a job lmao so do not be surprised if it disappears.</p>
-              </el-col>
-          </el-row>
+          </LayoutRow>
       </template>
        <template #references>
-        <el-col :span="20">
         <ul>
           <li>(1) Future Frontend Website <a href="https://futurefrontend.com">https://futurefrontend.com/</a></li>
           <li>(2) Talk about the Tadi Web | Lu Wilson <a href="https://www.youtube.com/watch?v=73mEhS0gxgI">https://www.youtube.com/watch?v=73mEhS0gxgI</a></li>
         </ul>
-        </el-col>
       </template>
     </BlogComponent>
     <br>
     <br>
     <BlogComponent date="27/12/2025" title="RAM Prices and reclaiming infrastructure ownership">
       <template #body>
-          <el-row :justify="'center'" class="header-color">
-              <el-col :span="20">
+         <LayoutRow class="header-color">
               <p>
                 As you may have heard these past few weeks, we are experiencing a RAM “shortage” <i>(writing this as of December 27th 2025, welcome to my end of the year rant)</i>.
                 This crisis has been mainly caused by the increase in demand caused by big corporations aimlessly running to be 
@@ -157,18 +148,15 @@ x-podman:
                 It is why this is my call to action to you, dear reader to try to run away from centralised, cloud, externally owned infrastructure (and eventually services) and try to regain control of your technological life. 
                 In the following weeks I will follow this post with other publications about my tinkering with tools such as PostmarketOS <i>(3)</i> or Lightweight Music Server <i>(4)</i> to achieve this for myself and show how easy (or not) it is to do so.  
               </p>
-              </el-col>
-          </el-row>
+          </LayoutRow>
       </template>   
       <template #references>
-        <el-col :span="20">
         <ul>
           <li>(1) RAM production moving away from the average consumer and targeting huge corporations <a href="https://intuitionlabs.ai/articles/ram-shortage-2025-ai-demand">https://intuitionlabs.ai/articles/ram-shortage-2025-ai-demand</a></li>
           <li>(2) RAM prices affecting cloud computing prices (AWS being not transparent about EC2 pricing history) <a href="https://instances.vantage.sh/?id=ca66395bd8a18c9ddd0dcc27ed31b275d5470517">https://instances.vantage.sh/?id=ca66395bd8a18c9ddd0dcc27ed31b275d5470517</a></li>
           <li>(3) PostMarketOS. An open source mobile phone OS. <a href="https://postmarketos.org/">https://postmarketos.org/</a></li>
           <li>(4) Lightweight Music Server. A music server that could be used as an alternative to streaming services. <a href="https://github.com/epoupon/lms">https://github.com/epoupon/lms</a></li>
         </ul>
-        </el-col>
       </template>
     </BlogComponent>
   </div>

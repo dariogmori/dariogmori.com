@@ -13,22 +13,24 @@
   </body>
 </html>
 <style>
-.html {
+.ahtml {
   background-size: cover; 
   background-attachment: fixed;
   background-position: center; 
 }
-.html::before{
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: inherit;
-  background-size: cover;
-  background-position: center;
-  filter: blur(3px); /* Adjust blur intensity */
-  z-index: -1;
+
+@-webkit-keyframes bg-scrolling {
+	100% {
+		background-position: 700px 700px;
+	}
 }
+
+.html {
+	scrollbar-color: rgb(17 132 126) rgb(3 66 66);
+	background-color: rgb(25 25 41);
+	background-image: url(/img/background.png);
+	-webkit-animation: bg-scrolling linear 40s infinite;
+	background-attachment: fixed;
+}
+
 </style>

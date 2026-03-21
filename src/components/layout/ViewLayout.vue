@@ -1,17 +1,23 @@
 <template>
-  <el-row justify="space-evenly">
-    <el-col :span="getSpan(1)" class="center-container">
+  <div style="display:flex; justify-content: space-evenly;">
+    <div class="center-container " :class="{ desktop: !isMobile(), mobile: isMobile()}">
       <slot name="content"></slot>
-    </el-col>
-  </el-row>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { getSpan } from "@/scripts/layout";
+import { isMobile } from "@/scripts/utils";
 </script>
 
 
 <style scoped>
 @import '../../assets/styles/palette.css';
 @import '../../assets/styles/view.css';
+.desktop{
+	width: 58%;
+}
+.mobile{
+	width: 100%;
+}
 </style>

@@ -1,20 +1,32 @@
 <template>
     <div :class="{ 'mobile': isMobile(), 'desktop': !isMobile(), 'menu': true}">
     	<div class="menu-button-container">
-			<button class="menu-button" @click="goToRoute('/')"><el-icon><HomeFilled /></el-icon>{{ isMobile() ? '': 'Home' }}</button>
+			<button class="menu-button" @click="goToRoute('/')">
+				<HomeFilled class="icon-menu" />{{ isMobile() ? '': 'Home' }}
+			</button>
     	</div>
     	<div class="menu-button-container">
-			<button class="menu-button" @click="goToRoute('/blog')"><el-icon><List /></el-icon>{{ isMobile() ? '': 'Blog' }}</button>
+			<button class="menu-button" @click="goToRoute('/blog')">
+				<List class="icon-menu"/>{{ isMobile() ? '': 'Blog' }}
+			</button>
     	</div>
     	<div class="menu-button-container">
-			<button class="menu-button" @click="goToRoute('/talks/sustainable-platform-engineering')"><el-icon><Management /></el-icon>{{ isMobile() ? '': 'Talks' }}</button>
+			<button class="menu-button" @click="goToRoute('/talks/sustainable-platform-engineering')">
+				<Management class="icon-menu"/>{{ isMobile() ? '': 'Talks' }}
+			</button>
     	</div>
     	<div class="menu-button-container">
-			<button class="menu-button"  @click="goToRoute('/art')"><el-icon><StarFilled /></el-icon>{{ isMobile() ? '': 'Art' }}</button>
+			<button class="menu-button"  @click="goToRoute('/art')">
+				<StarFilled class="icon-menu"/>{{ isMobile() ? '': 'Art' }}
+			</button>
     	</div>
     	<div class="menu-button-container">
-			<button class="menu-button" style="width:50%;" @click="toggleTheme()"><el-icon><Opportunity /></el-icon></button>
-			<button class="menu-button" style="width:50%;" @click="toggleLanguage()" >{{ config.lang }}</button>
+			<button class="menu-button" style="width:50%;" @click="toggleTheme()">
+				<Opportunity class="icon-menu"/>
+			</button>
+			<button class="menu-button" style="width:50%;" @click="toggleLanguage()" >
+				{{ config.lang }}
+			</button>
     	</div>
     </div>
 </template>
@@ -28,6 +40,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: var(--secondary-color);
+}
+
+.icon-menu {
+	height: 1em;
+	font-size: 18px;
+	width: 1em;
 }
 
 nav {
