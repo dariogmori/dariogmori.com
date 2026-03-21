@@ -88,7 +88,6 @@ x-podman:
 	         <li>(4) amperfy's Github Page  <a href="https://github.com/BLeeEZ/amperfy">https://github.com/BLeeEZ/amperfy</a></li>
 	         <li>(5) Supersonic’s Github Page  <a href="https://github.com/dweymouth/supersonic">https://github.com/dweymouth/supersonic</a></li>
 	       </ul>
-	       </el-col>
        </template>
     </BlogComponent>
     <br>
