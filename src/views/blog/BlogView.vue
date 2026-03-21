@@ -9,7 +9,7 @@
 	             </p>
 	             <p>
 				 	I stumbled upon Lightweight Music Server (3) (LMS for friends) which had Subsonic API support, meaning that it is compatible with most open source music players out there. 
-				 	For players, I chose Substreamer (4) for my mobile player (since I am stuck with iPhone until I figure out a nice phone to use with postmarketOS) and Supersonic (5) for my desktop player. You can use any player that supports the Subsonic API though so feel free to experiment and tell me why I am wrong.
+				 	For players, I chose amperfy (4) for my mobile player (since I am stuck with iPhone until I figure out a nice phone to use with postmarketOS) and Supersonic (5) for my desktop player. You can use any player that supports the Subsonic API though so feel free to experiment and tell me why I am wrong.
 	             </p>
 	             <h2>Setting up LMS</h2>
 	             <p>
@@ -82,12 +82,13 @@ x-podman:
        </template>
        <template #references>
 	       <ul>
-   	         <li>(1) Spotify is abusive towards musicians both rich and poor, and here is why | Ashley Jana <a href="https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02">https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02</a></li>
-   	         <li>(2) Spotify is paying out ai artist that spam the platform with ai made albums and abuse the system  <a href="https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/">https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/</a></li>
-   	         <li>(3) Lightweight Music Server's Github Page  <a href="https://github.com/epoupon/lms">https://github.com/epoupon/lms</a></li>
-   	         <li>(4) Substreamer's Main Page  <a href="https://substreamerapp.com/">https://substreamerapp.com/</a></li>
-   	         <li>(5) Supersonic’s Github Page  <a href="https://github.com/dweymouth/supersonic">https://github.com/dweymouth/supersonic</a></li>
-   	       </ul>
+	         <li>(1) Spotify is abusive towards musicians both rich and poor, and here is why | Ashley Jana <a href="https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02">https://ashleyjanamusic.medium.com/spotify-is-abusive-towards-musicians-both-rich-and-poor-and-here-is-why-a34792353f02</a></li>
+	         <li>(2) Spotify is paying out ai artist that spam the platform with ai made albums and abuse the system  <a href="https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/">https://www.reddit.com/r/musicians/comments/1r2e4fa/spotify_is_paying_out_ai_artist_that_spam_the/</a></li>
+	         <li>(3) Lightweight Music Server's Github Page  <a href="https://github.com/epoupon/lms">https://github.com/epoupon/lms</a></li>
+	         <li>(4) amperfy's Github Page  <a href="https://github.com/BLeeEZ/amperfy">https://github.com/BLeeEZ/amperfy</a></li>
+	         <li>(5) Supersonic’s Github Page  <a href="https://github.com/dweymouth/supersonic">https://github.com/dweymouth/supersonic</a></li>
+	       </ul>
+	       </el-col>
        </template>
     </BlogComponent>
     <br>
@@ -171,18 +172,18 @@ code {
   text-align:left;
   display:block;
   margin: 5px;
-  color: var(--white);
+  color: var(--code-color);
   background: var(--secondary-color);
 }
 pre {
-  border: 4px var(--white) double;
+  border: 4px var(--code-color) double;
   background: var(--secondary-color);
 }
 samp {
   text-align:left;
   display:block;
-  border: 4px var(--white) double;
-  color: var(--white);
+  border: 4px var(--code-color) double;
+  color: var(--code-color);
   background: var(--secondary-color);
 }
 h2 {
