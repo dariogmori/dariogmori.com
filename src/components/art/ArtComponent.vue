@@ -11,7 +11,7 @@
        />
      </div>
    </div>
-   <p>
+   <p class="secondary-text">
      {{ t('art.' + props.art.id + '.description') }}
    </p>
 </template>
@@ -36,5 +36,6 @@ const props = defineProps<{
   border: 6px double var(--secondary-color);
   background-color: var(--main-color);
 }
+
 
 </style>

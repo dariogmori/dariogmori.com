@@ -28,6 +28,8 @@
     --el-font-family: 'Press Start 2P' !important;
     --code-color: var(--white);
     --background-image-url: url(/img/background.png);
+    --secondary-font-family:  'Courier New', Courier, monospace;
+    --secondary-font-size: 18px;
 }
 
 [data-theme="dark-typical"] {
@@ -67,4 +69,9 @@ a:hover {
 }
 .link-bright:hover {
   color: var(--hover-color);
+}
+
+.secondary-text {
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
 }
