@@ -22,11 +22,6 @@ const routes = [
     component: () => import('../views/hobby/ArtView.vue')
   },
   {
-    path: '/about-me',
-    name: 'about',
-    component: () => import('../views/AboutMe.vue')
-  },
-  {
     path: '/games/big-crunch',
     name: 'big-crunch',
     component: () => import('../views/games/BigCrunchView.vue')
