@@ -1,11 +1,9 @@
 <template>
-  <body :class="{ 'body-mobile': isMobile(), 'body-desktop': !isMobile() }">
-    <div class="parallax-content">
-      <div style="margin-bottom: 10vh">
-        <router-view />
-      </div>
-    </div>
-    <div style="z-index: 11; justify-content: center; display: flex">
+  <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() } " >
+    <div style="margin-bottom: 10vh" >
+       <router-view/>
+    </div> 
+    <div style="z-index: 11; justify-content: center; display: flex;" >
       <MenuComponent />
     </div>
   </body>
@@ -41,9 +39,8 @@ nav a.router-link-exact-active {
 .body-desktop {
   max-width: 98.8%;
 }
-.body-mobile {
-  max-width: 100%;
-  overflow-x: hidden;
+.body-mobile{
+  max-width:100%;
 }
 </style>
 <script setup lang="ts">

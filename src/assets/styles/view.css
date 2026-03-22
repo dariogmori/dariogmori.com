@@ -1,9 +1,9 @@
-.center-container {
-  opacity: 0;
-  transform: translateY(-50px);
-  animation: fadeFall 0.5s ease-out forwards;
-  border: 4px double var(--secondary-color);
-  background-color: var(--main-color);
+.center-container{
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeFall 0.5s ease-out forwards;
+    border: 6px double var(--secondary-color);
+    background-color: var(--main-color);
 }
 
 .image-display:hover {
