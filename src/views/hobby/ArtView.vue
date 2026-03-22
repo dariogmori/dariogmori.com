@@ -1,15 +1,15 @@
 <template>
-  <ViewLayout>
-    <template #content>
-      <h1>Art</h1>
-      <ArtComponent v-for="paint in art" :art="paint" />
-    </template>
-  </ViewLayout>
+  <h1>Art</h1>
+  <CardComponent  v-for="paint in art">
+  	<template #content>
+  		<ArtComponent :art="paint" />
+  	</template>
+  </CardComponent>
 </template>
 
 <script setup lang="ts">
 import { useTranslation } from 'i18next-vue'
-import ViewLayout from '@/components/layout/ViewLayout.vue'
+import CardComponent from '@/components/layout/CardComponent.vue'
 import ArtComponent from '@/components/art/ArtComponent.vue'
 
 const { t } = useTranslation()
@@ -55,7 +55,3 @@ const art = [
   { id: 'helltaker', month: 'may', year: '2021', images: ['1.jpeg'] }
 ]
 </script>
-
-<style scoped>
-@import '../../assets/styles/view.css';
-</style>
