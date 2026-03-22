@@ -49,7 +49,7 @@
       </div>
       <el-row :justify="'center'">
         <el-col :span="20">
-          <p>{{ t('home.about-me') }}</p>
+          <p  class="secondary-text">{{ t('home.about-me') }}</p>
         </el-col>
       </el-row>
     </div>
