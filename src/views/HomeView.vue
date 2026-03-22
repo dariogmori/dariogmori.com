@@ -3,6 +3,7 @@
     <template #content>
       <DescriptionAboutMeComponentMobile v-if="isMobile()" />
       <DescriptionAboutMeComponent v-if="!isMobile()" />
+      <br>
       <div style="display: flex; width: 100%; justify-content: center">
         <el-divider style="width: 80%"></el-divider>
       </div>
