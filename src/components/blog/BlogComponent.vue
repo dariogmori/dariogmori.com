@@ -19,7 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import { getSpanBlog } from '@/scripts/layout'
 import LayoutRow from '@/components/layout/LayoutRow.vue'
 import { isMobile } from '@/scripts/utils'
 
