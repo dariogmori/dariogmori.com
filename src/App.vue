@@ -1,16 +1,14 @@
 <template>
-  <body :class="{ 'body-mobile' : isMobile(), 'body-desktop' : !isMobile() } " >
+  <body :class="{ 'body-mobile': isMobile(), 'body-desktop': !isMobile() }">
     <div class="parallax-content">
-      <div style="margin-bottom: 10vh" >
-        <router-view/>
+      <div style="margin-bottom: 10vh">
+        <router-view />
       </div>
-    </div> 
-    <div style="z-index: 11; justify-content: center; display: flex;" >
+    </div>
+    <div style="z-index: 11; justify-content: center; display: flex">
       <MenuComponent />
     </div>
-        
   </body>
-
 </template>
 
 <style>
@@ -36,25 +34,24 @@ nav a {
 nav a.router-link-exact-active {
   color: var(--secondary-color);
 }
-.mobile{
-  width:100%;
+.mobile {
+  width: 100%;
 }
 
 .body-desktop {
-  max-width:98.8%;
+  max-width: 98.8%;
 }
-.body-mobile{
-  max-width:100%;
+.body-mobile {
+  max-width: 100%;
   overflow-x: hidden;
 }
-
 </style>
 <script setup lang="ts">
 import { useTranslation } from 'i18next-vue'
 const { t, i18next } = useTranslation()
 import { onMounted, reactive } from 'vue'
-import {isMobile} from "@/scripts/utils";
-import MenuComponent from "@/components/MenuComponent.vue";
+import { isMobile } from '@/scripts/utils'
+import MenuComponent from '@/components/MenuComponent.vue'
 const config = reactive({
   theme: 'light',
   lang: 'es'
@@ -67,19 +64,17 @@ onMounted(() => {
     document.documentElement.setAttribute('data-theme', config.theme)
     changeLanguage(config.lang)
   }
-  if( savedLang ) {
+  if (savedLang) {
     config.lang = savedLang
     document.documentElement.setAttribute('data-lang', config.lang)
     changeLanguage(config.lang)
   }
 })
 
-function changeLanguage ( lang: string) {
+function changeLanguage(lang: string) {
   config.lang = lang
   document.documentElement.setAttribute('data-lang', config.lang)
   localStorage.setItem('lang', config.lang) // Save the current language to local storage
   i18next.changeLanguage(lang)
 }
-
-
 </script>

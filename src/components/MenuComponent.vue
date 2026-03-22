@@ -1,34 +1,34 @@
 <template>
-    <div :class="{ 'mobile': isMobile(), 'desktop': !isMobile(), 'menu': true}">
-    	<div class="menu-button-container">
-			<button class="menu-button" @click="goToRoute('/')">
-				<HomeFilled class="icon-menu" />{{ isMobile() ? '': 'Home' }}
-			</button>
-    	</div>
-    	<div class="menu-button-container">
-			<button class="menu-button" @click="goToRoute('/blog')">
-				<List class="icon-menu"/>{{ isMobile() ? '': 'Blog' }}
-			</button>
-    	</div>
-    	<div class="menu-button-container">
-			<button class="menu-button" @click="goToRoute('/talks/sustainable-platform-engineering')">
-				<Management class="icon-menu"/>{{ isMobile() ? '': 'Talks' }}
-			</button>
-    	</div>
-    	<div class="menu-button-container">
-			<button class="menu-button"  @click="goToRoute('/art')">
-				<StarFilled class="icon-menu"/>{{ isMobile() ? '': 'Art' }}
-			</button>
-    	</div>
-    	<div class="menu-button-container">
-			<button class="menu-button" style="width:50%;" @click="toggleTheme()">
-				<Opportunity class="icon-menu"/>
-			</button>
-			<button class="menu-button" style="width:50%;" @click="toggleLanguage()" >
-				{{ config.lang }}
-			</button>
-    	</div>
+  <div :class="{ mobile: isMobile(), desktop: !isMobile(), menu: true }">
+    <div class="menu-button-container">
+      <button class="menu-button" @click="goToRoute('/')">
+        <HomeFilled class="icon-menu" />{{ isMobile() ? '' : 'Home' }}
+      </button>
     </div>
+    <div class="menu-button-container">
+      <button class="menu-button" @click="goToRoute('/blog')">
+        <List class="icon-menu" />{{ isMobile() ? '' : 'Blog' }}
+      </button>
+    </div>
+    <div class="menu-button-container">
+      <button class="menu-button" @click="goToRoute('/talks/sustainable-platform-engineering')">
+        <Management class="icon-menu" />{{ isMobile() ? '' : 'Talks' }}
+      </button>
+    </div>
+    <div class="menu-button-container">
+      <button class="menu-button" @click="goToRoute('/art')">
+        <StarFilled class="icon-menu" />{{ isMobile() ? '' : 'Art' }}
+      </button>
+    </div>
+    <div class="menu-button-container">
+      <button class="menu-button" style="width: 50%" @click="toggleTheme()">
+        <Opportunity class="icon-menu" />
+      </button>
+      <button class="menu-button" style="width: 50%" @click="toggleLanguage()">
+        {{ config.lang }}
+      </button>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -43,9 +43,9 @@
 }
 
 .icon-menu {
-	height: 1em;
-	font-size: 18px;
-	width: 1em;
+  height: 1em;
+  font-size: 18px;
+  width: 1em;
 }
 
 nav {
@@ -60,47 +60,47 @@ nav a {
 nav a.router-link-exact-active {
   color: var(--secondary-color);
 }
-.mobile{
-  width:100%;
+.mobile {
+  width: 100%;
 }
-.desktop{
-  width:40%;
+.desktop {
+  width: 40%;
 }
-.menu{
-  max-width:99%;
-  position:fixed;
-  bottom:0px;
+.menu {
+  max-width: 99%;
+  position: fixed;
+  bottom: 0px;
   border: 4px solid var(--secondary-color);
-  display:flex; justify-content:center;
+  display: flex;
+  justify-content: center;
   background: var(--main-color);
 }
-.menu-button-container{
-  width:20%;
+.menu-button-container {
+  width: 20%;
 }
-.menu-button{
+.menu-button {
   font-family: var(--el-font-family) !important;
   font-size: var(--el-font-size-base);
   color: var(--secondary-color);
-  width:100%;
-  height:50px;
+  width: 100%;
+  height: 50px;
   background: var(--main-color);
-  border:none;
+  border: none;
 }
-.menu-button:hover{
+.menu-button:hover {
   background: var(--hover-color);
 }
-i{
-	font-size:18px !important;
+i {
+  font-size: 18px !important;
 }
-
 </style>
 <script setup lang="ts">
 import { useTranslation } from 'i18next-vue'
 const { t, i18next } = useTranslation()
 import { onMounted, reactive } from 'vue'
-import {isMobile} from "@/scripts/utils";
+import { isMobile } from '@/scripts/utils'
 
-import router from "@/router";
+import router from '@/router'
 
 const config = reactive({
   theme: 'light',
@@ -114,28 +114,28 @@ onMounted(() => {
     document.documentElement.setAttribute('data-theme', config.theme)
     changeLanguage(config.lang)
   }
-  if( savedLang ) {
+  if (savedLang) {
     config.lang = savedLang
     document.documentElement.setAttribute('data-lang', config.lang)
     changeLanguage(config.lang)
   }
 })
 
-function changeLanguage(lang: string){
-  config.lang = lang;
+function changeLanguage(lang: string) {
+  config.lang = lang
   document.documentElement.setAttribute('data-lang', config.lang)
   localStorage.setItem('lang', config.lang) // Save the current language to local storage
   i18next.changeLanguage(config.lang)
 }
 
-function toggleTheme () {
-  config.theme = config.theme == 'light'? 'dark-typical' : 'light';
+function toggleTheme() {
+  config.theme = config.theme == 'light' ? 'dark-typical' : 'light'
   document.documentElement.setAttribute('data-theme', config.theme)
   localStorage.setItem('theme', config.theme) // Save the current theme to local storageç
-  location.reload();
+  location.reload()
 }
-function toggleLanguage () {
-  config.lang = config.lang == 'es'? 'en': 'es';
+function toggleLanguage() {
+  config.lang = config.lang == 'es' ? 'en' : 'es'
   document.documentElement.setAttribute('data-lang', config.lang)
   localStorage.setItem('lang', config.lang) // Save the current language to local storage
   i18next.changeLanguage(config.lang)

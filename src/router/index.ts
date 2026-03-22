@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-const routes= [
+const routes = [
   {
     path: '/',
     name: 'home',
@@ -15,7 +15,8 @@ const routes= [
     path: '/minecraft',
     name: 'minecraft',
     component: () => import('../views/hobby/MinecraftView.vue')
-  },{
+  },
+  {
     path: '/art',
     name: 'art',
     component: () => import('../views/hobby/ArtView.vue')

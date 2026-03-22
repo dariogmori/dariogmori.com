@@ -3,7 +3,7 @@
     <h3>{{ title }} @ {{ company }}, {{ location }}</h3>
   </el-col>
   <el-col>
-    <p v-for="date in dates"> {{ date }}</p>
+    <p v-for="date in dates">{{ date }}</p>
   </el-col>
 </template>
 
@@ -11,12 +11,10 @@
 import { defineProps } from 'vue'
 defineProps({
   title: String,
-  company : String,
+  company: String,
   location: String,
   dates: Array<String>
 })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -8,28 +8,23 @@ import './assets/styles/theme.css'
 import i18next from 'i18next'
 import I18NextVue from 'i18next-vue'
 import Backend from 'i18next-http-backend'
-//element plus
-import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
 const savedLang = localStorage.getItem('lang') || 'en'
 
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
-
 async function bootstrap() {
-  await i18next
-    .use(Backend)
-    .init({
-      lng: savedLang,
-      fallbackLng: 'en',
-      backend: {
-        loadPath: '/locales/{{lng}}/{{ns}}.json'
-      },
-      interpolation: {
-        escapeValue: false
-      }
-    })
+  await i18next.use(Backend).init({
+    lng: savedLang,
+    fallbackLng: 'en',
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json'
+    },
+    interpolation: {
+      escapeValue: false
+    }
+  })
 
   const app = createApp(App)
 
@@ -37,7 +32,6 @@ async function bootstrap() {
     app.component(key, component)
   }
 
-  // app.use(ElementPlus)
   app.use(router)
   app.use(I18NextVue, { i18next })
 

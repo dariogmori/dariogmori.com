@@ -1,66 +1,74 @@
 @import './theme.css';
 .card-celeste {
-    background-color: var(--main-color);
-    background-image: url("../celeste/background.png");
-    background-position: bottom right;
-    background-size:100%;
-    background-repeat: no-repeat;
-    color: var(--secondary-color);
-    border-color:var(--secondary-color);
-    border-radius: 10px;
-    border:3px;
-    flex:auto;
-    border-top-style:dotted;
-    border-bottom-style:dotted;
-    border-left-style: dashed;
-    border-right-style:dashed;
-    image-rendering: crisp-edges;
+  background-color: var(--main-color);
+  background-image: url('../celeste/background.png');
+  background-position: bottom right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  border-radius: 10px;
+  border: 3px;
+  flex: auto;
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: dashed;
+  border-right-style: dashed;
+  image-rendering: crisp-edges;
 }
-.content-celeste{
-    margin:5px;
-    background-color: var(--hover-color);
-    opacity:0.9;
-    color: var(--secondary-color);
-    border-radius: 10px;
-    border-color: var(--secondary-color);
-    border:solid 5px;
-    flex:auto;
+.content-celeste {
+  margin: 5px;
+  background-color: var(--hover-color);
+  opacity: 0.9;
+  color: var(--secondary-color);
+  border-radius: 10px;
+  border-color: var(--secondary-color);
+  border: solid 5px;
+  flex: auto;
 }
-.avatar{
-    border-radius:10px;
-    width:80%;
-    border-color: var(--secondary-color);
-    border:solid 5px;
-    background:var(--hover-color);
+.avatar {
+  border-radius: 10px;
+  width: 80%;
+  border-color: var(--secondary-color);
+  border: solid 5px;
+  background: var(--hover-color);
 }
-.avatar:hover{
-    transform:scale(1.02);
+.avatar:hover {
+  transform: scale(1.02);
 }
-.username{
-    font-family: Lucida Console;
-    font-size: 1vw;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    margin:0px;
+.username {
+  font-family: Lucida Console;
+  font-size: 1vw;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin: 0px;
 }
-.counter{
-    font-family: Lucida Console;
-    font-size: 0.8vw;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    margin:0px;
+.counter {
+  font-family: Lucida Console;
+  font-size: 0.8vw;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin: 0px;
 }
-.inside-button{
-    width:100%;
-    min-width: 30px;
+.inside-button {
+  width: 100%;
+  min-width: 30px;
 }
 .flex-grow {
   flex-grow: 1;
 }
-.el-menu-demo{
-    background-color: var(--hover-color);
-    border-color: var(--secondary-color);
-    opacity:0.9;
+.el-menu-demo {
+  background-color: var(--hover-color);
+  border-color: var(--secondary-color);
+  opacity: 0.9;
 }
 
 .heart:hover {
@@ -68,5 +76,5 @@
 }
 
 .heart:click {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }

@@ -1,15 +1,30 @@
 <template>
   <div class="container">
-    <iframe class="responsive-iframe" style="border-radius: 20px;" :src="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe
+      class="responsive-iframe"
+      style="border-radius: 20px"
+      :src="video"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      allowfullscreen
+    ></iframe>
   </div>
-  </template>
+</template>
 <script setup lang="ts">
 import { defineProps } from 'vue'
 const props = defineProps({
   video: String,
   title: String,
   article: String
-
 })
 </script>
 <style scoped>

@@ -6,9 +6,9 @@
 
 <style scoped>
 .row {
-  margin-top:10px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;

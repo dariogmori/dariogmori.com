@@ -2,23 +2,28 @@
   <ViewLayout>
     <template #left-col>
       <LayoutRow :justify="'end'">
-        <img alt="logo" :src="'/img/game/' + props.game.id + '/logo.png'" class="image-display" style="width: 90%; rotate: -10deg;">
+        <img
+          alt="logo"
+          :src="'/img/game/' + props.game.id + '/logo.png'"
+          class="image-display"
+          style="width: 90%; rotate: -10deg"
+        />
       </LayoutRow>
-      <LayoutRow :justify="'center'" :align="'middle'" >
-        <h1>{{ t('games.released') + ': ' + props.game.date}} </h1>
+      <LayoutRow :justify="'center'" :align="'middle'">
+        <h1>{{ t('games.released') + ': ' + props.game.date }}</h1>
         <el-row align="middle">
-          <h2>{{ t('games.tags') }}: </h2>
-          <el-tag v-for="tag in props.game.tags"  :type="'info'">{{ tag }}</el-tag>
+          <h2>{{ t('games.tags') }}:</h2>
+          <el-tag v-for="tag in props.game.tags" :type="'info'">{{ tag }}</el-tag>
         </el-row>
       </LayoutRow>
       <LayoutRow :justify="'center'">
-        <p>{{ t('games.' + props.game.id + '.description')}}</p>
+        <p>{{ t('games.' + props.game.id + '.description') }}</p>
       </LayoutRow>
       <slot name="left-col"></slot>
     </template>
 
     <template #center-col>
-      <img alt="title" :src="getTitleURI()" style="width: 40%;" class="logo">
+      <img alt="title" :src="getTitleURI()" style="width: 40%" class="logo" />
     </template>
     <template #right-col>
       <slot name="right-col"></slot>
@@ -27,18 +32,18 @@
 </template>
 
 <script setup lang="ts">
-import LayoutRow from "@/components/layout/LayoutRow.vue";
-import ViewLayout from "@/components/layout/ViewLayout.vue";
-import {useTranslation} from "i18next-vue";
-import {onMounted, reactive} from "vue";
+import LayoutRow from '@/components/layout/LayoutRow.vue'
+import ViewLayout from '@/components/layout/ViewLayout.vue'
+import { useTranslation } from 'i18next-vue'
+import { onMounted, reactive } from 'vue'
 const props = defineProps<{
   game: {
-    id: String,
-    date: String,
+    id: String
+    date: String
     tags: Array<String>
   }
 }>()
-const { t } = useTranslation();
+const { t } = useTranslation()
 const config = reactive({
   theme: 'light',
   lang: 'es'
@@ -50,7 +55,7 @@ onMounted(() => {
     config.theme = savedTheme
     document.documentElement.setAttribute('data-theme', config.theme)
   }
-  if( savedLang ) {
+  if (savedLang) {
     config.lang = savedLang
     document.documentElement.setAttribute('data-lang', config.lang)
   }

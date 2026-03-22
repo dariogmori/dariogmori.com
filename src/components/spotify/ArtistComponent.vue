@@ -1,16 +1,27 @@
 <template>
-  <div class="image-container" style="width:100%;">
-    <img :src="`/img/pixels/artist_${props.index + 1}.jpg`" style="width:100%;" :alt="props.artist.name + ' cover'" class="logo"/>
+  <div class="image-container" style="width: 100%">
+    <img
+      :src="`/img/pixels/artist_${props.index + 1}.jpg`"
+      style="width: 100%"
+      :alt="props.artist.name + ' cover'"
+      class="logo"
+    />
     <div class="artist-text">
-      <h3><a :href="props.artist.profile_url" target="_blank" class="link-bright">{{props.artist.name}}</a></h3>
+      <h3>
+        <a :href="props.artist.profile_url" target="_blank" class="link-bright">{{
+          props.artist.name
+        }}</a>
+      </h3>
     </div>
     <div class="genre-text">
       <div
         v-for="genre in genresArray"
         :key="genre"
         type="info"
-        style="margin-right: 10%; background-color: var(--white);"
-      >{{genre}}</div>
+        style="margin-right: 10%; background-color: var(--white)"
+      >
+        {{ genre }}
+      </div>
     </div>
   </div>
 </template>
@@ -20,11 +31,11 @@ import { computed } from 'vue'
 
 const props = defineProps<{
   artist: {
-    name: string,
-    avatar_url: string | null,
-    profile_url: string,
+    name: string
+    avatar_url: string | null
+    profile_url: string
     genres: string
-  },
+  }
   index: number
 }>()
 
@@ -42,9 +53,8 @@ const genresArray = computed(() => {
 </script>
 
 <style scoped>
-
-.logo{
-    image-rendering: crisp-edges;
+.logo {
+  image-rendering: crisp-edges;
 }
 
 .image-container {
@@ -70,7 +80,6 @@ const genresArray = computed(() => {
   opacity: 0;
   white-space: nowrap;
   transition: 0.5s ease;
-  
 }
 .image-container .genre-text {
   position: absolute;
@@ -89,11 +98,11 @@ const genresArray = computed(() => {
 
 .image-container:hover .artist-text {
   opacity: 1;
-  left:10%;
+  left: 10%;
 }
 .image-container:hover .genre-text {
   opacity: 1;
-  left:10%;
+  left: 10%;
 }
 .image-container:hover .artist-text:hover {
   animation: scroll-left 10s linear infinite; /* Infinite scrolling */
@@ -104,13 +113,13 @@ const genresArray = computed(() => {
 /* Smooth scrolling from right to left and wrap back to the start */
 @keyframes scroll-left {
   0% {
-    transform: translate(0%,-50%); /* Start from the right */
+    transform: translate(0%, -50%); /* Start from the right */
   }
   20% {
-    transform: translate(0%,-50%); /* Scroll to the left */
+    transform: translate(0%, -50%); /* Scroll to the left */
   }
   100% {
-    transform: translate(-100%,-50%); /* Wrap back to the starting point */
+    transform: translate(-100%, -50%); /* Wrap back to the starting point */
   }
 }
 </style>

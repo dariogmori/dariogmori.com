@@ -5,12 +5,27 @@
       <LayoutRow :justify="'center'">
         <div class="about-me-fact">
           <el-col align="center">
-            <el-row style="max-width: 60%;">
+            <el-row style="max-width: 60%">
               <el-col :span="12">
-                <img src="../assets/about-me/guatemala.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges;" alt="Flag of Guatemala">
+                <img
+                  src="../assets/about-me/guatemala.png"
+                  class="image-display"
+                  style="
+                    width: 100%;
+                    max-width: 150px;
+                    rotate: -10deg;
+                    image-rendering: crisp-edges;
+                  "
+                  alt="Flag of Guatemala"
+                />
               </el-col>
               <el-col :span="12">
-                <img src="../assets/about-me/asturias.png" class="image-display" style="width: 100%; max-width: 150px; rotate: 10deg; image-rendering: crisp-edges;" alt="Flag of Asturias">
+                <img
+                  src="../assets/about-me/asturias.png"
+                  class="image-display"
+                  style="width: 100%; max-width: 150px; rotate: 10deg; image-rendering: crisp-edges"
+                  alt="Flag of Asturias"
+                />
               </el-col>
             </el-row>
           </el-col>
@@ -23,16 +38,37 @@
       </LayoutRow>
       <el-divider></el-divider>
       <LayoutRow justify="space-around">
-        <img src="/img/me-2.jpg" class="image-display" style="width: 80%; max-width: 300px;  rotate:10deg;" alt="Image of me">
-        <img src="/img/me-1.jpg" class="image-display" style="width: 90%; max-height:320px; max-width: 400px; rotate: -10deg" alt="Image of me">
-        <div class="about-me-fact" style="align-content: center;">
+        <img
+          src="/img/me-2.jpg"
+          class="image-display"
+          style="width: 80%; max-width: 300px; rotate: 10deg"
+          alt="Image of me"
+        />
+        <img
+          src="/img/me-1.jpg"
+          class="image-display"
+          style="width: 90%; max-height: 320px; max-width: 400px; rotate: -10deg"
+          alt="Image of me"
+        />
+        <div class="about-me-fact" style="align-content: center">
           <el-col align="center" justify="center">
-            <el-row style="max-width: 60%;" align="end">
+            <el-row style="max-width: 60%" align="end">
               <el-col :span="12">
-                <img  src="../assets/about-me/enby.png" class="image-display" style="width: 100%; max-width: 150px; rotate: -10deg; image-rendering: crisp-edges; border: 2px solid var(--main-color); " alt="Non binary flag">
+                <img
+                  src="../assets/about-me/enby.png"
+                  class="image-display"
+                  style="
+                    width: 100%;
+                    max-width: 150px;
+                    rotate: -10deg;
+                    image-rendering: crisp-edges;
+                    border: 2px solid var(--main-color);
+                  "
+                  alt="Non binary flag"
+                />
               </el-col>
               <el-col :span="12">
-                <h3 style="rotate:10deg; width:50%;"> he/they/she </h3>
+                <h3 style="rotate: 10deg; width: 50%">he/they/she</h3>
               </el-col>
             </el-row>
             <el-row :span="24">
@@ -42,26 +78,46 @@
             </el-row>
           </el-col>
         </div>
-        <img src="../assets/about-me/me-japan-oss.png" class="image-display" style="width: 90%; max-width: 500px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
+        <img
+          src="../assets/about-me/me-japan-oss.png"
+          class="image-display"
+          style="width: 90%; max-width: 500px; rotate: 5deg"
+          alt="Image of me in Open Source Summit Japan"
+        />
       </LayoutRow>
       <el-divider></el-divider>
       <LayoutRow :justify="'space-between'">
-        <div style="width: 400px;">
+        <div style="width: 400px">
           <TopArtistsComponent />
         </div>
-        <div style="width: 400px;">
+        <div style="width: 400px">
           <TopSongsComponent />
         </div>
       </LayoutRow>
       <el-divider></el-divider>
       <LayoutRow justify="space-around">
-        <img src="../assets/about-me/mushrooms/cesta-mixta-pinar.png" class="image-display" style="width: 70%; max-width: 400px;  max-height:550px;  rotate:10deg;" alt="Image of me">
-        <img src="../assets/about-me/mushrooms/cesta-cocina.png" class="image-display" style="width: 70%;  max-width: 400px; max-height:580px;rotate: -10deg" alt="Image of me">
-        <div class="about-me-fact" style="align-content: center;">
+        <img
+          src="../assets/about-me/mushrooms/cesta-mixta-pinar.png"
+          class="image-display"
+          style="width: 70%; max-width: 400px; max-height: 550px; rotate: 10deg"
+          alt="Image of me"
+        />
+        <img
+          src="../assets/about-me/mushrooms/cesta-cocina.png"
+          class="image-display"
+          style="width: 70%; max-width: 400px; max-height: 580px; rotate: -10deg"
+          alt="Image of me"
+        />
+        <div class="about-me-fact" style="align-content: center">
           <el-col align="center" justify="center">
-            <el-row style="max-width: 60%;" align="end">
+            <el-row style="max-width: 60%" align="end">
               <el-col :span="24">
-                <img src="../assets/about-me/mushrooms.png" class="image-display" style="width: 90%; max-width: 150px; image-rendering: crisp-edges;" alt="Mushrooms" >
+                <img
+                  src="../assets/about-me/mushrooms.png"
+                  class="image-display"
+                  style="width: 90%; max-width: 150px; image-rendering: crisp-edges"
+                  alt="Mushrooms"
+                />
               </el-col>
             </el-row>
             <el-row :span="24">
@@ -71,29 +127,33 @@
             </el-row>
           </el-col>
         </div>
-        <img src="../assets/about-me/mushrooms/muscaria.png" class="image-display" style="width: 70%; max-width: 400px; rotate: 5deg" alt="Image of me in Open Source Summit Japan">
+        <img
+          src="../assets/about-me/mushrooms/muscaria.png"
+          class="image-display"
+          style="width: 70%; max-width: 400px; rotate: 5deg"
+          alt="Image of me in Open Source Summit Japan"
+        />
       </LayoutRow>
     </template>
-
   </ViewLayout>
 </template>
 
 <style scoped>
 @import '../assets/styles/palette.css';
 @import '../assets/styles/view.css';
-.about-me-fact{
+.about-me-fact {
   max-width: 400px;
 }
 </style>
 
 <script setup lang="ts">
-import { useTranslation } from "i18next-vue";
-import { onMounted, reactive } from "vue";
-import ViewLayout from "@/components/layout/ViewLayout.vue";
-import LayoutRow from "@/components/layout/LayoutRow.vue";
-import TopSongsComponent from "@/components/spotify/TopSongsComponent.vue";
-import TopArtistsComponent from "@/components/spotify/TopArtistsComponent.vue";
-const { t } = useTranslation();
+import { useTranslation } from 'i18next-vue'
+import { onMounted, reactive } from 'vue'
+import ViewLayout from '@/components/layout/ViewLayout.vue'
+import LayoutRow from '@/components/layout/LayoutRow.vue'
+import TopSongsComponent from '@/components/spotify/TopSongsComponent.vue'
+import TopArtistsComponent from '@/components/spotify/TopArtistsComponent.vue'
+const { t } = useTranslation()
 const config = reactive({
   theme: 'light',
   lang: 'es'
@@ -105,7 +165,7 @@ onMounted(() => {
     config.theme = savedTheme
     document.documentElement.setAttribute('data-theme', config.theme)
   }
-  if( savedLang ) {
+  if (savedLang) {
     config.lang = savedLang
     document.documentElement.setAttribute('data-lang', config.lang)
   }
@@ -114,5 +174,4 @@ onMounted(() => {
 function getLogoURI() {
   return '/img/about-me/logo-' + config.theme + '-' + config.lang + '.png'
 }
-
 </script>

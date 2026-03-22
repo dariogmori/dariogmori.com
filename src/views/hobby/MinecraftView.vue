@@ -12,7 +12,7 @@
 
     <!-- CENTER CONTAINER -->
     <template #center-col>
-      <img src="../../../public/img/hobby/minecraft/logo.gif" class="logo" style="width: 60%; ">
+      <img src="../../../public/img/hobby/minecraft/logo.gif" class="logo" style="width: 60%" />
     </template>
 
     <!-- RIGHT CONTAINER -->
@@ -23,9 +23,18 @@
       </LayoutRow>
       -->
       <LayoutRow>
-        <el-carousel indicator-position="outside" :interval="4000" height="33vh" style="width:100%;">
-          <el-carousel-item v-for="image_name in images" >
-            <img :src="'../../img/hobby/minecraft/' + image_name" class="image-display" style="width: 100%">
+        <el-carousel
+          indicator-position="outside"
+          :interval="4000"
+          height="33vh"
+          style="width: 100%"
+        >
+          <el-carousel-item v-for="image_name in images">
+            <img
+              :src="'../../img/hobby/minecraft/' + image_name"
+              class="image-display"
+              style="width: 100%"
+            />
           </el-carousel-item>
         </el-carousel>
       </LayoutRow>
@@ -37,21 +46,20 @@
         </el-col>
       </LayoutRow>
     </template>
-
   </ViewLayout>
 </template>
 
 <script setup lang="ts">
-import { useTranslation } from "i18next-vue";
-import ViewLayout from "@/components/layout/ViewLayout.vue";
-import LayoutRow from "@/components/layout/LayoutRow.vue";
-import {onMounted} from "vue";
-import * as skinview3d from "skinview3d";
+import { useTranslation } from 'i18next-vue'
+import ViewLayout from '@/components/layout/ViewLayout.vue'
+import LayoutRow from '@/components/layout/LayoutRow.vue'
+import { onMounted } from 'vue'
+import * as skinview3d from 'skinview3d'
 
-const { t } = useTranslation();
+const { t } = useTranslation()
 
 onMounted(() => {
-  loadMinecraftSkin();
+  loadMinecraftSkin()
 })
 const images = [
   '1.png',
@@ -69,37 +77,36 @@ const images = [
 ]
 
 const loadMinecraftSkin = (): void => {
-  const canvas = document.getElementById("skin_container") as HTMLCanvasElement;
-  if (!canvas) return;
+  const canvas = document.getElementById('skin_container') as HTMLCanvasElement
+  if (!canvas) return
 
   // Set width and height based on the view width
-  const viewWidth = window.innerWidth;
+  const viewWidth = window.innerWidth
   // Example: make the canvas 40% of the view width, max 800px, min 300px
-  const width = Math.max(300, Math.min(0.4 * viewWidth, 800));
-  const height = width * 0.625; // maintain aspect ratio similar to 800x500
+  const width = Math.max(300, Math.min(0.4 * viewWidth, 800))
+  const height = width * 0.625 // maintain aspect ratio similar to 800x500
 
-  canvas.width = width;
-  canvas.height = height;
+  canvas.width = width
+  canvas.height = height
 
   let skinViewer = new skinview3d.SkinViewer({
     canvas,
     width,
     height,
-    skin: "img/skin.png"
-  });
+    skin: 'img/skin.png'
+  })
 
   // Rotate the player
-  skinViewer.autoRotate = true;
+  skinViewer.autoRotate = true
 
   // Apply an animation
-  skinViewer.animation = new skinview3d.WalkingAnimation();
+  skinViewer.animation = new skinview3d.WalkingAnimation()
 
   // Set the speed of the animation
-  skinViewer.animation.speed = 0.5;
+  skinViewer.animation.speed = 0.5
 
-  skinViewer.autoRotateSpeed = 0.2;
+  skinViewer.autoRotateSpeed = 0.2
 }
-
 </script>
 
 <style scoped>
