@@ -35,7 +35,7 @@
             </el-row>
           </el-col>
           <el-col :span="24" align="center">
-            <p>
+            <p class="secondary-text">
               {{ t('about-me.nationality') }}
             </p>
           </el-col>
@@ -76,7 +76,7 @@
               </el-col>
             </el-row>
             <el-row :span="24">
-              <p>
+              <p class="secondary-text">
                 {{ t('about-me.gender') }}
               </p>
             </el-row>
@@ -123,7 +123,7 @@
               </el-col>
             </el-row>
             <el-row :span="24">
-              <p>
+              <p class="secondary-text">
                 {{ t('about-me.mushrooms') }}
               </p>
             </el-row>
