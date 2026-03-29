@@ -10,7 +10,7 @@
       	<p> Contact me here: </p>
       	<div style=" width: 50%;justify-content: space-around; display: flex;">
 	      	<div style="align-content: center;">
-	          <a href="dariogmori@gmail.com" class="secondary-text">
+	          <a href="mailto:dariogmori@gmail.com" class="secondary-text">
 	            email
 	          </a>
 	        </div>
