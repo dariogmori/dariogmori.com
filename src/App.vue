@@ -33,14 +33,14 @@ nav a.router-link-exact-active {
   color: var(--secondary-color);
 }
 .mobile {
-  width: 100%;
+  width: 100vw;
 }
 
 .body-desktop {
-  max-width: 98.8%;
+  max-width: 98.8vw;
 }
 .body-mobile{
-  max-width:100%;
+  max-width:100vw;
 }
 </style>
 <script setup lang="ts">

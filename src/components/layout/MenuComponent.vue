@@ -61,13 +61,13 @@ nav a.router-link-exact-active {
   color: var(--secondary-color);
 }
 .mobile {
-  width: 100%;
+  width: 100vw;
 }
 .desktop {
-  width: 40%;
+  width: 40vw;
 }
 .menu {
-  max-width: 99%;
+  max-width: 99vw;
   position: fixed;
   bottom: 0px;
   border: 4px solid var(--secondary-color);
