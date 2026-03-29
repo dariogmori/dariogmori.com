@@ -36,5 +36,4 @@ const props = defineProps<{
   background-color: var(--main-color);
 }
 
-
 </style>
