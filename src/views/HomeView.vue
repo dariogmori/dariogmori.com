@@ -5,14 +5,15 @@
       <DescriptionAboutMeComponent v-if="!isMobile()" />
       <br>
       <div style="display: flex; width: 100%; justify-content: center">
-        <el-divider style="width: 80%"></el-divider>
+        <el-divider style="width: 80%;"></el-divider>
       </div>
       <!--<ResumeComponent />-->
+      <hr>
       <LayoutRow style="justify-content: center">
         <div class="about-me-fact">
-          <el-col align="center">
-            <el-row style="max-width: 60%">
-              <el-col :span="12">
+          <div style="width: 100%; display: flex; justify-content: center">
+            <LayoutRow style="max-width: 75%">
+              <div style="width: 50%; display: flex; justify-content: center">
                 <img
                   src="../assets/about-me/guatemala.png"
                   class="image-display"
@@ -24,22 +25,22 @@
                   "
                   alt="Flag of Guatemala"
                 />
-              </el-col>
-              <el-col :span="12">
+              </div>
+              <div style="width: 50%; display: flex; justify-content: center">
                 <img
                   src="../assets/about-me/asturias.png"
                   class="image-display"
                   style="width: 100%; max-width: 150px; rotate: 10deg; image-rendering: crisp-edges"
                   alt="Flag of Asturias"
                 />
-              </el-col>
-            </el-row>
-          </el-col>
-          <el-col :span="24" align="center">
+              </div>
+            </LayoutRow>
+          </div>
+          <div style="width: 100%; display: flex; justify-content: center">
             <p class="secondary-text">
               {{ t('about-me.nationality') }}
             </p>
-          </el-col>
+          </div>
         </div>
       </LayoutRow>
       <LayoutRow style="justify-content: space-around">
@@ -55,10 +56,10 @@
           style="width: 90%; max-height: 320px; max-width: 400px; rotate: -10deg"
           alt="Image of me"
         />
-        <div class="about-me-fact" style="align-content: center">
-          <el-col align="center" justify="center">
-            <el-row style="max-width: 60%" align="end">
-              <el-col :span="12">
+        <div class="about-me-fact" style="align-content: center; justify-content; center; ">
+          <div style=" display: flex; justify-content: center; align-content: center; flex-wrap: wrap;">
+            <LayoutRow style="max-width: 60%; align-content: end;">
+              <div style="width: 50%; display: flex; justify-content: center;">
                 <img
                   src="../assets/about-me/enby.png"
                   class="image-display"
@@ -71,17 +72,17 @@
                   "
                   alt="Non binary flag"
                 />
-              </el-col>
-              <el-col :span="12">
-                <h3 style="rotate: 10deg; width: 50%">he/they/she</h3>
-              </el-col>
-            </el-row>
-            <el-row :span="24">
+              </div>
+              <div style="width: 50%; display: flex; justify-content: center;">
+                <p style="rotate: 10deg; font-size: 16px;">he/they/she</p>
+              </div>
+            </LayoutRow>
+            <LayoutRow style="width:100%;">
               <p class="secondary-text">
                 {{ t('about-me.gender') }}
               </p>
-            </el-row>
-          </el-col>
+            </LayoutRow>
+          </div>
         </div>
         <img
           src="../assets/about-me/me-japan-oss.png"
@@ -112,23 +113,23 @@
           alt="Image of me"
         />
         <div class="about-me-fact" style="align-content: center">
-          <el-col align="center" justify="center">
-            <el-row style="max-width: 60%" align="end">
-              <el-col :span="24">
+          <div style="width: 100%; display: flex; justify-content: center; align-content: center; flex-wrap: wrap;">
+            <LayoutRow style="max-width: 60%" align="end">
+              <div style="width: 100%; display: flex; justify-content: center;">
                 <img
                   src="../assets/about-me/mushrooms.png"
                   class="image-display"
                   style="width: 90%; max-width: 150px; image-rendering: crisp-edges"
                   alt="Mushrooms"
                 />
-              </el-col>
-            </el-row>
-            <el-row :span="24">
+              </div>
+            </LayoutRow>
+            <LayoutRow>
               <p class="secondary-text">
                 {{ t('about-me.mushrooms') }}
               </p>
-            </el-row>
-          </el-col>
+            </LayoutRow>
+          </div>
         </div>
         <img
           src="../assets/about-me/mushrooms/muscaria.png"
@@ -153,13 +154,19 @@
 .about-me-fact {
   max-width: 400px;
 }
+hr {
+	width: 80%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: var(--primary-color);
+}
 </style>
 
 <script setup lang="ts">
 import { useTranslation } from 'i18next-vue'
 import { onMounted, reactive } from 'vue'
 import LayoutRow from '@/components/layout/LayoutRow.vue'
-import ResumeComponent from '@/components/home/ResumeComponent.vue'
+//import ResumeComponent from '@/components/home/ResumeComponent.vue'
 import TopSongsComponent from '@/components/spotify/TopSongsComponent.vue'
 import TopArtistsComponent from '@/components/spotify/TopArtistsComponent.vue'
 import ViewLayout from '@/components/layout/ViewLayout.vue'
