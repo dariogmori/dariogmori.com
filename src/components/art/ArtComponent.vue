@@ -29,11 +29,3 @@ const props = defineProps<{
   }
 }>()
 </script>
-
-<style>
-.center-container{
-  border: 6px double var(--secondary-color);
-  background-color: var(--main-color);
-}
-
-</style>

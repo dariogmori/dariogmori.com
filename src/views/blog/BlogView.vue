@@ -274,6 +274,8 @@ x-podman:
 
 <style scoped>
 @import '../../assets/styles/theme.css';
+@import '../../assets/styles/palette.css';
+@import '../../assets/styles/view.css';
 body {
   background-color: white;
 }
@@ -319,23 +321,6 @@ ul {
 .citation {
   font-style: italic;
   text-align: center;
-}
-@import '../../assets/styles/palette.css';
-.fade-in {
-  opacity: 0;
-  transform: translateY(-50px);
-  animation: fadeFall 0.5s ease-out forwards;
-}
-
-@keyframes fadeFall {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .small-text {

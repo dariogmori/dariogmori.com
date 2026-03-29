@@ -31,3 +31,15 @@
     transform: translateY(0);
   }
 }
+
+.fade-in {
+    transform: translateY(-50px);
+    animation: fadeFall 0.5s ease-out forwards;
+}
+
+hr {
+	width: 80%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: var(--primary-color);
+}

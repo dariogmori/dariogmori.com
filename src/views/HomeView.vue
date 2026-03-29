@@ -156,9 +156,6 @@
 }
 hr {
 	width: 80%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	color: var(--primary-color);
 }
 </style>
 

@@ -1,10 +1,12 @@
 <template>
-  <h1>Art</h1>
-  <CardComponent  v-for="paint in art">
-  	<template #content>
-  		<ArtComponent :art="paint" />
-  	</template>
-  </CardComponent>
+  <div class="fade-in">
+	  <h1>Art</h1>
+	  <CardComponent v-for="paint in art">
+	  	<template #content>
+	  		<ArtComponent :art="paint" />
+	  	</template>
+	  </CardComponent>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -55,3 +57,7 @@ const art = [
   { id: 'helltaker', month: 'may', year: '2021', images: ['1.jpeg'] }
 ]
 </script>
+
+<style scoped>
+@import '../../assets/styles/view.css';
+</style>
