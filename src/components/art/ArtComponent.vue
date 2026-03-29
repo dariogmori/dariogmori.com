@@ -18,7 +18,6 @@
 
 <script setup lang="ts">
 import { useTranslation } from 'i18next-vue'
-import { isMobile } from '@/scripts/utils'
 
 const { t } = useTranslation()
 const props = defineProps<{
