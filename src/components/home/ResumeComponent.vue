@@ -81,7 +81,7 @@
   </el-row>
 </template>
 <script setup lang="ts">
-import ExperienceComponent from '@/components/ExperienceComponent.vue'
+import ExperienceComponent from '@/components/home/ExperienceComponent.vue'
 import { useTranslation } from 'i18next-vue'
 const { t } = useTranslation()
 </script>

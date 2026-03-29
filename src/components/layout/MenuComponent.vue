@@ -32,7 +32,7 @@
 </template>
 
 <style>
-@import '../assets/styles/theme.css';
+@import '../../assets/styles/theme.css';
 #app {
   font-family: 'Press Start 2P';
   font-size: 13px;

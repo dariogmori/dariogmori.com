@@ -48,7 +48,7 @@ import { useTranslation } from 'i18next-vue'
 const { t, i18next } = useTranslation()
 import { onMounted, reactive } from 'vue'
 import { isMobile } from '@/scripts/utils'
-import MenuComponent from '@/components/MenuComponent.vue'
+import MenuComponent from '@/components/layout/MenuComponent.vue'
 const config = reactive({
   theme: 'light',
   lang: 'es'
