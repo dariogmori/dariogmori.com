@@ -5,6 +5,3 @@ services:
       context: .
     user: 1000:1000
     network_mode: "host"
-   # restart: unless-stopped
-    volumes:
-      - /home/dariogmori/Desktop/dariogmori.com/private_keys:/config/keys:rw
