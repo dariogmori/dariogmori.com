@@ -29,6 +29,7 @@
 		  <p>
 		  	Anyways, have a nice month of April, let's hope for better weather than the rainy mess we got here in Asturias in March.
 		  </p>
+	   	  <img src="../../assets/blog/31-03-2026/buggy.png" />
 	  	  <p class="small-text">
 	  	    part of the fault for the lack of post is that I started playing Hypixel Skyblock again -> thus surrendering my life.
 	  	    Aw, 2019 memories.
