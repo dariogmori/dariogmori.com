@@ -1,5 +1,41 @@
 <template>
   <div class="fade-in">
+  	<!--<BlogComponent
+  	  	      date="XX/XX/2026"
+  	  	      title="My phosh mobile experience"
+  		>
+    </BlogComponent>
+    <BlogComponent
+      	  	      date=" XX/XX/2026"
+      	  	      title="My home server journey"
+      		>
+        </BlogComponent>-->
+  	<BlogComponent
+  	      date=" 0̶1̶/̶0̶4̶/̶2̶0̶2̶6̶  31/03/2026"
+  	      title="Woops forgot my post for the month"
+	>
+	  <template #body>
+	  	<LayoutRow class="header-color">
+	  	  <p>	
+	  	 	Tis been but a complex month, full of familiy meetings, beer drinking with friends, phone company shenanigans, attending some art event and furthering the steps in my tech fermenting journey.
+	  	  </p>
+	  	  <p>
+	  	    I am totally not writing this on the 1st of April (cool April Fool's joke ig) 'cause I was so busy this last month that I could not even write a single post woops, maybe I should have learned by 
+	  	    this point that I should not focus on small features but fill this page with content but whatever...
+	  	  </p>
+	  	  <p>
+	  	    Long story short, changed my NAS setup from a Podman based server in my Steam Deck to a k3s cluster hosted in 2 second hand <i>Xiaomi Poco X3 NFC </i> phones I bought (will make a post this month about that whole thing).
+	  	  </p>
+		  <p>
+		  	Anyways, have a nice month of April, let's hope for better weather than the rainy mess we got here in Asturias in March.
+		  </p>
+	  	  <p class="small-text">
+	  	    part of the fault for the lack of post is that I started playing Hypixel Skyblock again -> thus surrendering my life.
+	  	    Aw, 2019 memories.
+	  	   </p>
+	  	</LayoutRow>
+	  </template>
+  	</BlogComponent>
     <BlogComponent
       date="17/02/2026"
       title="Running away from Spotify (or Apple Music if you are weird like that)"
