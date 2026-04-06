@@ -2,13 +2,13 @@
   <CardComponent>
     <template #content>
       <LayoutRow :justify="'center'" :align="'middle'">
-	    <h3>{{ props.game.date }}</h3>
+	    <h3>{{ date }}</h3>
       </LayoutRow>
       <div style="display:flex; justify-content:center;">
       	<img alt="title" :src="getTitleURI()" style="width: 40%" class="logo" />
       </div>
       <LayoutRow :justify="'center'">
-      	<p>{{ t('games.' + props.game.id + '.description') }}</p>
+      	<p>{{ t('games.' + id + '.description') }}</p>
       </LayoutRow>
       <slot name="content"></slot>
     </template>
@@ -22,11 +22,8 @@ import CardComponent from '@/components/layout/CardComponent.vue'
 import { useTranslation } from 'i18next-vue'
 import { onMounted, reactive } from 'vue'
 const props = defineProps<{
-  game: {
-    id: String
-    date: String
-    tags: Array<String>
-  }
+  id: string,
+  date: string
 }>()
 const { t } = useTranslation()
 const config = reactive({
@@ -46,7 +43,7 @@ onMounted(() => {
   }
 })
 function getTitleURI() {
-  return '/img/game/' + props.game.id + '/title-' + config.theme + '.png'
+  return '/img/game/' + props.id + '/title-' + config.theme + '.png'
 }
 </script>
 
