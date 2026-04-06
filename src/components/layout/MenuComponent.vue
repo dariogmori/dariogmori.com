@@ -5,20 +5,22 @@
         <HomeFilled class="icon-menu" />{{ isMobile() ? '' : 'Home' }}
       </button>
     </div>
-    <div class="menu-button-container">
-      <button class="menu-button" @click="goToRoute('/blog')">
-        <List class="icon-menu" />{{ isMobile() ? '' : 'Blog' }}
-      </button>
-    </div>
-    <div class="menu-button-container">
-      <button class="menu-button" @click="goToRoute('/talks/sustainable-platform-engineering')">
-        <Management class="icon-menu" />{{ isMobile() ? '' : 'Talks' }}
-      </button>
-    </div>
-    <div class="menu-button-container">
-      <button class="menu-button" @click="goToRoute('/art')">
-        <StarFilled class="icon-menu" />{{ isMobile() ? '' : 'Art' }}
-      </button>
+    <div style="width:60%; display: flex;">
+    	<div style="width:33%;">
+          <button class="menu-button" @click="goToRoute('/blog')">
+            <List class="icon-menu" />{{ isMobile() ? '' : 'Blog' }}
+          </button>
+        </div>
+        <div style="width:33%;">
+          <button class="menu-button" @click="goToRoute('/projects')">
+            <Management class="icon-menu" />{{ isMobile() ? '' : 'Projects' }}
+          </button>
+        </div>
+        <div style="width:33%;">
+          <button class="menu-button" @click="goToRoute('/hobbies')">
+            <StarFilled class="icon-menu" />{{ isMobile() ? '' : 'Hobbies' }}
+          </button>
+        </div>
     </div>
     <div class="menu-button-container">
       <button class="menu-button" style="width: 50%" @click="toggleTheme()">
