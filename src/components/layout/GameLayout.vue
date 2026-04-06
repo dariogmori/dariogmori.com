@@ -1,39 +1,24 @@
 <template>
-  <ViewLayout>
-    <template #left-col>
-      <LayoutRow :justify="'end'">
-        <img
-          alt="logo"
-          :src="'/img/game/' + props.game.id + '/logo.png'"
-          class="image-display"
-          style="width: 90%; rotate: -10deg"
-        />
-      </LayoutRow>
+  <CardComponent>
+    <template #content>
       <LayoutRow :justify="'center'" :align="'middle'">
-        <h1>{{ t('games.released') + ': ' + props.game.date }}</h1>
-        <el-row align="middle">
-          <h2>{{ t('games.tags') }}:</h2>
-          <el-tag v-for="tag in props.game.tags" :type="'info'">{{ tag }}</el-tag>
-        </el-row>
+	    <h3>{{ props.game.date }}</h3>
       </LayoutRow>
+      <div style="display:flex; justify-content:center;">
+      	<img alt="title" :src="getTitleURI()" style="width: 40%" class="logo" />
+      </div>
       <LayoutRow :justify="'center'">
-        <p>{{ t('games.' + props.game.id + '.description') }}</p>
+      	<p>{{ t('games.' + props.game.id + '.description') }}</p>
       </LayoutRow>
-      <slot name="left-col"></slot>
+      <slot name="content"></slot>
     </template>
-
-    <template #center-col>
-      <img alt="title" :src="getTitleURI()" style="width: 40%" class="logo" />
-    </template>
-    <template #right-col>
-      <slot name="right-col"></slot>
-    </template>
-  </ViewLayout>
+  </CardComponent>
 </template>
 
 <script setup lang="ts">
 import LayoutRow from '@/components/layout/LayoutRow.vue'
 import ViewLayout from '@/components/layout/ViewLayout.vue'
+import CardComponent from '@/components/layout/CardComponent.vue'
 import { useTranslation } from 'i18next-vue'
 import { onMounted, reactive } from 'vue'
 const props = defineProps<{
