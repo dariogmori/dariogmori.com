@@ -1,4 +1,5 @@
 <template>
+  <div class="fade-in">
   <GameLayout id="medium-expendedore" date="23-01-2024" title="Medium Expendedore" url="https://dariogmori.itch.io/medium-expendedore">
 	<template #content>
 	      <LayoutRow :justify="'center'">
@@ -125,6 +126,7 @@
         </LayoutRow>
 	  </template>
   	</GameLayout>
+  	</div>
 </template>
 
 <script setup lang="ts">

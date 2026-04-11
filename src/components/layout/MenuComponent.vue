@@ -17,8 +17,8 @@
           </button>
         </div>
         <div style="width:33%;">
-          <button class="menu-button" @click="goToRoute('/hobbies')">
-            <StarFilled class="icon-menu" />{{ isMobile() ? '' : 'Hobbies' }}
+          <button class="menu-button" @click="goToRoute('/art')">
+            <StarFilled class="icon-menu" />{{ isMobile() ? '' : 'Art' }}
           </button>
         </div>
     </div>

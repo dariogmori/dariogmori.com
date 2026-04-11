@@ -17,6 +17,10 @@
 	       Games 
 	      </a>
         </LayoutRow>
+        <LayoutRow style="justify-content: space-around;">
+        <img src="/src/assets/obres2.gif" />
+        <img src="/src/assets/const1.gif" />
+        </LayoutRow>
       </template>
     </ViewLayout>
   </div>
