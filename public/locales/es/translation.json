@@ -62,6 +62,11 @@
     "kiwiq": {
       "description": "Adéntrate en preguntas apasionantes en este juego de trivia desarrollado para my curso de Arquitectura del Software.",
       "development": "Desarrollado con compañeros de clase!"
+    },
+    "index-html": {
+      "description": "Jueguito hecho para la Corujam (1era edición). Graciñas a mis amigues por el tiempo chulisimo que pasamos en la jam y espero volver pronto :)",
+      "language": "Solo disponible en inglés!",
+      "development" : "Este jueguito fue hecho 100% sin estrés (por primera vez en una jam por mi parte!)."
     }
   },
   "projects": {

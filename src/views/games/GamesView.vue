@@ -1,5 +1,29 @@
 <template>
   <div class="fade-in">
+  <GameLayout id="index-html" date="16-21-2025" title="index.html" url="https://puzzle.dariogmori.com/">
+  	<template #content>
+  	      <LayoutRow :justify="'center'">
+  	        <img
+  	          alt="title"
+  	          :src="'/img/game/index-html/capture1.png'"
+  	          style="min-width: 300px;  margin: 10px;"
+  	          class="logo"
+  	        />
+  	        <img
+   	          alt="capture2"
+   	          :src="'/img/game/index-html/capture2.png'"
+   	          style="min-width: 300px;  margin: 10px;"
+   	          class="logo"
+   	        />
+  	      </LayoutRow>
+  	      <LayoutRow :justify="'center'">
+  	        <p>{{ t('games.index-html.language') }}</p>
+  	      </LayoutRow>
+  	      <LayoutRow :justify="'center'">
+  	        <p>{{ t('games.index-html.development') }}</p>
+  	      </LayoutRow>
+  	</template>
+  </GameLayout>
   <GameLayout id="medium-expendedore" date="23-01-2024" title="Medium Expendedore" url="https://dariogmori.itch.io/medium-expendedore">
 	<template #content>
 	      <LayoutRow :justify="'center'">

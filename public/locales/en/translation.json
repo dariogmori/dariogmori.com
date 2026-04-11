@@ -76,6 +76,11 @@
     "kiwiq": {
       "description": "Play some trivia in this quiz game developed for my Software Architecture course.",
       "development": "Developed with other fellow students!"
+    },
+    "index-html": {
+      "description": "Game made for the Corujam (1st edition). Graciñas to my friends for the great time and I hope to come back soon :)",
+      "language": "Only available in english!",
+      "development" : "This game was made 100% stress-less! (a first for me during a game jam)."
     }
   },
   "celeste": {
