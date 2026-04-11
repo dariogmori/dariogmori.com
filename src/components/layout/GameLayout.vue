@@ -5,8 +5,9 @@
 	    <h3>{{ date }}</h3>
       </LayoutRow>
       <div style="display:flex; justify-content:center;">
-      	<img alt="title" :src="getTitleURI()" style="width: 40%" class="logo" />
+      	<h2> {{ title }} </h2>
       </div>
+      <button type="primary" @click="openGameLink()">Play</button>
       <LayoutRow :justify="'center'">
       	<p>{{ t('games.' + id + '.description') }}</p>
       </LayoutRow>
@@ -23,7 +24,9 @@ import { useTranslation } from 'i18next-vue'
 import { onMounted, reactive } from 'vue'
 const props = defineProps<{
   id: string,
-  date: string
+  date: string,
+  title: string,
+  url: string
 }>()
 const { t } = useTranslation()
 const config = reactive({
@@ -45,9 +48,17 @@ onMounted(() => {
 function getTitleURI() {
   return '/img/game/' + props.id + '/title-' + config.theme + '.png'
 }
+function openGameLink() {
+  window.open(props.url, '_blank')
+}
 </script>
 
 <style scoped>
 @import '../../assets/styles/palette.css';
 @import '../../assets/styles/view.css';
+
+p {
+	font-family: var(--secondary-font-family);
+	font-size: var(--secondary-font-size);
+}
 </style>

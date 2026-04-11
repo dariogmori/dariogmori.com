@@ -1,75 +1,66 @@
 <template>
-  <!--<GameLayout id="kiwiq" date="23-04-2024">
-    <template #content>
-      <button type="primary" @click="openRepoLink()">Github repo</button>
-      <LayoutRow :justify="'center'">
-        <img
-          alt="title"
-          :src="'/img/game/kiwiq/capture1.jpeg'"
-          style="width: 60%;"
-          class="logo"
-        />
-      </LayoutRow>
-      <LayoutRow :justify="'center'">
-        <p>{{ t('games.kiwiq.development') }}</p>
-      </LayoutRow>
-      <LayoutRow :justify="'center'"> </LayoutRow>
-      <LayoutRow>
-        <img
-          alt="capture2"
-          :src="'/img/game/kiwiq/capture2.jpeg'"
-          style="width: 60%;"
-          class="logo"
-        />
-      </LayoutRow>
-      <LayoutRow :justify="'center'">
-        <img
-          alt="title"
-          :src="'/img/game/kiwiq/capture3.jpeg'"
-          style="width: 60%;"
-          class="logo"
-        />
-      </LayoutRow>
-    </template>
-  </GameLayout>-->
-  <GameLayout id="flerovium" date="20-10-2023">
+  <GameLayout id="medium-expendedore" date="23-01-2024" title="Medium Expendedore" url="https://dariogmori.itch.io/medium-expendedore">
+	<template #content>
+	      <LayoutRow :justify="'center'">
+	        <img
+	          alt="title"
+	          :src="'/img/game/medium-expendedore/capture1.png'"
+	          style="width: 80%;"
+	          class="logo"
+	        />
+	      </LayoutRow>
+	      <LayoutRow :justify="'center'">
+	        <p>{{ t('games.medium-expendedore.language') }}</p>
+	      </LayoutRow>
+	      <LayoutRow>
+	        <img
+	          alt="capture2"
+	          :src="'/img/game/medium-expendedore/capture2.png'"
+	          style="width: 60%;"
+	          class="logo"
+	        />
+	      </LayoutRow>
+	      <LayoutRow :justify="'center'">
+	        <p>{{ t('games.medium-expendedore.development') }}</p>
+	      </LayoutRow>
+	</template>
+  </GameLayout>
+  <GameLayout id="flerovium" date="20-10-2023" title="Half life of flerovium" url="https://dariogmori.itch.io/the-half-life-of-flevorium">
 	  <template #content>
-	     <button type="primary" @click="openGameLink()">Play</button>
 	     <LayoutRow :justify="'center'">
 		   <img
-		     alt="title"
-		     :src="'/img/game/flerovium/capture1.png'"
-		     style="width: 60%; rotate: 10deg"
+		     alt="title"           
+		     :src="'/img/game/flerovium/capture2.png'"
+		     style="width: 60%;"
 		     class="logo"
 		   />
 		 </LayoutRow>
 		 <LayoutRow :justify="'center'">
 		   <p>{{ t('games.flerovium.language') }}</p>
 		 </LayoutRow>
-		 <LayoutRow :justify="'end'">
+		 <LayoutRow style="justify-content:space-around; flex-wrap: wrap; align-content: space-around;">
 		   <img
 		     alt="title"
 		     :src="'/img/game/flerovium/capture3.png'"
-		     style="width: 60%; rotate: -10deg"
+		     style="min-width: 300px;  margin: 10px;"
 		     class="logo"
 		   />
-		 </LayoutRow>
-		 <LayoutRow>
+   		   
 		   <img
 		     alt="capture2"
-		     :src="'/img/game/flerovium/capture2.png'"
-		     style="width: 60%; rotate: 10deg"
+		     :src="'/img/game/flerovium/capture1.png'"
+		     style="min-width: 300px;  margin: 10px;"
 		     class="logo"
 		   />
 		 </LayoutRow>
-		 <LayoutRow :justify="'center'">
-		   <p>{{ t('games.flerovium.understanding') }}</p>
-		 </LayoutRow>
+		 
+	     <LayoutRow :justify="'center'">
+	       <p>{{ t('games.flerovium.understanding') }}</p>
+	     </LayoutRow>
 	  </template>
     </GameLayout>
-    <GameLayout id="hdiewtg" date="15-09-2023">
+    <GameLayout id="hdiewtg" date="15-09-2023" title="How do I even win this game?" url="https://arive.itch.io/how-do-i-even-win-this-game">
       <template #content>
-        <button type="primary" @click="openGameLink()">Play</button>
         <LayoutRow style="justify-content:space-around; flex-wrap: wrap; align-content: space-around;">
           <img
             alt="capture2"
@@ -80,15 +71,13 @@
           <img
             alt="title"
             :src="'/img/game/hdiewtg/capture1.png'"
-            style="min-width: 300px;"
+            style="min-width: 300px;  margin: 10px;"
             class="logo"
           />
         </LayoutRow>
         <LayoutRow :justify="'center'">
           <p>{{ t('games.hdiewtg.developers') }}</p>
-          <el-col>
-            <el-button type="primary" @click="openAriLink()">Ari's socials</el-button>
-          </el-col>
+          <button type="primary" @click="openAriLink()">Ari's socials</button>
         </LayoutRow>
         <LayoutRow :justify="'end'">
           <img
@@ -101,8 +90,41 @@
         <LayoutRow>
           <p>{{ t('games.hdiewtg.languages') }}</p>
         </LayoutRow>
-</template>
-  </GameLayout>
+	  </template>
+  	</GameLayout>
+  	<GameLayout id="big-crunch" date="21-01-2022" title="Big Crunch" url="https://dariogmori.itch.io/big-crunch">
+      <template #content>
+        <LayoutRow style="justify-content:space-around; flex-wrap: wrap; align-content: space-around;">
+          <img
+            alt="capture2"
+            :src="'/img/game/big-crunch/capture1.png'"
+            style="min-width: 300px; margin: 10px;"
+            class="logo"
+          />
+          <img
+            alt="title"
+            :src="'/img/game/big-crunch/capture2.png'"
+            style="min-width: 300px;  margin: 10px;"
+            class="logo"
+          />
+        </LayoutRow>
+        <LayoutRow :justify="'center'">
+          <p>{{ t('games.big-crunch.first-game') }}</p>
+        </LayoutRow>
+        <LayoutRow :justify="'end'">
+           <p>{{ t('games.big-crunch.development') }}</p>
+        </LayoutRow>
+        <LayoutRow>
+          <p>{{ t('games.big-crunch.languages') }}</p>
+        </LayoutRow>
+              
+        <LayoutRow>
+          <a
+            :href="'https://www.youtube.com/embed/x5Yj8gDjvs0'"
+          >Demo</a>
+        </LayoutRow>
+	  </template>
+  	</GameLayout>
 </template>
 
 <script setup lang="ts">
@@ -119,4 +141,8 @@ function openRepoLink() {
 <style scoped>
 @import '../../assets/styles/palette.css';
 @import '../../assets/styles/view.css';
+p {
+	font-family: var(--secondary-font-family);
+	font-size: var(--secondary-font-size);
+}
 </style>
