@@ -5,7 +5,7 @@
     </div>-->
     <div style="width: 70%">
       <h1>Darío Gutiérrez Mori</h1>
-      <h2>Mid Platform Engineer</h2>
+      <h3>Tinkerer, fermenter, forager</h3>
       <div style="justify-content: center; display: flex; flex-wrap: wrap;">
       	<p> Contact me here: </p>
       	<div style=" width: 50%;justify-content: space-around; display: flex;">
