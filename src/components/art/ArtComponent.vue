@@ -2,7 +2,7 @@
   <div style="width: 100%">
   	<h2>{{ t('month.' + props.art.month) + ' ' + props.art.year }}</h2>
   </div>
-  <div v-if="!enabled.value" style="width:80%; border: 2px var(--secondary-color) dashed;">
+  <div v-if="!enabled.value" style="width:50%; border: 2px var(--secondary-color) dashed;">
   	 <p style="margin:20px; font-family: var(--secondary-font-family);"> The following content is <b>{{ props.art.size_file }}</b>. Are you sure you want to load it? </p>
   	 <button style="margin:20px;" @click="enableArt"> Load </button>
   </div>
