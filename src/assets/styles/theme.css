@@ -43,8 +43,20 @@
     --code-color: var(--main-color);
     --background-image-url: url(/img/background-dark.png);
 }
-.el-button {
-  font-family: var(--el-font-family) !important;
+button {
+  font-family: var(--secondary-font-family) !important;
+  background: var(--secondary-color);
+  color: var(--main-color);
+  border: 4px var(--main-color) double;
+}
+
+button:hover{
+	background: var(--hover-color);
+}
+button:active{
+	background: var(--main-color);
+	color: var(--secondary-color);
+	border: 4px var(--secondary-color) double;
 }
 
 .el-menu {
