@@ -21,40 +21,45 @@ const art = [
     id: 'ace-attorney',
     month: 'august',
     year: '2024',
-    images: ['maya.png', 'gumshoe.png', 'edgeworth.png', 'judge.png']
+    images: ['maya.png', 'gumshoe.png', 'edgeworth.png', 'judge.png'],
+    size_file: '50.8KB'
   },
   {
     id: 'me-sketches',
     month: 'august',
     year: '2024',
-    images: ['1.png', '2.png', '3.png', '4.png', '5.png']
+    images: ['1.png', '2.png', '3.png', '4.png', '5.png'],
+    size_file: '59.7KB'
   },
-  { id: 'mix/jose-emilio', month: 'april', year: '2024', images: ['kiwi.gif'] },
+  { id: 'mix/jose-emilio', month: 'april', year: '2024', images: ['kiwi.gif'], size_file: '4.7KB' },
   {
     id: 'pfp/2024',
     month: 'march',
     year: '2024',
-    images: ['2.png', '3.png', '4.png', '1.png', '5.png', '6.png']
+    images: ['2.png', '3.png', '4.png', '1.png', '5.png', '6.png'],
+    size_file: '52.1KB'
   },
   {
     id: 'class',
     month: 'december',
     year: '2023',
-    images: ['1.jpg', '2.png', '3.jpg', '4.jpg', '5.jpg']
+    images: ['1.jpg', '2.png', '3.jpg', '4.jpg', '5.jpg'],
+    size_file: 'heavy, as it is formed by images'
   },
   {
     id: 'tf2/merasmus',
     month: 'october',
     year: '2023',
-    images: ['merasmus.png', 'explanation.png']
+    images: ['merasmus.png', 'explanation.png'],
+    size_file: '32.5KB'
   },
-  { id: 'pfp/2023', month: 'june', year: '2023', images: ['1.png', '2.gif'] },
-  { id: 'mix/snails-house', month: 'january', year: '2023', images: ['1.jpg'] },
-  { id: 'pfp/2022', month: 'october', year: '2022', images: ['2.png', '3.png'] },
-  { id: 'mix/omori', month: 'october', year: '2022', images: ['1.jpg'] },
-  { id: 'mix/oneshot', month: 'september', year: '2022', images: ['1.jpg'] },
-  { id: 'pfp/2022', month: 'june', year: '2022', images: ['1.png'] },
-  { id: 'helltaker', month: 'may', year: '2021', images: ['1.jpeg'] }
+  { id: 'pfp/2023', month: 'june', year: '2023', images: ['1.png', '2.gif'], size_file: 'heavy, as it is formed by images' },
+  { id: 'mix/snails-house', month: 'january', year: '2023', images: ['1.jpg'], size_file: 'heavy, as it is formed by images' },
+  { id: 'pfp/2022', month: 'october', year: '2022', images: ['2.png', '3.png'], size_file: 'heavy, as it is formed by images' },
+  { id: 'mix/omori', month: 'october', year: '2022', images: ['1.jpg'], size_file: 'heavy, as it is formed by images' },
+  { id: 'mix/oneshot', month: 'september', year: '2022', images: ['1.jpg'], size_file: 'heavy, as it is formed by images' },
+  { id: 'pfp/2022', month: 'june', year: '2022', images: ['1.png'], size_file: 'heavy, as it is formed by images' },
+  { id: 'helltaker', month: 'may', year: '2021', images: ['1.jpeg'], size_file: 'heavy, as it is formed by images' }
 ]
 </script>
 
