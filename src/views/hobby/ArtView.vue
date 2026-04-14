@@ -43,8 +43,8 @@ const art = [
     id: 'class',
     month: 'december',
     year: '2023',
-    images: ['1.jpg', '2.png', '3.jpg', '4.jpg', '5.jpg'],
-    size_file: 'heavy, as it is formed by images'
+    images: ['1.png', '2.png', '3.png', '4.png', '5.png'],
+    size_file: '151.6KB (that is a lot!)'
   },
   {
     id: 'tf2/merasmus',
@@ -53,13 +53,55 @@ const art = [
     images: ['merasmus.png', 'explanation.png'],
     size_file: '32.5KB'
   },
-  { id: 'pfp/2023', month: 'june', year: '2023', images: ['1.png', '2.gif'], size_file: 'heavy, as it is formed by images' },
-  { id: 'mix/snails-house', month: 'january', year: '2023', images: ['1.jpg'], size_file: 'heavy, as it is formed by images' },
-  { id: 'pfp/2022', month: 'october', year: '2022', images: ['2.png', '3.png'], size_file: 'heavy, as it is formed by images' },
-  { id: 'mix/omori', month: 'october', year: '2022', images: ['1.jpg'], size_file: 'heavy, as it is formed by images' },
-  { id: 'mix/oneshot', month: 'september', year: '2022', images: ['1.jpg'], size_file: 'heavy, as it is formed by images' },
-  { id: 'pfp/2022', month: 'june', year: '2022', images: ['1.png'], size_file: 'heavy, as it is formed by images' },
-  { id: 'helltaker', month: 'may', year: '2021', images: ['1.jpeg'], size_file: 'heavy, as it is formed by images' }
+  { 
+  	id: 'pfp/2023',
+  	month: 'june',
+  	year: '2023',
+  	images: ['1.png', '2.gif'],
+  	size_file: '4.41MB (that is a LOT! think twice before loading!)' 
+  },
+  { 
+  	id: 'mix/snails-house',
+  	month: 'january',
+  	year: '2023',
+  	images: ['1.png'],
+  	size_file: '23.5KB'
+  },
+  { 
+  	id: 'pfp/2022',
+  	month: 'october',
+  	year: '2022',
+  	images: ['2.png', '3.png'],
+  	size_file: '28.2KB'
+  },
+  { 
+  	id: 'mix/omori',
+  	month: 'october',
+  	year: '2022',
+  	images: ['1.png'],
+  	size_file: '25.0KB'
+  },
+  { 
+  	id: 'mix/oneshot',
+  	month: 'september',
+  	year: '2022',
+  	images: ['1.png'],
+  	size_file: '23.9KB'
+  },
+  { 
+  	id: 'pfp/2022',
+  	month: 'june',
+  	year: '2022',
+  	images: ['1.png'],
+  	size_file: '6.6KB'
+  },
+  { 
+  	id: 'helltaker',
+  	month: 'may',
+  	year: '2021',
+  	images: ['1.png'],
+  	size_file: '33.1KB'
+  }
 ]
 </script>
 
